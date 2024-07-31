@@ -1,0 +1,7 @@
+name: "Code block recipe"
+description: "Code block recipe recipe for UBC Web Services websites"
+type: "Block type"
+install:
+  # core
+  - block
+  - block_content

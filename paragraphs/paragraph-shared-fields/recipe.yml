@@ -1,0 +1,11 @@
+name: "Paragraph shared fields"
+description: "Paragraph shared fields recipe for UBC Web Services websites"
+type: "Fields"
+install:
+  # core
+  - file
+  - image
+  - taxonomy
+  - paragraphs
+  # contrib
+  - ubc_paragraph_entities

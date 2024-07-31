@@ -1,0 +1,9 @@
+name: "Tab paragraph"
+description: "Tab paragraph recipe for UBC Web Services websites"
+type: "Paragraph type"
+install:
+    # core
+  - text
+  # contrib
+  - paragraphs
+  - ubc_paragraph_entities

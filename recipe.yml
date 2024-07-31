@@ -1,0 +1,19 @@
+name: "Orchestrate all recipes"
+description: "Orchestrate all recipes for UBC Web Services websites"
+type: "Site"
+recipes:
+  # install parent recipes first
+  - recipes/ws-recipes/role/role-editor
+  - recipes/ws-recipes/role/role-content-creator
+  - recipes/ws-recipes/theme/theme-ws
+  - recipes/ws-recipes/theme/theme-admin
+  - recipes/ws-recipes/block/block-code
+  - recipes/ws-recipes/block/block-quicklinks
+  - recipes/ws-recipes/date-formats
+  - recipes/ws-recipes/image/image-styles
+  - recipes/ws-recipes/image/image-styles-responsive
+  - recipes/ws-recipes/taxonomy/taxonomy-admin
+  - recipes/ws-recipes/media/media-config
+  - recipes/ws-recipes/text-format/text-format-filtered
+  - recipes/ws-recipes/custom-entity/custom-entity-ubc-alert
+  - recipes/ws-recipes/paragraphs/paragraph-config

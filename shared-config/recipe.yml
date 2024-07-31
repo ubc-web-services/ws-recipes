@@ -1,0 +1,28 @@
+name: "Shared Configuration"
+description: "Shared Base configuration for UBC Web Services websites"
+type: "Site"
+recipes:
+  - recipes/ws-recipes/theme/theme-admin
+  - recipes/ws-recipes/theme/theme-ws
+  - recipes/ws-recipes/text-format/text-format-filtered
+config:
+  import:
+    node:
+      - core.entity_view_mode.node.card_horizontal.yml
+      - core.entity_view_mode.node.card_image.yml
+      - core.entity_view_mode.node.card_vertical.yml
+      - core.entity_view_mode.node.custom_content.yml
+      - core.entity_view_mode.node.featured_content.yml
+    taxonomy:
+      - taxonomy.vocabulary.admin_background_color_settings.yml
+      - taxonomy.vocabulary.admin_icon_position.yml
+      - taxonomy.vocabulary.admin_icon_settings.yml
+      - taxonomy.vocabulary.admin_number_of_items_per_row.yml
+      - taxonomy.vocabulary.admin_postion_settings.yml
+      - taxonomy.vocabulary.admin_vertical_spacing_settings.yml
+      - taxonomy.vocabulary.admin_width_settings.yml
+      - taxonomy.vocabulary.announcement_type.yml
+      - taxonomy.vocabulary.department_or_unit.yml
+      - taxonomy.vocabulary.event_category.yml
+    views:
+      - views.view.content_conditional_title.yml

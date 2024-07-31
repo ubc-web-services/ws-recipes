@@ -1,0 +1,16 @@
+name: "SVG Icon media type"
+description: "SVG Icon media type for UBC Web Services websites"
+type: "Media type"
+recipes:
+  - recipes/ws-recipes/media/media-view-modes
+  - recipes/ws-recipes/image/image-styles
+install:
+  # core
+  - file
+  - image
+  - responsive_image
+  - media
+  - media_library
+  - path
+  # contrib
+  - svg_image

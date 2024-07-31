@@ -1,0 +1,16 @@
+name: "Feature image paragraph"
+description: "Feature image paragraph recipe for UBC Web Services websites"
+type: "Paragraph type"
+recipes:
+  - recipes/ws-recipes/image/image-styles
+  - recipes/ws-recipes/paragraphs/paragraph-shared-fields
+install:
+  # core
+  - file
+  - image
+  - link
+  - taxonomy
+  # contrib
+  - maxlength
+  - paragraphs
+  - ubc_paragraph_entities

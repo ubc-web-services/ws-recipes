@@ -1,0 +1,11 @@
+name: "Admin taxonomy"
+description: "Admin taxonomy recipe for UBC Web Services websites"
+type: "Taxonomy"
+install:
+  # core
+  - taxonomy
+  # contrib
+  - metatag
+  - metatag_open_graph
+  - metatag_twitter_cards
+  - pathauto

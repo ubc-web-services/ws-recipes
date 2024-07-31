@@ -1,0 +1,17 @@
+name: "Image media type"
+description: "Image media type for UBC Web Services websites"
+type: "Media type"
+recipes:
+  - core/recipes/image_media_type
+  - recipes/ws-recipes/media/media-view-modes
+  - recipes/ws-recipes/image/image-styles
+  - recipes/ws-recipes/image/image-styles-responsive
+install:
+  # core
+  - file
+  - image
+  - media
+  - media_library
+  - path
+  # contrib
+  - crop

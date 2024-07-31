@@ -1,0 +1,6 @@
+name: "Media view modes"
+description: "Media view modes recipe for UBC Web Services websites"
+type: "Media view modes"
+install:
+  # core
+  - media

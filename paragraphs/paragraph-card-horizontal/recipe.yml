@@ -1,0 +1,21 @@
+name: "Horizontal card paragraph"
+description: "Horizontal card paragraph recipe for UBC Web Services websites"
+type: "Paragraph type"
+recipes:
+  - recipes/ws-recipes/image/image-styles
+  - recipes/ws-recipes/paragraphs/paragraph-shared-fields
+install:
+  # core
+  - file
+  - image
+  - link
+  - taxonomy
+  #contrib
+  - entity_reference_revisions
+  - focal_point
+  - maxlength
+  - paragraphs
+  - ubc_paragraph_entities
+
+
+

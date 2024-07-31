@@ -1,0 +1,40 @@
+name: "Editor role"
+description: "Editor role recipe for UBC Web Services websites"
+type: "Editor role"
+install:
+  # core
+  - block
+  - contextual
+  - file
+  - menu_ui
+  - path
+  - toolbar
+  - user
+config:
+  actions:
+    user.role.editor:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: editor
+        label: Editor
+        weight: 2
+        is_admin: false
+      # grant permissions from enabled core modules
+      grantPermissions:
+        - 'access administration pages'
+        - 'access contextual links'
+        - 'access files overview'
+        - 'access site in maintenance mode'
+        - 'access toolbar'
+        - 'access user profiles'
+        - 'administer blocks'
+        - 'administer menu'
+        - 'administer themes'
+        - 'administer site configuration'
+        - 'administer url aliases'
+        - 'administer users'
+        - 'cancel account'
+        - 'change own username'
+        - 'create url aliases'
+        - 'select account cancellation method'
+        - 'view the administration theme'

@@ -1,0 +1,13 @@
+name: "Private file media type"
+description: "Private file media type for UBC Web Services websites"
+type: "Media type"
+recipes:
+  - recipes/ws-recipes/media/media-view-modes
+  - recipes/ws-recipes/image/image-styles
+install:
+  # core
+  - file
+  - media
+  - media_library
+  - path
+

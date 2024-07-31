@@ -1,0 +1,15 @@
+name: "UBC Alert type"
+description: "UBC Alert type recipe for UBC Web Services websites"
+type: "Content item type"
+install:
+  # core
+  - ckeditor5
+  - options
+  - taxonomy
+  - text
+  - views
+  # contrib
+  - auto_entitylabel
+  - datetime
+  - maxlength
+  - ubc_content_items

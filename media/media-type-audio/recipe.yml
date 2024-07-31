@@ -1,0 +1,12 @@
+name: "Audio media type"
+description: "Audio media type recipe for UBC Web Services websites"
+type: "Media"
+recipes:
+  - core/recipes/audio_media_type
+  - recipes/ws-recipes/media/media-view-modes
+install:
+  # core
+  - file
+  - image
+  - media
+  - path

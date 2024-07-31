@@ -1,0 +1,9 @@
+name: "Paragraph configuration"
+description: "Paragraph configuration recipe for UBC Web Services websites"
+type: "Paragraph configuration"
+recipes:
+  - recipes/ws-recipes/paragraphs/paragraph-card-group
+  - recipes/ws-recipes/paragraphs/paragraph-feature-image
+  - recipes/ws-recipes/paragraphs/paragraph-slideshow
+  - recipes/ws-recipes/paragraphs/paragraph-tabcordion
+  - recipes/ws-recipes/paragraphs/paragraph-text

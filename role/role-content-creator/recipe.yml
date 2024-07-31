@@ -1,0 +1,27 @@
+name: "Content Creator role"
+description: "Content Creator role recipe for UBC Web Services websites"
+type: "User role"
+install:
+  # core
+  - file
+  - menu_ui
+  - path
+  - toolbar
+config:
+  actions:
+    user.role.content_creator:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: content_creator
+        label: Content Creator
+        weight: 1
+        is_admin: false
+      # grant permissions from enabled core modules
+      grantPermissions:
+        - 'access files overview'
+        - 'access site in maintenance mode'
+        - 'access toolbar'
+        - 'administer menu'
+        - 'administer url aliases'
+        - 'create url aliases'
+        - 'view the administration theme'

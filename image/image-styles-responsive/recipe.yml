@@ -1,0 +1,102 @@
+name: "Responsive image styles"
+description: "Responsive image styles recipe for UBC Web Services websites"
+type: "Site"
+install:
+  # core
+  - image
+  - breakpoint
+  - responsive_image
+config:
+  actions:
+    # Configure the wide image style
+    responsive_image.styles.wide:
+      ensure_exists:
+        langcode: en
+        status: true
+        dependencies:
+          config:
+            - image.style.max_1300x1300
+            - image.style.max_2600x2600
+            - image.style.max_970x970
+            - image.style.max_650x650
+            - image.style.max_325x325
+        id: wide
+        label: Wide
+        image_style_mappings:
+          -
+            image_mapping_type: image_style
+            image_mapping: max_650x650
+            breakpoint_id: kraken.micro
+            multiplier: 1x
+          -
+            image_mapping_type: image_style
+            image_mapping: max_970x970
+            breakpoint_id: kraken.sm
+            multiplier: 1x
+          -
+            image_mapping_type: image_style
+            image_mapping: max_1300x1300
+            breakpoint_id: kraken.md
+            multiplier: 1x
+          -
+            image_mapping_type: image_style
+            image_mapping: max_2600x2600
+            breakpoint_id: kraken.lg
+            multiplier: 1x
+          -
+            image_mapping_type: image_style
+            image_mapping: max_2600x2600
+            breakpoint_id: kraken.xl
+            multiplier: 1x
+          -
+            image_mapping_type: image_style
+            image_mapping: max_2600x2600
+            breakpoint_id: kraken.xxl
+            multiplier: 1x
+        breakpoint_group: kraken
+        fallback_image_style: max_325x325
+    # Configure the narrow image style
+    responsive_image.styles.narrow:
+      ensure_exists:
+        langcode: en
+        status: true
+        dependencies:
+          config:
+            - image.style.max_1300x1300
+            - image.style.max_2600x2600
+            - image.style.max_970x970
+        id: narrow
+        label: Narrow
+        image_style_mappings:
+          -
+            image_mapping_type: image_style
+            image_mapping: max_325x325
+            breakpoint_id: kraken.micro
+            multiplier: 1x
+          -
+            image_mapping_type: image_style
+            image_mapping: max_325x325
+            breakpoint_id: kraken.sm
+            multiplier: 1x
+          -
+            image_mapping_type: image_style
+            image_mapping: max_650x650
+            breakpoint_id: kraken.md
+            multiplier: 1x
+          -
+            image_mapping_type: image_style
+            image_mapping: max_970x970
+            breakpoint_id: kraken.lg
+            multiplier: 1x
+          -
+            image_mapping_type: image_style
+            image_mapping: max_970x970
+            breakpoint_id: kraken.xl
+            multiplier: 1x
+          -
+            image_mapping_type: image_style
+            image_mapping: max_1300x1300
+            breakpoint_id: kraken.xxl
+            multiplier: 1x
+        breakpoint_group: kraken
+        fallback_image_style: max_325x325

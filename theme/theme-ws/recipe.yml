@@ -1,0 +1,43 @@
+name: "Web Services UBC theme"
+description: "Web Services UBC theme configuration for UBC Web Services websites"
+type: "Site"
+install:
+  - kraken
+config:
+  import:
+    kraken: "*"
+  actions:
+    system.theme:
+      simple_config_update:
+        default: kraken
+    # disable unneeded blocks
+    block.block.kraken_page_title:
+      simple_config_update:
+        status: false
+    block.block.kraken_powered:
+      simple_config_update:
+        status: false
+    block.block.kraken_search_form_wide:
+      simple_config_update:
+        status: false
+    block.block.kraken_search_form_narrow:
+      simple_config_update:
+        status: false
+    block.block.kraken_account_menu:
+      simple_config_update:
+        status: false
+    block.block.kraken_syndicate:
+      simple_config_update:
+        status: false
+    block.block.kraken_site_branding:
+      simple_config_update:
+        status: false
+    block.block.kraken_content:
+      simple_config_update:
+        status: false
+    block.block.kraken_primary_admin_actions:
+      simple_config_update:
+        status: false
+    block.block.kraken_primary_local_tasks:
+      simple_config_update:
+        status: false

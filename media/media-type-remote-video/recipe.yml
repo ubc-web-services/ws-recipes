@@ -1,0 +1,15 @@
+name: "Remote video media type"
+description: "Base media types for UBC Web Services websites"
+type: "Media type"
+recipes:
+  - core/recipes/remote_video_media_type
+  - recipes/ws-recipes/media/media-view-modes
+  - recipes/ws-recipes/image/image-styles
+install:
+  # core
+  - file
+  - image
+  - responsive_image
+  - media
+  - media_library
+  - path

@@ -1,0 +1,21 @@
+name: "Vertical card paragraph"
+description: "Vertical card paragraph recipe for UBC Web Services websites"
+type: "Paragraph type"
+recipes:
+  - recipes/ws-recipes/image/image-styles
+  - recipes/ws-recipes/image/image-styles-responsive
+  - recipes/ws-recipes/paragraphs/paragraph-shared-fields
+install:
+  # core
+  - file
+  - image
+  - breakpoint
+  - link
+  - responsive_image
+  - taxonomy
+  # contrib
+  - entity_reference_revisions
+  - focal_point
+  - maxlength
+  - paragraphs
+  - ubc_paragraph_entities

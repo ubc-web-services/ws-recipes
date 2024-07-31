@@ -1,0 +1,11 @@
+name: "File media type"
+description: "File media type recipe for UBC Web Services websites"
+type: "Media type"
+recipes:
+  - recipes/ws-recipes/media/media-view-modes
+install:
+  # core
+  - file
+  - media
+  - media_library
+  - path

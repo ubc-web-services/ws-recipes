@@ -1,0 +1,23 @@
+name: "Filtered text format"
+description: "Filtered text format for UBC Web Services websites"
+type: "Text format editor"
+install:
+  # core
+  - ckeditor5
+  - ckeditor5_fullscreen
+  - editor_advanced_link
+  - image
+  - linkit
+  - media
+  - media_library
+  - responsive_table_filter
+  - ubc_ckeditor_widgets
+config:
+  import:
+    ckeditor5:
+      - editor.editor.filtered_text.yml
+      - filter.format.filtered_text.yml
+    editor_advanced_link: "*"
+    linkit: "*"
+    responsive_table_filter: "*"
+    ubc_ckeditor_widgets: "*"

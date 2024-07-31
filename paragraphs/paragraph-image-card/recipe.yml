@@ -1,0 +1,18 @@
+name: "Image card paragraph"
+description: "Image card paragraph recipe for UBC Web Services websites"
+type: "Paragraph type"
+recipes:
+  - recipes/ws-recipes/image/image-styles
+  - recipes/ws-recipes/paragraphs/paragraph-shared-fields
+install:
+  # core
+  - file
+  - image
+  - link
+  - responsive_image
+  - taxonomy
+  # contrib
+  - maxlength
+  - paragraphs
+  - svg_image
+  - ubc_paragraph_entities

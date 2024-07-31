@@ -1,0 +1,64 @@
+name: "Admin theme"
+description: "Admin theme configuration for UBC Web Services websites"
+type: "Site"
+install:
+  - admin_toolbar
+  - admin_toolbar_tools
+  - gin
+  - gin_toolbar
+  - gin_login
+  - rebuild_cache_access
+config:
+  import:
+    gin:
+      - gin.settings
+      - block.block.gin_breadcrumbs
+      - block.block.gin_content
+      - block.block.gin_local_actions
+      - block.block.gin_messages
+      - block.block.gin_page_title
+      - block.block.gin_primary_local_tasks
+      - block.block.gin_secondary_local_tasks
+    gin_toolbar: "*"
+    gin_login: "*"
+  actions:
+    system.theme:
+      simple_config_update:
+        admin: gin
+    gin.settings:
+      simple_config_update:
+        sticky_action_buttons: true
+    # disable unneeded blocks
+    block.block.gin_search_form_wide:
+      simple_config_update:
+        status: false
+    block.block.gin_search_form_narrow:
+      simple_config_update:
+        status: false
+    block.block.gin_account_menu:
+      simple_config_update:
+        status: false
+    block.block.gin_main_menu:
+      simple_config_update:
+        status: false
+    block.block.gin_powered:
+      simple_config_update:
+        status: false
+    block.block.gin_syndicate:
+      simple_config_update:
+        status: false
+    block.block.gin_site_branding:
+      simple_config_update:
+        status: false
+    block.block.gin_primaryadminactions:
+      simple_config_update:
+        status: false
+    block.block.gin_drawer:
+      simple_config_update:
+        status: false
+    block.block.gin_tabs:
+      simple_config_update:
+        status: false
+    block.block.gin_primary_admin_actions:
+      simple_config_update:
+        status: false
