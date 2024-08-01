@@ -1,6 +1,9 @@
 name: "UBC Alert type"
 description: "UBC Alert type recipe for UBC Web Services websites"
 type: "Content item type"
+recipes:
+  - recipes/ws-recipes/role/role-editor
+  - recipes/ws-recipes/role/role-content-creator
 install:
   # core
   - ckeditor5
@@ -13,3 +16,24 @@ install:
   - datetime
   - maxlength
   - ubc_content_items
+config:
+  actions:
+    user.role.anonymous:
+      grantPermissions:
+        - 'view published content item entities'
+    user.role.authenticated:
+      grantPermissions:
+        - 'view published content item entities'
+    user.role.content_creator:
+      grantPermissions:
+        - 'view published content item entities'
+    user.role.editor:
+      grantPermissions:
+        - 'add content item entities'
+        - 'delete content item entities'
+        - 'delete all content item revisions'
+        - 'edit content item entities'
+        - 'revert all content item revisions'
+        - 'view all content item revisions'
+        - 'view published content item entities'
+        - 'view unpublished content item entities'

@@ -2,6 +2,8 @@ name: "Private file media type"
 description: "Private file media type for UBC Web Services websites"
 type: "Media type"
 recipes:
+  - recipes/ws-recipes/role/role-editor
+  - recipes/ws-recipes/role/role-content-creator
   - recipes/ws-recipes/media/media-view-modes
   - recipes/ws-recipes/image/image-styles
 install:
@@ -10,4 +12,26 @@ install:
   - media
   - media_library
   - path
-
+config:
+  # assign private_file media permissions
+  actions:
+    user.role.content_creator:
+      grantPermissions:
+        - 'create private_file media'
+        - 'delete any private_file media'
+        - 'delete own private_file media'
+        - 'edit any private_file media'
+        - 'edit own private_file media'
+        - 'view any private_file media revisions'
+        - 'delete any private_file media revisions'
+        - 'revert any private_file media revisions'
+    user.role.editor:
+      grantPermissions:
+        - 'create private_file media'
+        - 'delete any private_file media'
+        - 'delete own private_file media'
+        - 'edit any private_file media'
+        - 'edit own private_file media'
+        - 'view any private_file media revisions'
+        - 'delete any private_file media revisions'
+        - 'revert any private_file media revisions'

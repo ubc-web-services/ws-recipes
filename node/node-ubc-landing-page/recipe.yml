@@ -1,0 +1,43 @@
+name: "Landing Page type configuration"
+description: "Landing Page type configuration recipe for UBC Web Services websites"
+type: 'Content type'
+recipes:
+  - recipes/ws-recipes/role/role-editor
+  - recipes/ws-recipes/node/node-view-modes
+install:
+  #core
+  - file
+  - image
+  - link
+  - menu_ui
+  - node
+  - path
+  - taxonomy
+  - text
+  - user
+  # contrib
+  - allowed_formats
+  - entity_reference_revisions
+  - field_group
+  - focal_point
+  - maxlength
+  - metatag
+  - paragraphs
+  - pathauto
+  - responsive_image
+  - scheduler
+  - simple_sitemap
+  - text_summary_options
+config:
+  # assign landing page permissions
+  actions:
+    user.role.editor:
+      grantPermissions:
+        - 'create ubc_landing_page content'
+        - 'delete any ubc_landing_page content'
+        - 'delete own ubc_landing_page content'
+        - 'delete ubc_landing_page revisions'
+        - 'edit any ubc_landing_page content'
+        - 'edit own ubc_landing_page content'
+        - 'revert ubc_landing_page revisions'
+        - 'view ubc_landing_page revisions'

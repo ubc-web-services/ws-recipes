@@ -1,0 +1,29 @@
+name: "Private Page type configuration"
+description: "Private Page type configuration recipe for UBC Web Services websites"
+type: 'Content type'
+recipes:
+  - recipes/ws-recipes/role/role-editor
+  - recipes/ws-recipes/node/node-view-modes
+install:
+  #core
+  - file
+  - menu_ui
+  - node
+  - path
+  - text
+  - user
+  # contrib
+  - scheduler
+config:
+  # assign private page permissions
+  actions:
+    user.role.editor:
+      grantPermissions:
+        - 'create private_page content'
+        - 'delete any private_page content'
+        - 'delete own private_page content'
+        - 'delete private_page revisions'
+        - 'edit any private_page content'
+        - 'edit own private_page content'
+        - 'revert private_page revisions'
+        - 'view private_page revisions'

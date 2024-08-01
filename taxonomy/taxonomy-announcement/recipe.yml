@@ -1,0 +1,21 @@
+name: "Announcement taxonomy"
+description: "Announcement taxonomy recipe for UBC Web Services websites"
+type: "Taxonomy"
+recipes:
+  - recipes/ws-recipes/role/role-editor
+install:
+  # core
+  - taxonomy
+  # contrib
+  - metatag
+  - metatag_open_graph
+  - metatag_twitter_cards
+  - pathauto
+config:
+  # assign announcement taxonomy permissions
+  actions:
+    user.role.editor:
+      grantPermissions:
+        - 'create terms in announcement_type'
+        - 'delete terms in announcement_type'
+        - 'edit terms in announcement_type'

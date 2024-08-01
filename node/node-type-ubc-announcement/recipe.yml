@@ -1,5 +1,0 @@
-name: "Node view modes"
-description: "Node view modes recipe for UBC Web Services websites"
-type: "View mode"
-recipes:
-  - node

@@ -1,8 +1,21 @@
 name: "Quicklinks block"
 description: "Quicklinks block recipe for UBC Web Services websites"
 type: "Block type"
+recipes:
+  - recipes/ws-recipes/role/role-editor
+  - recipes/ws-recipes/role/role-content-creator
 install:
   # core
   - block
   - block_content
   - link
+config:
+  actions:
+    user.role.editor:
+      grantPermissions:
+        - 'create quicklinks_block block content'
+        - 'delete any quicklinks_block block content'
+        - 'delete any quicklinks_block block content revisions'
+        - 'edit any quicklinks_block block content'
+        - 'revert any quicklinks_block block content revisions'
+        - 'view any quicklinks_block block content history'

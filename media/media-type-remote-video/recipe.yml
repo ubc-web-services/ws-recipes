@@ -2,6 +2,8 @@ name: "Remote video media type"
 description: "Base media types for UBC Web Services websites"
 type: "Media type"
 recipes:
+  - recipes/ws-recipes/role/role-editor
+  - recipes/ws-recipes/role/role-content-creator
   - core/recipes/remote_video_media_type
   - recipes/ws-recipes/media/media-view-modes
   - recipes/ws-recipes/image/image-styles
@@ -13,3 +15,26 @@ install:
   - media
   - media_library
   - path
+config:
+  actions:
+    # assign remote_video media permissions
+    user.role.content_creator:
+      grantPermissions:
+        - 'create remote_video media'
+        - 'delete any remote_video media'
+        - 'delete own remote_video media'
+        - 'edit any remote_video media'
+        - 'edit own remote_video media'
+        - 'view any remote_video media revisions'
+        - 'delete any remote_video media revisions'
+        - 'revert any remote_video media revisions'
+    user.role.editor:
+      grantPermissions:
+        - 'create remote_video media'
+        - 'delete any remote_video media'
+        - 'delete own remote_video media'
+        - 'edit any remote_video media'
+        - 'edit own remote_video media'
+        - 'view any remote_video media revisions'
+        - 'delete any remote_video media revisions'
+        - 'revert any remote_video media revisions'

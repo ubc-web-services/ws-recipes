@@ -8,6 +8,7 @@ install:
   - file
   - menu_ui
   - path
+  - taxonomy
   - toolbar
   - user
 config:
@@ -22,19 +23,22 @@ config:
       # grant permissions from enabled core modules
       grantPermissions:
         - 'access administration pages'
+        - 'access block library'
+        - 'access content overview'
         - 'access contextual links'
         - 'access files overview'
         - 'access site in maintenance mode'
+        - 'access taxonomy overview'
         - 'access toolbar'
         - 'access user profiles'
         - 'administer blocks'
         - 'administer menu'
         - 'administer themes'
-        - 'administer site configuration'
         - 'administer url aliases'
         - 'administer users'
         - 'cancel account'
         - 'change own username'
         - 'create url aliases'
+        - 'delete any file'
         - 'select account cancellation method'
         - 'view the administration theme'

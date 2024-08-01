@@ -1,0 +1,50 @@
+name: "Announcement type configuration"
+description: "Announcement type configuration recipe for UBC Web Services websites"
+type: 'Content type'
+recipes:
+  - recipes/ws-recipes/role/role-editor
+  - recipes/ws-recipes/role/role-content-creator
+  - recipes/ws-recipes/node/node-view-modes
+  - recipes/ws-recipes/taxonomy/taxonomy-announcement-content
+install:
+  #core
+  - image
+  - link
+  - menu_ui
+  - node
+  - path
+  - taxonomy
+  - text
+  - user
+  # contrib
+  - allowed_formats
+  - field_group
+  - focal_point
+  - maxlength
+  - metatag
+  - pathauto
+  - responsive_image
+  - scheduler
+  - simple_sitemap
+  - text_summary_options
+config:
+  # assign announcement permissions
+  actions:
+    user.role.content_creator:
+      grantPermissions:
+        - 'create ubc_announcement content'
+        - 'delete own ubc_announcement content'
+        - 'delete ubc_announcement revisions'
+        - 'edit own ubc_announcement content'
+        - 'revert ubc_announcement revisions'
+        - 'view ubc_announcement revisions'
+    user.role.editor:
+      grantPermissions:
+        - 'create ubc_announcement content'
+        - 'delete any ubc_announcement content'
+        - 'delete own ubc_announcement content'
+        - 'delete ubc_announcement revisions'
+        - 'edit any ubc_announcement content'
+        - 'edit own ubc_announcement content'
+        - 'revert ubc_announcement revisions'
+        - 'view ubc_announcement revisions'

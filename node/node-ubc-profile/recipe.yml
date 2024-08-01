@@ -1,0 +1,50 @@
+name: "Profile type configuration"
+description: "Profile type configuration recipe for UBC Web Services websites"
+type: 'Content type'
+recipes:
+  - recipes/ws-recipes/role/role-editor
+  - recipes/ws-recipes/role/role-content-creator
+  - recipes/ws-recipes/node/node-view-modes
+  - recipes/ws-recipes/taxonomy/taxonomy-department
+install:
+  #core
+  - image
+  - menu_ui
+  - node
+  - path
+  - taxonomy
+  - text
+  - user
+  # contrib
+  - allowed_formats
+  - auto_entitylabel
+  - field_group
+  - maxlength
+  - metatag
+  - pathauto
+  - scheduler
+  - simple_sitemap
+  - svg_image
+  - telephone
+  - text_summary_options
+config:
+  # assign profile permissions
+  actions:
+    user.role.content_creator:
+      grantPermissions:
+        - 'create ubc_profile content'
+        - 'delete own ubc_profile content'
+        - 'delete ubc_profile revisions'
+        - 'edit own ubc_profile content'
+        - 'revert ubc_profile revisions'
+        - 'view ubc_profile revisions'
+    user.role.editor:
+      grantPermissions:
+        - 'create ubc_profile content'
+        - 'delete any ubc_profile content'
+        - 'delete own ubc_profile content'
+        - 'delete ubc_profile revisions'
+        - 'edit any ubc_profile content'
+        - 'edit own ubc_profile content'
+        - 'revert ubc_profile revisions'
+        - 'view ubc_profile revisions'

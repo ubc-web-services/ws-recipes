@@ -2,6 +2,8 @@ name: "SVG Icon media type"
 description: "SVG Icon media type for UBC Web Services websites"
 type: "Media type"
 recipes:
+  - recipes/ws-recipes/role/role-editor
+  - recipes/ws-recipes/role/role-content-creator
   - recipes/ws-recipes/media/media-view-modes
   - recipes/ws-recipes/image/image-styles
 install:
@@ -14,3 +16,26 @@ install:
   - path
   # contrib
   - svg_image
+config:
+  # assign svg_icon media permissions
+  actions:
+    user.role.content_creator:
+      grantPermissions:
+        - 'create svg_icon media'
+        - 'delete any svg_icon media'
+        - 'delete own svg_icon media'
+        - 'edit any svg_icon media'
+        - 'edit own svg_icon media'
+        - 'view any svg_icon media revisions'
+        - 'delete any svg_icon media revisions'
+        - 'revert any svg_icon media revisions'
+    user.role.editor:
+      grantPermissions:
+        - 'create svg_icon media'
+        - 'delete any svg_icon media'
+        - 'delete own svg_icon media'
+        - 'edit any svg_icon media'
+        - 'edit own svg_icon media'
+        - 'view any svg_icon media revisions'
+        - 'delete any svg_icon media revisions'
+        - 'revert any svg_icon media revisions'

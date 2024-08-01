@@ -2,6 +2,8 @@ name: "Image media type"
 description: "Image media type for UBC Web Services websites"
 type: "Media type"
 recipes:
+  - recipes/ws-recipes/role/role-editor
+  - recipes/ws-recipes/role/role-content-creator
   - core/recipes/image_media_type
   - recipes/ws-recipes/media/media-view-modes
   - recipes/ws-recipes/image/image-styles
@@ -15,3 +17,26 @@ install:
   - path
   # contrib
   - crop
+config:
+  # assign image media permissions
+  actions:
+    user.role.content_creator:
+      grantPermissions:
+        - 'create image media'
+        - 'delete any image media'
+        - 'delete own image media'
+        - 'edit any image media'
+        - 'edit own image media'
+        - 'view any image media revisions'
+        - 'delete any image media revisions'
+        - 'revert any image media revisions'
+    user.role.editor:
+      grantPermissions:
+        - 'create image media'
+        - 'delete any image media'
+        - 'delete own image media'
+        - 'edit any image media'
+        - 'edit own image media'
+        - 'view any image media revisions'
+        - 'delete any image media revisions'
+        - 'revert any image media revisions'

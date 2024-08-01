@@ -1,0 +1,54 @@
+name: "Event type configuration"
+description: "Event type configuration recipe for UBC Web Services websites"
+type: 'Content type'
+recipes:
+  - recipes/ws-recipes/role/role-editor
+  - recipes/ws-recipes/role/role-content-creator
+  - recipes/ws-recipes/node/node-view-modes
+  - recipes/ws-recipes/taxonomy/taxonomy-event
+install:
+  #core
+  - image
+  - link
+  - menu_ui
+  - node
+  - path
+  - taxonomy
+  - text
+  - user
+  # contrib
+  - address
+  - allowed_formats
+  - datetime_range
+  - datetimehideseconds
+  - field_group
+  - focal_point
+  - maxlength
+  - metatag
+  - pathauto
+  - responsive_image
+  - scheduler
+  - simple_sitemap
+  - svg_image
+  - text_summary_options
+config:
+  # assign event permissions
+  actions:
+    user.role.content_creator:
+      grantPermissions:
+        - 'create ubc_event content'
+        - 'delete own ubc_event content'
+        - 'delete ubc_event revisions'
+        - 'edit own ubc_event content'
+        - 'revert ubc_event revisions'
+        - 'view ubc_event revisions'
+    user.role.editor:
+      grantPermissions:
+        - 'create ubc_event content'
+        - 'delete any ubc_event content'
+        - 'delete own ubc_event content'
+        - 'delete ubc_event revisions'
+        - 'edit any ubc_event content'
+        - 'edit own ubc_event content'
+        - 'revert ubc_event revisions'
+        - 'view ubc_event revisions'

@@ -1,6 +1,8 @@
 name: "Department or unit taxonomy"
 description: "Department or unit taxonomy recipe for UBC Web Services websites"
 type: "Taxonomy"
+recipes:
+  - recipes/ws-recipes/role/role-editor
 install:
   # core
   - taxonomy
@@ -9,3 +11,11 @@ install:
   - metatag_open_graph
   - metatag_twitter_cards
   - pathauto
+config:
+  # assign department taxonomy permissions
+  actions:
+    user.role.editor:
+      grantPermissions:
+        - 'create terms in department_or_unit'
+        - 'delete terms in department_or_unit'
+        - 'edit terms in department_or_unit'

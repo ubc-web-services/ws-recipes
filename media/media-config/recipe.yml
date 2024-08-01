@@ -2,6 +2,8 @@ name: "General media configuration"
 description: "General media configuration recipe for UBC Web Services websites"
 type: "Media configuration"
 recipes:
+  - recipes/ws-recipes/role/role-editor
+  - recipes/ws-recipes/role/role-content-creator
   - recipes/ws-recipes/media/media-view-modes
   - recipes/ws-recipes/media/media-type-audio
   - recipes/ws-recipes/media/media-type-file
@@ -18,3 +20,43 @@ install:
   - media_alias_display
   - media_bulk_upload
   - media_entity_file_replace
+config:
+
+  actions:
+    # enable standalone media settings
+    media.settings:
+      simple_config_update:
+        standalone_url: 1
+    # assign general media permissions
+    user.role.anonymous:
+      grantPermissions:
+        - 'view media'
+    user.role.authenticated:
+      grantPermissions:
+        - 'view media'
+    user.role.content_creator:
+      grantPermissions:
+        - 'access media overview'
+        - 'delete any media'
+        - 'delete media'
+        - 'dropzone upload files'
+        - 'update any media'
+        - 'update media'
+        - 'use bulk_upload_documents bulk upload form'
+        - 'use bulk_upload_images bulk upload form'
+        - 'view all media revisions'
+        - 'view media'
+        - 'view own unpublished media'
+    user.role.editor:
+      grantPermissions:
+        - 'access media overview'
+        - 'delete any media'
+        - 'delete media'
+        - 'dropzone upload files'
+        - 'update any media'
+        - 'update media'
+        - 'use bulk_upload_documents bulk upload form'
+        - 'use bulk_upload_images bulk upload form'
+        - 'view all media revisions'
+        - 'view media'
+        - 'view own unpublished media'

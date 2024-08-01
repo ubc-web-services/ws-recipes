@@ -6,6 +6,7 @@ install:
   - file
   - menu_ui
   - path
+  - taxonomy
   - toolbar
 config:
   actions:
@@ -18,8 +19,11 @@ config:
         is_admin: false
       # grant permissions from enabled core modules
       grantPermissions:
+        - 'access administration pages'
+        - 'access content overview'
         - 'access files overview'
         - 'access site in maintenance mode'
+        - 'access taxonomy overview'
         - 'access toolbar'
         - 'administer menu'
         - 'administer url aliases'

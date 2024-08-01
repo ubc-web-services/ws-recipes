@@ -2,6 +2,8 @@ name: "File media type"
 description: "File media type recipe for UBC Web Services websites"
 type: "Media type"
 recipes:
+  - recipes/ws-recipes/role/role-editor
+  - recipes/ws-recipes/role/role-content-creator
   - recipes/ws-recipes/media/media-view-modes
 install:
   # core
@@ -9,3 +11,26 @@ install:
   - media
   - media_library
   - path
+config:
+  # assign file media permissions
+  actions:
+    user.role.content_creator:
+      grantPermissions:
+        - 'create file media'
+        - 'delete any file media'
+        - 'delete own file media'
+        - 'edit any file media'
+        - 'edit own file media'
+        - 'view any file media revisions'
+        - 'delete any file media revisions'
+        - 'revert any file media revisions'
+    user.role.editor:
+      grantPermissions:
+        - 'create file media'
+        - 'delete any file media'
+        - 'delete own file media'
+        - 'edit any file media'
+        - 'edit own file media'
+        - 'view any file media revisions'
+        - 'delete any file media revisions'
+        - 'revert any file media revisions'

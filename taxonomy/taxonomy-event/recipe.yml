@@ -1,6 +1,8 @@
 name: "Event taxonomy"
 description: "Event taxonomy recipe for UBC Web Services websites"
 type: "Taxonomy"
+recipes:
+  - recipes/ws-recipes/role/role-editor
 install:
   # core
   - taxonomy
@@ -9,3 +11,11 @@ install:
   - metatag_open_graph
   - metatag_twitter_cards
   - pathauto
+config:
+  # assign department taxonomy permissions
+  actions:
+    user.role.editor:
+      grantPermissions:
+        - 'create terms in event_category'
+        - 'delete terms in event_category'
+        - 'edit terms in event_category'

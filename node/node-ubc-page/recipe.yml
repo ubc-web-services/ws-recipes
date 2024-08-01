@@ -1,0 +1,44 @@
+name: "Page type configuration"
+description: "Page type configuration recipe for UBC Web Services websites"
+type: 'Content type'
+recipes:
+  - recipes/ws-recipes/role/role-editor
+  - recipes/ws-recipes/role/role-content-creator
+  - recipes/ws-recipes/node/node-view-modes
+install:
+  #core
+  - image
+  - menu_ui
+  - node
+  - path
+  - text
+  - user
+  # contrib
+  - allowed_formats
+  - maxlength
+  - metatag
+  - pathauto
+  - scheduler
+  - simple_sitemap
+  - text_summary_options
+config:
+  # assign page permissions
+  actions:
+    user.role.content_creator:
+      grantPermissions:
+        - 'create ubc_page content'
+        - 'delete own ubc_page content'
+        - 'delete ubc_page revisions'
+        - 'edit own ubc_page content'
+        - 'revert ubc_page revisions'
+        - 'view ubc_page revisions'
+    user.role.editor:
+      grantPermissions:
+        - 'create ubc_page content'
+        - 'delete any ubc_page content'
+        - 'delete own ubc_page content'
+        - 'delete ubc_page revisions'
+        - 'edit any ubc_page content'
+        - 'edit own ubc_page content'
+        - 'revert ubc_page revisions'
+        - 'view ubc_page revisions'
