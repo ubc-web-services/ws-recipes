@@ -6,9 +6,6 @@ dependencies:
     - image.style.card_480x240
     - image.style.card_600x300
     - image.style.card_780x390
-  enforced:
-    module:
-      - ubc_image_styles
 id: card
 label: Card
 image_style_mappings:
