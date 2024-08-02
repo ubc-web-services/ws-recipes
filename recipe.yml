@@ -27,10 +27,106 @@ recipes:
   - recipes/ws-recipes/node/node-ubc-profile
 install:
   # contrib
+  # navigation / menus
+  - easy_breadcrumb
+  - menu_block
+  - menu_position
+  # redirects
+  - redirect
+  # block
+  - block_exclude_pages
+  # date / event
+  - date_popup
+  - optional_end_date
+  # config
+  - config_ignore
+  # mail
+  - smtp
+  # media
+  - file_delete
+  - file_to_media
+  # editing / ui
+  - chosen
+  - formtips
+  - linkit_media_library
+  - twig_tweak
+  - ubc_chosen_style_tweaks
+  # views
+  - fullcalendar_view
+  - views_autosubmit
+  # spam
+  - antibot
+  # search
+  - google_analytics
+  - google_tag
+  # node / permissions
+  - quick_node_clone
+  - node_revision_delete
   - role_delegation
   - view_unpublished
+  # services
+  - jsonapi
+  - rest
 config:
   actions:
+    # chosen settings
+    chosen.settings:
+      simple_config_update:
+        minimum_single: '0'
+        minimum_multiple: '0'
+        max_shown_results: '20'
+        minimum_width: '100'
+        use_relative_width: 'true'
+        search_contains: 'true'
+        chosen_include: '0'
+    # node revision delete settings
+    node_revision_delete.settings:
+      simple_config_update:
+        node_revision_delete_time: '0'
+        delete_newer: 'false'
+    # easy breadcrumb settings
+    easy_breadcrumb.settings:
+      simple_config_update:
+        include_title_segment: 1
+    # metatag settings
+    # metatag.metatag_defaults.global:
+    #   simple_config_update:
+    #     tags.canonical_url: '[current-page:url]'
+    #     tags.title: '[current-page:title] | [site:name]'
+    # metatag.metatag_defaults.front:
+    #   simple_config_update:
+    #     tags.canonical_url: '[node:url]'
+    #     tags.description: '[node:summary]'
+    #     tags.title: '[node:title] | [site:name]'
+    # metatag.metatag_defaults.node:
+    #   simple_config_update:
+    #     tags.canonical_url: '[node:url]'
+    #     tags.description: '[node:summary]'
+    #     tags.title: '[node:title] | [site:name]'
+    #     tags.og_description: '[node:summary]'
+    #     tags.og_site_name: '[site:name]'
+    #     tags.og_title: '[node:title]'
+    #     tags.og_url: '[node:url]'
+    #     tags.twitter_cards_description: '[node:summary]'
+    #     tags.twitter_cards_page_url: '[node:url]'
+    #     tags.twitter_cards_title: '[node:title]'
+    #     tags.twitter_cards_type: 'summary'
+    # scheduler settings
+    scheduler.settings:
+      simple_config_update:
+        allow_date_only: 1
+        default_time: '00:00'
+        hide_seconds: 1
+    # smtp settings
+    smtp.settings:
+      simple_config_update:
+        smtp_on: 1
+        smtp_host: 'smtp.mail.ubc.ca'
+        smtp_port: 587
+        smtp_protocol: 'tls'
+        smtp_autotls: 1
+        smtp_username: 'ubcuit-a-UBCITWSNR'
+        smtp_client_helo: 'mail.ubc.ca'
     user.role.content_creator:
       # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
       createIfNotExists:
