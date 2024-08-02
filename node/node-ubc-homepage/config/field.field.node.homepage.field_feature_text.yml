@@ -16,7 +16,7 @@ entity_type: node
 bundle: homepage
 label: 'Feature Text'
 description: 'This field can only have very limited text - excessive text will be removed'
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
