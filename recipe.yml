@@ -329,9 +329,9 @@ config:
             - node
             - views
           theme:
-            - vpr
-        id: vpr_homepage_paragraphs
-        theme: vpr
+            - kraken
+        id: kraken_homepage_paragraphs
+        theme: kraken
         region: prefooter
         weight: 0
         provider: null
@@ -363,9 +363,9 @@ config:
             - node
             - views
           theme:
-            - vpr
-        id: vpr_landing_feature
-        theme: vpr
+            - kraken
+        id: kraken_landing_feature
+        theme: kraken
         region: masthead
         weight: 0
         provider: null
