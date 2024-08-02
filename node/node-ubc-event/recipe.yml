@@ -13,6 +13,7 @@ install:
   - taxonomy
   - text
   - user
+  - views
   # contrib
   - address
   - allowed_formats

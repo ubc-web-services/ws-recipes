@@ -11,6 +11,7 @@ install:
   - path
   - text
   - user
+  - views
   # contrib
   - allowed_formats
   - entity_reference_revisions
