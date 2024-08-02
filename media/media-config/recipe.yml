@@ -21,7 +21,6 @@ install:
   - media_bulk_upload
   - media_entity_file_replace
 config:
-
   actions:
     # enable standalone media settings
     media.settings:
