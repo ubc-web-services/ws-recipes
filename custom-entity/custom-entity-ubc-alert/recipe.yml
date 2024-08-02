@@ -1,9 +1,6 @@
 name: "UBC Alert type"
 description: "UBC Alert type recipe for UBC Web Services websites"
 type: "Content item type"
-recipes:
-  - recipes/ws-recipes/role/role-editor
-  - recipes/ws-recipes/role/role-content-creator
 install:
   # core
   - ckeditor5
@@ -11,6 +8,7 @@ install:
   - taxonomy
   - text
   - views
+  - user
   # contrib
   - auto_entitylabel
   - datetime
@@ -25,9 +23,23 @@ config:
       grantPermissions:
         - 'view published content item entities'
     user.role.content_creator:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: content_creator
+        label: Content Creator
+        weight: 1
+        is_admin: false
+      # grant permissions from enabled core modules
       grantPermissions:
         - 'view published content item entities'
     user.role.editor:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: editor
+        label: Editor
+        weight: 2
+        is_admin: false
+      # grant permissions from enabled core modules
       grantPermissions:
         - 'add content item entities'
         - 'delete content item entities'

@@ -1,10 +1,6 @@
 name: "Page type configuration"
 description: "Page type configuration recipe for UBC Web Services websites"
 type: 'Content type'
-recipes:
-  - recipes/ws-recipes/role/role-editor
-  - recipes/ws-recipes/role/role-content-creator
-  - recipes/ws-recipes/node/node-view-modes
 install:
   #core
   - image
@@ -22,9 +18,15 @@ install:
   - simple_sitemap
   - text_summary_options
 config:
-  # assign page permissions
   actions:
+    # assign page permissions
     user.role.content_creator:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: content_creator
+        label: Content Creator
+        weight: 1
+        is_admin: false
       grantPermissions:
         - 'create ubc_page content'
         - 'delete own ubc_page content'
@@ -33,6 +35,12 @@ config:
         - 'revert ubc_page revisions'
         - 'view ubc_page revisions'
     user.role.editor:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: editor
+        label: Editor
+        weight: 2
+        is_admin: false
       grantPermissions:
         - 'create ubc_page content'
         - 'delete any ubc_page content'

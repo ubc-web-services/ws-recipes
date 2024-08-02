@@ -2,8 +2,6 @@ name: "Paragraph configuration"
 description: "Paragraph configuration recipe for UBC Web Services websites"
 type: "Paragraph configuration"
 recipes:
-  - recipes/ws-recipes/role/role-editor
-  - recipes/ws-recipes/role/role-content-creator
   - recipes/ws-recipes/paragraphs/paragraph-card-group
   - recipes/ws-recipes/paragraphs/paragraph-feature-image
   - recipes/ws-recipes/paragraphs/paragraph-slideshow
@@ -13,8 +11,20 @@ config:
   # assign general paragraphs permissions
   actions:
     user.role.content_creator:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: content_creator
+        label: Content Creator
+        weight: 1
+        is_admin: false
       grantPermissions:
         - 'view unpublished paragraphs'
     user.role.editor:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: editor
+        label: Editor
+        weight: 2
+        is_admin: false
       grantPermissions:
         - 'view unpublished paragraphs'

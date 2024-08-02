@@ -2,8 +2,6 @@ name: "General media configuration"
 description: "General media configuration recipe for UBC Web Services websites"
 type: "Media configuration"
 recipes:
-  - recipes/ws-recipes/role/role-editor
-  - recipes/ws-recipes/role/role-content-creator
   - recipes/ws-recipes/media/media-view-modes
   - recipes/ws-recipes/media/media-type-audio
   - recipes/ws-recipes/media/media-type-file
@@ -12,6 +10,9 @@ recipes:
   - recipes/ws-recipes/media/media-type-remote-video
   - recipes/ws-recipes/media/media-type-svg-icon
 install:
+  # core
+  - media
+  - user
   # contrib
   - crop
   - dropzonejs
@@ -34,6 +35,12 @@ config:
       grantPermissions:
         - 'view media'
     user.role.content_creator:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: content_creator
+        label: Content Creator
+        weight: 1
+        is_admin: false
       grantPermissions:
         - 'access media overview'
         - 'delete any media'
@@ -47,6 +54,12 @@ config:
         - 'view media'
         - 'view own unpublished media'
     user.role.editor:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: editor
+        label: Editor
+        weight: 2
+        is_admin: false
       grantPermissions:
         - 'access media overview'
         - 'delete any media'

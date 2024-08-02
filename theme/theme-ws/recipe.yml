@@ -10,6 +10,12 @@ config:
     system.theme:
       simple_config_update:
         default: kraken
+    block.block.kraken_help:
+      simple_config_update:
+        region: help
+    block.block.kraken_messages:
+      simple_config_update:
+        region: help
     # disable unneeded blocks
     block.block.kraken_page_title:
       simple_config_update:

@@ -5,8 +5,8 @@ recipes:
   # install parent recipes first
   - recipes/ws-recipes/role/role-editor
   - recipes/ws-recipes/role/role-content-creator
-  - recipes/ws-recipes/theme/theme-ws
   - recipes/ws-recipes/theme/theme-admin
+  - recipes/ws-recipes/theme/theme-ws
   - recipes/ws-recipes/block/block-code
   - recipes/ws-recipes/block/block-quicklinks
   - recipes/ws-recipes/date-formats
@@ -18,6 +18,7 @@ recipes:
   - recipes/ws-recipes/text-format/text-format-filtered
   - recipes/ws-recipes/custom-entity/custom-entity-ubc-alert
   - recipes/ws-recipes/paragraphs/paragraph-config
+  - recipes/ws-recipes/node/node-view-modes
   - recipes/ws-recipes/node/node-ubc-announcement
   - recipes/ws-recipes/node/node-ubc-event
   - recipes/ws-recipes/node/node-ubc-homepage
@@ -26,6 +27,10 @@ recipes:
   - recipes/ws-recipes/node/node-ubc-private-page
   - recipes/ws-recipes/node/node-ubc-profile
 install:
+  # core
+  # services
+  - jsonapi
+  - rest
   # contrib
   # navigation / menus
   - easy_breadcrumb
@@ -59,16 +64,27 @@ install:
   # search
   - google_analytics
   - google_tag
+  - metatag
   # node / permissions
   - quick_node_clone
   - node_revision_delete
   - role_delegation
   - view_unpublished
-  # services
-  - jsonapi
-  - rest
 config:
+  import:
+    simple_sitemap: "*"
+    metatag: "*"
   actions:
+    # antibot settings
+    antibot.settings:
+      simple_config_update:
+        form_ids:
+          - 'comment_*'
+          - user_login_form
+          - user_pass
+          - user_register_form
+          - 'contact_message_*'
+          - 'webform_*'
     # chosen settings
     chosen.settings:
       simple_config_update:
@@ -88,29 +104,34 @@ config:
     easy_breadcrumb.settings:
       simple_config_update:
         include_title_segment: 1
+    # breadcrumb block settings
+    block.block.kraken_breadcrumbs:
+      simple_config_update:
+        visibility.request_path.negate: true
+        visibility.request_path.pages: '<front>'
     # metatag settings
-    # metatag.metatag_defaults.global:
-    #   simple_config_update:
-    #     tags.canonical_url: '[current-page:url]'
-    #     tags.title: '[current-page:title] | [site:name]'
-    # metatag.metatag_defaults.front:
-    #   simple_config_update:
-    #     tags.canonical_url: '[node:url]'
-    #     tags.description: '[node:summary]'
-    #     tags.title: '[node:title] | [site:name]'
-    # metatag.metatag_defaults.node:
-    #   simple_config_update:
-    #     tags.canonical_url: '[node:url]'
-    #     tags.description: '[node:summary]'
-    #     tags.title: '[node:title] | [site:name]'
-    #     tags.og_description: '[node:summary]'
-    #     tags.og_site_name: '[site:name]'
-    #     tags.og_title: '[node:title]'
-    #     tags.og_url: '[node:url]'
-    #     tags.twitter_cards_description: '[node:summary]'
-    #     tags.twitter_cards_page_url: '[node:url]'
-    #     tags.twitter_cards_title: '[node:title]'
-    #     tags.twitter_cards_type: 'summary'
+    metatag.metatag_defaults.global:
+      simple_config_update:
+        tags.canonical_url: '[current-page:url]'
+        tags.title: '[current-page:title] | [site:name]'
+    metatag.metatag_defaults.front:
+      simple_config_update:
+        tags.canonical_url: '[node:url]'
+        tags.description: '[node:summary]'
+        tags.title: '[node:title] | [site:name]'
+    metatag.metatag_defaults.node:
+      simple_config_update:
+        tags.canonical_url: '[node:url]'
+        tags.description: '[node:summary]'
+        tags.title: '[node:title] | [site:name]'
+        tags.og_description: '[node:summary]'
+        tags.og_site_name: '[site:name]'
+        tags.og_title: '[node:title]'
+        tags.og_url: '[node:url]'
+        tags.twitter_cards_description: '[node:summary]'
+        tags.twitter_cards_page_url: '[node:url]'
+        tags.twitter_cards_title: '[node:title]'
+        tags.twitter_cards_type: 'summary'
     # scheduler settings
     scheduler.settings:
       simple_config_update:
@@ -127,6 +148,33 @@ config:
         smtp_autotls: 1
         smtp_username: 'ubcuit-a-UBCITWSNR'
         smtp_client_helo: 'mail.ubc.ca'
+    # place some blocks
+    block.block.kraken_alert_banner:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies:
+          config:
+            - views.view.content_alert_banner
+          module:
+            - views
+          theme:
+            - kraken
+        id: kraken_alert_banner
+        theme: kraken
+        region: alert_region
+        weight: 0
+        provider: null
+        plugin: 'views_block:content_alert_banner-block_1'
+        settings:
+          id: 'views_block:content_alert_banner-block_1'
+          label: ''
+          label_display: '0'
+          provider: views
+          views_label: ''
+          items_per_page: none
+        visibility: {  }
+    # content creator role
     user.role.content_creator:
       # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
       createIfNotExists:
@@ -137,6 +185,7 @@ config:
       # grant permissions from enabled core modules
       grantPermissions:
         - 'view any unpublished content'
+    # editor role
     user.role.editor:
       # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
       createIfNotExists:
@@ -146,6 +195,18 @@ config:
         is_admin: false
       # grant permissions from enabled core modules
       grantPermissions:
+        - 'administer redirects'
         - 'assign content_creator role'
         - 'assign editor role'
+        - 'clone ubc_announcement content'
+        - 'clone ubc_event content'
+        - 'clone ubc_landing_page content'
+        - 'clone ubc_page content'
+        - 'clone ubc_profile content'
+        # - 'create basic_block block content'
+        # - 'delete any basic_block block content'
+        # - 'delete any basic_block block content revisions'
+        # - 'edit any basic_block block content'
+        # - 'revert any basic_block block content revisions'
+        # - 'view any basic_block block content history'
         - 'view any unpublished content'

@@ -2,19 +2,24 @@ name: "Audio media type"
 description: "Audio media type recipe for UBC Web Services websites"
 type: "Media"
 recipes:
-  - recipes/ws-recipes/role/role-editor
   - core/recipes/audio_media_type
-  - recipes/ws-recipes/media/media-view-modes
 install:
   # core
   - file
   - image
   - media
   - path
+  - user
 config:
   # assign audio media permissions
   actions:
     user.role.editor:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: editor
+        label: Editor
+        weight: 2
+        is_admin: false
       grantPermissions:
         - 'create audio media'
         - 'delete any audio media'

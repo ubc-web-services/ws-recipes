@@ -1,9 +1,6 @@
 name: "Private Page type configuration"
 description: "Private Page type configuration recipe for UBC Web Services websites"
 type: 'Content type'
-recipes:
-  - recipes/ws-recipes/role/role-editor
-  - recipes/ws-recipes/node/node-view-modes
 install:
   #core
   - file
@@ -18,6 +15,12 @@ config:
   # assign private page permissions
   actions:
     user.role.editor:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: editor
+        label: Editor
+        weight: 2
+        is_admin: false
       grantPermissions:
         - 'create private_page content'
         - 'delete any private_page content'

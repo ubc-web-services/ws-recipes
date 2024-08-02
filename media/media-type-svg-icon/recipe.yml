@@ -1,11 +1,6 @@
 name: "SVG Icon media type"
 description: "SVG Icon media type for UBC Web Services websites"
 type: "Media type"
-recipes:
-  - recipes/ws-recipes/role/role-editor
-  - recipes/ws-recipes/role/role-content-creator
-  - recipes/ws-recipes/media/media-view-modes
-  - recipes/ws-recipes/image/image-styles
 install:
   # core
   - file
@@ -14,12 +9,65 @@ install:
   - media
   - media_library
   - path
+  - user
   # contrib
   - svg_image
 config:
-  # assign svg_icon media permissions
   actions:
+    image.style.icon_large:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies: {  }
+        name: icon_large
+        label: 'Icon, large'
+        effects:
+          f9973a7b-6e05-4c2a-983b-ad1c5816b4e0:
+            uuid: f9973a7b-6e05-4c2a-983b-ad1c5816b4e0
+            id: image_scale_and_crop
+            weight: 1
+            data:
+              width: 96
+              height: 96
+              anchor: center-center
+    image.style.icon_small:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies: {  }
+        name: icon_small
+        label: 'Icon, small'
+        effects:
+          aed7f070-e2f5-44a1-965c-4d1564f3bc2b:
+            uuid: aed7f070-e2f5-44a1-965c-4d1564f3bc2b
+            id: image_scale_and_crop
+            weight: 1
+            data:
+              width: 24
+              height: 24
+              anchor: center-center
+    core.entity_view_mode.media.small_icon:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies:
+          module:
+            - media
+        id: media.small_icon
+        label: 'Small icon'
+        targetEntityType: media
+        cache: true
+    # assign svg_icon media permissions
     user.role.content_creator:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: content_creator
+        label: Content Creator
+        weight: 1
+        is_admin: false
       grantPermissions:
         - 'create svg_icon media'
         - 'delete any svg_icon media'
@@ -30,6 +78,12 @@ config:
         - 'delete any svg_icon media revisions'
         - 'revert any svg_icon media revisions'
     user.role.editor:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: editor
+        label: Editor
+        weight: 2
+        is_admin: false
       grantPermissions:
         - 'create svg_icon media'
         - 'delete any svg_icon media'

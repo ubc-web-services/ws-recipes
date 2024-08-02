@@ -2,7 +2,6 @@ name: "Text paragraph"
 description: "Text paragraph recipe for UBC Web Services websites"
 type: "Paragraph type"
 recipes:
-  - recipes/ws-recipes/taxonomy/taxonomy-admin
   - recipes/ws-recipes/paragraphs/paragraph-shared-fields
 install:
   # core

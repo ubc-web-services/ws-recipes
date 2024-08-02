@@ -2,11 +2,7 @@ name: "Remote video media type"
 description: "Base media types for UBC Web Services websites"
 type: "Media type"
 recipes:
-  - recipes/ws-recipes/role/role-editor
-  - recipes/ws-recipes/role/role-content-creator
   - core/recipes/remote_video_media_type
-  - recipes/ws-recipes/media/media-view-modes
-  - recipes/ws-recipes/image/image-styles
 install:
   # core
   - file
@@ -15,10 +11,63 @@ install:
   - media
   - media_library
   - path
+  - user
 config:
   actions:
+    image.style.video_thumbnail:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies: {  }
+        name: video_thumbnail
+        label: 'Video thumbnail'
+        effects:
+          5c2acded-7aed-40d4-a6cc-d12164bb6750:
+            uuid: 5c2acded-7aed-40d4-a6cc-d12164bb6750
+            id: image_scale_and_crop
+            weight: 1
+            data:
+              width: 900
+              height: 506
+              anchor: center-center
+    # alter default view mode for remote video media
+    core.entity_view_display.media.remote_video.default:
+      setComponents:
+        -
+          name: field_media_oembed_video
+          options:
+            type: oembed
+            label: hidden
+            settings:
+              max_width: 900
+              max_height: 506
+              loading:
+                attribute: lazy
+            third_party_settings: {  }
+            weight: 0
+            region: content
+        -
+          name: field_categories
+          options:
+            type: image
+            label: hidden
+            settings:
+              image_link: ''
+              image_style: video_thumbnail
+              image_loading:
+                attribute: lazy
+            third_party_settings: {  }
+            weight: 0
+            region: content
     # assign remote_video media permissions
     user.role.content_creator:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: content_creator
+        label: Content Creator
+        weight: 1
+        is_admin: false
       grantPermissions:
         - 'create remote_video media'
         - 'delete any remote_video media'
@@ -29,6 +78,12 @@ config:
         - 'delete any remote_video media revisions'
         - 'revert any remote_video media revisions'
     user.role.editor:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: editor
+        label: Editor
+        weight: 2
+        is_admin: false
       grantPermissions:
         - 'create remote_video media'
         - 'delete any remote_video media'

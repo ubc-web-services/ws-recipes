@@ -2,7 +2,6 @@ name: "Feature image paragraph"
 description: "Feature image paragraph recipe for UBC Web Services websites"
 type: "Paragraph type"
 recipes:
-  - recipes/ws-recipes/image/image-styles
   - recipes/ws-recipes/paragraphs/paragraph-shared-fields
 install:
   # core
@@ -14,3 +13,21 @@ install:
   - maxlength
   - paragraphs
   - ubc_paragraph_entities
+config:
+  # add image style if it doesn't already exist
+  actions:
+    image.style.max_1300x1300:
+      createIfNotExists:
+        langcode: en
+        status: true
+        name: max_1300x1300
+        label: 'Max 1300x1300'
+        effects:
+          04caae9a-fa3e-4ea6-ae09-9c26aec7d308:
+            uuid: 04caae9a-fa3e-4ea6-ae09-9c26aec7d308
+            id: image_scale
+            weight: 1
+            data:
+              width: 1300
+              height: 1300
+              upscale: false

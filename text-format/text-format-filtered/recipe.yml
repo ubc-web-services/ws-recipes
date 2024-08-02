@@ -1,18 +1,17 @@
 name: "Filtered text format"
 description: "Filtered text format for UBC Web Services websites"
 type: "Text format editor"
-recipes:
-  - recipes/ws-recipes/role/role-editor
-  - recipes/ws-recipes/role/role-content-creator
 install:
   # core
   - ckeditor5
-  - ckeditor5_fullscreen
-  - editor_advanced_link
   - image
-  - linkit
   - media
   - media_library
+  - user
+  # contrib
+  - ckeditor5_fullscreen
+  - editor_advanced_link
+  - linkit
   - responsive_table_filter
   - ubc_ckeditor_widgets
 config:
@@ -27,9 +26,21 @@ config:
   # assign text format permissions
   actions:
     user.role.content_creator:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: content_creator
+        label: Content Creator
+        weight: 1
+        is_admin: false
       grantPermissions:
         - 'use text format filtered_text'
     user.role.editor:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: editor
+        label: Editor
+        weight: 2
+        is_admin: false
       grantPermissions:
         - 'use text format filtered_text'
 

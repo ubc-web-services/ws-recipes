@@ -1,17 +1,22 @@
 name: "Quicklinks block"
 description: "Quicklinks block recipe for UBC Web Services websites"
 type: "Block type"
-recipes:
-  - recipes/ws-recipes/role/role-editor
-  - recipes/ws-recipes/role/role-content-creator
 install:
   # core
   - block
   - block_content
   - link
+  - user
 config:
   actions:
     user.role.editor:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: editor
+        label: Editor
+        weight: 2
+        is_admin: false
+      # grant permissions from enabled core modules
       grantPermissions:
         - 'create quicklinks_block block content'
         - 'delete any quicklinks_block block content'

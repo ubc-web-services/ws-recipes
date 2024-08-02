@@ -1,11 +1,10 @@
 name: "Announcement taxonomy"
 description: "Announcement taxonomy recipe for UBC Web Services websites"
 type: "Taxonomy"
-recipes:
-  - recipes/ws-recipes/role/role-editor
 install:
   # core
   - taxonomy
+  - user
   # contrib
   - metatag
   - metatag_open_graph
@@ -15,6 +14,12 @@ config:
   # assign announcement taxonomy permissions
   actions:
     user.role.editor:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: editor
+        label: Editor
+        weight: 2
+        is_admin: false
       grantPermissions:
         - 'create terms in announcement_type'
         - 'delete terms in announcement_type'

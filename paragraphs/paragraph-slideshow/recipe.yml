@@ -2,8 +2,6 @@ name: "Slideshow paragraph"
 description: "Slideshow paragraph recipe for UBC Web Services websites"
 type: "Paragraph type"
 recipes:
-  - recipes/ws-recipes/image/image-styles
-  - recipes/ws-recipes/image/image-styles-responsive
   - recipes/ws-recipes/paragraphs/paragraph-slide
   - recipes/ws-recipes/paragraphs/paragraph-shared-fields
 install:

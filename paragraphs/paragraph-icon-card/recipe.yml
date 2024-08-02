@@ -2,7 +2,6 @@ name: "Icon card paragraph"
 description: "Icon card paragraph recipe for UBC Web Services websites"
 type: "Paragraph type"
 recipes:
-  - recipes/ws-recipes/image/image-styles
   - recipes/ws-recipes/paragraphs/paragraph-shared-fields
 install:
   # core
@@ -17,3 +16,23 @@ install:
   - paragraphs
   - svg_image
   - ubc_paragraph_entities
+config:
+  # add image style if it doesn't already exist
+  actions:
+    image.style.icon_large:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies: {  }
+        name: icon_large
+        label: 'Icon, large'
+        effects:
+          f9973a7b-6e05-4c2a-983b-ad1c5816b4e0:
+            uuid: f9973a7b-6e05-4c2a-983b-ad1c5816b4e0
+            id: image_scale_and_crop
+            weight: 1
+            data:
+              width: 96
+              height: 96
+              anchor: center-center
+
