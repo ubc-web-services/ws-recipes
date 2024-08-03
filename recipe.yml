@@ -14,6 +14,7 @@ recipes:
   # install recipes that rely on other recipes next
   - recipes/ws-recipes/image/image-styles-responsive
   - recipes/ws-recipes/taxonomy/taxonomy-admin
+  - recipes/ws-recipes/taxonomy/taxonomy-admin-content
   - recipes/ws-recipes/media/media-config
   - recipes/ws-recipes/text-format/text-format-filtered
   - recipes/ws-recipes/custom-entity/custom-entity-ubc-alert
