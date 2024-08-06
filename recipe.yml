@@ -36,7 +36,6 @@ install:
   # navigation / menus
   - easy_breadcrumb
   - menu_block
-  - menu_position
   # redirects
   - redirect
   # block
@@ -75,6 +74,7 @@ install:
   - role_delegation
   - view_unpublished
   - webform
+  - webform_node
 config:
   import:
     config_ignore: "*"
@@ -414,7 +414,15 @@ config:
         is_admin: false
       # grant permissions from enabled modules
       grantPermissions:
+        - 'access webform help'
+        - 'access webform overview'
+        - 'access webform submission user'
+        - 'administer google analytics'
+        - 'administer google_tag_container'
+        - 'administer meta tags'
         - 'administer redirects'
+        - 'administer webform'
+        - 'administer webform submission'
         - 'assign content_creator role'
         - 'assign editor role'
         - 'clone ubc_announcement content'
@@ -424,14 +432,31 @@ config:
         - 'clone ubc_profile content'
         - 'create basic block content'
         - 'create terms in tags'
+        - 'create webform'
         - 'delete any basic block content'
         - 'delete any basic block content revisions'
+        - 'delete any webform'
+        - 'delete any webform submission'
+        - 'delete own webform'
+        - 'delete own webform submission'
         - 'delete term revisions in tags'
         - 'delete terms in tags'
+        - 'delete webform submissions any node'
+        - 'delete webform submissions own node'
         - 'edit any basic block content'
+        - 'edit any webform'
+        - 'edit own webform'
+        - 'edit own webform submission'
         - 'edit terms in tags'
+        - 'edit webform submissions any node'
+        - 'edit webform submissions own node'
         - 'revert any basic block content revisions'
         - 'revert term revisions in tags'
+        - 'schedule publishing of node'
         - 'view any basic block content history'
         - 'view any unpublished content'
+        - 'view any webform submission'
+        - 'view own webform submission'
         - 'view term revisions in tags'
+        - 'view webform submissions any node'
+        - 'view webform submissions own node'
