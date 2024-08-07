@@ -402,7 +402,9 @@ config:
         - 'delete terms in tags'
         - 'edit terms in tags'
         - 'revert term revisions in tags'
+        - 'schedule publishing of nodes'
         - 'view any unpublished content'
+        - 'view scheduled content'
         - 'view term revisions in tags'
     # editor role
     user.role.editor:
@@ -452,11 +454,12 @@ config:
         - 'edit webform submissions own node'
         - 'revert any basic block content revisions'
         - 'revert term revisions in tags'
-        - 'schedule publishing of node'
+        - 'schedule publishing of nodes'
         - 'view any basic block content history'
         - 'view any unpublished content'
         - 'view any webform submission'
         - 'view own webform submission'
+        - 'view scheduled content'
         - 'view term revisions in tags'
         - 'view webform submissions any node'
         - 'view webform submissions own node'
