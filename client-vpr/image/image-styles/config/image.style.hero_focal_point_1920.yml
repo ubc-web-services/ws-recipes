@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: hero_focal_point_1920
+label: 'Hero, focal point, 1920'
+effects:
+  1e3de93a-07b2-49fa-942d-deb31c8d42ab:
+    uuid: 1e3de93a-07b2-49fa-942d-deb31c8d42ab
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1920
+      height: 600
+      crop_type: focal_point

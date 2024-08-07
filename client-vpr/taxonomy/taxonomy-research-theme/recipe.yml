@@ -1,0 +1,37 @@
+name: "Research Theme taxonomy"
+description: "Research Theme taxonomy recipe for UBC Web Services websites"
+type: "Taxonomy"
+install:
+  # core
+  - taxonomy
+  - user
+  # contrib
+  - metatag
+  - metatag_open_graph
+  - metatag_twitter_cards
+  - pathauto
+config:
+  # assign department taxonomy permissions
+  actions:
+    user.role.editor:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: editor
+        label: Editor
+        weight: 2
+        is_admin: false
+      grantPermissions:
+        - 'create terms in research_theme'
+        - 'delete terms in research_theme'
+        - 'edit terms in research_theme'
+  user.role.super_user:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: super_user
+        label: 'Super User'
+        weight: -5
+        is_admin: false
+      grantPermissions:
+        - 'create terms in research_theme'
+        - 'delete terms in research_theme'
+        - 'edit terms in research_theme'

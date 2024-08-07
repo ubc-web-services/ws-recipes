@@ -1,0 +1,83 @@
+
+name: "VPR Page type configuration"
+description: "VPR Page type configuration recipe for UBC Web Services websites"
+type: 'Content type'
+install:
+  #core
+  - datetime
+  - image
+  - link
+  - menu_ui
+  - node
+  - options
+  - path
+  - responsive_image
+  - taxonomy
+  - text
+  - user
+  - views
+  # contrib
+  - allowed_formats
+  - entity_reference_revisions
+  - field_group
+  - focal_point
+  - maxlength
+  - metatag
+  - pathauto
+  - paragraphs
+  - quick_node_clone
+  - scheduler
+  - simple_sitemap
+  - text_summary_options
+config:
+  actions:
+    # add view modes if they aren't present
+    core.entity_view_mode.node.custom_content:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies:
+          module:
+            - node
+        id: node.custom_content
+        label: 'Custom Content'
+        targetEntityType: node
+        cache: true
+    core.entity_view_mode.node.sidebar_content:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies:
+          module:
+            - node
+        id: node.sidebar_content
+        label: 'Sidebar Content'
+        targetEntityType: node
+        cache: true
+    # assign ubc_page permissions
+    user.role.editor:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: editor
+        label: Editor
+        weight: 2
+        is_admin: false
+      grantPermissions:
+        - 'clone ubc_page content'
+    user.role.super_user:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: super_user
+        label: 'Super User'
+        weight: -5
+        is_admin: false
+      grantPermissions:
+        - 'clone ubc_page content'
+        - 'create ubc_page content'
+        - 'delete any ubc_page content'
+        - 'delete own ubc_page content'
+        - 'delete ubc_page revisions'
+        - 'edit any ubc_page content'
+        - 'edit own ubc_page content'
+        - 'revert ubc_page revisions'
+        - 'view ubc_page revisions'

@@ -1,0 +1,74 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_custom_content_region
+    - node.type.ubc_page
+    - paragraphs.paragraphs_type.card_group
+    - paragraphs.paragraphs_type.feature_image
+    - paragraphs.paragraphs_type.slideshow
+    - paragraphs.paragraphs_type.tabcordion
+    - paragraphs.paragraphs_type.text
+  module:
+    - entity_reference_revisions
+id: node.ubc_page.field_page_custom_content_region
+field_name: field_page_custom_content_region
+entity_type: node
+bundle: ubc_page
+label: 'Custom Content Regions'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      card_group: card_group
+      feature_image: feature_image
+      slideshow: slideshow
+      tabcordion: tabcordion
+      text: text
+    negate: 0
+    target_bundles_drag_drop:
+      card_group:
+        weight: 14
+        enabled: true
+      card_horizontal:
+        weight: 15
+        enabled: false
+      card_rollover:
+        weight: 16
+        enabled: false
+      card_text:
+        weight: 17
+        enabled: false
+      card_vertical:
+        weight: 18
+        enabled: false
+      feature_image:
+        weight: 19
+        enabled: true
+      icon_card:
+        weight: 20
+        enabled: false
+      image_card:
+        weight: 21
+        enabled: false
+      slide:
+        weight: 22
+        enabled: false
+      slideshow:
+        weight: 23
+        enabled: true
+      tab:
+        weight: 24
+        enabled: false
+      tabcordion:
+        weight: 25
+        enabled: true
+      text:
+        weight: 26
+        enabled: true
+field_type: entity_reference_revisions

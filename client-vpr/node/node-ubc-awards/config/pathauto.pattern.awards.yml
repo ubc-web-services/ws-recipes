@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: awards
+label: Awards
+type: 'canonical_entities:node'
+pattern: 'awards/[node:title]'
+selection_criteria:
+  a65db934-7000-4c58-87f6-48d728b8787b:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: a65db934-7000-4c58-87f6-48d728b8787b
+    context_mapping:
+      node: node
+    bundles:
+      awards: awards
+selection_logic: and
+weight: -5
+relationships: {  }

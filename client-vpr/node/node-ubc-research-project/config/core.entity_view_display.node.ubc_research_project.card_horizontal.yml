@@ -1,0 +1,43 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card_horizontal
+    - field.field.node.ubc_research_project.body
+    - field.field.node.ubc_research_project.field_r_project_feature_image
+    - field.field.node.ubc_research_project.field_r_project_image_teaser
+    - field.field.node.ubc_research_project.field_r_project_research_theme
+    - field.field.node.ubc_research_project.field_r_project_researchers
+    - node.type.ubc_research_project
+    - responsive_image.styles.card_focal_point
+  module:
+    - responsive_image
+    - text
+    - user
+id: node.ubc_research_project.card_horizontal
+targetEntityType: node
+bundle: ubc_research_project
+mode: card_horizontal
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 350
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_r_project_feature_image:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: card_focal_point
+      image_link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_r_project_image_teaser: true
+  field_r_project_research_theme: true
+  field_r_project_researchers: true
+  links: true

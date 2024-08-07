@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Award Category'
+vid: award_category
+description: 'Refine the award type by category'
+weight: 0

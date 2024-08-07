@@ -1,0 +1,101 @@
+name: "Awards type configuration"
+description: "Awards type configuration recipe for UBC Web Services websites"
+type: 'Content type'
+install:
+  #core
+  - datetime
+  - image
+  - link
+  - menu_ui
+  - node
+  - options
+  - path
+  - responsive_image
+  - taxonomy
+  - text
+  - user
+  - views
+  # contrib
+  - allowed_formats
+  - field_group
+  - focal_point
+  - maxlength
+  - metatag
+  - pathauto
+  - quick_node_clone
+  - scheduler
+  - simple_sitemap
+  - text_summary_options
+config:
+  actions:
+    # add view modes if they aren't present
+    core.entity_view_mode.node.card_horizontal:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies:
+          module:
+            - node
+        id: node.card_horizontal
+        label: 'Card: Horizontal'
+        targetEntityType: node
+        cache: true
+    # assign awards permissions
+    user.role.content_creator:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: content_creator
+        label: Content Creator
+        weight: 1
+        is_admin: false
+      grantPermissions:
+        - 'create awards content'
+        - 'delete own awards content'
+        - 'delete awards revisions'
+        - 'edit own awards content'
+        - 'revert awards revisions'
+        - 'view awards revisions'
+    user.role.editor:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: editor
+        label: Editor
+        weight: 2
+        is_admin: false
+      grantPermissions:
+        - 'create awards content'
+        - 'delete any awards content'
+        - 'delete own awards content'
+        - 'delete awards revisions'
+        - 'edit any awards content'
+        - 'edit own awards content'
+        - 'revert awards revisions'
+        - 'view awards revisions'
+        - 'create terms in award_category'
+        - 'delete terms in award_category'
+        - 'edit terms in award_category'
+        - 'create terms in discipline'
+        - 'delete terms in discipline'
+        - 'edit terms in discipline'
+    user.role.super_user:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: super_user
+        label: 'Super User'
+        weight: -5
+        is_admin: false
+      grantPermissions:
+        - 'create awards content'
+        - 'delete any awards content'
+        - 'delete own awards content'
+        - 'delete awards revisions'
+        - 'edit any awards content'
+        - 'edit own awards content'
+        - 'revert awards revisions'
+        - 'view awards revisions'
+        - 'create terms in award_category'
+        - 'delete terms in award_category'
+        - 'edit terms in award_category'
+        - 'create terms in discipline'
+        - 'delete terms in discipline'
+        - 'edit terms in discipline'

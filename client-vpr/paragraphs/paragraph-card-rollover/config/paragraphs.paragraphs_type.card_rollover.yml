@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: card_rollover
+label: 'Card: Rollover'
+icon_uuid: null
+icon_default: null
+description: 'Adds a card with an image that is hidden on rollover / focus and displays some additional text and a link.'
+behavior_plugins: {  }

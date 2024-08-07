@@ -1,0 +1,103 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card_horizontal_round_image
+    - field.field.node.ubc_profile.body
+    - field.field.node.ubc_profile.field_profile_accreditation
+    - field.field.node.ubc_profile.field_profile_affiliated
+    - field.field.node.ubc_profile.field_profile_category
+    - field.field.node.ubc_profile.field_profile_department_unit
+    - field.field.node.ubc_profile.field_profile_email
+    - field.field.node.ubc_profile.field_profile_faculty
+    - field.field.node.ubc_profile.field_profile_first_name
+    - field.field.node.ubc_profile.field_profile_google_scholar
+    - field.field.node.ubc_profile.field_profile_image
+    - field.field.node.ubc_profile.field_profile_job_title
+    - field.field.node.ubc_profile.field_profile_last_name
+    - field.field.node.ubc_profile.field_profile_meta_tags
+    - field.field.node.ubc_profile.field_profile_name_prefix
+    - field.field.node.ubc_profile.field_profile_name_suffix
+    - field.field.node.ubc_profile.field_profile_office
+    - field.field.node.ubc_profile.field_profile_phone
+    - field.field.node.ubc_profile.field_profile_preferred_website
+    - field.field.node.ubc_profile.field_profile_pronouns
+    - field.field.node.ubc_profile.field_profile_research_area
+    - field.field.node.ubc_profile.field_profile_role
+    - field.field.node.ubc_profile.field_profile_tags
+    - image.style.square_400
+    - node.type.ubc_profile
+  module:
+    - svg_image
+    - user
+id: node.ubc_profile.card_horizontal_round_image
+targetEntityType: node
+bundle: ubc_profile
+mode: card_horizontal_round_image
+content:
+  field_profile_department_unit:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_profile_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: square_400
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_profile_job_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_profile_name_prefix:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_profile_name_suffix:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true
+  field_profile_accreditation: true
+  field_profile_affiliated: true
+  field_profile_category: true
+  field_profile_email: true
+  field_profile_faculty: true
+  field_profile_first_name: true
+  field_profile_google_scholar: true
+  field_profile_last_name: true
+  field_profile_meta_tags: true
+  field_profile_office: true
+  field_profile_phone: true
+  field_profile_preferred_website: true
+  field_profile_pronouns: true
+  field_profile_research_area: true
+  field_profile_role: true
+  field_profile_tags: true
+  links: true

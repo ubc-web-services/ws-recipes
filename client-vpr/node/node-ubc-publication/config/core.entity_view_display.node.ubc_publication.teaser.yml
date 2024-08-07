@@ -1,0 +1,43 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ubc_publication.body
+    - field.field.node.ubc_publication.field_publication_journal
+    - field.field.node.ubc_publication.field_publication_lead
+    - field.field.node.ubc_publication.field_publication_link
+    - field.field.node.ubc_publication.field_publication_projects
+    - field.field.node.ubc_publication.field_publication_research_area
+    - field.field.node.ubc_publication.field_publication_type
+    - field.field.node.ubc_publication.field_publication_year
+    - node.type.ubc_publication
+  module:
+    - text
+    - user
+id: node.ubc_publication.teaser
+targetEntityType: node
+bundle: ubc_publication
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 350
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_publication_journal: true
+  field_publication_lead: true
+  field_publication_link: true
+  field_publication_projects: true
+  field_publication_research_area: true
+  field_publication_type: true
+  field_publication_year: true

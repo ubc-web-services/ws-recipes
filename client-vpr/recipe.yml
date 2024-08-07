@@ -1,0 +1,529 @@
+name: "Orchestrate all VPR recipes"
+description: "Orchestrate all VPR recipes for UBC Web Services websites"
+type: "Site"
+recipes:
+  # install parent recipes first
+  - recipes/ws-recipes/role/role-editor
+  - recipes/ws-recipes/role/role-content-creator
+  - recipes/ws-recipes/client-vpr/role/role-read-only
+  - recipes/ws-recipes/client-vpr/role/role-super-user
+  - recipes/ws-recipes/theme/theme-admin
+  - recipes/ws-recipes/client-vpr/theme/theme-vpr
+  - recipes/ws-recipes/block/block-code
+  - recipes/ws-recipes/block/block-quicklinks
+  - recipes/ws-recipes/date-formats
+  - recipes/ws-recipes/image/image-styles
+  - recipes/ws-recipes/client-vpr/image/image-styles
+  # install recipes that rely on other recipes next
+  - recipes/ws-recipes/image/image-styles-responsive
+  - recipes/ws-recipes/taxonomy/taxonomy-admin
+  - recipes/ws-recipes/taxonomy/taxonomy-admin-content
+  - recipes/ws-recipes/media/media-config
+  - recipes/ws-recipes/text-format/text-format-filtered
+  - recipes/ws-recipes/custom-entity/custom-entity-ubc-alert
+  - recipes/ws-recipes/paragraphs/paragraph-config
+  - recipes/ws-recipes/client-vpr/paragraphs/paragraph-card-rollover
+  - recipes/ws-recipes/client-vpr/paragraphs/paragraph-card-text
+  - recipes/ws-recipes/node/node-view-modes
+  - recipes/ws-recipes/client-vpr/node/node-vpr-view-modes
+  - recipes/ws-recipes/node/node-ubc-announcement
+  # - recipes/ws-recipes/client-vpr/node/node-vpr-announcement
+  # - recipes/ws-recipes/node/node-ubc-event
+  # - recipes/ws-recipes/client-vpr/node/node-vpr-event
+  # - recipes/ws-recipes/node/node-ubc-homepage
+  # - recipes/ws-recipes/client-vpr/node/node-vpr-homepage
+  # - recipes/ws-recipes/node/node-ubc-landing-page
+  # - recipes/ws-recipes/client-vpr/node/node-vpr-landing-page
+  # - recipes/ws-recipes/node/node-ubc-page
+  # - recipes/ws-recipes/client-vpr/node/node-vpr-page
+  # - recipes/ws-recipes/node/node-ubc-profile
+  # - recipes/ws-recipes/client-vpr/node/node-vpr-profile
+  # - recipes/ws-recipes/node/node-ubc-private-page
+  # - recipes/ws-recipes/client-vpr/node/node-ubc-awards
+  # - recipes/ws-recipes/client-vpr/node/node-ubc-project
+  # - recipes/ws-recipes/client-vpr/node/node-ubc-publication
+  # - recipes/ws-recipes/client-vpr/node/node-ubc-research-project
+  # - recipes/ws-recipes/client-vpr/node/node-vpr-webform
+install:
+  # core
+  # services
+  - jsonapi
+  - rest
+  # contrib
+  # navigation / menus
+  - easy_breadcrumb
+  - menu_block
+  - menu_position
+  # redirects
+  - redirect
+  # block
+  - block_exclude_pages
+  # date / event
+  - date_popup
+  - optional_end_date
+  # config
+  - config_ignore
+  # mail
+  - smtp
+  # media
+  - dropzonejs
+  - file_delete
+  - file_to_media
+  - focal_point
+  - image_widget_crop
+  # editing / ui
+  - chosen
+  - formtips
+  - linkit_media_library
+  - twig_tweak
+  - ubc_chosen_style_tweaks
+  # views
+  - fullcalendar_view
+  - views_autosubmit
+  # spam
+  - antibot
+  # search
+  - google_analytics
+  - google_tag
+  - metatag
+  # node / permissions
+  - node_revision_delete
+  - role_delegation
+  - view_unpublished
+  - webform
+  - webform_node
+config:
+  import:
+    config_ignore: "*"
+    dropzonejs: "*"
+    focal_point: "*"
+    fullcalendar_view: "*"
+    google_analytics: "*"
+    google_tag: "*"
+    image_widget_crop: "*"
+    metatag: "*"
+    redirect: "*"
+    scheduler: "*"
+    simple_sitemap: "*"
+    webform: "*"
+  actions:
+    # antibot settings
+    antibot.settings:
+      simple_config_update:
+        form_ids:
+          - 'comment_*'
+          - user_login_form
+          - user_pass
+          - user_register_form
+          - 'contact_message_*'
+          - 'webform_*'
+    # chosen settings
+    chosen.settings:
+      simple_config_update:
+        minimum_single: '0'
+        minimum_multiple: '0'
+        max_shown_results: '20'
+        minimum_width: '100'
+        use_relative_width: 'true'
+        search_contains: 'true'
+        chosen_include: '0'
+    # easy breadcrumb settings
+    easy_breadcrumb.settings:
+      simple_config_update:
+        include_title_segment: 1
+    # metatag settings
+    metatag.metatag_defaults.global:
+      simple_config_update:
+        tags.canonical_url: '[current-page:url]'
+        tags.title: '[current-page:title] | [site:name]'
+    metatag.metatag_defaults.front:
+      simple_config_update:
+        tags.canonical_url: '[node:url]'
+        tags.description: '[node:summary]'
+        tags.title: '[node:title] | [site:name]'
+    metatag.metatag_defaults.node:
+      simple_config_update:
+        tags.canonical_url: '[node:url]'
+        tags.description: '[node:summary]'
+        tags.title: '[node:title] | [site:name]'
+        tags.og_description: '[node:summary]'
+        tags.og_site_name: '[site:name]'
+        tags.og_title: '[node:title]'
+        tags.og_url: '[node:url]'
+        tags.twitter_cards_description: '[node:summary]'
+        tags.twitter_cards_page_url: '[node:url]'
+        tags.twitter_cards_title: '[node:title]'
+        tags.twitter_cards_type: 'summary'
+    # node revision delete settings
+    node_revision_delete.settings:
+      simple_config_update:
+        node_revision_delete_time: '0'
+        delete_newer: 'false'
+    # scheduler settings
+    scheduler.settings:
+      simple_config_update:
+        allow_date_only: 1
+        default_time: '00:00'
+        hide_seconds: 1
+    # smtp settings
+    smtp.settings:
+      simple_config_update:
+        smtp_on: 1
+        smtp_host: 'smtp.mail.ubc.ca'
+        smtp_port: 587
+        smtp_protocol: 'tls'
+        smtp_autotls: 1
+        smtp_username: 'ubcuit-a-UBCITWSNR'
+        smtp_client_helo: 'mail.ubc.ca'
+    # place blocks
+    block.block.vpr_alert_banner:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies:
+          config:
+            - views.view.content_alert_banner
+          module:
+            - views
+          theme:
+            - vpr
+        id: vpr_alert_banner
+        theme: vpr
+        region: alert_region
+        weight: 0
+        provider: null
+        plugin: 'views_block:content_alert_banner-block_1'
+        settings:
+          id: 'views_block:content_alert_banner-block_1'
+          label: ''
+          label_display: '0'
+          provider: views
+          views_label: ''
+          items_per_page: none
+        visibility: {  }
+    block.block.vpr_announcement_feature:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies:
+          config:
+            - views.view.content_announcement_feature
+          module:
+            - node
+            - views
+          theme:
+            - vpr
+        id: vpr_announcement_feature
+        theme: vpr
+        region: masthead
+        weight: 0
+        provider: null
+        plugin: 'views_block:content_announcement_feature-block_1'
+        settings:
+          id: 'views_block:content_announcement_feature-block_1'
+          label: ''
+          label_display: '0'
+          provider: views
+          context_mapping: {  }
+          views_label: ''
+          items_per_page: none
+        visibility:
+          'entity_bundle:node':
+            id: 'entity_bundle:node'
+            negate: false
+            context_mapping:
+              node: '@node.node_route_context:node'
+            bundles:
+              ubc_announcement: ubc_announcement
+    block.block.vpr_event_feature:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies:
+          config:
+            - views.view.content_event_feature
+          module:
+            - node
+            - views
+          theme:
+            - vpr
+        id: vpr_event_feature
+        theme: vpr
+        region: masthead
+        weight: 0
+        provider: null
+        plugin: 'views_block:content_event_feature-block_1'
+        settings:
+          id: 'views_block:content_event_feature-block_1'
+          label: ''
+          label_display: '0'
+          provider: views
+          context_mapping: {  }
+          views_label: ''
+          items_per_page: none
+        visibility:
+          'entity_bundle:node':
+            id: 'entity_bundle:node'
+            negate: false
+            context_mapping:
+              node: '@node.node_route_context:node'
+            bundles:
+              ubc_event: ubc_event
+    block.block.vpr_homepage_feature:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies:
+          config:
+            - views.view.content_homepage
+          module:
+            - node
+            - views
+          theme:
+            - vpr
+        id: vpr_homepage_feature
+        theme: vpr
+        region: masthead
+        weight: 0
+        provider: null
+        plugin: 'views_block:content_homepage-block_1'
+        settings:
+          id: 'views_block:content_homepage-block_1'
+          label: ''
+          label_display: '0'
+          provider: views
+          views_label: ''
+          items_per_page: none
+        visibility:
+          'entity_bundle:node':
+            id: 'entity_bundle:node'
+            negate: false
+            context_mapping:
+              node: '@node.node_route_context:node'
+            bundles:
+              homepage: homepage
+    block.block.vpr_homepage_paragraphs:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies:
+          config:
+            - views.view.content_homepage_paragraphs
+          module:
+            - node
+            - views
+          theme:
+            - vpr
+        id: vpr_homepage_paragraphs
+        theme: vpr
+        region: prefooter
+        weight: 0
+        provider: null
+        plugin: 'views_block:content_homepage_paragraphs-block_1'
+        settings:
+          id: 'views_block:content_homepage_paragraphs-block_1'
+          label: ''
+          label_display: '0'
+          provider: views
+          context_mapping: {  }
+          views_label: ''
+          items_per_page: none
+        visibility:
+          'entity_bundle:node':
+            id: 'entity_bundle:node'
+            negate: false
+            context_mapping:
+              node: '@node.node_route_context:node'
+            bundles:
+              homepage: homepage
+    block.block.vpr_landing_feature:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies:
+          config:
+            - views.view.content_landing_feature
+          module:
+            - node
+            - views
+          theme:
+            - vpr
+        id: vpr_landing_feature
+        theme: vpr
+        region: masthead
+        weight: 0
+        provider: null
+        plugin: 'views_block:content_landing_feature-block_1'
+        settings:
+          id: 'views_block:content_landing_feature-block_1'
+          label: ''
+          label_display: '0'
+          provider: views
+          context_mapping: {  }
+          views_label: ''
+          items_per_page: none
+        visibility:
+          'entity_bundle:node':
+            id: 'entity_bundle:node'
+            negate: false
+            context_mapping:
+              node: '@node.node_route_context:node'
+            bundles:
+              ubc_landing_page: ubc_landing_page
+    block.block.vpr_landing_paragraphs:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies:
+          config:
+            - views.view.content_landing_paragraphs
+          module:
+            - node
+            - views
+          theme:
+            - vpr
+        id: vpr_landing_paragraphs
+        theme: vpr
+        region: prefooter
+        weight: 0
+        provider: null
+        plugin: 'views_block:content_landing_paragraphs-block_1'
+        settings:
+          id: 'views_block:content_landing_paragraphs-block_1'
+          label: ''
+          label_display: '0'
+          provider: views
+          context_mapping: {  }
+          views_label: ''
+          items_per_page: none
+        visibility:
+          'entity_bundle:node':
+            id: 'entity_bundle:node'
+            negate: false
+            context_mapping:
+              node: '@node.node_route_context:node'
+            bundles:
+              ubc_landing_page: ubc_landing_page
+    # content creator role
+    user.role.content_creator:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: content_creator
+        label: Content Creator
+        weight: 1
+        is_admin: false
+      # grant permissions from enabled modules
+      grantPermissions:
+        - 'create terms in tags'
+        - 'delete term revisions in tags'
+        - 'delete terms in tags'
+        - 'edit terms in tags'
+        - 'revert term revisions in tags'
+        - 'schedule publishing of nodes'
+        - 'view any unpublished content'
+        - 'view scheduled content'
+        - 'view term revisions in tags'
+    # editor role
+    user.role.editor:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: editor
+        label: Editor
+        weight: 2
+        is_admin: false
+      # grant permissions from enabled modules
+      grantPermissions:
+        - 'access webform help'
+        - 'access webform overview'
+        - 'access webform submission user'
+        - 'administer google analytics'
+        - 'administer google_tag_container'
+        - 'administer meta tags'
+        - 'administer redirects'
+        - 'administer webform'
+        - 'administer webform submission'
+        - 'assign content_creator role'
+        - 'assign editor role'
+        - 'create basic block content'
+        - 'create terms in tags'
+        - 'create webform'
+        - 'delete any basic block content'
+        - 'delete any basic block content revisions'
+        - 'delete any webform'
+        - 'delete any webform submission'
+        - 'delete own webform'
+        - 'delete own webform submission'
+        - 'delete term revisions in tags'
+        - 'delete terms in tags'
+        - 'delete webform submissions any node'
+        - 'delete webform submissions own node'
+        - 'edit any basic block content'
+        - 'edit any webform'
+        - 'edit own webform'
+        - 'edit own webform submission'
+        - 'edit terms in tags'
+        - 'edit webform submissions any node'
+        - 'edit webform submissions own node'
+        - 'revert any basic block content revisions'
+        - 'revert term revisions in tags'
+        - 'schedule publishing of nodes'
+        - 'view any basic block content history'
+        - 'view any unpublished content'
+        - 'view any webform submission'
+        - 'view own webform submission'
+        - 'view scheduled content'
+        - 'view term revisions in tags'
+        - 'view webform submissions any node'
+        - 'view webform submissions own node'
+    # super user role
+    user.role.super_user:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: super_user
+        label: 'Super User'
+        weight: -5
+        is_admin: false
+      # grant permissions from enabled modules
+      grantPermissions:
+        - 'access webform help'
+        - 'access webform overview'
+        - 'access webform submission user'
+        - 'administer google analytics'
+        - 'administer google_tag_container'
+        - 'administer meta tags'
+        - 'administer redirects'
+        - 'administer webform'
+        - 'administer webform submission'
+        - 'assign content_creator role'
+        - 'assign editor role'
+        - 'create basic block content'
+        - 'create terms in tags'
+        - 'create webform'
+        - 'delete any basic block content'
+        - 'delete any basic block content revisions'
+        - 'delete any webform'
+        - 'delete any webform submission'
+        - 'delete own webform'
+        - 'delete own webform submission'
+        - 'delete term revisions in tags'
+        - 'delete terms in tags'
+        - 'delete webform submissions any node'
+        - 'delete webform submissions own node'
+        - 'edit any basic block content'
+        - 'edit any webform'
+        - 'edit own webform'
+        - 'edit own webform submission'
+        - 'edit terms in tags'
+        - 'edit webform submissions any node'
+        - 'edit webform submissions own node'
+        - 'revert any basic block content revisions'
+        - 'revert term revisions in tags'
+        - 'schedule publishing of nodes'
+        - 'view any basic block content history'
+        - 'view any unpublished content'
+        - 'view any webform submission'
+        - 'view own webform submission'
+        - 'view scheduled content'
+        - 'view term revisions in tags'
+        - 'view webform submissions any node'
+        - 'view webform submissions own node'

@@ -1,0 +1,93 @@
+name: "Publication type configuration"
+description: "Publication type configuration recipe for UBC Web Services websites"
+type: 'Content type'
+install:
+  #core
+  - datetime
+  - image
+  - link
+  - menu_ui
+  - node
+  - options
+  - path
+  - responsive_image
+  - taxonomy
+  - text
+  - user
+  - views
+  # contrib
+  - allowed_formats
+  - field_group
+  - focal_point
+  - maxlength
+  - metatag
+  - pathauto
+  - quick_node_clone
+  - scheduler
+  - simple_sitemap
+  - text_summary_options
+config:
+  actions:
+    taxonomy.vocabulary.research_theme:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies: {  }
+        name: 'Research Theme'
+        vid: research_theme
+        description: 'Associates the content with a research theme'
+        weight: 0
+    # assign ubc_publication permissions
+    user.role.content_creator:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: content_creator
+        label: Content Creator
+        weight: 1
+        is_admin: false
+      grantPermissions:
+        - 'create ubc_publication content'
+        - 'delete own ubc_publication content'
+        - 'delete ubc_publication revisions'
+        - 'edit own ubc_publication content'
+        - 'revert ubc_publication revisions'
+        - 'view ubc_publication revisions'
+    user.role.editor:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: editor
+        label: Editor
+        weight: 2
+        is_admin: false
+      grantPermissions:
+        - 'create ubc_publication content'
+        - 'delete any ubc_publication content'
+        - 'delete own ubc_publication content'
+        - 'delete ubc_publication revisions'
+        - 'edit any ubc_publication content'
+        - 'edit own ubc_publication content'
+        - 'revert ubc_publication revisions'
+        - 'view ubc_publication revisions'
+        - 'create terms in publication_type'
+        - 'delete terms in publication_type'
+        - 'edit terms in publication_type'
+    user.role.super_user:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: super_user
+        label: 'Super User'
+        weight: -5
+        is_admin: false
+      grantPermissions:
+        - 'create ubc_publication content'
+        - 'delete any ubc_publication content'
+        - 'delete own ubc_publication content'
+        - 'delete ubc_publication revisions'
+        - 'edit any ubc_publication content'
+        - 'edit own ubc_publication content'
+        - 'revert ubc_publication revisions'
+        - 'view ubc_publication revisions'
+        - 'create terms in publication_type'
+        - 'delete terms in publication_type'
+        - 'edit terms in publication_type'
+

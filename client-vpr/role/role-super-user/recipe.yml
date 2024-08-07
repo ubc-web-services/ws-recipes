@@ -1,0 +1,51 @@
+name: "Super User role"
+description: "Super User recipe for UBC Web Services websites"
+type: "Super User role"
+install:
+  # core
+  - block
+  - contextual
+  - file
+  - menu_ui
+  - path
+  - taxonomy
+  - toolbar
+  - user
+config:
+  actions:
+    user.role.super_user:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: super_user
+        label: 'Super User'
+        weight: -5
+        is_admin: false
+      # grant permissions from enabled core modules
+      grantPermissions:
+        - 'access administration pages'
+        - 'access content overview'
+        - 'access contextual links'
+        - 'access files overview'
+        - 'access site in maintenance mode'
+        - 'access taxonomy overview'
+        - 'access toolbar'
+        - 'access user profiles'
+        - 'administer blocks'
+        - 'administer content types'
+        - 'administer menu'
+        - 'administer node display'
+        - 'administer node fields'
+        - 'administer node form display'
+        - 'administer nodes'
+        - 'administer site configuration'
+        - 'administer taxonomy'
+        - 'administer themes'
+        - 'administer url aliases'
+        - 'administer users'
+        - 'administer views'
+        - 'cancel account'
+        - 'change own username'
+        - 'create url aliases'
+        - 'delete any file'
+        - 'select account cancellation method'
+        - 'view the administration theme'

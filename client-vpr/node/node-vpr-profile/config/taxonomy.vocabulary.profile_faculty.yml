@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Profile Faculty'
+vid: profile_faculty
+description: 'Associates the profile with a faculty'
+weight: 0

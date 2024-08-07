@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.cards
+    - field.field.node.homepage.body
+    - field.field.node.homepage.field_feature_link
+    - field.field.node.homepage.field_feature_text
+    - field.field.node.homepage.field_home_feature_image
+    - field.field.node.homepage.field_home_meta_tags
+    - field.field.node.homepage.field_homepage_cards
+    - field.field.node.homepage.field_homepage_custom_content
+    - node.type.homepage
+  module:
+    - entity_reference_revisions
+    - user
+id: node.homepage.cards
+targetEntityType: node
+bundle: homepage
+mode: cards
+content:
+  field_homepage_cards:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_feature_link: true
+  field_feature_text: true
+  field_home_feature_image: true
+  field_home_meta_tags: true
+  field_homepage_custom_content: true
+  links: true

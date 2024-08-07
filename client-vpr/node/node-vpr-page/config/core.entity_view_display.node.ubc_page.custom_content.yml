@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.custom_content
+    - field.field.node.ubc_page.body
+    - field.field.node.ubc_page.field_page_custom_content_region
+    - field.field.node.ubc_page.field_page_meta_tags
+    - field.field.node.ubc_page.field_page_supporting_content
+    - node.type.ubc_page
+  module:
+    - entity_reference_revisions
+    - user
+id: node.ubc_page.custom_content
+targetEntityType: node
+bundle: ubc_page
+mode: custom_content
+content:
+  field_page_custom_content_region:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_page_meta_tags: true
+  field_page_supporting_content: true
+  links: true

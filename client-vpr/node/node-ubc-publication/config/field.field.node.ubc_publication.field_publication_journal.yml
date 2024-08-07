@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publication_journal
+    - node.type.ubc_publication
+id: node.ubc_publication.field_publication_journal
+field_name: field_publication_journal
+entity_type: node
+bundle: ubc_publication
+label: 'Journal Name'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

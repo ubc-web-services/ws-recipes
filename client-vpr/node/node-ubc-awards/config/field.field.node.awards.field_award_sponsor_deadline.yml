@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_award_sponsor_deadline
+    - node.type.awards
+  module:
+    - datetime
+id: node.awards.field_award_sponsor_deadline
+field_name: field_award_sponsor_deadline
+entity_type: node
+bundle: awards
+label: 'Sponsor Deadline'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

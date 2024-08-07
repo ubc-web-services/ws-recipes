@@ -1,0 +1,61 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card_horizontal
+    - field.field.node.awards.body
+    - field.field.node.awards.field_aggr_category
+    - field.field.node.awards.field_award_application_form
+    - field.field.node.awards.field_award_category
+    - field.field.node.awards.field_award_deadline
+    - field.field.node.awards.field_award_discipline
+    - field.field.node.awards.field_award_guidlines_link
+    - field.field.node.awards.field_award_internal_deadline
+    - field.field.node.awards.field_award_sponsor
+    - field.field.node.awards.field_award_sponsor_deadline
+    - field.field.node.awards.field_award_sponsor_url
+    - node.type.awards
+  module:
+    - datetime
+    - user
+id: node.awards.card_horizontal
+targetEntityType: node
+bundle: awards
+mode: card_horizontal
+content:
+  field_award_internal_deadline:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: date_readable_short_day
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_award_sponsor:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_award_sponsor_deadline:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: date_readable_short_day
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true
+  field_aggr_category: true
+  field_award_application_form: true
+  field_award_category: true
+  field_award_deadline: true
+  field_award_discipline: true
+  field_award_guidlines_link: true
+  field_award_sponsor_url: true
+  links: true

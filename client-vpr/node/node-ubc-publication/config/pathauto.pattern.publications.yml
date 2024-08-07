@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: publications
+label: Publications
+type: 'canonical_entities:node'
+pattern: 'publications/[node:title]'
+selection_criteria:
+  53753039-6b1b-4f98-ad37-fef7f78753a0:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 53753039-6b1b-4f98-ad37-fef7f78753a0
+    context_mapping:
+      node: node
+    bundles:
+      ubc_publication: ubc_publication
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: research_projects
+label: 'Research Projects'
+type: 'canonical_entities:node'
+pattern: 'research-projects/[node:title]'
+selection_criteria:
+  c47da035-d4b2-4a43-becd-16f0ad60d744:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: c47da035-d4b2-4a43-becd-16f0ad60d744
+    context_mapping:
+      node: node
+    bundles:
+      ubc_research_project: ubc_research_project
+selection_logic: and
+weight: -5
+relationships: {  }

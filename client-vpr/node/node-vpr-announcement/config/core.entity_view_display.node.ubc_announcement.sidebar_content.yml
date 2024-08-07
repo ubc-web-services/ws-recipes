@@ -1,0 +1,44 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.sidebar_content
+    - field.field.node.ubc_announcement.body
+    - field.field.node.ubc_announcement.field_announcement_custom_conten
+    - field.field.node.ubc_announcement.field_announcement_external_link
+    - field.field.node.ubc_announcement.field_announcement_feature_image
+    - field.field.node.ubc_announcement.field_announcement_image_teaser
+    - field.field.node.ubc_announcement.field_announcement_meta_tags
+    - field.field.node.ubc_announcement.field_announcement_profiles
+    - field.field.node.ubc_announcement.field_announcement_supporting
+    - field.field.node.ubc_announcement.field_announcement_tags
+    - field.field.node.ubc_announcement.field_announcement_theme
+    - field.field.node.ubc_announcement.field_announcement_type
+    - node.type.ubc_announcement
+  module:
+    - text
+    - user
+id: node.ubc_announcement.sidebar_content
+targetEntityType: node
+bundle: ubc_announcement
+mode: sidebar_content
+content:
+  field_announcement_supporting:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_announcement_custom_conten: true
+  field_announcement_external_link: true
+  field_announcement_feature_image: true
+  field_announcement_image_teaser: true
+  field_announcement_meta_tags: true
+  field_announcement_profiles: true
+  field_announcement_tags: true
+  field_announcement_theme: true
+  field_announcement_type: true
+  links: true

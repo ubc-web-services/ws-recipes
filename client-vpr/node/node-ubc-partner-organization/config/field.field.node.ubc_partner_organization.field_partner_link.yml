@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_partner_link
+    - node.type.ubc_partner_organization
+  module:
+    - link
+id: node.ubc_partner_organization.field_partner_link
+field_name: field_partner_link
+entity_type: node
+bundle: ubc_partner_organization
+label: 'Link to Organization'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

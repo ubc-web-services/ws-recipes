@@ -1,0 +1,25 @@
+name: "Read only role"
+description: "Read only  recipe for UBC Web Services websites"
+type: "Read only role"
+install:
+  # core
+  - block
+  - contextual
+  - file
+  - menu_ui
+  - path
+  - taxonomy
+  - toolbar
+  - user
+config:
+  actions:
+    user.role.read_only:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: read_only
+        label: 'Read Only'
+        weight: -8
+        is_admin: false
+      # grant permissions from enabled core modules
+      grantPermissions:
+        - 'access site in maintenance mode'

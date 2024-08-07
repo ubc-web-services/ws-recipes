@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: partner_organization
+label: 'Partner Organization'
+type: 'canonical_entities:node'
+pattern: 'partner-organizations/[node:title]'
+selection_criteria:
+  322e9c66-adf3-470a-a4d5-fef53b62bc5b:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 322e9c66-adf3-470a-a4d5-fef53b62bc5b
+    context_mapping:
+      node: node
+    bundles:
+      ubc_partner_organization: ubc_partner_organization
+selection_logic: and
+weight: -5
+relationships: {  }

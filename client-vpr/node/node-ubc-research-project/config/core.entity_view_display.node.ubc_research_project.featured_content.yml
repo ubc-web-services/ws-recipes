@@ -1,0 +1,42 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.featured_content
+    - field.field.node.ubc_research_project.body
+    - field.field.node.ubc_research_project.field_r_project_feature_image
+    - field.field.node.ubc_research_project.field_r_project_image_teaser
+    - field.field.node.ubc_research_project.field_r_project_research_theme
+    - field.field.node.ubc_research_project.field_r_project_researchers
+    - node.type.ubc_research_project
+    - responsive_image.styles.hero_image
+  module:
+    - responsive_image
+    - user
+id: node.ubc_research_project.featured_content
+targetEntityType: node
+bundle: ubc_research_project
+mode: featured_content
+content:
+  field_r_project_feature_image:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: hero_image
+      image_link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_r_project_image_teaser:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true
+  field_r_project_research_theme: true
+  field_r_project_researchers: true
+  links: true

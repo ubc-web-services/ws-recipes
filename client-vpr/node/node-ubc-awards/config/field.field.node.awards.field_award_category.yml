@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_award_category
+    - node.type.awards
+    - taxonomy.vocabulary.award_category
+id: node.awards.field_award_category
+field_name: field_award_category
+entity_type: node
+bundle: awards
+label: 'Award Category'
+description: 'Add a category to the award'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      award_category: award_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

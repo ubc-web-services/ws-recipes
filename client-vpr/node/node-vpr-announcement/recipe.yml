@@ -1,0 +1,94 @@
+
+name: "VPR Announcement type configuration"
+description: "VPR Announcement type configuration recipe for UBC Web Services websites"
+type: 'Content type'
+install:
+  #core
+  - datetime
+  - image
+  - link
+  - menu_ui
+  - node
+  - options
+  - path
+  - responsive_image
+  - taxonomy
+  - text
+  - user
+  - views
+  # contrib
+  - allowed_formats
+  - entity_reference_revisions
+  - field_group
+  - focal_point
+  - maxlength
+  - metatag
+  - paragraphs
+  - pathauto
+  - quick_node_clone
+  - scheduler
+  - simple_sitemap
+  - text_summary_options
+config:
+  actions:
+    taxonomy.vocabulary.research_theme:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies: {  }
+        name: 'Research Theme'
+        vid: research_theme
+        description: 'Associates the content with a research theme'
+        weight: 0
+    field.storage.node.field_show_gradient_on_image:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies:
+          module:
+            - node
+        id: node.field_show_gradient_on_image
+        field_name: field_show_gradient_on_image
+        entity_type: node
+        type: boolean
+        settings: {  }
+        module: core
+        locked: false
+        cardinality: 1
+        translatable: true
+        indexes: {  }
+        persist_with_no_fields: false
+        custom_storage: false
+    # assign ubc_announcement permissions
+    user.role.editor:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: editor
+        label: Editor
+        weight: 2
+        is_admin: false
+      grantPermissions:
+        - 'clone ubc_announcement content'
+        - 'create terms in research_theme'
+        - 'delete terms in research_theme'
+        - 'edit terms in research_theme'
+    user.role.super_user:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: super_user
+        label: 'Super User'
+        weight: -5
+        is_admin: false
+      grantPermissions:
+        - 'clone ubc_announcement content'
+        - 'create ubc_announcement content'
+        - 'delete any ubc_announcement content'
+        - 'delete own ubc_announcement content'
+        - 'delete ubc_announcement revisions'
+        - 'edit any ubc_announcement content'
+        - 'edit own ubc_announcement content'
+        - 'revert ubc_announcement revisions'
+        - 'view ubc_announcement revisions'
+        - 'create terms in research_theme'
+        - 'delete terms in research_theme'
+        - 'edit terms in research_theme'

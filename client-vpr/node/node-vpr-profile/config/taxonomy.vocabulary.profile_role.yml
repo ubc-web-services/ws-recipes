@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Profile Role'
+vid: profile_role
+description: 'Identifies the profile by role'
+weight: 0

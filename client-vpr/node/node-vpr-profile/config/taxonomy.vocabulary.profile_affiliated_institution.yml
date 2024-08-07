@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Affiliated Institution'
+vid: profile_affiliated_institution
+description: 'Relate a profile to an institution'
+weight: 0

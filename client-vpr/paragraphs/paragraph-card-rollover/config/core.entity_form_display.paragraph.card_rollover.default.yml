@@ -1,0 +1,60 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card_rollover.field_paragraph_card_image
+    - field.field.paragraph.card_rollover.field_paragraph_card_link
+    - field.field.paragraph.card_rollover.field_paragraph_card_title
+    - field.field.paragraph.card_rollover.field_paragraph_revealed_text
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.card_rollover
+  module:
+    - link
+    - maxlength
+    - svg_image
+id: paragraph.card_rollover.default
+targetEntityType: paragraph
+bundle: card_rollover
+mode: default
+content:
+  field_paragraph_card_image:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_paragraph_card_link:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_paragraph_card_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 150
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+  field_paragraph_revealed_text:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 150
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+hidden:
+  created: true
+  status: true

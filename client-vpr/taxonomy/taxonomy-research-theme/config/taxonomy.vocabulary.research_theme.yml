@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Research Theme'
+vid: research_theme
+description: 'Associates the content with a research theme'
+weight: 0

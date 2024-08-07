@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_researchers
+    - node.type.ubc_profile
+    - node.type.ubc_project
+id: node.ubc_project.field_project_researchers
+field_name: field_project_researchers
+entity_type: node
+bundle: ubc_project
+label: Researchers
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      ubc_profile: ubc_profile
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

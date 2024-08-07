@@ -1,0 +1,68 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_homepage_cards
+    - node.type.homepage
+    - paragraphs.paragraphs_type.card_rollover
+    - paragraphs.paragraphs_type.card_text
+  module:
+    - entity_reference_revisions
+id: node.homepage.field_homepage_cards
+field_name: field_homepage_cards
+entity_type: node
+bundle: homepage
+label: 'Homepage Cards'
+description: 'These should be added in groups of 3 (ie. 3, 6, 9, etc)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      card_rollover: card_rollover
+      card_text: card_text
+    negate: 0
+    target_bundles_drag_drop:
+      card_group:
+        weight: 13
+        enabled: false
+      card_horizontal:
+        weight: 14
+        enabled: false
+      card_rollover:
+        weight: 15
+        enabled: true
+      card_text:
+        weight: 17
+        enabled: true
+      card_vertical:
+        weight: 16
+        enabled: false
+      feature_image:
+        weight: 17
+        enabled: false
+      icon_card:
+        weight: 18
+        enabled: false
+      image_card:
+        weight: 19
+        enabled: false
+      slide:
+        weight: 20
+        enabled: false
+      slideshow:
+        weight: 21
+        enabled: false
+      tab:
+        weight: 22
+        enabled: false
+      tabcordion:
+        weight: 23
+        enabled: false
+      text:
+        weight: 24
+        enabled: false
+field_type: entity_reference_revisions

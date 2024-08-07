@@ -1,0 +1,37 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.featured_content
+    - field.field.node.ubc_partner_organization.body
+    - field.field.node.ubc_partner_organization.field_partner_feature_image
+    - field.field.node.ubc_partner_organization.field_partner_link
+    - field.field.node.ubc_partner_organization.field_partner_location
+    - field.field.node.ubc_partner_organization.field_partner_representative
+    - field.field.node.ubc_partner_organization.field_partner_researchers
+    - node.type.ubc_partner_organization
+    - responsive_image.styles.hero_image
+  module:
+    - responsive_image
+    - user
+id: node.ubc_partner_organization.featured_content
+targetEntityType: node
+bundle: ubc_partner_organization
+mode: featured_content
+content:
+  field_partner_feature_image:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: hero_image
+      image_link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_partner_link: true
+  field_partner_location: true
+  field_partner_representative: true
+  field_partner_researchers: true
+  links: true

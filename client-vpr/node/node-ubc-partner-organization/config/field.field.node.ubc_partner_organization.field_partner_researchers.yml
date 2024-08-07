@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_partner_researchers
+    - node.type.ubc_partner_organization
+    - node.type.ubc_profile
+id: node.ubc_partner_organization.field_partner_researchers
+field_name: field_partner_researchers
+entity_type: node
+bundle: ubc_partner_organization
+label: 'Cluster Researchers'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      ubc_profile: ubc_profile
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

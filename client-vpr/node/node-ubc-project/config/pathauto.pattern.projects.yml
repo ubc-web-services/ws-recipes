@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: projects
+label: Projects
+type: 'canonical_entities:node'
+pattern: 'projects/[node:title]'
+selection_criteria:
+  fb6af2c1-86ef-4b79-af45-d71c4e0b7639:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: fb6af2c1-86ef-4b79-af45-d71c4e0b7639
+    context_mapping:
+      node: node
+    bundles:
+      ubc_project: ubc_project
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publication_projects
+    - node.type.ubc_publication
+    - node.type.ubc_research_project
+id: node.ubc_publication.field_publication_projects
+field_name: field_publication_projects
+entity_type: node
+bundle: ubc_publication
+label: 'Associated Projects'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      ubc_research_project: ubc_research_project
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

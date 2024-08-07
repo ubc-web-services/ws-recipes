@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publication_year
+    - node.type.ubc_publication
+  module:
+    - datetime
+id: node.ubc_publication.field_publication_year
+field_name: field_publication_year
+entity_type: node
+bundle: ubc_publication
+label: 'Publication Year'
+description: 'While the date month and day have to be entered to determine a valid timestamp, they are ignored for the purpose of sorting and identification. Please ensure the <strong>Year</strong> is correct, however.'
+required: false
+translatable: true
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

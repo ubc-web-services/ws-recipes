@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.sidebar_content
+    - field.field.node.webform.body
+    - field.field.node.webform.field_webform_meta_tags
+    - field.field.node.webform.field_webform_supporting_content
+    - field.field.node.webform.field_webform_tags
+    - field.field.node.webform.webform
+    - node.type.webform
+  module:
+    - text
+    - user
+id: node.webform.sidebar_content
+targetEntityType: node
+bundle: webform
+mode: sidebar_content
+content:
+  field_webform_supporting_content:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_webform_meta_tags: true
+  field_webform_tags: true
+  links: true
+  webform: true

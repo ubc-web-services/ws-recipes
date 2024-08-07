@@ -1,0 +1,16 @@
+name: "Text Card paragraph"
+description: "Text Card paragraph recipe for UBC Web Services websites"
+type: "Paragraph type"
+recipes:
+  - recipes/ws-recipes/image/image-styles
+  - recipes/ws-recipes/paragraphs/paragraph-shared-fields
+install:
+  # core
+  - taxonomy
+  - text
+  #contrib
+  - entity_reference_revisions
+  - field_group
+  - link
+  - maxlength
+  - paragraphs

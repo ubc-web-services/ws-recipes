@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.card_horizontal_round_image
+label: 'Card: Horizontal (round image)'
+targetEntityType: node
+cache: true

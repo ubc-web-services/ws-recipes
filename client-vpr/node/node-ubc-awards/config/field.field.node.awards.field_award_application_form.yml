@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_award_application_form
+    - node.type.awards
+  module:
+    - link
+id: node.awards.field_award_application_form
+field_name: field_award_application_form
+entity_type: node
+bundle: awards
+label: 'Application Form Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

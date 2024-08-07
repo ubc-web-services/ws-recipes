@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ubc_project.body
+    - field.field.node.ubc_project.field_project_funders
+    - field.field.node.ubc_project.field_project_image
+    - field.field.node.ubc_project.field_project_researchers
+    - field.field.node.ubc_project.field_project_theme
+    - node.type.ubc_project
+  module:
+    - text
+    - user
+id: node.ubc_project.teaser
+targetEntityType: node
+bundle: ubc_project
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 350
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_project_funders: true
+  field_project_image: true
+  field_project_researchers: true
+  field_project_theme: true
+  links: true

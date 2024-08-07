@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Profile Category'
+vid: profile_category
+description: 'Identifies the profile by category'
+weight: 0

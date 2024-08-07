@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publication_research_area
+    - node.type.ubc_publication
+    - taxonomy.vocabulary.research_theme
+id: node.ubc_publication.field_publication_research_area
+field_name: field_publication_research_area
+entity_type: node
+bundle: ubc_publication
+label: 'Research Area'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      research_theme: research_theme
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

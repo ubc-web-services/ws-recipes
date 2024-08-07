@@ -1,0 +1,5 @@
+name: "Node VPR view modes"
+description: "Node VPR view modes recipe for UBC Web Services websites"
+type: "View mode"
+install:
+  - node
