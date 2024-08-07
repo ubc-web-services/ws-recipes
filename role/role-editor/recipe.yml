@@ -18,7 +18,7 @@ config:
       createIfNotExists:
         id: editor
         label: Editor
-        weight: 2
+        weight: 6
         is_admin: false
       # grant permissions from enabled core modules
       grantPermissions:

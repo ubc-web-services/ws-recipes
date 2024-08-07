@@ -1,9 +1,6 @@
 name: "Slide paragraph"
 description: "Slide paragraph recipe for UBC Web Services websites"
 type: "Paragraph type"
-recipes:
-  - recipes/ws-recipes/image/image-styles
-  - recipes/ws-recipes/image/image-styles-responsive
 install:
     # core
   - file

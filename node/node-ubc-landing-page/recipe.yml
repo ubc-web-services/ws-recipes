@@ -28,69 +28,13 @@ install:
   - text_summary_options
 config:
   actions:
-    # add view modes if they aren't present
-    core.entity_view_mode.node.card_horizontal:
-      createIfNotExists:
-        langcode: en
-        status: true
-        dependencies:
-          module:
-            - node
-        id: node.card_horizontal
-        label: 'Card: Horizontal'
-        targetEntityType: node
-        cache: true
-    core.entity_view_mode.node.card_image:
-      createIfNotExists:
-        langcode: en
-        status: true
-        dependencies:
-          module:
-            - node
-        id: node.card_image
-        label: 'Card: Image'
-        targetEntityType: node
-        cache: true
-    core.entity_view_mode.node.card_vertical:
-      createIfNotExists:
-        langcode: en
-        status: true
-        dependencies:
-          module:
-            - node
-        id: node.card_vertical
-        label: 'Card: Vertical'
-        targetEntityType: node
-        cache: true
-    core.entity_view_mode.node.custom_content:
-      createIfNotExists:
-        langcode: en
-        status: true
-        dependencies:
-          module:
-            - node
-        id: node.custom_content
-        label: 'Custom Content'
-        targetEntityType: node
-        cache: true
-    core.entity_view_mode.node.featured_content:
-      createIfNotExists:
-        langcode: en
-        status: true
-        dependencies:
-          module:
-            - node
-        id: node.featured_content
-        label: 'Featured Content'
-        targetEntityType: node
-        cache: true
     # assign landing page permissions
     user.role.editor:
       # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
       createIfNotExists:
         id: editor
         label: Editor
-        weight: 2
+        weight: 6
         is_admin: false
       grantPermissions:
         - 'create ubc_landing_page content'

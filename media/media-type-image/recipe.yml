@@ -3,8 +3,6 @@ description: "Image media type for UBC Web Services websites"
 type: "Media type"
 recipes:
   - core/recipes/image_media_type
-  - recipes/ws-recipes/image/image-styles
-  - recipes/ws-recipes/image/image-styles-responsive
 install:
   # core
   - file
@@ -17,70 +15,13 @@ install:
   - crop
 config:
   actions:
-    # add view modes if not installed
-    core.entity_view_mode.media.featured_content:
-      createIfNotExists:
-        langcode: en
-        status: true
-        dependencies:
-          module:
-            - media
-        id: media.featured_content
-        label: 'Featured Content'
-        targetEntityType: media
-        cache: true
-    core.entity_view_mode.media.narrow:
-      createIfNotExists:
-        langcode: en
-        status: true
-        dependencies:
-          module:
-            - media
-        id: media.narrow
-        label: Narrow
-        targetEntityType: media
-        cache: true
-    core.entity_view_mode.media.original:
-      createIfNotExists:
-        langcode: en
-        status: true
-        dependencies:
-          module:
-            - media
-        id: media.original
-        label: Original
-        description: ''
-        targetEntityType: media
-        cache: true
-    core.entity_view_mode.media.preview:
-      createIfNotExists:
-        langcode: en
-        status: true
-        dependencies:
-          module:
-            - media
-        id: media.preview
-        label: Preview
-        targetEntityType: media
-        cache: true
-    core.entity_view_mode.media.square:
-      createIfNotExists:
-        langcode: en
-        status: true
-        dependencies:
-          module:
-            - media
-        id: media.square
-        label: Square
-        targetEntityType: media
-        cache: true
     # assign image media permissions
     user.role.content_creator:
       # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
       createIfNotExists:
         id: content_creator
         label: Content Creator
-        weight: 1
+        weight: 5
         is_admin: false
       grantPermissions:
         - 'create image media'
@@ -96,7 +37,7 @@ config:
       createIfNotExists:
         id: editor
         label: Editor
-        weight: 2
+        weight: 6
         is_admin: false
       grantPermissions:
         - 'create image media'

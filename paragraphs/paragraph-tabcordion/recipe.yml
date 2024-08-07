@@ -2,7 +2,6 @@ name: "Tabcordion paragraph"
 description: "Tabcordion paragraph recipe for UBC Web Services websites"
 type: "Paragraph type"
 recipes:
-  - recipes/ws-recipes/paragraphs/paragraph-shared-fields
   - recipes/ws-recipes/paragraphs/paragraph-tab
 install:
     # core

@@ -46,7 +46,7 @@ config:
       createIfNotExists:
         id: content_creator
         label: Content Creator
-        weight: 1
+        weight: 5
         is_admin: false
       grantPermissions:
         - 'create awards content'
@@ -60,7 +60,7 @@ config:
       createIfNotExists:
         id: editor
         label: Editor
-        weight: 2
+        weight: 6
         is_admin: false
       grantPermissions:
         - 'create awards content'
@@ -82,7 +82,7 @@ config:
       createIfNotExists:
         id: super_user
         label: 'Super User'
-        weight: -5
+        weight: 7
         is_admin: false
       grantPermissions:
         - 'create awards content'

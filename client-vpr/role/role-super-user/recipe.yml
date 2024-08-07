@@ -18,11 +18,12 @@ config:
       createIfNotExists:
         id: super_user
         label: 'Super User'
-        weight: -5
+        weight: 7
         is_admin: false
       # grant permissions from enabled core modules
       grantPermissions:
         - 'access administration pages'
+        - 'access block library'
         - 'access content overview'
         - 'access contextual links'
         - 'access files overview'

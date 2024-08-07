@@ -1,8 +1,6 @@
 name: "Feature image paragraph"
 description: "Feature image paragraph recipe for UBC Web Services websites"
 type: "Paragraph type"
-recipes:
-  - recipes/ws-recipes/paragraphs/paragraph-shared-fields
 install:
   # core
   - file

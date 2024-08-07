@@ -29,45 +29,179 @@ install:
   - text_summary_options
 config:
   actions:
-    # add view modes if they aren't present
-    core.entity_view_mode.node.card_horizontal_round_image:
-      createIfNotExists:
-        langcode: en
-        status: true
-        dependencies:
-          module:
-            - node
-        id: node.card_horizontal_round_image
-        label: 'Card: Horizontal (round image)'
-        targetEntityType: node
-        cache: true
-    core.entity_view_mode.node.sidebar_content:
-      createIfNotExists:
-        langcode: en
-        status: true
-        dependencies:
-          module:
-            - node
-        id: node.sidebar_content
-        label: 'Sidebar Content'
-        targetEntityType: node
-        cache: true
-    taxonomy.vocabulary.research_theme:
-      createIfNotExists:
-        langcode: en
-        status: true
-        dependencies: {  }
-        name: 'Research Theme'
-        vid: research_theme
-        description: 'Associates the content with a research theme'
-        weight: 0
+    # allow unlimited departments / units
+    field.storage.node.field_profile_department_unit:
+      simple_config_update:
+        cardinality: -1
+    # update the form display
+    core.entity_form_display.node.ubc_profile.default:
+      simple_config_update:
+        third_party_settings.field_group.group_metadata.children:
+          - field_profile_research_area
+          - field_profile_category
+          - field_profile_affiliated
+          - field_profile_faculty
+          - field_profile_department_unit
+          - field_profile_role
+          - field_profile_tags
+      setComponents:
+        -
+          name: field_profile_affiliated
+          options:
+            type: options_select
+            weight: 8
+            region: content
+            settings: { }
+            third_party_settings: {  }
+        -
+          name: field_profile_department_unit
+          options:
+            type: options_select
+            weight: 4
+            region: content
+            settings: { }
+            third_party_settings: {  }
+        -
+          name: field_profile_category
+          options:
+            type: options_select
+            weight: 7
+            region: content
+            settings: { }
+            third_party_settings: {  }
+        -
+          name: field_profile_faculty
+          options:
+            type: options_select
+            weight: 9
+            region: content
+            settings: { }
+            third_party_settings: {  }
+        -
+          name: field_profile_supporting
+          options:
+            type: text_textarea
+            weight: 7
+            region: content
+            settings:
+              rows: 5
+              placeholder: ''
+            third_party_settings: {  }
+        -
+          name: field_profile_google_scholar
+          options:
+            type: link_default
+            weight: 12
+            region: content
+            settings:
+              placeholder_url: ''
+              placeholder_title: ''
+            third_party_settings: {  }
+        -
+          name: field_profile_name_prefix
+          options:
+            type: string_textfield
+            weight: 3
+            region: content
+            settings:
+              size: '60'
+              placeholder: 'e.g. Ms, Dr'
+            third_party_settings:
+              maxlength:
+                maxlength_js: 120
+                maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+        -
+          name: field_profile_name_suffix
+          options:
+            type: string_textfield
+            weight: 3
+            region: content
+            settings:
+              size: '60'
+              placeholder: 'e.g. PhD, MSc'
+            third_party_settings:
+              maxlength:
+                maxlength_js: 120
+                maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+        -
+          name: field_profile_preferred_website
+          options:
+            type: link_default
+            weight: 13
+            region: content
+            settings:
+              placeholder_url: ''
+              placeholder_title: ''
+            third_party_settings: { }
+        -
+          name: field_profile_research_area
+          options:
+            type: options_select
+            weight: 5
+            region: content
+            settings: { }
+            third_party_settings: { }
+        -
+          name: field_profile_role
+          options:
+            type: options_select
+            weight: 11
+            region: content
+            settings: { }
+            third_party_settings: { }
+    # update the card horizontal display
+    core.entity_view_display.node.ubc_profile.card_horizontal:
+      setComponents:
+        -
+          name: field_profile_name_prefix
+          options:
+            type: string
+            weight: 0
+            label: hidden
+            region: content
+            settings:
+              link_to_entity: false
+            third_party_settings: {  }
+        -
+          name: field_profile_name_suffix
+          options:
+            type: string
+            weight: 1
+            label: hidden
+            region: content
+            settings:
+              link_to_entity: false
+            third_party_settings: {  }
+    # update the card vertical display
+    core.entity_view_display.node.ubc_profile.card_vertical:
+      setComponents:
+        -
+          name: field_profile_name_prefix
+          options:
+            type: string
+            weight: 0
+            label: hidden
+            region: content
+            settings:
+              link_to_entity: false
+            third_party_settings: {  }
+        -
+          name: field_profile_name_suffix
+          options:
+            type: string
+            weight: 1
+            label: hidden
+            region: content
+            settings:
+              link_to_entity: false
+            third_party_settings: {  }
     # assign ubc_profile permissions
     user.role.editor:
       # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
       createIfNotExists:
         id: editor
         label: Editor
-        weight: 2
+        weight: 6
         is_admin: false
       grantPermissions:
         - 'clone ubc_profile content'
@@ -79,7 +213,7 @@ config:
       createIfNotExists:
         id: super_user
         label: 'Super User'
-        weight: -5
+        weight: 7
         is_admin: false
       grantPermissions:
         - 'clone ubc_profile content'

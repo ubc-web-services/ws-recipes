@@ -1,8 +1,6 @@
 name: "Profile type configuration"
 description: "Profile type configuration recipe for UBC Web Services websites"
 type: 'Content type'
-recipes:
-  - recipes/ws-recipes/taxonomy/taxonomy-department
 install:
   #core
   - image
@@ -19,6 +17,8 @@ install:
   - field_group
   - maxlength
   - metatag
+  - metatag_open_graph
+  - metatag_twitter_cards
   - pathauto
   - scheduler
   - simple_sitemap
@@ -27,36 +27,13 @@ install:
   - text_summary_options
 config:
   actions:
-    # add view modes if they aren't present
-    core.entity_view_mode.node.card_horizontal:
-      createIfNotExists:
-        langcode: en
-        status: true
-        dependencies:
-          module:
-            - node
-        id: node.card_horizontal
-        label: 'Card: Horizontal'
-        targetEntityType: node
-        cache: true
-    core.entity_view_mode.node.card_vertical:
-      createIfNotExists:
-        langcode: en
-        status: true
-        dependencies:
-          module:
-            - node
-        id: node.card_vertical
-        label: 'Card: Vertical'
-        targetEntityType: node
-        cache: true
     # assign profile permissions
     user.role.content_creator:
       # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
       createIfNotExists:
         id: content_creator
         label: Content Creator
-        weight: 1
+        weight: 5
         is_admin: false
       grantPermissions:
         - 'create ubc_profile content'
@@ -70,9 +47,12 @@ config:
       createIfNotExists:
         id: editor
         label: Editor
-        weight: 2
+        weight: 6
         is_admin: false
       grantPermissions:
+        - 'create terms in department_or_unit'
+        - 'delete terms in department_or_unit'
+        - 'edit terms in department_or_unit'
         - 'create ubc_profile content'
         - 'delete any ubc_profile content'
         - 'delete own ubc_profile content'

@@ -19,7 +19,7 @@ config:
       createIfNotExists:
         id: editor
         label: Editor
-        weight: 2
+        weight: 6
         is_admin: false
       grantPermissions:
         - 'create private_page content'

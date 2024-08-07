@@ -29,86 +29,118 @@ install:
   - text_summary_options
 config:
   actions:
-    field.storage.node.field_show_gradient_on_image:
-      createIfNotExists:
-        langcode: en
-        status: true
-        dependencies:
-          module:
-            - node
-        id: node.field_show_gradient_on_image
-        field_name: field_show_gradient_on_image
-        entity_type: node
-        type: boolean
-        settings: {  }
-        module: core
-        locked: false
-        cardinality: 1
-        translatable: true
-        indexes: {  }
-        persist_with_no_fields: false
-        custom_storage: false
-    # add view modes if they aren't present
-    core.entity_view_mode.node.card_horizontal:
-      createIfNotExists:
-        langcode: en
-        status: true
-        dependencies:
-          module:
-            - node
-        id: node.card_horizontal
-        label: 'Card: Horizontal'
-        targetEntityType: node
-        cache: true
-    core.entity_view_mode.node.card_image:
-      createIfNotExists:
-        langcode: en
-        status: true
-        dependencies:
-          module:
-            - node
-        id: node.card_image
-        label: 'Card: Image'
-        targetEntityType: node
-        cache: true
-    core.entity_view_mode.node.card_vertical:
-      createIfNotExists:
-        langcode: en
-        status: true
-        dependencies:
-          module:
-            - node
-        id: node.card_vertical
-        label: 'Card: Vertical'
-        targetEntityType: node
-        cache: true
-    core.entity_view_mode.node.featured_content:
-      createIfNotExists:
-        langcode: en
-        status: true
-        dependencies:
-          module:
-            - node
-        id: node.featured_content
-        label: 'Featured Content'
-        targetEntityType: node
-        cache: true
-    taxonomy.vocabulary.research_theme:
-      createIfNotExists:
-        langcode: en
-        status: true
-        dependencies: {  }
-        name: 'Research Theme'
-        vid: research_theme
-        description: 'Associates the content with a research theme'
-        weight: 0
+    # update the address field
+    field.field.node.ubc_event.field_event_location:
+       simple_config_update:
+        settings.field_overrides.addressLine2:
+          override: optional
+    # update the form display
+    core.entity_form_display.node.ubc_event.default:
+      simple_config_update:
+        third_party_settings.field_group.group_metadata.children:
+          - field_event_category
+          - field_event_tags
+          - field_event_theme
+      setComponents:
+        -
+          name: field_event_external_link
+          options:
+            type: entity_reference_paragraphs
+            weight: 12
+            region: content
+            settings:
+              title: Paragraph
+              title_plural: Paragraphs
+              edit_mode: open
+              add_mode: dropdown
+              form_display_mode: default
+              default_paragraph_type: ''
+            third_party_settings: {  }
+        -
+          name: field_event_external_link
+          options:
+            type: link_default
+            weight: 23
+            region: content
+            settings:
+              placeholder_url: ''
+              placeholder_title: ''
+            third_party_settings: {  }
+        -
+          name: field_event_image_teaser
+          options:
+            type: string_textfield
+            weight: 1
+            region: content
+            settings:
+              size: 60
+              placeholder: ''
+            third_party_settings:
+              maxlength:
+                maxlength_js: 120
+                maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+        -
+          name: field_show_gradient_on_image
+          options:
+            type: boolean_checkbox
+            weight: 1
+            region: content
+            settings:
+              display_label: true
+            third_party_settings: {  }
+        -
+          name: field_event_theme
+          options:
+            type: options_select
+            weight: 14
+            region: content
+            settings: {  }
+            third_party_settings: {  }
+        -
+          name: field_event_supporting
+          options:
+            type: text_textarea
+            weight: 10
+            region: content
+            settings:
+              rows: 5
+              placeholder: ''
+            third_party_settings: {  }
+    # update the featured content display
+    core.entity_view_display.node.ubc_event.featured_content:
+      setComponent:
+        name: field_event_image_teaser
+        options:
+          type: string
+          weight: 1
+          region: content
+          label: hidden
+          settings:
+            link_to_entity: false
+          third_party_settings: {  }
+    # update the teaser display
+    core.entity_view_display.node.ubc_event.teaser:
+      setComponent:
+        name: field_event_external_link
+        options:
+          type: link
+          weight: 2
+          region: content
+          label: hidden
+          settings:
+            trim_length: 80
+            url_only: false
+            url_plain: false
+            rel: ''
+            target: ''
+          third_party_settings: {  }
     # assign ubc_event permissions
     user.role.editor:
       # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
       createIfNotExists:
         id: editor
         label: Editor
-        weight: 2
+        weight: 6
         is_admin: false
       grantPermissions:
         - 'clone ubc_event content'
@@ -120,7 +152,7 @@ config:
       createIfNotExists:
         id: super_user
         label: 'Super User'
-        weight: -5
+        weight: 7
         is_admin: false
       grantPermissions:
         - 'clone ubc_event content'

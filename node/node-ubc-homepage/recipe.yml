@@ -27,36 +27,13 @@ install:
   - text_summary_options
 config:
   actions:
-    # add view modes if they aren't present
-    core.entity_view_mode.node.custom_content:
-      createIfNotExists:
-        langcode: en
-        status: true
-        dependencies:
-          module:
-            - node
-        id: node.custom_content
-        label: 'Custom Content'
-        targetEntityType: node
-        cache: true
-    core.entity_view_mode.node.featured_content:
-      createIfNotExists:
-        langcode: en
-        status: true
-        dependencies:
-          module:
-            - node
-        id: node.featured_content
-        label: 'Featured Content'
-        targetEntityType: node
-        cache: true
     # assign homepage permissions
     user.role.editor:
       # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
       createIfNotExists:
         id: editor
         label: Editor
-        weight: 2
+        weight: 6
         is_admin: false
       grantPermissions:
         - 'delete homepage revisions'

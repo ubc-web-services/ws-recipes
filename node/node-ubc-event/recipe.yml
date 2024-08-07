@@ -1,8 +1,6 @@
 name: "Event type configuration"
 description: "Event type configuration recipe for UBC Web Services websites"
 type: 'Content type'
-recipes:
-  - recipes/ws-recipes/taxonomy/taxonomy-event
 install:
   #core
   - image
@@ -23,6 +21,8 @@ install:
   - focal_point
   - maxlength
   - metatag
+  - metatag_open_graph
+  - metatag_twitter_cards
   - pathauto
   - responsive_image
   - scheduler
@@ -31,58 +31,13 @@ install:
   - text_summary_options
 config:
   actions:
-    # add view modes if they aren't present
-    core.entity_view_mode.node.card_horizontal:
-      createIfNotExists:
-        langcode: en
-        status: true
-        dependencies:
-          module:
-            - node
-        id: node.card_horizontal
-        label: 'Card: Horizontal'
-        targetEntityType: node
-        cache: true
-    core.entity_view_mode.node.card_image:
-      createIfNotExists:
-        langcode: en
-        status: true
-        dependencies:
-          module:
-            - node
-        id: node.card_image
-        label: 'Card: Image'
-        targetEntityType: node
-        cache: true
-    core.entity_view_mode.node.card_vertical:
-      createIfNotExists:
-        langcode: en
-        status: true
-        dependencies:
-          module:
-            - node
-        id: node.card_vertical
-        label: 'Card: Vertical'
-        targetEntityType: node
-        cache: true
-    core.entity_view_mode.node.featured_content:
-      createIfNotExists:
-        langcode: en
-        status: true
-        dependencies:
-          module:
-            - node
-        id: node.featured_content
-        label: 'Featured Content'
-        targetEntityType: node
-        cache: true
     # assign event permissions
     user.role.content_creator:
       # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
       createIfNotExists:
         id: content_creator
         label: Content Creator
-        weight: 1
+        weight: 5
         is_admin: false
       grantPermissions:
         - 'create ubc_event content'
@@ -96,9 +51,12 @@ config:
       createIfNotExists:
         id: editor
         label: Editor
-        weight: 2
+        weight: 6
         is_admin: false
       grantPermissions:
+        - 'create terms in event_category'
+        - 'delete terms in event_category'
+        - 'edit terms in event_category'
         - 'create ubc_event content'
         - 'delete any ubc_event content'
         - 'delete own ubc_event content'

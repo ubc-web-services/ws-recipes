@@ -1,5 +1,0 @@
-name: "Announcement taxonomy terms"
-description: "Announcement taxonomy terms recipe for UBC Web Services websites"
-type: "Taxonomy terms"
-recipes:
-  - recipes/ws-recipes/taxonomy/taxonomy-announcement

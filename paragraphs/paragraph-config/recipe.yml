@@ -2,6 +2,7 @@ name: "Paragraph configuration"
 description: "Paragraph configuration recipe for UBC Web Services websites"
 type: "Paragraph configuration"
 recipes:
+  - recipes/ws-recipes/paragraphs/paragraph-shared-fields
   - recipes/ws-recipes/paragraphs/paragraph-card-group
   - recipes/ws-recipes/paragraphs/paragraph-feature-image
   - recipes/ws-recipes/paragraphs/paragraph-slideshow
@@ -15,7 +16,7 @@ config:
       createIfNotExists:
         id: content_creator
         label: Content Creator
-        weight: 1
+        weight: 5
         is_admin: false
       grantPermissions:
         - 'view unpublished paragraphs'
@@ -24,7 +25,7 @@ config:
       createIfNotExists:
         id: editor
         label: Editor
-        weight: 2
+        weight: 6
         is_admin: false
       grantPermissions:
         - 'view unpublished paragraphs'

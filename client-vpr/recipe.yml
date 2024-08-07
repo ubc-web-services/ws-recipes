@@ -12,37 +12,40 @@ recipes:
   - recipes/ws-recipes/block/block-code
   - recipes/ws-recipes/block/block-quicklinks
   - recipes/ws-recipes/date-formats
-  - recipes/ws-recipes/image/image-styles
-  - recipes/ws-recipes/client-vpr/image/image-styles
-  # install recipes that rely on other recipes next
-  - recipes/ws-recipes/image/image-styles-responsive
   - recipes/ws-recipes/taxonomy/taxonomy-admin
   - recipes/ws-recipes/taxonomy/taxonomy-admin-content
+  - recipes/ws-recipes/image/image-styles
+  - recipes/ws-recipes/client-vpr/image/image-styles
+  # # install recipes that rely on other recipes next
+  - recipes/ws-recipes/image/image-styles-responsive
+  # image-styles and image-styles-responsive recipes needed for media recipe
   - recipes/ws-recipes/media/media-config
   - recipes/ws-recipes/text-format/text-format-filtered
   - recipes/ws-recipes/custom-entity/custom-entity-ubc-alert
+  # image-styles and image-styles-responsive recipes needed for paragraph-config recipe
   - recipes/ws-recipes/paragraphs/paragraph-config
   - recipes/ws-recipes/client-vpr/paragraphs/paragraph-card-rollover
   - recipes/ws-recipes/client-vpr/paragraphs/paragraph-card-text
+  # node-view-modes, image-styles and image-styles-responsive recipes needed for subsequent node recipes
   - recipes/ws-recipes/node/node-view-modes
-  - recipes/ws-recipes/client-vpr/node/node-vpr-view-modes
+  - recipes/ws-recipes/client-vpr/node/node-vpr-shared
   - recipes/ws-recipes/node/node-ubc-announcement
-  # - recipes/ws-recipes/client-vpr/node/node-vpr-announcement
-  # - recipes/ws-recipes/node/node-ubc-event
-  # - recipes/ws-recipes/client-vpr/node/node-vpr-event
-  # - recipes/ws-recipes/node/node-ubc-homepage
-  # - recipes/ws-recipes/client-vpr/node/node-vpr-homepage
-  # - recipes/ws-recipes/node/node-ubc-landing-page
-  # - recipes/ws-recipes/client-vpr/node/node-vpr-landing-page
-  # - recipes/ws-recipes/node/node-ubc-page
-  # - recipes/ws-recipes/client-vpr/node/node-vpr-page
-  # - recipes/ws-recipes/node/node-ubc-profile
-  # - recipes/ws-recipes/client-vpr/node/node-vpr-profile
-  # - recipes/ws-recipes/node/node-ubc-private-page
-  # - recipes/ws-recipes/client-vpr/node/node-ubc-awards
-  # - recipes/ws-recipes/client-vpr/node/node-ubc-project
-  # - recipes/ws-recipes/client-vpr/node/node-ubc-publication
-  # - recipes/ws-recipes/client-vpr/node/node-ubc-research-project
+  - recipes/ws-recipes/client-vpr/node/node-vpr-announcement
+  - recipes/ws-recipes/node/node-ubc-event
+  - recipes/ws-recipes/client-vpr/node/node-vpr-event
+  - recipes/ws-recipes/node/node-ubc-homepage
+  - recipes/ws-recipes/client-vpr/node/node-vpr-homepage
+  - recipes/ws-recipes/node/node-ubc-landing-page
+  - recipes/ws-recipes/client-vpr/node/node-vpr-landing-page
+  - recipes/ws-recipes/node/node-ubc-page
+  - recipes/ws-recipes/client-vpr/node/node-vpr-page
+  - recipes/ws-recipes/node/node-ubc-profile
+  - recipes/ws-recipes/client-vpr/node/node-vpr-profile
+  - recipes/ws-recipes/node/node-ubc-private-page
+  - recipes/ws-recipes/client-vpr/node/node-ubc-awards
+  - recipes/ws-recipes/client-vpr/node/node-ubc-project
+  - recipes/ws-recipes/client-vpr/node/node-ubc-publication
+  - recipes/ws-recipes/client-vpr/node/node-ubc-research-project
   # - recipes/ws-recipes/client-vpr/node/node-vpr-webform
 install:
   # core
@@ -75,6 +78,7 @@ install:
   - chosen
   - formtips
   - linkit_media_library
+  - scheduler
   - twig_tweak
   - ubc_chosen_style_tweaks
   # views
@@ -92,6 +96,7 @@ install:
   - view_unpublished
   - webform
   - webform_node
+  - webform_ui
 config:
   import:
     config_ignore: "*"
@@ -107,6 +112,14 @@ config:
     simple_sitemap: "*"
     webform: "*"
   actions:
+    # theme settings
+    vpr.settings:
+      simple_config_update:
+        clf_css: css-prod
+    # admin role weight
+    user.role.administrator:
+      simple_config_update:
+        weight: 10
     # antibot settings
     antibot.settings:
       simple_config_update:
@@ -410,13 +423,14 @@ config:
       createIfNotExists:
         id: content_creator
         label: Content Creator
-        weight: 1
+        weight: 5
         is_admin: false
       # grant permissions from enabled modules
       grantPermissions:
         - 'create terms in tags'
         - 'delete term revisions in tags'
         - 'delete terms in tags'
+        - 'dropzone upload files'
         - 'edit terms in tags'
         - 'revert term revisions in tags'
         - 'schedule publishing of nodes'
@@ -429,7 +443,7 @@ config:
       createIfNotExists:
         id: editor
         label: Editor
-        weight: 2
+        weight: 6
         is_admin: false
       # grant permissions from enabled modules
       grantPermissions:
@@ -444,6 +458,7 @@ config:
         - 'administer webform submission'
         - 'assign content_creator role'
         - 'assign editor role'
+        - 'assign read_only role'
         - 'create basic block content'
         - 'create terms in tags'
         - 'create webform'
@@ -457,6 +472,7 @@ config:
         - 'delete terms in tags'
         - 'delete webform submissions any node'
         - 'delete webform submissions own node'
+        - 'dropzone upload files'
         - 'edit any basic block content'
         - 'edit any webform'
         - 'edit own webform'
@@ -464,11 +480,14 @@ config:
         - 'edit terms in tags'
         - 'edit webform submissions any node'
         - 'edit webform submissions own node'
+        - 'revert all revisions'
         - 'revert any basic block content revisions'
         - 'revert term revisions in tags'
         - 'schedule publishing of nodes'
+        - 'view all revisions'
         - 'view any basic block content history'
         - 'view any unpublished content'
+        - 'view own unpublished content'
         - 'view any webform submission'
         - 'view own webform submission'
         - 'view scheduled content'
@@ -481,7 +500,7 @@ config:
       createIfNotExists:
         id: super_user
         label: 'Super User'
-        weight: -5
+        weight: 7
         is_admin: false
       # grant permissions from enabled modules
       grantPermissions:
@@ -496,11 +515,16 @@ config:
         - 'administer webform submission'
         - 'assign content_creator role'
         - 'assign editor role'
+        - 'assign read_only role'
+        - 'assign super_user role'
         - 'create basic block content'
+        - 'create quicklinks_block block content'
         - 'create terms in tags'
         - 'create webform'
         - 'delete any basic block content'
         - 'delete any basic block content revisions'
+        - 'delete any quicklinks_block block content'
+        - 'delete any quicklinks_block block content revisions'
         - 'delete any webform'
         - 'delete any webform submission'
         - 'delete own webform'
@@ -509,19 +533,26 @@ config:
         - 'delete terms in tags'
         - 'delete webform submissions any node'
         - 'delete webform submissions own node'
+        - 'dropzone upload files'
         - 'edit any basic block content'
+        - 'edit any quicklinks_block block content'
         - 'edit any webform'
         - 'edit own webform'
         - 'edit own webform submission'
         - 'edit terms in tags'
         - 'edit webform submissions any node'
         - 'edit webform submissions own node'
+        - 'revert all revisions'
         - 'revert any basic block content revisions'
+        - 'revert any quicklinks_block block content revisions'
         - 'revert term revisions in tags'
         - 'schedule publishing of nodes'
+        - 'view all revisions'
         - 'view any basic block content history'
+        - 'view any quicklinks_block block content history'
         - 'view any unpublished content'
         - 'view any webform submission'
+        - 'view own unpublished content'
         - 'view own webform submission'
         - 'view scheduled content'
         - 'view term revisions in tags'

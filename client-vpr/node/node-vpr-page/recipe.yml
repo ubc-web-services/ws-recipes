@@ -31,36 +31,25 @@ install:
   - text_summary_options
 config:
   actions:
-    # add view modes if they aren't present
-    core.entity_view_mode.node.custom_content:
-      createIfNotExists:
-        langcode: en
-        status: true
-        dependencies:
-          module:
-            - node
-        id: node.custom_content
-        label: 'Custom Content'
-        targetEntityType: node
-        cache: true
-    core.entity_view_mode.node.sidebar_content:
-      createIfNotExists:
-        langcode: en
-        status: true
-        dependencies:
-          module:
-            - node
-        id: node.sidebar_content
-        label: 'Sidebar Content'
-        targetEntityType: node
-        cache: true
+    # update the form display
+    core.entity_form_display.node.ubc_page.default:
+      setComponent:
+        name: field_page_supporting_content
+        options:
+          type: text_textarea
+          weight: 5
+          region: content
+          settings:
+            rows: 5
+            placeholder: ''
+          third_party_settings: {  }
     # assign ubc_page permissions
     user.role.editor:
       # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
       createIfNotExists:
         id: editor
         label: Editor
-        weight: 2
+        weight: 6
         is_admin: false
       grantPermissions:
         - 'clone ubc_page content'
@@ -69,7 +58,7 @@ config:
       createIfNotExists:
         id: super_user
         label: 'Super User'
-        weight: -5
+        weight: 7
         is_admin: false
       grantPermissions:
         - 'clone ubc_page content'

@@ -18,7 +18,7 @@ config:
       createIfNotExists:
         id: read_only
         label: 'Read Only'
-        weight: -8
+        weight: 2
         is_admin: false
       # grant permissions from enabled core modules
       grantPermissions:

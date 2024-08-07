@@ -15,7 +15,7 @@ config:
       createIfNotExists:
         id: content_creator
         label: Content Creator
-        weight: 1
+        weight: 5
         is_admin: false
       # grant permissions from enabled core modules
       grantPermissions:

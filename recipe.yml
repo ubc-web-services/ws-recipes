@@ -10,11 +10,11 @@ recipes:
   - recipes/ws-recipes/block/block-code
   - recipes/ws-recipes/block/block-quicklinks
   - recipes/ws-recipes/date-formats
+  - recipes/ws-recipes/taxonomy/taxonomy-admin
+  - recipes/ws-recipes/taxonomy/taxonomy-admin-content
   - recipes/ws-recipes/image/image-styles
   # install recipes that rely on other recipes next
   - recipes/ws-recipes/image/image-styles-responsive
-  - recipes/ws-recipes/taxonomy/taxonomy-admin
-  - recipes/ws-recipes/taxonomy/taxonomy-admin-content
   - recipes/ws-recipes/media/media-config
   - recipes/ws-recipes/text-format/text-format-filtered
   - recipes/ws-recipes/custom-entity/custom-entity-ubc-alert
@@ -58,6 +58,7 @@ install:
   - formtips
   - linkit_media_library
   - twig_tweak
+  - scheduler
   - ubc_chosen_style_tweaks
   # views
   - fullcalendar_view
@@ -75,6 +76,7 @@ install:
   - view_unpublished
   - webform
   - webform_node
+  - webform_ui
 config:
   import:
     config_ignore: "*"
@@ -90,6 +92,11 @@ config:
     simple_sitemap: "*"
     webform: "*"
   actions:
+    # admin role weight
+    user.role.administrator:
+      simple_config_update:
+        weight: 10
+    # chosen settings
     # antibot settings
     antibot.settings:
       simple_config_update:
@@ -393,13 +400,14 @@ config:
       createIfNotExists:
         id: content_creator
         label: Content Creator
-        weight: 1
+        weight: 5
         is_admin: false
       # grant permissions from enabled modules
       grantPermissions:
         - 'create terms in tags'
         - 'delete term revisions in tags'
         - 'delete terms in tags'
+        - 'dropzone upload files'
         - 'edit terms in tags'
         - 'revert term revisions in tags'
         - 'schedule publishing of nodes'
@@ -412,7 +420,7 @@ config:
       createIfNotExists:
         id: editor
         label: Editor
-        weight: 2
+        weight: 6
         is_admin: false
       # grant permissions from enabled modules
       grantPermissions:
@@ -445,6 +453,7 @@ config:
         - 'delete terms in tags'
         - 'delete webform submissions any node'
         - 'delete webform submissions own node'
+        - 'dropzone upload files'
         - 'edit any basic block content'
         - 'edit any webform'
         - 'edit own webform'
@@ -452,11 +461,14 @@ config:
         - 'edit terms in tags'
         - 'edit webform submissions any node'
         - 'edit webform submissions own node'
+        - 'revert all revisions'
         - 'revert any basic block content revisions'
         - 'revert term revisions in tags'
         - 'schedule publishing of nodes'
+        - 'view all revisions'
         - 'view any basic block content history'
         - 'view any unpublished content'
+        - 'view own unpublished content'
         - 'view any webform submission'
         - 'view own webform submission'
         - 'view scheduled content'

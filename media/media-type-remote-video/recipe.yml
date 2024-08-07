@@ -14,23 +14,6 @@ install:
   - user
 config:
   actions:
-    image.style.video_thumbnail:
-      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
-      createIfNotExists:
-        langcode: en
-        status: true
-        dependencies: {  }
-        name: video_thumbnail
-        label: 'Video thumbnail'
-        effects:
-          5c2acded-7aed-40d4-a6cc-d12164bb6750:
-            uuid: 5c2acded-7aed-40d4-a6cc-d12164bb6750
-            id: image_scale_and_crop
-            weight: 1
-            data:
-              width: 900
-              height: 506
-              anchor: center-center
     # alter default view mode for remote video media
     core.entity_view_display.media.remote_video.default:
       setComponents:
@@ -66,7 +49,7 @@ config:
       createIfNotExists:
         id: content_creator
         label: Content Creator
-        weight: 1
+        weight: 5
         is_admin: false
       grantPermissions:
         - 'create remote_video media'
@@ -82,7 +65,7 @@ config:
       createIfNotExists:
         id: editor
         label: Editor
-        weight: 2
+        weight: 6
         is_admin: false
       grantPermissions:
         - 'create remote_video media'

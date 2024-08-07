@@ -1,0 +1,5 @@
+name: "Node VPR shared node config"
+description: "Node VPR shared node config recipe for UBC Web Services websites"
+type: "Shared config"
+install:
+  - node
