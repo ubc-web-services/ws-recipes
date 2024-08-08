@@ -88,9 +88,12 @@ config:
     image_widget_crop: "*"
     metatag: "*"
     redirect: "*"
-    scheduler: "*"
+    scheduler:
+      - scheduler.settings
+      - views.view.scheduler_scheduled_content
     simple_sitemap: "*"
     webform: "*"
+    webform_node: "*"
   actions:
     # admin role weight
     user.role.administrator:

@@ -42,11 +42,11 @@ recipes:
   - recipes/ws-recipes/node/node-ubc-profile
   - recipes/ws-recipes/client-vpr/node/node-vpr-profile
   - recipes/ws-recipes/node/node-ubc-private-page
-  - recipes/ws-recipes/client-vpr/node/node-ubc-awards
-  - recipes/ws-recipes/client-vpr/node/node-ubc-project
-  - recipes/ws-recipes/client-vpr/node/node-ubc-publication
-  - recipes/ws-recipes/client-vpr/node/node-ubc-research-project
-  # - recipes/ws-recipes/client-vpr/node/node-vpr-webform
+  # - recipes/ws-recipes/client-vpr/node/node-ubc-awards
+  # - recipes/ws-recipes/client-vpr/node/node-ubc-project
+  # - recipes/ws-recipes/client-vpr/node/node-ubc-publication
+  # - recipes/ws-recipes/client-vpr/node/node-ubc-research-project
+  - recipes/ws-recipes/client-vpr/node/node-vpr-webform
 install:
   # core
   # services
@@ -95,7 +95,6 @@ install:
   - role_delegation
   - view_unpublished
   - webform
-  - webform_node
   - webform_ui
 config:
   import:
@@ -108,7 +107,9 @@ config:
     image_widget_crop: "*"
     metatag: "*"
     redirect: "*"
-    scheduler: "*"
+    scheduler:
+      - scheduler.settings
+      - views.view.scheduler_scheduled_content
     simple_sitemap: "*"
     webform: "*"
   actions:

@@ -30,6 +30,8 @@ install:
   - webform
   - webform_node
 config:
+  import:
+    webform_node: "*"
   actions:
     # update the form display
     core.entity_form_display.node.webform.default:
