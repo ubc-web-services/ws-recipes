@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: text_image_region_image_680
+label: 'Text , Image Region Image, 680'
+effects:
+  14c5fd3f-1d2e-418b-a863-cb7832514f76:
+    uuid: 14c5fd3f-1d2e-418b-a863-cb7832514f76
+    id: focal_point_scale_and_crop
+    weight: -9
+    data:
+      width: 680
+      height: 631
+      crop_type: focal_point

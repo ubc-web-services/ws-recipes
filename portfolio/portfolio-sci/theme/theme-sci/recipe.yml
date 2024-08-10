@@ -1,0 +1,66 @@
+name: "Web Services Science theme"
+description: "Web Services Science theme configuration for UBC Web Services websites"
+type: "Site"
+install:
+  - science
+config:
+  import:
+    science:
+      - block.block.science_alert_banner
+      - block.block.science_announcement_feature
+      - block.block.science_breadcrumbs
+      - block.block.science_conditional_title
+      - block.block.science_drawer
+      - block.block.science_event_feature
+      - block.block.science_help
+      - block.block.science_homepage_feature
+      - block.block.science_homepage_paragraphs
+      - block.block.science_landing_feature
+      - block.block.science_landing_paragraphs
+      - block.block.science_main_menu
+      - block.block.science_mainpagecontent
+      - block.block.science_messages
+      - block.block.science_pagetitle
+      - block.block.science_primaryadminactions
+      - block.block.science_tabs
+  actions:
+    system.theme:
+      simple_config_update:
+        default: science
+    block.block.science_help:
+      simple_config_update:
+        region: help
+    block.block.science_messages:
+      simple_config_update:
+        region: help
+    # disable unneeded blocks
+    block.block.science_page_title:
+      simple_config_update:
+        status: false
+    block.block.science_powered:
+      simple_config_update:
+        status: false
+    block.block.science_search_form_wide:
+      simple_config_update:
+        status: false
+    block.block.science_search_form_narrow:
+      simple_config_update:
+        status: false
+    block.block.science_account_menu:
+      simple_config_update:
+        status: false
+    block.block.science_syndicate:
+      simple_config_update:
+        status: false
+    block.block.science_site_branding:
+      simple_config_update:
+        status: false
+    block.block.science_content:
+      simple_config_update:
+        status: false
+    block.block.science_primary_admin_actions:
+      simple_config_update:
+        status: false
+    block.block.science_primary_local_tasks:
+      simple_config_update:
+        status: false

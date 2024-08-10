@@ -1,0 +1,53 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 14670022-ce9a-46d6-b497-e22ac1930a97
+  bundle: admin_texture_colours
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Light Yellow Upper, Medium Yellow Lower'
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Light Yellow Upper, Medium Yellow Lower | SCIENCE TEST'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/admin-texture-colours/light-yellow-upper-medium-yellow-lower'
+  path:
+    -
+      alias: /admin-texture-colours/light-yellow-upper-medium-yellow-lower
+      langcode: en
+      pathauto: 1
+  field_background:
+    -
+      value: bg-unit-alt-tertiary
+  field_background_texture:
+    -
+      value: 'bg-[url(../img/svg/texture-2-unit.svg)]'
+  field_second_background:
+    -
+      value: text-unit-alt-secondary
+  field_stroke_colour:
+    -
+      value: '#d4a411'
+  field_text_colour:
+    -
+      value: text-unit-alt-primary

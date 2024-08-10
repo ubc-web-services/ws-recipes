@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: text_links_region
+label: 'Text + Links Region'
+icon_uuid: null
+icon_default: null
+description: 'Adds a text and links region that is divided into equal columns, with text on one side and a series of links on the other.'
+behavior_plugins: {  }

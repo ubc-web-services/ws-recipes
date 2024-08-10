@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: masthead_focal_point_sm
+label: 'Masthead, focal point, sm'
+effects:
+  45e67dee-0d83-414d-9175-c6b24e7fc923:
+    uuid: 45e67dee-0d83-414d-9175-c6b24e7fc923
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 267
+      crop_type: focal_point

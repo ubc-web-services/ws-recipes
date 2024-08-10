@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_stroke_colour
+    - taxonomy.vocabulary.admin_texture_colours
+id: taxonomy_term.admin_texture_colours.field_stroke_colour
+field_name: field_stroke_colour
+entity_type: taxonomy_term
+bundle: admin_texture_colours
+label: 'Stroke colour'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

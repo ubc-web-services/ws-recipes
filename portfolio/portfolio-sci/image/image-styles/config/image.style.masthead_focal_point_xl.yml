@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: masthead_focal_point_xl
+label: 'Masthead, focal point, xl'
+effects:
+  90fd5d0d-56d4-4ec0-a2e3-51df464e2119:
+    uuid: 90fd5d0d-56d4-4ec0-a2e3-51df464e2119
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 980
+      height: 653
+      crop_type: focal_point

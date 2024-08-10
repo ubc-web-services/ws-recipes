@@ -1,0 +1,53 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 8b8839ef-d150-4846-b7e4-4aef3e5cdc95
+  bundle: admin_texture_colours
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'White Upper, Medium Yellow Lower'
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'White Upper, Medium Yellow Lower | SCIENCE TEST'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/admin-texture-colours/white-upper-medium-yellow-lower'
+  path:
+    -
+      alias: /admin-texture-colours/white-upper-medium-yellow-lower
+      langcode: en
+      pathauto: 1
+  field_background:
+    -
+      value: bg-white
+  field_background_texture:
+    -
+      value: 'bg-[url(../img/svg/texture-2grey.svg)]'
+  field_second_background:
+    -
+      value: text-unit-alt-secondary
+  field_stroke_colour:
+    -
+      value: '#bbc2c5'
+  field_text_colour:
+    -
+      value: text-unit-alt-primary

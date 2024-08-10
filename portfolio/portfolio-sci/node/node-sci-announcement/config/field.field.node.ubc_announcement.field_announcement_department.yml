@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_announcement_department
+    - node.type.ubc_announcement
+    - taxonomy.vocabulary.department_or_unit
+id: node.ubc_announcement.field_announcement_department
+field_name: field_announcement_department
+entity_type: node
+bundle: ubc_announcement
+label: 'Department / Unit'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      department_or_unit: department_or_unit
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

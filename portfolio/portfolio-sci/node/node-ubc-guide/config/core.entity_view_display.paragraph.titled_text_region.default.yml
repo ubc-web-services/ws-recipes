@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.titled_text_region.field_text_region
+    - field.field.paragraph.titled_text_region.field_title_for_text_region
+    - paragraphs.paragraphs_type.titled_text_region
+  module:
+    - text
+id: paragraph.titled_text_region.default
+targetEntityType: paragraph
+bundle: titled_text_region
+mode: default
+content:
+  field_text_region:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title_for_text_region:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

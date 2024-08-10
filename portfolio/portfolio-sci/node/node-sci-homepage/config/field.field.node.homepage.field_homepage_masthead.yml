@@ -1,0 +1,74 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_homepage_masthead
+    - node.type.homepage
+    - paragraphs.paragraphs_type.masthead
+    - paragraphs.paragraphs_type.masthead_simple
+  module:
+    - entity_reference_revisions
+id: node.homepage.field_homepage_masthead
+field_name: field_homepage_masthead
+entity_type: node
+bundle: homepage
+label: Masthead
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      masthead: masthead
+      masthead_simple: masthead_simple
+    negate: 0
+    target_bundles_drag_drop:
+      card_group:
+        weight: 16
+        enabled: false
+      card_horizontal:
+        weight: 17
+        enabled: false
+      card_vertical:
+        weight: 18
+        enabled: false
+      feature_image:
+        weight: 19
+        enabled: false
+      icon_card:
+        weight: 20
+        enabled: false
+      image_card:
+        weight: 21
+        enabled: false
+      masthead:
+        weight: 22
+        enabled: true
+      masthead_simple:
+        weight: 23
+        enabled: true
+      slide:
+        weight: 24
+        enabled: false
+      slideshow:
+        weight: 25
+        enabled: false
+      tab:
+        weight: 26
+        enabled: false
+      tabcordion:
+        weight: 27
+        enabled: false
+      text:
+        weight: 28
+        enabled: false
+      text_links_image_region:
+        weight: 29
+        enabled: false
+      text_links_region:
+        weight: 30
+        enabled: false
+field_type: entity_reference_revisions

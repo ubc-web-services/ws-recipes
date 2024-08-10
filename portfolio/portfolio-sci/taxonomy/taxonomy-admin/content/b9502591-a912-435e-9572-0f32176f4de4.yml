@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: b9502591-a912-435e-9572-0f32176f4de4
+  bundle: admin_colour_settings
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: None
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'None | SCIENCE TEST'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/admin-colour-settings/none'
+  path:
+    -
+      alias: /admin-colour-settings/none
+      langcode: en
+      pathauto: 1
+  field_background:
+    -
+      value: no-style
+  field_text_colour:
+    -
+      value: no-style

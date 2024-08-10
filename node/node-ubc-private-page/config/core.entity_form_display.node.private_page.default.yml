@@ -57,8 +57,8 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  simple_sitemap:
-    weight: 10
+  scheduler_settings:
+    weight: 50
     region: content
     settings: {  }
     third_party_settings: {  }

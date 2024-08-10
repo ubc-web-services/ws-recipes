@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.ubc_blog
+id: node.ubc_blog.title
+field_name: title
+entity_type: node
+bundle: ubc_blog
+label: Headline
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

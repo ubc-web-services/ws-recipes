@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.titled_text_region.field_text_region
+    - field.field.paragraph.titled_text_region.field_title_for_text_region
+    - paragraphs.paragraphs_type.titled_text_region
+  module:
+    - maxlength
+    - text
+id: paragraph.titled_text_region.default
+targetEntityType: paragraph
+bundle: titled_text_region
+mode: default
+content:
+  field_text_region:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_title_for_text_region:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 255
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+        maxlength_js_enforce: false
+hidden:
+  created: true
+  status: true

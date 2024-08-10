@@ -1,0 +1,33 @@
+name: "Line Art media type"
+description: "Line Art media type recipe for UBC Web Services websites"
+type: "Media"
+recipes:
+  - core/recipes/audio_media_type
+install:
+  # core
+  - file
+  - image
+  - media
+  - path
+  - user
+  # contrib
+  - svg_image
+config:
+  # assign line_art media permissions
+  actions:
+    user.role.editor:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: editor
+        label: Editor
+        weight: 6
+        is_admin: false
+      grantPermissions:
+        - 'create line_art media'
+        - 'delete any line_art media'
+        - 'delete own line_art media'
+        - 'edit any line_art media'
+        - 'edit own line_art media'
+        - 'view any line_art media revisions'
+        - 'delete any line_art media revisions'
+        - 'revert any line_art media revisions'

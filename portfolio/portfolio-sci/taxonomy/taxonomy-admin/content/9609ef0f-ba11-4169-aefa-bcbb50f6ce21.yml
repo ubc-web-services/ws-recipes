@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 9609ef0f-ba11-4169-aefa-bcbb50f6ce21
+  bundle: admin_colour_settings
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'UBC Blue: Polar'
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'UBC Blue: Polar | SCIENCE TEST'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/admin-colour-settings/ubc-blue-polar'
+  path:
+    -
+      alias: /admin-colour-settings/ubc-blue-polar
+      langcode: en
+      pathauto: 1
+  field_background:
+    -
+      value: 'bg-ubc-blue-polar bg-light'
+  field_text_colour:
+    -
+      value: text-ubc-blue-polar

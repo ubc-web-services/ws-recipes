@@ -1,0 +1,107 @@
+
+name: "Science Landing Page type configuration"
+description: "Science Landing Page type configuration recipe for UBC Web Services websites"
+type: 'Content type'
+install:
+  #core
+  - datetime
+  - image
+  - link
+  - menu_ui
+  - node
+  - options
+  - path
+  - responsive_image
+  - taxonomy
+  - text
+  - user
+  - views
+  # contrib
+  - allowed_formats
+  - entity_reference_revisions
+  - field_group
+  - focal_point
+  - maxlength
+  - metatag
+  - pathauto
+  - paragraphs
+  - quick_node_clone
+  - scheduler
+  - simple_sitemap
+  - text_summary_options
+config:
+  actions:
+    # update the form display
+    core.entity_form_display.node.ubc_landing_page.default:
+      setComponents:
+        -
+          name: field_show_gradient_on_image
+          options:
+            type: boolean_checkbox
+            weight: 1
+            region: content
+            settings:
+              display_label: true
+            third_party_settings: {  }
+        -
+          name: field_landing_supporting_content
+          options:
+            type: text_textarea
+            weight: 4
+            region: content
+            settings:
+              rows: 5
+              placeholder: ''
+            third_party_settings: {  }
+        -
+          name: field_landing_image_teaser
+          options:
+            type: string_textfield
+            weight: 1
+            region: content
+            settings:
+              size: 60
+              placeholder: 'Text that will be placed over top of the Feature Image'
+            third_party_settings:
+              maxlength:
+                maxlength_js: 120
+                maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+    # update the featured content display
+    core.entity_view_display.node.ubc_landing_page.featured_content:
+      setComponent:
+        name: field_landing_image_teaser
+        options:
+          type: string
+          weight: 1
+          region: content
+          label: hidden
+          settings:
+            link_to_entity: false
+          third_party_settings: {  }
+    # assign ubc_landing_page permissions
+    user.role.editor:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: editor
+        label: Editor
+        weight: 6
+        is_admin: false
+      grantPermissions:
+        - 'clone ubc_landing_page content'
+    user.role.super_user:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: super_user
+        label: 'Super User'
+        weight: 7
+        is_admin: false
+      grantPermissions:
+        - 'clone ubc_landing_page content'
+        - 'create ubc_landing_page content'
+        - 'delete any ubc_landing_page content'
+        - 'delete own ubc_landing_page content'
+        - 'delete ubc_landing_page revisions'
+        - 'edit any ubc_landing_page content'
+        - 'edit own ubc_landing_page content'
+        - 'revert ubc_landing_page revisions'
+        - 'view ubc_landing_page revisions'

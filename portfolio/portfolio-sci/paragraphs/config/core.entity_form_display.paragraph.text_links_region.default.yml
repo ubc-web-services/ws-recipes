@@ -1,0 +1,78 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_links_region.field_add_page_width_top_border
+    - field.field.paragraph.text_links_region.field_region_links
+    - field.field.paragraph.text_links_region.field_region_text
+    - field.field.paragraph.text_links_region.field_region_title
+    - field.field.paragraph.text_links_region.field_section_title_before_regio
+    - field.field.paragraph.text_links_region.field_show_title_and_text_on_rig
+    - paragraphs.paragraphs_type.text_links_region
+  module:
+    - link
+    - maxlength
+    - text
+id: paragraph.text_links_region.default
+targetEntityType: paragraph
+bundle: text_links_region
+mode: default
+content:
+  field_add_page_width_top_border:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_region_links:
+    type: link_default
+    weight: 5
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 160
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+  field_region_text:
+    type: text_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_region_title:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 255
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+  field_section_title_before_regio:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: 'Optional title to introduce a region'
+    third_party_settings:
+      maxlength:
+        maxlength_js: 255
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+  field_show_title_and_text_on_rig:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

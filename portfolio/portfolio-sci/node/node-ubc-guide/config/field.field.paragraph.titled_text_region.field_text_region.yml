@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_region
+    - paragraphs.paragraphs_type.titled_text_region
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    allowed_formats:
+      - filtered_text
+id: paragraph.titled_text_region.field_text_region
+field_name: field_text_region
+entity_type: paragraph
+bundle: titled_text_region
+label: 'Text region'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

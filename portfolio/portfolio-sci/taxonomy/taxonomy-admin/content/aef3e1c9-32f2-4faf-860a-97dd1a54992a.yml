@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: aef3e1c9-32f2-4faf-860a-97dd1a54992a
+  bundle: admin_colour_settings
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Unit Accent'
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Unit Accent | SCIENCE TEST'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/admin-colour-settings/unit-accent'
+  path:
+    -
+      alias: /admin-colour-settings/unit-accent
+      langcode: en
+      pathauto: 1
+  field_background:
+    -
+      value: 'bg-unit-accent bg-light'
+  field_text_colour:
+    -
+      value: text-unit-accent

@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: Addresses
+vid: addresses
+description: ''
+weight: 0

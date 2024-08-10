@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: Industry
+vid: industry
+description: ''
+weight: 0

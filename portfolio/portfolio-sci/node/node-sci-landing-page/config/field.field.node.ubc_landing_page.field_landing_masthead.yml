@@ -1,0 +1,74 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_landing_masthead
+    - node.type.ubc_landing_page
+    - paragraphs.paragraphs_type.masthead
+    - paragraphs.paragraphs_type.masthead_simple
+  module:
+    - entity_reference_revisions
+id: node.ubc_landing_page.field_landing_masthead
+field_name: field_landing_masthead
+entity_type: node
+bundle: ubc_landing_page
+label: Masthead
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      masthead: masthead
+      masthead_simple: masthead_simple
+    negate: 0
+    target_bundles_drag_drop:
+      card_group:
+        weight: 15
+        enabled: false
+      card_horizontal:
+        weight: 16
+        enabled: false
+      card_vertical:
+        weight: 17
+        enabled: false
+      feature_image:
+        weight: 18
+        enabled: false
+      icon_card:
+        weight: 19
+        enabled: false
+      image_card:
+        weight: 20
+        enabled: false
+      masthead:
+        weight: 21
+        enabled: true
+      masthead_simple:
+        weight: 23
+        enabled: true
+      slide:
+        weight: 22
+        enabled: false
+      slideshow:
+        weight: 23
+        enabled: false
+      tab:
+        weight: 24
+        enabled: false
+      tabcordion:
+        weight: 25
+        enabled: false
+      text:
+        weight: 26
+        enabled: false
+      text_links_image_region:
+        weight: 27
+        enabled: false
+      text_links_region:
+        weight: 28
+        enabled: false
+field_type: entity_reference_revisions

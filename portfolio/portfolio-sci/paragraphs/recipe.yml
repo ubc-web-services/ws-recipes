@@ -1,0 +1,17 @@
+name: "Science paragraphs"
+description: "Science paragraphs recipe for UBC Web Services websites"
+type: "Paragraph type"
+install:
+  # core
+  - image
+  - link
+  - taxonomy
+  - text
+  #contrib
+  - allowed_formats
+  - entity_reference_revisions
+  - field_group
+  - focal_point
+  - maxlength
+  - paragraphs
+  - svg_image

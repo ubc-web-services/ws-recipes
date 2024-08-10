@@ -1,0 +1,64 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.masthead_simple.field_color
+    - field.field.paragraph.masthead_simple.field_image
+    - field.field.paragraph.masthead_simple.field_style
+    - field.field.paragraph.masthead_simple.field_teaser_text
+    - field.field.paragraph.masthead_simple.field_title
+    - image.style.medium
+    - paragraphs.paragraphs_type.masthead_simple
+  module:
+    - maxlength
+    - svg_image
+id: paragraph.masthead_simple.default
+targetEntityType: paragraph
+bundle: masthead_simple
+mode: default
+content:
+  field_color:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    type: image_image
+    weight: 3
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: medium
+    third_party_settings: {  }
+  field_style:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_teaser_text:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: 'This is an optional region for additional short text'
+    third_party_settings:
+      maxlength:
+        maxlength_js: 150
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+  field_title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: 'Note that this is used as the page title in place of the title entered above, but both are required'
+    third_party_settings:
+      maxlength:
+        maxlength_js: 150
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+hidden:
+  created: true
+  status: true

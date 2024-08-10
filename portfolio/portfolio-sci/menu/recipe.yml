@@ -1,0 +1,7 @@
+name: "Science Menus"
+description: "Science Menus recipe for UBC Web Services websites"
+type: "Menu"
+install:
+  # core
+  - menu_ui
+

@@ -1,0 +1,242 @@
+
+name: "Science Announcement type configuration"
+description: "Science Announcement type configuration recipe for UBC Web Services websites"
+type: 'Content type'
+install:
+  #core
+  - datetime
+  - image
+  - link
+  - menu_ui
+  - node
+  - options
+  - path
+  - taxonomy
+  - text
+  - user
+  - views
+  # contrib
+  - allowed_formats
+  - entity_reference_revisions
+  - field_group
+  - focal_point
+  - maxlength
+  - metatag
+  - pathauto
+  - scheduler
+  - simple_sitemap
+  - text_summary_options
+config:
+  actions:
+    # update the featured image field
+    field.field.node.ubc_announcement.field_announcement_feature_image:
+      simple_config_update:
+        description: 'Add a feature image to the announcement. Feature image must be at least 980x653.'
+        settings.file_extensions: 'png jpg jpeg'
+        settings.max_resolution: ''
+        settings.min_resolution: '980x653'
+    # update the form display
+    core.entity_form_display.node.ubc_announcement.default:
+      simple_config_update:
+        third_party_settings.field_group.group_feature_title_override.children:
+          - field_announcement_type
+          - field_announcement_department
+          - field_announcement_industry
+          - field_announcement_topic
+          - field_announcement_media_contact
+          - field_announcement_tags
+      setComponents:
+        -
+          name: body
+          options:
+            type: text_textarea_with_summary
+            weight: 3
+            region: content
+            settings:
+              rows: 9
+              placeholder: ''
+              summary_rows: 3
+              show_summary: true
+            third_party_settings:
+              maxlength:
+                maxlength_js: ''
+                maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+                maxlength_js_summary: 160
+                maxlength_js_label_summary: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+                maxlength_js_enforce: true
+                maxlength_js_truncate_html: false
+              allowed_formats:
+                hide_help: 0
+                hide_guidelines: 0
+        -
+          name: field_announcement_type
+          options:
+            type: options_select
+            weight: 4
+            region: content
+            settings: { }
+            third_party_settings: { }
+        -
+          name: field_announcement_department
+          options:
+            type: options_select
+            weight: 5
+            region: content
+            settings: { }
+            third_party_settings: {  }
+        -
+          name: field_announcement_industry
+          options:
+            type: options_select
+            weight: 6
+            region: content
+            settings: { }
+            third_party_settings: {  }
+        -
+          name: field_announcement_topic
+          options:
+            type: options_select
+            weight: 7
+            region: content
+            settings: { }
+            third_party_settings: {  }
+        -
+          name: field_announcement_media_contact
+          options:
+            type: options_select
+            weight: 8
+            region: content
+            settings: { }
+            third_party_settings: {  }
+        -
+          name: field_announcement_external_link
+          options:
+            type: link_default
+            weight: 3
+            region: content
+            settings:
+              placeholder_url: ''
+              placeholder_title: ''
+            third_party_settings:
+              maxlength:
+                maxlength_js: 100
+                maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+        -
+          name: field_announcement_image_caption
+          options:
+            type: string_textfield
+            weight: 2
+            region: content
+            settings:
+              size: 60
+              placeholder: 'Add a caption to the feature image if applicable.'
+            third_party_settings:
+              maxlength:
+                maxlength_js: 150
+                maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+    # update the default display
+    core.entity_view_display.node.ubc_announcement.default:
+      simple_config_update:
+        hidden.field_announcement_feature_image: true
+        hidden.field_announcement_image_caption: true
+      setComponents:
+        -
+          name: field_announcement_department
+          options:
+            type: entity_reference_label
+            weight: 5
+            region: content
+            label: hidden
+            settings:
+              link: false
+            third_party_settings: {  }
+        -
+          name: field_announcement_industry
+          options:
+            type: entity_reference_label
+            weight: 7
+            region: content
+            label: hidden
+            settings:
+              link: false
+            third_party_settings: {  }
+        -
+          name: field_announcement_media_contact
+          options:
+            type: entity_reference_label
+            weight: 6
+            region: content
+            label: hidden
+            settings:
+              link: false
+            third_party_settings: {  }
+        -
+          name: field_announcement_topic
+          options:
+            type: entity_reference_label
+            weight: 8
+            region: content
+            label: hidden
+            settings:
+              link: false
+            third_party_settings: {  }
+    # update the featured content display
+    core.entity_view_display.node.ubc_announcement.featured_content:
+      simple_config_update:
+        content.field_announcement_feature_image.settings.responsive_image_style: masthead_focal_point
+      setComponent:
+        name: field_announcement_image_caption
+        options:
+          type: string
+          weight: 1
+          region: content
+          label: hidden
+          settings:
+            link_to_entity: false
+          third_party_settings: {  }
+    # assign ubc_announcement permissions
+    user.role.editor:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: editor
+        label: Editor
+        weight: 6
+        is_admin: false
+      grantPermissions:
+        - 'create terms in industry'
+        - 'delete terms in industry'
+        - 'edit terms in industry'
+        - 'create terms in media_contact'
+        - 'delete terms in media_contact'
+        - 'edit terms in media_contact'
+        - 'create terms in topic'
+        - 'delete terms in topic'
+        - 'edit terms in topic'
+    user.role.manager:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: manager
+        label: 'Manager'
+        weight: 7
+        is_admin: false
+      grantPermissions:
+        - 'create ubc_announcement content'
+        - 'delete any ubc_announcement content'
+        - 'delete own ubc_announcement content'
+        - 'delete ubc_announcement revisions'
+        - 'edit any ubc_announcement content'
+        - 'edit own ubc_announcement content'
+        - 'revert ubc_announcement revisions'
+        - 'view ubc_announcement revisions'
+        - 'create terms in announcement_type'
+        - 'delete terms in announcement_type'
+        - 'edit terms in announcement_type'
+        - 'create terms in industry'
+        - 'delete terms in industry'
+        - 'edit terms in industry'
+        - 'create terms in media_contact'
+        - 'delete terms in media_contact'
+        - 'edit terms in media_contact'
+        - 'create terms in topic'
+        - 'delete terms in topic'
+        - 'edit terms in topic'

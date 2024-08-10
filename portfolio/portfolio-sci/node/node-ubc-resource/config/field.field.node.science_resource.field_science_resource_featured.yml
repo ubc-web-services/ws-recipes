@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_science_resource_featured
+    - node.type.science_resource
+  module:
+    - options
+id: node.science_resource.field_science_resource_featured
+field_name: field_science_resource_featured
+entity_type: node
+bundle: science_resource
+label: Featured
+description: 'When a search filter is set this determines sort order.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

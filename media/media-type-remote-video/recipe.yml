@@ -31,7 +31,7 @@ config:
             weight: 0
             region: content
         -
-          name: field_categories
+          name: thumbnail
           options:
             type: image
             label: hidden

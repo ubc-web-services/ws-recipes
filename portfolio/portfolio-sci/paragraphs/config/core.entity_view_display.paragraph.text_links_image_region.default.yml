@@ -1,0 +1,75 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_links_image_region.field_add_page_width_top_border
+    - field.field.paragraph.text_links_image_region.field_region_image
+    - field.field.paragraph.text_links_image_region.field_region_links
+    - field.field.paragraph.text_links_image_region.field_region_text
+    - field.field.paragraph.text_links_image_region.field_region_title
+    - field.field.paragraph.text_links_image_region.field_section_title_before_regio
+    - field.field.paragraph.text_links_image_region.field_show_title_and_text_on_rig
+    - image.style.text_image_region_image_680
+    - paragraphs.paragraphs_type.text_links_image_region
+  module:
+    - link
+    - svg_image
+    - text
+id: paragraph.text_links_image_region.default
+targetEntityType: paragraph
+bundle: text_links_image_region
+mode: default
+content:
+  field_region_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: text_image_region_image_680
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_region_links:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_region_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_region_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_section_title_before_regio:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_add_page_width_top_border: true
+  field_show_title_and_text_on_rig: true

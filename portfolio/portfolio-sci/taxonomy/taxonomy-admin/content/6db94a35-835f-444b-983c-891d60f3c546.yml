@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 6db94a35-835f-444b-983c-891d60f3c546
+  bundle: admin_colour_settings
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'UBC Blue: Neptune'
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'UBC Blue: Neptune | SCIENCE TEST'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/admin-colour-settings/ubc-blue-neptune'
+  path:
+    -
+      alias: /admin-colour-settings/ubc-blue-neptune
+      langcode: en
+      pathauto: 1
+  field_background:
+    -
+      value: 'bg-ubc-blue-neptune bg-light'
+  field_text_colour:
+    -
+      value: text-ubc-blue-neptune

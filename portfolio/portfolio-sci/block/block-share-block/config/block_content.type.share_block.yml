@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: share_block
+label: 'Share Block'
+revision: 0
+description: 'Add some share links'

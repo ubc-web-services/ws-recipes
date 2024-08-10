@@ -1,0 +1,8 @@
+name: "Science Image Styles"
+description: "Science Image styles recipe for UBC Web Services websites"
+type: "Site"
+install:
+  # core
+  - image
+  # contrib
+  - focal_point

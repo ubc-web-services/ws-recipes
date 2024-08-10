@@ -25,8 +25,9 @@ recipes:
   - recipes/ws-recipes/node/node-ubc-homepage
   - recipes/ws-recipes/node/node-ubc-landing-page
   - recipes/ws-recipes/node/node-ubc-page
-  - recipes/ws-recipes/node/node-ubc-private-page
+  # - recipes/ws-recipes/node/node-ubc-private-page
   - recipes/ws-recipes/node/node-ubc-profile
+  - recipes/ws-recipes/node/node-ubc-webform
 install:
   # core
   # services
@@ -39,7 +40,7 @@ install:
   # redirects
   - redirect
   # block
-  # - block_exclude_pages
+  - block_exclude_pages
   # date / event
   - date_popup
   - optional_end_date

@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: ff6da3ac-768d-47e0-9316-648b9bb4d07d
+  bundle: admin_colour_settings
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Unit Secondary'
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Unit Secondary | SCIENCE TEST'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/admin-colour-settings/unit-secondary'
+  path:
+    -
+      alias: /admin-colour-settings/unit-secondary
+      langcode: en
+      pathauto: 1
+  field_background:
+    -
+      value: 'bg-unit-secondary bg-dark'
+  field_text_colour:
+    -
+      value: text-unit-secondary

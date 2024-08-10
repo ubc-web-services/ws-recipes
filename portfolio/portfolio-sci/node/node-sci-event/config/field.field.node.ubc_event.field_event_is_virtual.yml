@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_is_virtual
+    - node.type.ubc_event
+id: node.ubc_event.field_event_is_virtual
+field_name: field_event_is_virtual
+entity_type: node
+bundle: ubc_event
+label: 'Event is virtual'
+description: 'This option allows you to set an event as <em>Virtual</em>, which will override the location.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

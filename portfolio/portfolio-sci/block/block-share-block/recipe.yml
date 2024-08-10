@@ -1,0 +1,26 @@
+name: "Share block"
+description: "Share block recipe for UBC Web Services websites"
+type: "Block type"
+install:
+  # core
+  - block
+  - block_content
+  - link
+  - user
+config:
+  actions:
+    user.role.editor:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: editor
+        label: Editor
+        weight: 6
+        is_admin: false
+      # grant permissions from enabled core modules
+      grantPermissions:
+        - 'create share_block block content'
+        - 'delete any share_block block content'
+        - 'delete any share_block block content revisions'
+        - 'edit any share_block block content'
+        - 'revert any share_block block content revisions'
+        - 'view any share_block block content history'

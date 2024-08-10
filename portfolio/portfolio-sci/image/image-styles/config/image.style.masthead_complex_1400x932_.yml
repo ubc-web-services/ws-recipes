@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: masthead_complex_1400x932_
+label: 'Masthead, complex (1400x932)'
+effects:
+  33c91934-abed-4520-a681-a8dcde83ea3d:
+    uuid: 33c91934-abed-4520-a681-a8dcde83ea3d
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1400
+      height: 932
+      crop_type: focal_point

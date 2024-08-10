@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style
+    - paragraphs.paragraphs_type.masthead
+    - taxonomy.vocabulary.admin_texture_colours
+  content:
+    - 'taxonomy_term:admin_texture_colours:e0d2098c-3e33-4cda-9742-1935b672e010'
+id: paragraph.masthead.field_style
+field_name: field_style
+entity_type: paragraph
+bundle: masthead
+label: Style
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: e0d2098c-3e33-4cda-9742-1935b672e010
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      admin_texture_colours: admin_texture_colours
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

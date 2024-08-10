@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: ee700c79-2a4d-4d30-b92f-e2903313636f
+  bundle: admin_colour_settings
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'UBC Blue'
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'UBC Blue | SCIENCE TEST'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/admin-colour-settings/ubc-blue'
+  path:
+    -
+      alias: /admin-colour-settings/ubc-blue
+      langcode: en
+      pathauto: 1
+  field_background:
+    -
+      value: 'bg-ubc-blue bg-dark'
+  field_text_colour:
+    -
+      value: text-ubc-blue

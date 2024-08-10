@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.masthead_focal_point_lg
+    - image.style.masthead_focal_point_sm
+    - image.style.masthead_focal_point_xl
+id: masthead_focal_point
+label: 'Masthead, focal point'
+image_style_mappings:
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: '(min-width:960px) 980px, (min-width:960px) 600px, 100vw'
+      sizes_image_styles:
+        - masthead_focal_point_lg
+        - masthead_focal_point_sm
+        - masthead_focal_point_xl
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: masthead_focal_point_sm

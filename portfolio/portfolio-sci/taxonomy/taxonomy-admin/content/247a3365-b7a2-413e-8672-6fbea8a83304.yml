@@ -1,0 +1,53 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 247a3365-b7a2-413e-8672-6fbea8a83304
+  bundle: admin_texture_colours
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Light Blue Upper, Medium Blue Lower'
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Light Blue Upper, Medium Blue Lower | SCIENCE TEST'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/admin-texture-colours/light-blue-upper-medium-blue-lower'
+  path:
+    -
+      alias: /admin-texture-colours/light-blue-upper-medium-blue-lower
+      langcode: en
+      pathauto: 1
+  field_background:
+    -
+      value: bg-unit-tertiary
+  field_background_texture:
+    -
+      value: 'bg-[url(../img/svg/texture-2-portfolio.svg)]'
+  field_second_background:
+    -
+      value: text-unit-secondary
+  field_stroke_colour:
+    -
+      value: '#6ec4e8'
+  field_text_colour:
+    -
+      value: text-ubc-blue

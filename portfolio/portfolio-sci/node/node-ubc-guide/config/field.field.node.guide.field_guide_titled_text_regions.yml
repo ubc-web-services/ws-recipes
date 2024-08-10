@@ -1,0 +1,75 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_guide_titled_text_regions
+    - node.type.guide
+    - paragraphs.paragraphs_type.titled_text_region
+  module:
+    - entity_reference_revisions
+id: node.guide.field_guide_titled_text_regions
+field_name: field_guide_titled_text_regions
+entity_type: node
+bundle: guide
+label: 'Titled text regions'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      titled_text_region: titled_text_region
+    negate: 0
+    target_bundles_drag_drop:
+      card_group:
+        weight: 17
+        enabled: false
+      card_horizontal:
+        weight: 18
+        enabled: false
+      card_vertical:
+        weight: 19
+        enabled: false
+      feature_image:
+        weight: 20
+        enabled: false
+      icon_card:
+        weight: 21
+        enabled: false
+      image_card:
+        weight: 22
+        enabled: false
+      masthead:
+        weight: 23
+        enabled: false
+      masthead_simple:
+        weight: 24
+        enabled: false
+      slide:
+        weight: 25
+        enabled: false
+      slideshow:
+        weight: 26
+        enabled: false
+      tab:
+        weight: 27
+        enabled: false
+      tabcordion:
+        weight: 28
+        enabled: false
+      text:
+        weight: 29
+        enabled: false
+      text_links_image_region:
+        weight: 30
+        enabled: false
+      text_links_region:
+        weight: 31
+        enabled: false
+      titled_text_region:
+        weight: 32
+        enabled: true
+field_type: entity_reference_revisions

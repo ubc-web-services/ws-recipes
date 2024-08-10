@@ -1,0 +1,48 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.masthead.field_image
+    - field.field.paragraph.masthead.field_style
+    - field.field.paragraph.masthead.field_title
+    - image.style.masthead_complex_1400x932_
+    - paragraphs.paragraphs_type.masthead
+  module:
+    - svg_image
+id: paragraph.masthead.default
+targetEntityType: paragraph
+bundle: masthead
+mode: default
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: masthead_complex_1400x932_
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_style:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

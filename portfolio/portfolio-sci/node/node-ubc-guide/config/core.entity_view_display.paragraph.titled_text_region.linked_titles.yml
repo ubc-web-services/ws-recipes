@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.linked_titles
+    - field.field.paragraph.titled_text_region.field_text_region
+    - field.field.paragraph.titled_text_region.field_title_for_text_region
+    - paragraphs.paragraphs_type.titled_text_region
+id: paragraph.titled_text_region.linked_titles
+targetEntityType: paragraph
+bundle: titled_text_region
+mode: linked_titles
+content:
+  field_title_for_text_region:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_text_region: true

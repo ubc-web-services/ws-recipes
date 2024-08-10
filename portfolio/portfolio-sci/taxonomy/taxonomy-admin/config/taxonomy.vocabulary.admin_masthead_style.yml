@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'ADMIN - Masthead Style'
+vid: admin_masthead_style
+description: ''
+weight: 0

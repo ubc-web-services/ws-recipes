@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: landscape_600x400_focal_point
+label: 'Landscape, 600x400, Focal Point'
+effects:
+  1bbf11ee-d7ec-452a-8e4a-84b64aee2742:
+    uuid: 1bbf11ee-d7ec-452a-8e4a-84b64aee2742
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 400
+      crop_type: focal_point

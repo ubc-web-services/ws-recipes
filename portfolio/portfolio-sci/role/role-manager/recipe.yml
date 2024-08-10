@@ -1,0 +1,47 @@
+name: "Manager role"
+description: "Manager role recipe for UBC Web Services websites"
+type: "Manager role"
+install:
+  # core
+  - block
+  - contextual
+  - file
+  - menu_ui
+  - path
+  - taxonomy
+  - toolbar
+  - user
+config:
+  actions:
+    user.role.manager:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: manager
+        label: 'Manager'
+        weight: 7
+        is_admin: false
+      # grant permissions from enabled core modules
+      grantPermissions:
+        - 'access administration pages'
+        - 'access block library'
+        - 'access content overview'
+        - 'access contextual links'
+        - 'access files overview'
+        - 'access site in maintenance mode'
+        - 'access taxonomy overview'
+        - 'access toolbar'
+        - 'access user profiles'
+        - 'administer blocks'
+        - 'administer menu'
+        - 'administer nodes'
+        - 'administer permissions'
+        - 'administer taxonomy'
+        - 'administer themes'
+        - 'administer url aliases'
+        - 'administer users'
+        - 'cancel account'
+        - 'change own username'
+        - 'create url aliases'
+        - 'delete any file'
+        - 'select account cancellation method'
+        - 'view the administration theme'

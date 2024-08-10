@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: titled_text_region
+label: 'Titled text region'
+icon_uuid: null
+icon_default: null
+description: 'Adds a region of text preceded by a title.'
+behavior_plugins: {  }

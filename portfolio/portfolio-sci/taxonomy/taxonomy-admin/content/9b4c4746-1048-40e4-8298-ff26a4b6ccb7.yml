@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 9b4c4746-1048-40e4-8298-ff26a4b6ccb7
+  bundle: admin_colour_settings
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'UBC Blue: Cobalt'
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'UBC Blue: Cobalt | SCIENCE TEST'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/admin-colour-settings/ubc-blue-cobalt'
+  path:
+    -
+      alias: /admin-colour-settings/ubc-blue-cobalt
+      langcode: en
+      pathauto: 1
+  field_background:
+    -
+      value: 'bg-ubc-blue-cobalt bg-dark'
+  field_text_colour:
+    -
+      value: text-ubc-blue-cobalt

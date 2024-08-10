@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_show_title_and_text_on_rig
+    - paragraphs.paragraphs_type.text_links_image_region
+id: paragraph.text_links_image_region.field_show_title_and_text_on_rig
+field_name: field_show_title_and_text_on_rig
+entity_type: paragraph
+bundle: text_links_image_region
+label: 'Show Title, Text and Links on Right'
+description: 'By default the title, text and links are aligned left of the image. Choose this option to reverse the layout.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

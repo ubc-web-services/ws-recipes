@@ -1,0 +1,46 @@
+name: "Soundcloud media type"
+description: "Soundcloud media type recipe for UBC Web Services websites"
+type: "Media type"
+install:
+  # core
+  - file
+  - media
+  - media_entity_soundcloud
+  - media_library
+  - path
+  - user
+config:
+  # assign file media permissions
+  actions:
+    user.role.content_creator:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: content_creator
+        label: Content Creator
+        weight: 5
+        is_admin: false
+      grantPermissions:
+        - 'create soundcloud media'
+        - 'delete any soundcloud media'
+        - 'delete own soundcloud media'
+        - 'edit any soundcloud media'
+        - 'edit own soundcloud media'
+        - 'view any soundcloud media revisions'
+        - 'delete any soundcloud media revisions'
+        - 'revert any soundcloud media revisions'
+    user.role.editor:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: editor
+        label: Editor
+        weight: 6
+        is_admin: false
+      grantPermissions:
+        - 'create soundcloud media'
+        - 'delete any soundcloud media'
+        - 'delete own soundcloud media'
+        - 'edit any soundcloud media'
+        - 'edit own soundcloud media'
+        - 'view any soundcloud media revisions'
+        - 'delete any soundcloud media revisions'
+        - 'revert any soundcloud media revisions'

@@ -1,0 +1,8 @@
+name: "Science Responsive image styles"
+description: "Science Responsive image styles recipe for UBC Web Services websites"
+type: "Site"
+install:
+  # core
+  - image
+  - breakpoint
+  - responsive_image

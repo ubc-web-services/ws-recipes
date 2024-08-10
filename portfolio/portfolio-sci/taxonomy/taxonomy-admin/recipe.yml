@@ -1,0 +1,12 @@
+name: "Science Admin taxonomies"
+description: "Science Admin taxonomies recipe for UBC Web Services websites"
+type: "Taxonomy"
+install:
+  # core
+  - taxonomy
+  - user
+  # contrib
+  - metatag
+  - metatag_open_graph
+  - metatag_twitter_cards
+  - pathauto

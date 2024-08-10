@@ -1,0 +1,34 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.linked_titles
+    - field.field.node.guide.body
+    - field.field.node.guide.field_guide_additional_resources
+    - field.field.node.guide.field_guide_documentation_type
+    - field.field.node.guide.field_guide_tags
+    - field.field.node.guide.field_guide_titled_text_regions
+    - node.type.guide
+  module:
+    - entity_reference_revisions
+    - user
+id: node.guide.linked_titles
+targetEntityType: node
+bundle: guide
+mode: linked_titles
+content:
+  field_guide_titled_text_regions:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: linked_titles
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_guide_additional_resources: true
+  field_guide_documentation_type: true
+  field_guide_tags: true
+  links: true

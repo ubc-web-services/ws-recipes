@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_region_text
+    - paragraphs.paragraphs_type.text_links_image_region
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    allowed_formats:
+      - filtered_text
+id: paragraph.text_links_image_region.field_region_text
+field_name: field_region_text
+entity_type: paragraph
+bundle: text_links_image_region
+label: 'Region Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

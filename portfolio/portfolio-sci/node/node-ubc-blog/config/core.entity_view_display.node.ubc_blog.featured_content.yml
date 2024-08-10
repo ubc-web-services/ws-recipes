@@ -1,0 +1,42 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.featured_content
+    - field.field.node.ubc_blog.body
+    - field.field.node.ubc_blog.field_blog_feature_image
+    - field.field.node.ubc_blog.field_blog_feature_image_caption
+    - field.field.node.ubc_blog.field_blog_meta_tags
+    - field.field.node.ubc_blog.field_blog_tags
+    - node.type.ubc_blog
+    - responsive_image.styles.masthead_focal_point
+  module:
+    - responsive_image
+    - user
+id: node.ubc_blog.featured_content
+targetEntityType: node
+bundle: ubc_blog
+mode: featured_content
+content:
+  field_blog_feature_image:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: masthead_focal_point
+      image_link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_blog_feature_image_caption:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true
+  field_blog_meta_tags: true
+  field_blog_tags: true
+  links: true

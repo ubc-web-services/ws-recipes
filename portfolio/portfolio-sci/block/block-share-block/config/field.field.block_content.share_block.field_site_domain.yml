@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.share_block
+    - field.storage.block_content.field_site_domain
+id: block_content.share_block.field_site_domain
+field_name: field_site_domain
+entity_type: block_content
+bundle: share_block
+label: 'Site domain'
+description: 'Add the site''s domain. This should be in the for format of <strong>mysite.ubc.ca</strong> (no <code>https://</code>).'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

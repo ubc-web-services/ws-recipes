@@ -1,0 +1,78 @@
+
+name: "Science Homepage type configuration"
+description: "Science Homepage type configuration recipe for UBC Web Services websites"
+type: 'Content type'
+install:
+  #core
+  - datetime
+  - image
+  - link
+  - menu_ui
+  - node
+  - options
+  - path
+  - responsive_image
+  - taxonomy
+  - text
+  - user
+  - views
+  # contrib
+  - allowed_formats
+  - entity_reference_revisions
+  - field_group
+  - focal_point
+  - maxlength
+  - metatag
+  - pathauto
+  - paragraphs
+  - scheduler
+  - simple_sitemap
+  - text_summary_options
+config:
+  actions:
+    # update the form display
+    core.entity_form_display.node.homepage.default:
+      simple_config_update:
+        third_party_settings.field_group.group_feature_area.children:
+          - field_home_feature_image
+          - field_show_gradient_on_image
+          - field_feature_text
+          - field_feature_link
+      setComponents:
+        -
+          name: field_homepage_cards
+          options:
+            type: entity_reference_paragraphs
+            weight: 3
+            region: content
+            settings:
+              title: Paragraph
+              title_plural: Paragraphs
+              edit_mode: closed
+              add_mode: button
+              form_display_mode: default
+              default_paragraph_type: none
+            third_party_settings: {  }
+        -
+          name: field_show_gradient_on_image
+          options:
+            type: boolean_checkbox
+            weight: 1
+            region: content
+            settings:
+              display_label: true
+            third_party_settings: {  }
+    # assign homepage permissions
+    user.role.super_user:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: super_user
+        label: 'Super User'
+        weight: 7
+        is_admin: false
+      grantPermissions:
+        - 'delete homepage revisions'
+        - 'edit any homepage content'
+        - 'edit own homepage content'
+        - 'revert homepage revisions'
+        - 'view homepage revisions'

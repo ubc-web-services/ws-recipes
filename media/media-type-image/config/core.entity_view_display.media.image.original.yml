@@ -6,7 +6,7 @@ dependencies:
     - field.field.media.image.field_media_image
     - media.type.image
   module:
-    - svg_image
+    - image
 id: media.image.original
 targetEntityType: media
 bundle: image
@@ -20,10 +20,6 @@ content:
       image_style: ''
       image_loading:
         attribute: lazy
-      svg_attributes:
-        width: null
-        height: null
-      svg_render_as_image: true
     third_party_settings: {  }
     weight: 1
     region: content

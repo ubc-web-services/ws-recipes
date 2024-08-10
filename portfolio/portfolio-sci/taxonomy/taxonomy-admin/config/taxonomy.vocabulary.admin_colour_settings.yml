@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'ADMIN - Colour settings'
+vid: admin_colour_settings
+description: 'Defines both a background and equivalent text colour class'
+weight: 0
