@@ -38,6 +38,10 @@ config:
     core.entity_form_display.node.homepage.default:
       simple_config_update:
         content.title.weight: -10
+        hidden:
+          - field_feature_link
+          - field_feature_text
+          - field_home_feature_image
       setComponents:
         -
           name: field_homepage_custom_content
@@ -82,8 +86,18 @@ config:
                 duplicate: 'duplicate'
             third_party_settings: {  }
     # update the default display
+    core.entity_view_display.node.homepage.default:
+      simple_config_update:
+        hidden:
+          - field_homepage_masthead
     # update the featured_content display
     core.entity_view_display.node.homepage.featured_content:
+      simple_config_update:
+        hidden:
+          - field_feature_link
+          - field_feature_text
+          - field_home_feature_image
+          - links
       setComponent:
         name: field_homepage_masthead
         options:
