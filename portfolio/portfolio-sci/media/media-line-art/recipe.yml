@@ -1,8 +1,6 @@
 name: "Line Art media type"
 description: "Line Art media type recipe for UBC Web Services websites"
 type: "Media"
-recipes:
-  - core/recipes/audio_media_type
 install:
   # core
   - file

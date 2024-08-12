@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 87b8535a-bb9f-4504-b602-96673480d292
+  bundle: profile_rank
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Staff
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Staff | SCIENCE TEST'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/profile-rank/staff'
+  path:
+    -
+      alias: /profile-rank/staff
+      langcode: en
+      pathauto: 1

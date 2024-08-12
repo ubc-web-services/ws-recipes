@@ -1,0 +1,5 @@
+name: "Science Node view modes"
+description: "Science Node view modes recipe for UBC Web Services websites"
+type: "View mode"
+install:
+  - node

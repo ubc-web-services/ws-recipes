@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 8bf4dacd-3458-4664-9776-7105f0ff7261
+  bundle: profile_rank
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Faculty
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Faculty | SCIENCE TEST'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/profile-rank/faculty'
+  path:
+    -
+      alias: /profile-rank/faculty
+      langcode: en
+      pathauto: 1

@@ -24,31 +24,33 @@ recipes:
   - recipes/ws-recipes/portfolio/portfolio-sci/image/image-styles-responsive
   # image-styles and image-styles-responsive recipes needed for media recipe
   - recipes/ws-recipes/media/media-config
-  - recipes/ws-recipes/portfolio/portfolio-sci/media/media-line-art
+  - recipes/ws-recipes/portfolio/portfolio-sci/media/media-config
   - recipes/ws-recipes/text-format/text-format-filtered
+  - recipes/ws-recipes/portfolio/portfolio-sci/text-format
   - recipes/ws-recipes/custom-entity/custom-entity-ubc-alert
   # image-styles and image-styles-responsive recipes needed for paragraph-config recipe
   - recipes/ws-recipes/paragraphs/paragraph-config
   - recipes/ws-recipes/portfolio/portfolio-sci/paragraphs
   # node-view-modes, image-styles and image-styles-responsive recipes needed for subsequent node recipes
   - recipes/ws-recipes/node/node-view-modes
+  - recipes/ws-recipes/portfolio/portfolio-sci/node/node-view-modes
   - recipes/ws-recipes/node/node-ubc-announcement
-  # - recipes/ws-recipes/portfolio/portfolio-sci/node/node-sci-announcement
+  - recipes/ws-recipes/portfolio/portfolio-sci/node/node-sci-announcement
   - recipes/ws-recipes/node/node-ubc-event
-  # - recipes/ws-recipes/portfolio/portfolio-sci/node/node-sci-event
+  - recipes/ws-recipes/portfolio/portfolio-sci/node/node-sci-event
   - recipes/ws-recipes/node/node-ubc-homepage
-  # - recipes/ws-recipes/portfolio/portfolio-sci/node/node-sci-homepage
+  - recipes/ws-recipes/portfolio/portfolio-sci/node/node-sci-homepage
   - recipes/ws-recipes/node/node-ubc-landing-page
   # - recipes/ws-recipes/portfolio/portfolio-sci/node/node-sci-landing-page
   - recipes/ws-recipes/node/node-ubc-page
   - recipes/ws-recipes/node/node-ubc-profile
   # - recipes/ws-recipes/portfolio/portfolio-sci/node/node-sci-profile
   # - recipes/ws-recipes/node/node-ubc-private-page
-  # - recipes/ws-recipes/portfolio/portfolio-sci/node/node-ubc-awards
-  # - recipes/ws-recipes/portfolio/portfolio-sci/node/node-ubc-project
-  # - recipes/ws-recipes/portfolio/portfolio-sci/node/node-ubc-publication
-  # - recipes/ws-recipes/portfolio/portfolio-sci/node/node-ubc-research-project
-  # - recipes/ws-recipes/portfolio/portfolio-sci/node/node-sci-webform
+  - recipes/ws-recipes/portfolio/portfolio-sci/node/node-ubc-blog
+  - recipes/ws-recipes/portfolio/portfolio-sci/node/node-ubc-guide
+  # - recipes/ws-recipes/portfolio/portfolio-sci/node/node-ubc-resource
+  - recipes/ws-recipes/portfolio/portfolio-sci/node/node-sci-webform
+  - recipes/ws-recipes/portfolio/portfolio-sci/views
 install:
   # core
   # services

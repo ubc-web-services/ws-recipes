@@ -1,6 +1,6 @@
 
-name: "VPR Webform type configuration"
-description: "VPR Webform type configuration recipe for UBC Web Services websites"
+name: "Science Webform type configuration"
+description: "Science Webform type configuration recipe for UBC Web Services websites"
 type: 'Content type'
 install:
   #core
@@ -33,11 +33,11 @@ config:
     webform_node: "*"
   actions:
     # assign webform permissions
-    user.role.super_user:
+    user.role.manager:
       # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
       createIfNotExists:
-        id: super_user
-        label: 'Super User'
+        id: manager
+        label: 'Manager'
         weight: 7
         is_admin: false
       grantPermissions:

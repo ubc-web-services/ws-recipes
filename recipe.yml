@@ -28,6 +28,7 @@ recipes:
   # - recipes/ws-recipes/node/node-ubc-private-page
   - recipes/ws-recipes/node/node-ubc-profile
   - recipes/ws-recipes/node/node-ubc-webform
+  - recipes/ws-recipes/node/views
 install:
   # core
   # services

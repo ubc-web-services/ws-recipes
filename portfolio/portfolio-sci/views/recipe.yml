@@ -1,0 +1,6 @@
+name: "Science views recipes"
+description: "Science views recipes for UBC Web Services websites"
+type: "Views"
+install:
+  # core
+  - views

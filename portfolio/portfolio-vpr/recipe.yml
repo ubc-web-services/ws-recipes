@@ -47,6 +47,7 @@ recipes:
   # - recipes/ws-recipes/portfolio/portfolio-vpr/node/node-ubc-publication
   # - recipes/ws-recipes/portfolio/portfolio-vpr/node/node-ubc-research-project
   - recipes/ws-recipes/portfolio/portfolio-vpr/node/node-vpr-webform
+  - recipes/ws-recipes/node/views
 install:
   # core
   # services

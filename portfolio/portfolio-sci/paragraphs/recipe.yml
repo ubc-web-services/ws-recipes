@@ -15,3 +15,50 @@ install:
   - maxlength
   - paragraphs
   - svg_image
+config:
+  actions:
+    # Update paragraphs field config
+    field.field.paragraph.masthead_simple.field_image:
+      simple_config_update:
+        settings.file_extensions: 'png jpg jpeg'
+    field.field.paragraph.card_horizontal.field_paragraph_card_image:
+      simple_config_update:
+        settings.file_extensions: 'png jpg jpeg'
+    field.field.paragraph.card_vertical.field_paragraph_card_image:
+      simple_config_update:
+        settings.file_extensions: 'png jpg jpeg'
+    field.field.paragraph.feature_image.field_paragraph_feature_image:
+      simple_config_update:
+        settings.file_extensions: 'png jpg jpeg'
+    field.field.paragraph.image_card.field_paragraph_card_image:
+      simple_config_update:
+        settings.file_extensions: 'png jpg jpeg'
+    # Update paragraphs display modes config
+    core.entity_form_display.paragraph.card_group.default:
+      simple_config_update:
+        third_party_settings.field_group.group_optional_title.weight: -1
+    core.entity_form_display.paragraph.card_horizontal.default:
+      simple_config_update:
+        content.field_paragraph_card_link.third_party_settings.maxlength.maxlength_js: 100
+        content.field_paragraph_card_link.third_party_settings.maxlength.maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+        content.field_paragraph_card_title.weight: -1
+    core.entity_form_display.paragraph.card_vertical.default:
+      simple_config_update:
+        content.field_paragraph_card_link.third_party_settings.maxlength.maxlength_js: 100
+        content.field_paragraph_card_link.third_party_settings.maxlength.maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+        content.field_paragraph_card_title.weight: -1
+    core.entity_form_display.paragraph.feature_image.default:
+      simple_config_update:
+        content.field_paragraph_card_link.third_party_settings.maxlength.maxlength_js: 100
+        content.field_paragraph_card_link.third_party_settings.maxlength.maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+        content.field_paragraph_card_title.weight: -1
+    core.entity_form_display.paragraph.icon_card.default:
+      simple_config_update:
+        content.field_paragraph_icon_card_link.third_party_settings.maxlength.maxlength_js: 100
+        content.field_paragraph_icon_card_link.third_party_settings.maxlength.maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+        content.field_paragraph_icon_card_title.weight: -1
+    core.entity_form_display.paragraph.image_card.default:
+      simple_config_update:
+        content.field_paragraph_card_link.third_party_settings.maxlength.maxlength_js: 100
+        content.field_paragraph_card_link.third_party_settings.maxlength.maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+        content.field_paragraph_card_title.weight: -1

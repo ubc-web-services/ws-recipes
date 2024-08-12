@@ -23,7 +23,6 @@ install:
   - maxlength
   - metatag
   - pathauto
-  - quick_node_clone
   - scheduler
   - simple_sitemap
   - text_summary_options
@@ -204,19 +203,17 @@ config:
         weight: 6
         is_admin: false
       grantPermissions:
-        - 'clone ubc_profile content'
         - 'create terms in research_theme'
         - 'delete terms in research_theme'
         - 'edit terms in research_theme'
-    user.role.super_user:
+    user.role.manager:
       # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
       createIfNotExists:
-        id: super_user
-        label: 'Super User'
+        id: manager
+        label: 'Manager'
         weight: 7
         is_admin: false
       grantPermissions:
-        - 'clone ubc_profile content'
         - 'create ubc_profile content'
         - 'delete any ubc_profile content'
         - 'delete own ubc_profile content'

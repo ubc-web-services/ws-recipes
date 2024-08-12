@@ -25,7 +25,6 @@ install:
   - metatag
   - pathauto
   - paragraphs
-  - quick_node_clone
   - scheduler
   - simple_sitemap
   - text_summary_options
@@ -79,24 +78,14 @@ config:
             link_to_entity: false
           third_party_settings: {  }
     # assign ubc_landing_page permissions
-    user.role.editor:
+    user.role.manager:
       # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
       createIfNotExists:
-        id: editor
-        label: Editor
-        weight: 6
-        is_admin: false
-      grantPermissions:
-        - 'clone ubc_landing_page content'
-    user.role.super_user:
-      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
-      createIfNotExists:
-        id: super_user
-        label: 'Super User'
+        id: manager
+        label: 'Manager'
         weight: 7
         is_admin: false
       grantPermissions:
-        - 'clone ubc_landing_page content'
         - 'create ubc_landing_page content'
         - 'delete any ubc_landing_page content'
         - 'delete own ubc_landing_page content'

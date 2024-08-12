@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.card_vertical_no_image
+label: 'Card: Vertical, no image'
+targetEntityType: node
+cache: true

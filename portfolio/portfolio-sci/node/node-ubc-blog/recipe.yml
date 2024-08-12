@@ -1,5 +1,5 @@
-name: "Awards type configuration"
-description: "Awards type configuration recipe for UBC Web Services websites"
+name: "Blog type configuration"
+description: "Blog type configuration recipe for UBC Web Services websites"
 type: 'Content type'
 install:
   #core
@@ -22,24 +22,11 @@ install:
   - maxlength
   - metatag
   - pathauto
-  - quick_node_clone
   - scheduler
   - simple_sitemap
   - text_summary_options
 config:
   actions:
-    # add view modes if they aren't present
-    core.entity_view_mode.node.card_horizontal:
-      createIfNotExists:
-        langcode: en
-        status: true
-        dependencies:
-          module:
-            - node
-        id: node.card_horizontal
-        label: 'Card: Horizontal'
-        targetEntityType: node
-        cache: true
     # assign awards permissions
     user.role.content_creator:
       # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
@@ -49,12 +36,12 @@ config:
         weight: 5
         is_admin: false
       grantPermissions:
-        - 'create awards content'
-        - 'delete own awards content'
-        - 'delete awards revisions'
-        - 'edit own awards content'
-        - 'revert awards revisions'
-        - 'view awards revisions'
+        - 'create ubc_blog content'
+        - 'delete own ubc_blog content'
+        - 'delete ubc_blog revisions'
+        - 'edit own ubc_blog content'
+        - 'revert ubc_blog revisions'
+        - 'view ubc_blog revisions'
     user.role.editor:
       # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
       createIfNotExists:
@@ -63,39 +50,27 @@ config:
         weight: 6
         is_admin: false
       grantPermissions:
-        - 'create awards content'
-        - 'delete any awards content'
-        - 'delete own awards content'
-        - 'delete awards revisions'
-        - 'edit any awards content'
-        - 'edit own awards content'
-        - 'revert awards revisions'
-        - 'view awards revisions'
-        - 'create terms in award_category'
-        - 'delete terms in award_category'
-        - 'edit terms in award_category'
-        - 'create terms in discipline'
-        - 'delete terms in discipline'
-        - 'edit terms in discipline'
-    user.role.super_user:
+        - 'create ubc_blog content'
+        - 'delete any ubc_blog content'
+        - 'delete own ubc_blog content'
+        - 'delete ubc_blog revisions'
+        - 'edit any ubc_blog content'
+        - 'edit own ubc_blog content'
+        - 'revert ubc_blog revisions'
+        - 'view ubc_blog revisions'
+    user.role.manager:
       # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
       createIfNotExists:
-        id: super_user
-        label: 'Super User'
+        id: manager
+        label: 'Manager'
         weight: 7
         is_admin: false
       grantPermissions:
-        - 'create awards content'
-        - 'delete any awards content'
-        - 'delete own awards content'
-        - 'delete awards revisions'
-        - 'edit any awards content'
-        - 'edit own awards content'
-        - 'revert awards revisions'
-        - 'view awards revisions'
-        - 'create terms in award_category'
-        - 'delete terms in award_category'
-        - 'edit terms in award_category'
-        - 'create terms in discipline'
-        - 'delete terms in discipline'
-        - 'edit terms in discipline'
+        - 'create ubc_blog content'
+        - 'delete any ubc_blog content'
+        - 'delete own ubc_blog content'
+        - 'delete ubc_blog revisions'
+        - 'edit any ubc_blog content'
+        - 'edit own ubc_blog content'
+        - 'revert ubc_blog revisions'
+        - 'view ubc_blog revisions'

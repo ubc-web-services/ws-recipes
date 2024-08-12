@@ -1,0 +1,52 @@
+name: "General media configuration"
+description: "General media configuration recipe for UBC Web Services websites"
+type: "Media configuration"
+recipes:
+  - recipes/ws-recipes/portfolio/portfolio-sci/media/media-line-art
+install:
+  # core
+  - media
+  - user
+  # contrib
+  - crop
+  - dropzonejs
+  - image_widget_crop
+  - media_bulk_upload_dropzonejs
+  - media_alias_display
+  - media_bulk_upload
+  - media_entity_file_replace
+  - svg_image
+config:
+  actions:
+    # Update media form modes config
+    core.entity_form_display.media.image.default:
+      setComponents:
+        -
+          name: name
+          options:
+            type: string_textfield
+            weight: 2
+            region: content
+            settings:
+              link: 60
+              placeholder: ''
+            third_party_settings: {  }
+        -
+          name: replace_file
+          options:
+            weight: 3
+            region: content
+            settings: { }
+            third_party_settings: {  }
+    core.entity_form_display.media.private_file.default:
+      setComponent:
+        name: replace_file
+        options:
+          weight: 3
+          region: content
+          settings: { }
+          third_party_settings: {  }
+    # update media bulk upload settings
+    media_bulk_upload.media_bulk_config.bulk_upload_documents:
+      simple_config_update:
+        label: Bulk Upload Files

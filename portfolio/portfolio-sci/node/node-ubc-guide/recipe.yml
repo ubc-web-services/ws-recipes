@@ -1,45 +1,30 @@
-name: "Partner Organization type configuration"
-description: "Partner Organization type configuration recipe for UBC Web Services websites"
+name: "Guide type configuration"
+description: "Guide type configuration recipe for UBC Web Services websites"
 type: 'Content type'
 install:
   #core
-  - datetime
-  - image
   - link
   - menu_ui
   - node
   - options
   - path
-  - responsive_image
   - taxonomy
   - text
   - user
   - views
   # contrib
   - allowed_formats
+  - entity_reference_revisions
   - field_group
-  - focal_point
   - maxlength
   - metatag
+  - paragraphs
   - pathauto
-  - quick_node_clone
   - scheduler
   - simple_sitemap
   - text_summary_options
 config:
   actions:
-    # add view modes if they aren't present
-    core.entity_view_mode.node.featured_content:
-      createIfNotExists:
-        langcode: en
-        status: true
-        dependencies:
-          module:
-            - node
-        id: node.featured_content
-        label: 'Featured Content'
-        targetEntityType: node
-        cache: true
     # assign ubc_partner_organization permissions
     user.role.content_creator:
       # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
@@ -49,12 +34,12 @@ config:
         weight: 5
         is_admin: false
       grantPermissions:
-        - 'create ubc_partner_organization content'
-        - 'delete own ubc_partner_organization content'
-        - 'delete ubc_partner_organization revisions'
-        - 'edit own ubc_partner_organization content'
-        - 'revert ubc_partner_organization revisions'
-        - 'view ubc_partner_organization revisions'
+        - 'create guide content'
+        - 'delete own guide content'
+        - 'delete guide revisions'
+        - 'edit own guide content'
+        - 'revert guide revisions'
+        - 'view guide revisions'
     user.role.editor:
       # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
       createIfNotExists:
@@ -63,37 +48,34 @@ config:
         weight: 6
         is_admin: false
       grantPermissions:
-        - 'create ubc_partner_organization content'
-        - 'delete any ubc_partner_organization content'
-        - 'delete own ubc_partner_organization content'
-        - 'delete ubc_partner_organization revisions'
-        - 'edit any ubc_partner_organization content'
-        - 'edit own ubc_partner_organization content'
-        - 'revert ubc_partner_organization revisions'
-        - 'view ubc_partner_organization revisions'
-        - 'create terms in award_category'
-        - 'delete terms in award_category'
-        - 'edit terms in award_category'
-        - 'create terms in partner_location'
-        - 'delete terms in partner_location'
-        - 'edit terms in partner_location'
-    user.role.super_user:
+        - 'create guide content'
+        - 'delete any guide content'
+        - 'delete own guide content'
+        - 'delete guide revisions'
+        - 'edit any guide content'
+        - 'edit own guide content'
+        - 'revert guide revisions'
+        - 'view guide revisions'
+        - 'create terms in documentation_type'
+        - 'delete terms in documentation_type'
+        - 'edit terms in documentation_type'
+    user.role.manager:
       # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
       createIfNotExists:
-        id: super_user
-        label: 'Super User'
+        id: manager
+        label: 'Manager'
         weight: 7
         is_admin: false
       grantPermissions:
-        - 'create ubc_partner_organization content'
-        - 'delete any ubc_partner_organization content'
-        - 'delete own ubc_partner_organization content'
-        - 'delete ubc_partner_organization revisions'
-        - 'edit any ubc_partner_organization content'
-        - 'edit own ubc_partner_organization content'
-        - 'revert ubc_partner_organization revisions'
-        - 'view ubc_partner_organization revisions'
-        - 'create terms in partner_location'
-        - 'delete terms in partner_location'
-        - 'edit terms in partner_location'
+        - 'create guide content'
+        - 'delete any guide content'
+        - 'delete own guide content'
+        - 'delete guide revisions'
+        - 'edit any guide content'
+        - 'edit own guide content'
+        - 'revert guide revisions'
+        - 'view guide revisions'
+        - 'create terms in documentation_type'
+        - 'delete terms in documentation_type'
+        - 'edit terms in documentation_type'
 

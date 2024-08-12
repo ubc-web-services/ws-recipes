@@ -30,44 +30,77 @@ install:
   - text_summary_options
 config:
   actions:
+    # update field settings
+    field.field.node.homepage.field_home_feature_image:
+      simple_config_update:
+        settings.file_extensions: 'png jpg jpeg'
     # update the form display
     core.entity_form_display.node.homepage.default:
       simple_config_update:
-        third_party_settings.field_group.group_feature_area.children:
-          - field_home_feature_image
-          - field_show_gradient_on_image
-          - field_feature_text
-          - field_feature_link
+        content.title.weight: -10
       setComponents:
         -
-          name: field_homepage_cards
+          name: field_homepage_custom_content
           options:
-            type: entity_reference_paragraphs
+            type: paragraphs
             weight: 3
             region: content
             settings:
               title: Paragraph
               title_plural: Paragraphs
-              edit_mode: closed
+              edit_mode: open
+              closed_mode: 'summary'
+              autocollapse: 'none'
+              closed_mode_threshold: 0
               add_mode: button
               form_display_mode: default
               default_paragraph_type: none
+              features:
+                add_above: 'add_above'
+                collapse_edit_all: 'collapse_edit_all'
+                duplicate: 'duplicate'
             third_party_settings: {  }
         -
-          name: field_show_gradient_on_image
+          name: field_homepage_masthead
           options:
-            type: boolean_checkbox
+            type: paragraphs
             weight: 1
             region: content
             settings:
-              display_label: true
+              title: Masthead
+              title_plural: 'Mastheads'
+              edit_mode: open
+              closed_mode: 'summary'
+              autocollapse: 'none'
+              closed_mode_threshold: 0
+              add_mode: button
+              form_display_mode: default
+              default_paragraph_type: none
+              features:
+                add_above: 0
+                collapse_edit_all: 'collapse_edit_all'
+                duplicate: 'duplicate'
             third_party_settings: {  }
+    # update the default display
+    # update the featured_content display
+    core.entity_view_display.node.homepage.featured_content:
+      setComponent:
+        name: field_homepage_masthead
+        options:
+          type: entity_reference_revisions_entity_view
+          weight: 0
+          label: hidden
+          region: content
+          settings:
+            view_mode: default
+            link: false
+          third_party_settings: { }
     # assign homepage permissions
-    user.role.super_user:
+    user.role.manager:
       # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
       createIfNotExists:
-        id: super_user
-        label: 'Super User'
+        id: manager
+        label: 'Manager'
         weight: 7
         is_admin: false
       grantPermissions:
