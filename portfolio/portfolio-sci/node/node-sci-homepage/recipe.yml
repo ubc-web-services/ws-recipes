@@ -28,6 +28,7 @@ install:
   - scheduler
   - simple_sitemap
   - text_summary_options
+  - ubc_science_nodes
 config:
   actions:
     # update field settings
