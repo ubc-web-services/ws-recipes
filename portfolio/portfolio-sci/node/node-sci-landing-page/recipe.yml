@@ -41,58 +41,45 @@ config:
           text_links_region: text_links_region
           text_links_image_region: text_links_image_region
         settings.handler_settings.target_bundles_drag_drop:
-          -
-            card_group:
-              weight: '10'
-              enabled: true
-          -
-            card_horizontal:
-              weight: '14'
-              enabled: false
-          -
-            card_vertical:
-              weight: '15'
-              enabled: false
-          -
-            feature_image:
-              weight: '11'
-              enabled: true
-          -
-            icon_card:
-              weight: '12'
-              enabled: false
-          -
-            image_card:
-              weight: '13'
-              enabled: false
-          -
-            slide:
-              weight: '19'
-              enabled: false
-          -
-            slideshow:
-              weight: '20'
-              enabled: false
-          -
-            tab:
-              weight: '15'
-              enabled: false
-          -
-            tabcordion:
-              weight: '16'
-              enabled: true
-          -
-            text:
-              weight: '17'
-              enabled: true
-          -
-            text_links_image_region:
-              weight: '25'
-              enabled: true
-          -
-            text_links_region:
-              weight: '24'
-              enabled: true
+          card_group:
+            weight: '10'
+            enabled: true
+          card_horizontal:
+            weight: '14'
+            enabled: false
+          card_vertical:
+            weight: '15'
+            enabled: false
+          feature_image:
+            weight: '11'
+            enabled: true
+          icon_card:
+            weight: '12'
+            enabled: false
+          image_card:
+            weight: '13'
+            enabled: false
+          slide:
+            weight: '19'
+            enabled: false
+          slideshow:
+            weight: '20'
+            enabled: false
+          tab:
+            weight: '15'
+            enabled: false
+          tabcordion:
+            weight: '16'
+            enabled: true
+          text:
+            weight: '17'
+            enabled: true
+          text_links_image_region:
+            weight: '25'
+            enabled: true
+          text_links_region:
+            weight: '24'
+            enabled: true
     field.field.node.ubc_landing_page.field_landing_feature_image:
       simple_config_update:
         label: Card Image
