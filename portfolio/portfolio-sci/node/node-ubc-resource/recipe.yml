@@ -54,9 +54,9 @@ config:
         - 'edit own science_resource content'
         - 'revert science_resource revisions'
         - 'view science_resource revisions'
-        - 'create terms in research_type'
-        - 'delete terms in research_type'
-        - 'edit terms in research_type'
+        - 'create terms in resource_type'
+        - 'delete terms in resource_type'
+        - 'edit terms in resource_type'
     user.role.manager:
       # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
       createIfNotExists:
@@ -73,7 +73,7 @@ config:
         - 'edit own science_resource content'
         - 'revert science_resource revisions'
         - 'view science_resource revisions'
-        - 'create terms in research_type'
-        - 'delete terms in research_type'
-        - 'edit terms in research_type'
+        - 'create terms in resource_type'
+        - 'delete terms in resource_type'
+        - 'edit terms in resource_type'
 
