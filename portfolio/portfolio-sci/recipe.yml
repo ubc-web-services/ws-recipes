@@ -44,7 +44,7 @@ recipes:
   - recipes/ws-recipes/portfolio/portfolio-sci/node/node-sci-landing-page
   - recipes/ws-recipes/node/node-ubc-page
   - recipes/ws-recipes/node/node-ubc-profile
-  # - recipes/ws-recipes/portfolio/portfolio-sci/node/node-sci-profile
+  - recipes/ws-recipes/portfolio/portfolio-sci/node/node-sci-profile
   # - recipes/ws-recipes/node/node-ubc-private-page
   - recipes/ws-recipes/portfolio/portfolio-sci/node/node-ubc-blog
   - recipes/ws-recipes/portfolio/portfolio-sci/node/node-ubc-guide

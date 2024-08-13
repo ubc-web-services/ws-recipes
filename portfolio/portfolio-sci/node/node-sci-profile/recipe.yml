@@ -4,7 +4,6 @@ description: "Science Profile type configuration recipe for UBC Web Services web
 type: 'Content type'
 install:
   #core
-  - datetime
   - image
   - link
   - menu_ui
@@ -13,11 +12,14 @@ install:
   - path
   - responsive_image
   - taxonomy
+  - telephone
   - text
   - user
   - views
   # contrib
+  - address
   - allowed_formats
+  - conditional_fields
   - field_group
   - focal_point
   - maxlength
@@ -28,27 +30,32 @@ install:
   - text_summary_options
 config:
   actions:
-    # allow unlimited departments / units
-    field.storage.node.field_profile_department_unit:
+    # update fields
+    field.field.node.ubc_profile.field_profile_accreditation:
       simple_config_update:
-        cardinality: -1
+        label: 'Accreditation, Credentials'
+    field.field.node.ubc_profile.field_profile_image:
+      simple_config_update:
+        settings.file_extensions: 'png jpg jpeg'
     # update the form display
     core.entity_form_display.node.ubc_profile.default:
       simple_config_update:
+        hidden:
+          - field_profile_office
         third_party_settings.field_group.group_metadata.children:
-          - field_profile_research_area
-          - field_profile_category
-          - field_profile_affiliated
-          - field_profile_faculty
           - field_profile_department_unit
-          - field_profile_role
+          - field_profile_address_tax
+          - field_profile_type
+          - field_profile_program
+          - field_profile_year
+          - field_profile_rank
           - field_profile_tags
       setComponents:
         -
-          name: field_profile_affiliated
+          name: field_profile_address_tax
           options:
             type: options_select
-            weight: 8
+            weight: 5
             region: content
             settings: { }
             third_party_settings: {  }
@@ -61,139 +68,219 @@ config:
             settings: { }
             third_party_settings: {  }
         -
-          name: field_profile_category
+          name: field_profile_job_title
           options:
-            type: options_select
-            weight: 7
-            region: content
-            settings: { }
-            third_party_settings: {  }
-        -
-          name: field_profile_faculty
-          options:
-            type: options_select
-            weight: 9
-            region: content
-            settings: { }
-            third_party_settings: {  }
-        -
-          name: field_profile_supporting
-          options:
-            type: text_textarea
-            weight: 7
+            type: string_textfield
+            weight: 4
             region: content
             settings:
-              rows: 5
+              size: 60
               placeholder: ''
+            third_party_settings:
+              maxlength:
+                maxlength_js: 255
+                maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+              conditional_fields : { }
+        -
+          name: field_profile_program
+          options:
+            type: string_textfield
+            weight: 30
+            region: content
+            settings:
+              size: 60
+              placeholder: ''
+            third_party_settings:
+              maxlength:
+                maxlength_js: 255
+                maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+                maxlength_js_enforce: false
+              conditional_fields : { }
+        -
+          name: field_profile_rank
+          options:
+            type: options_select
+            weight: 32
+            region: content
+            settings: { }
             third_party_settings: {  }
         -
-          name: field_profile_google_scholar
+          name: field_profile_sidebar_links
           options:
             type: link_default
-            weight: 12
+            weight: 10
             region: content
             settings:
               placeholder_url: ''
               placeholder_title: ''
+            third_party_settings:
+              maxlength:
+                maxlength_js: 100
+                maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+              conditional_fields : { }
+        -
+          name: field_profile_type
+          options:
+            type: options_select
+            weight: 6
+            region: content
+            settings: { }
             third_party_settings: {  }
         -
-          name: field_profile_name_prefix
+          name: field_profile_year
           options:
-            type: string_textfield
-            weight: 3
+            type: number
+            weight: 31
             region: content
             settings:
-              size: '60'
-              placeholder: 'e.g. Ms, Dr'
+              placeholder: ''
             third_party_settings:
               maxlength:
-                maxlength_js: 120
-                maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+                conditional_fields: { }
+    # update the default display
+    core.entity_view_display.node.ubc_profile.default:
+      setComponents:
         -
-          name: field_profile_name_suffix
+          name: field_profile_address_tax
           options:
-            type: string_textfield
-            weight: 3
+            type: entity_reference_label
+            weight: 16
             region: content
+            label: hidden
             settings:
-              size: '60'
-              placeholder: 'e.g. PhD, MSc'
-            third_party_settings:
-              maxlength:
-                maxlength_js: 120
-                maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+              link: false
+            third_party_settings: { }
         -
-          name: field_profile_preferred_website
+          name: field_profile_rank
           options:
-            type: link_default
+            type: entity_reference_label
             weight: 13
             region: content
+            label: hidden
             settings:
-              placeholder_url: ''
-              placeholder_title: ''
+              link: false
             third_party_settings: { }
         -
-          name: field_profile_research_area
+          name: field_profile_type
           options:
-            type: options_select
-            weight: 5
+            type: entity_reference_label
+            weight: 14
             region: content
-            settings: { }
+            label: hidden
+            settings:
+              link: false
             third_party_settings: { }
         -
-          name: field_profile_role
+          name: field_profile_sidebar_links
           options:
-            type: options_select
-            weight: 11
+            type: link
+            weight: 10
             region: content
-            settings: { }
+            label: hidden
+            settings:
+              trim_length: 80
+              url_only: false
+              url_plain: false
+              rel: ''
+              target: ''
             third_party_settings: { }
-    # update the card horizontal display
+        -
+          name: field_profile_program
+          options:
+            type: string
+            weight: 17
+            region: content
+            label: hidden
+            settings:
+              link_to_entity: false
+        -
+          name: field_profile_year
+          options:
+            type: number_integer
+            weight: 18
+            region: content
+            label: hidden
+            settings:
+              thousand_separator: ''
+              prefix_suffix: true
+            third_party_settings: { }
+    # update the card_horizontal display
     core.entity_view_display.node.ubc_profile.card_horizontal:
-      setComponents:
-        -
-          name: field_profile_name_prefix
-          options:
-            type: string
-            weight: 0
-            label: hidden
-            region: content
-            settings:
-              link_to_entity: false
-            third_party_settings: {  }
-        -
-          name: field_profile_name_suffix
-          options:
-            type: string
-            weight: 1
-            label: hidden
-            region: content
-            settings:
-              link_to_entity: false
-            third_party_settings: {  }
-    # update the card vertical display
+      simple_config_update:
+        hidden:
+          - body
+          - field_profile_address_tax
+          - field_profile_email
+          - field_profile_first_name
+          - field_profile_last_name
+          - field_profile_meta_tags
+          - field_profile_office
+          - field_profile_phone
+          - field_profile_program
+          - field_profile_pronouns
+          - field_profile_rank
+          - field_profile_sidebar_links
+          - field_profile_tags
+          - field_profile_type
+          - field_profile_year
+          - links
+    # update the card_vertical display
     core.entity_view_display.node.ubc_profile.card_vertical:
-      setComponents:
-        -
-          name: field_profile_name_prefix
-          options:
-            type: string
-            weight: 0
-            label: hidden
-            region: content
-            settings:
-              link_to_entity: false
-            third_party_settings: {  }
-        -
-          name: field_profile_name_suffix
-          options:
-            type: string
-            weight: 1
-            label: hidden
-            region: content
-            settings:
-              link_to_entity: false
-            third_party_settings: {  }
+      simple_config_update:
+        hidden:
+          - body
+          - field_profile_address_tax
+          - field_profile_email
+          - field_profile_first_name
+          - field_profile_last_name
+          - field_profile_meta_tags
+          - field_profile_office
+          - field_profile_phone
+          - field_profile_program
+          - field_profile_pronouns
+          - field_profile_rank
+          - field_profile_sidebar_links
+          - field_profile_tags
+          - field_profile_type
+          - field_profile_year
+          - links
+      setComponent:
+        name: field_profile_image
+        options:
+          type: image
+          weight: 0
+          label: hidden
+          region: content
+          settings:
+            image_link: ''
+            image_style: landscape_600x400_focal_point
+            svg_attributes:
+              width: null
+              height: null
+            svg_render_as_image: true
+            image_loading:
+              attribute: lazy
+          third_party_settings: {  }
+    # update the teaser display
+    core.entity_view_display.node.ubc_profile.teaser:
+      simple_config_update:
+        hidden:
+          - body
+          - field_profile_accreditation
+          - field_profile_address_tax
+          - field_profile_first_name
+          - field_profile_image
+          - field_profile_last_name
+          - field_profile_meta_tags
+          - field_profile_office
+          - field_profile_program
+          - field_profile_pronouns
+          - field_profile_rank
+          - field_profile_sidebar_links
+          - field_profile_tags
+          - field_profile_type
+          - field_profile_year
+          - links
     # assign ubc_profile permissions
     user.role.editor:
       # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
@@ -203,9 +290,15 @@ config:
         weight: 6
         is_admin: false
       grantPermissions:
-        - 'create terms in research_theme'
-        - 'delete terms in research_theme'
-        - 'edit terms in research_theme'
+        - 'create terms in addresses'
+        - 'delete terms in addresses'
+        - 'edit terms in addresses'
+        - 'create terms in profile_rank'
+        - 'delete terms in profile_rank'
+        - 'edit terms in profile_rank'
+        - 'create terms in profile_type'
+        - 'delete terms in profile_type'
+        - 'edit terms in profile_type'
     user.role.manager:
       # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
       createIfNotExists:
@@ -222,7 +315,13 @@ config:
         - 'edit own ubc_profile content'
         - 'revert ubc_profile revisions'
         - 'view ubc_profile revisions'
-        - 'create terms in research_theme'
-        - 'delete terms in research_theme'
-        - 'edit terms in research_theme'
+        - 'create terms in addresses'
+        - 'delete terms in addresses'
+        - 'edit terms in addresses'
+        - 'create terms in profile_rank'
+        - 'delete terms in profile_rank'
+        - 'edit terms in profile_rank'
+        - 'create terms in profile_type'
+        - 'delete terms in profile_type'
+        - 'edit terms in profile_type'
 
