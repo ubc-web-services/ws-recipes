@@ -40,8 +40,7 @@ config:
     # update the form display
     core.entity_form_display.node.ubc_profile.default:
       simple_config_update:
-        hidden:
-          - field_profile_office
+        hidden.field_profile_office: true
         third_party_settings.field_group.group_metadata.children:
           - field_profile_department_unit
           - field_profile_address_tax
@@ -207,43 +206,41 @@ config:
     # update the card_horizontal display
     core.entity_view_display.node.ubc_profile.card_horizontal:
       simple_config_update:
-        hidden:
-          - body
-          - field_profile_address_tax
-          - field_profile_email
-          - field_profile_first_name
-          - field_profile_last_name
-          - field_profile_meta_tags
-          - field_profile_office
-          - field_profile_phone
-          - field_profile_program
-          - field_profile_pronouns
-          - field_profile_rank
-          - field_profile_sidebar_links
-          - field_profile_tags
-          - field_profile_type
-          - field_profile_year
-          - links
+        hidden.body: true
+        hidden.field_profile_address_tax: true
+        hidden.field_profile_email: true
+        hidden.field_profile_first_name: true
+        hidden.field_profile_last_name: true
+        hidden.field_profile_meta_tags: true
+        hidden.field_profile_office: true
+        hidden.field_profile_phone: true
+        hidden.field_profile_program: true
+        hidden.field_profile_pronouns: true
+        hidden.field_profile_rank: true
+        hidden.field_profile_sidebar_links: true
+        hidden.field_profile_tags: true
+        hidden.field_profile_type: true
+        hidden.field_profile_year: true
+        hidden.links: true
     # update the card_vertical display
     core.entity_view_display.node.ubc_profile.card_vertical:
       simple_config_update:
-        hidden:
-          - body
-          - field_profile_address_tax
-          - field_profile_email
-          - field_profile_first_name
-          - field_profile_last_name
-          - field_profile_meta_tags
-          - field_profile_office
-          - field_profile_phone
-          - field_profile_program
-          - field_profile_pronouns
-          - field_profile_rank
-          - field_profile_sidebar_links
-          - field_profile_tags
-          - field_profile_type
-          - field_profile_year
-          - links
+        hidden.body: true
+        hidden.field_profile_address_tax: true
+        hidden.field_profile_email: true
+        hidden.field_profile_first_name: true
+        hidden.field_profile_last_name: true
+        hidden.field_profile_meta_tags: true
+        hidden.field_profile_office: true
+        hidden.field_profile_phone: true
+        hidden.field_profile_program: true
+        hidden.field_profile_pronouns: true
+        hidden.field_profile_rank: true
+        hidden.field_profile_sidebar_links: true
+        hidden.field_profile_tags: true
+        hidden.field_profile_type: true
+        hidden.field_profile_year: true
+        hidden.links: true
       setComponent:
         name: field_profile_image
         options:
@@ -264,23 +261,22 @@ config:
     # update the teaser display
     core.entity_view_display.node.ubc_profile.teaser:
       simple_config_update:
-        hidden:
-          - body
-          - field_profile_accreditation
-          - field_profile_address_tax
-          - field_profile_first_name
-          - field_profile_image
-          - field_profile_last_name
-          - field_profile_meta_tags
-          - field_profile_office
-          - field_profile_program
-          - field_profile_pronouns
-          - field_profile_rank
-          - field_profile_sidebar_links
-          - field_profile_tags
-          - field_profile_type
-          - field_profile_year
-          - links
+        hidden.body: true
+        hidden.field_profile_accreditation: true
+        hidden.field_profile_address_tax: true
+        hidden.field_profile_first_name: true
+        hidden.field_profile_image: true
+        hidden.field_profile_last_name: true
+        hidden.field_profile_meta_tags: true
+        hidden.field_profile_office: true
+        hidden.field_profile_program: true
+        hidden.field_profile_pronouns: true
+        hidden.field_profile_rank: true
+        hidden.field_profile_sidebar_links: true
+        hidden.field_profile_tags: true
+        hidden.field_profile_type: true
+        hidden.field_profile_year: true
+        hidden.links: true
     # assign ubc_profile permissions
     user.role.editor:
       # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.

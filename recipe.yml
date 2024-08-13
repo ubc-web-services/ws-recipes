@@ -102,7 +102,10 @@ config:
     user.role.administrator:
       simple_config_update:
         weight: 10
-    # chosen settings
+    # theme settings
+    kraken.settings:
+      simple_config_update:
+        clf_css: css-prod
     # antibot settings
     antibot.settings:
       simple_config_update:

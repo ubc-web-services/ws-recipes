@@ -34,15 +34,15 @@ config:
     # update field settings
     field.field.node.homepage.field_home_feature_image:
       simple_config_update:
-        settings.file_extensions: 'png jpg jpeg'
+        required: false
     # update the form display
     core.entity_form_display.node.homepage.default:
       simple_config_update:
         content.title.weight: -10
-        hidden:
-          - field_feature_link
-          - field_feature_text
-          - field_home_feature_image
+        hidden.field_feature_link: true
+        hidden.field_feature_text: true
+        hidden.field_home_feature_image: true
+        third_party_settings.field_group.group_feature_area.children: { }
       setComponents:
         -
           name: field_homepage_custom_content
@@ -89,16 +89,14 @@ config:
     # update the default display
     core.entity_view_display.node.homepage.default:
       simple_config_update:
-        hidden:
-          - field_homepage_masthead
+        hidden.field_homepage_masthead: true
     # update the featured_content display
     core.entity_view_display.node.homepage.featured_content:
       simple_config_update:
-        hidden:
-          - field_feature_link
-          - field_feature_text
-          - field_home_feature_image
-          - links
+        hidden.field_feature_link: true
+        hidden.field_feature_text: true
+        hidden.field_home_feature_image: true
+        hidden.links: true
       setComponent:
         name: field_homepage_masthead
         options:
