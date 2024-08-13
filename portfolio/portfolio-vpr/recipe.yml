@@ -21,6 +21,7 @@ recipes:
   # image-styles and image-styles-responsive recipes needed for media recipe
   - recipes/ws-recipes/media/media-config
   - recipes/ws-recipes/text-format/text-format-filtered
+  - recipes/ws-recipes/text-format/text-format-simple
   - recipes/ws-recipes/custom-entity/custom-entity-ubc-alert
   # image-styles and image-styles-responsive recipes needed for paragraph-config recipe
   - recipes/ws-recipes/paragraphs/paragraph-config
@@ -509,6 +510,7 @@ config:
         - 'access webform help'
         - 'access webform overview'
         - 'access webform submission user'
+        - 'add content item entities'
         - 'administer google analytics'
         - 'administer google_tag_container'
         - 'administer meta tags'
@@ -523,12 +525,14 @@ config:
         - 'create quicklinks_block block content'
         - 'create terms in tags'
         - 'create webform'
+        - 'delete all content item revisions'
         - 'delete any basic block content'
         - 'delete any basic block content revisions'
         - 'delete any quicklinks_block block content'
         - 'delete any quicklinks_block block content revisions'
         - 'delete any webform'
         - 'delete any webform submission'
+        - 'delete content item entities'
         - 'delete own webform'
         - 'delete own webform submission'
         - 'delete term revisions in tags'
@@ -539,16 +543,19 @@ config:
         - 'edit any basic block content'
         - 'edit any quicklinks_block block content'
         - 'edit any webform'
+        - 'edit content item entities'
         - 'edit own webform'
         - 'edit own webform submission'
         - 'edit terms in tags'
         - 'edit webform submissions any node'
         - 'edit webform submissions own node'
+        - 'revert all content item revisions'
         - 'revert all revisions'
         - 'revert any basic block content revisions'
         - 'revert any quicklinks_block block content revisions'
         - 'revert term revisions in tags'
         - 'schedule publishing of nodes'
+        - 'view all content item revisions'
         - 'view all revisions'
         - 'view any basic block content history'
         - 'view any quicklinks_block block content history'
@@ -556,7 +563,9 @@ config:
         - 'view any webform submission'
         - 'view own unpublished content'
         - 'view own webform submission'
+        - 'view published content item entities'
         - 'view scheduled content'
         - 'view term revisions in tags'
+        - 'view unpublished content item entities'
         - 'view webform submissions any node'
         - 'view webform submissions own node'

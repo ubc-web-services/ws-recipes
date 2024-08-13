@@ -62,3 +62,12 @@ config:
         content.field_paragraph_card_link.third_party_settings.maxlength.maxlength_js: 100
         content.field_paragraph_card_link.third_party_settings.maxlength.maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
         content.field_paragraph_card_title.weight: -1
+    user.role.manager:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: manager
+        label: 'Manager'
+        weight: 7
+        is_admin: false
+      grantPermissions:
+        - 'view unpublished paragraphs'

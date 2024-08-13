@@ -24,3 +24,17 @@ config:
         - 'edit any share_block block content'
         - 'revert any share_block block content revisions'
         - 'view any share_block block content history'
+    user.role.manager:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: manager
+        label: 'Manager'
+        weight: 7
+        is_admin: false
+      grantPermissions:
+        - 'create share_block block content'
+        - 'delete any share_block block content'
+        - 'delete any share_block block content revisions'
+        - 'edit any share_block block content'
+        - 'revert any share_block block content revisions'
+        - 'view any share_block block content history'

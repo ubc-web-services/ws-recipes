@@ -17,6 +17,7 @@ recipes:
   - recipes/ws-recipes/image/image-styles-responsive
   - recipes/ws-recipes/media/media-config
   - recipes/ws-recipes/text-format/text-format-filtered
+  - recipes/ws-recipes/text-format/text-format-simple
   - recipes/ws-recipes/custom-entity/custom-entity-ubc-alert
   - recipes/ws-recipes/paragraphs/paragraph-config
   - recipes/ws-recipes/node/node-view-modes

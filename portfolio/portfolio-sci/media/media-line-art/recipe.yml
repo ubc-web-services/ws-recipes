@@ -29,3 +29,19 @@ config:
         - 'view any line_art media revisions'
         - 'delete any line_art media revisions'
         - 'revert any line_art media revisions'
+    user.role.manager:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: manager
+        label: Manager
+        weight: 7
+        is_admin: false
+      grantPermissions:
+        - 'create line_art media'
+        - 'delete any line_art media'
+        - 'delete own line_art media'
+        - 'edit any line_art media'
+        - 'edit own line_art media'
+        - 'view any line_art media revisions'
+        - 'delete any line_art media revisions'
+        - 'revert any line_art media revisions'

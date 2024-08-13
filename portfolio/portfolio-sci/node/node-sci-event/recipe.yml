@@ -205,3 +205,6 @@ config:
         - 'edit own ubc_event content'
         - 'revert ubc_event revisions'
         - 'view ubc_event revisions'
+        - 'create terms in event_category'
+        - 'delete terms in event_category'
+        - 'edit terms in event_category'

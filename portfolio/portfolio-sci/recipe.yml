@@ -26,6 +26,7 @@ recipes:
   - recipes/ws-recipes/media/media-config
   - recipes/ws-recipes/portfolio/portfolio-sci/media/media-config
   - recipes/ws-recipes/text-format/text-format-filtered
+  - recipes/ws-recipes/text-format/text-format-simple
   - recipes/ws-recipes/portfolio/portfolio-sci/text-format
   - recipes/ws-recipes/custom-entity/custom-entity-ubc-alert
   # image-styles and image-styles-responsive recipes needed for paragraph-config recipe
@@ -48,7 +49,7 @@ recipes:
   # - recipes/ws-recipes/node/node-ubc-private-page
   - recipes/ws-recipes/portfolio/portfolio-sci/node/node-ubc-blog
   - recipes/ws-recipes/portfolio/portfolio-sci/node/node-ubc-guide
-  # - recipes/ws-recipes/portfolio/portfolio-sci/node/node-ubc-resource
+  - recipes/ws-recipes/portfolio/portfolio-sci/node/node-ubc-resource
   - recipes/ws-recipes/portfolio/portfolio-sci/node/node-sci-webform
   - recipes/ws-recipes/portfolio/portfolio-sci/views
 install:
@@ -431,6 +432,8 @@ config:
         - 'edit terms in tags'
         - 'revert term revisions in tags'
         - 'schedule publishing of nodes'
+        - 'use text format filtered_text'
+        - 'use text format simple'
         - 'view any unpublished content'
         - 'view scheduled content'
         - 'view term revisions in tags'
@@ -475,6 +478,8 @@ config:
         - 'revert any basic block content revisions'
         - 'revert term revisions in tags'
         - 'schedule publishing of nodes'
+        - 'use text format filtered_text'
+        - 'use text format simple'
         - 'view all revisions'
         - 'view any basic block content history'
         - 'view any unpublished content'
@@ -496,6 +501,7 @@ config:
         - 'access webform help'
         - 'access webform overview'
         - 'access webform submission user'
+        - 'add content item entities'
         - 'administer google analytics'
         - 'administer meta tags'
         - 'administer pathauto'
@@ -509,29 +515,43 @@ config:
         - 'create basic block content'
         - 'create quicklinks_block block content'
         - 'create terms in tags'
+        - 'create ubc_page content'
         - 'create webform'
+        - 'delete all content item revisions'
         - 'delete any basic block content'
         - 'delete any basic block content revisions'
         - 'delete any quicklinks_block block content'
         - 'delete any quicklinks_block block content revisions'
+        - 'delete any ubc_page content'
         - 'delete any webform'
         - 'delete any webform submission'
+        - 'delete content item entities'
+        - 'delete own ubc_page content'
         - 'delete own webform'
         - 'delete own webform submission'
         - 'delete term revisions in tags'
         - 'delete terms in tags'
+        - 'delete ubc_page revisions'
         - 'dropzone upload files'
         - 'edit any basic block content'
         - 'edit any quicklinks_block block content'
+        - 'edit any ubc_page content'
+        - 'edit content item entities'
+        - 'edit own ubc_page content'
         - 'edit any webform'
         - 'edit own webform'
         - 'edit own webform submission'
         - 'edit terms in tags'
+        - 'revert all content item revisions'
         - 'revert all revisions'
         - 'revert any basic block content revisions'
         - 'revert any quicklinks_block block content revisions'
         - 'revert term revisions in tags'
+        - 'revert ubc_page revisions'
         - 'schedule publishing of nodes'
+        - 'use text format filtered_text'
+        - 'use text format simple'
+        - 'view all content item revisions'
         - 'view all revisions'
         - 'view any basic block content history'
         - 'view any quicklinks_block block content history'
@@ -539,5 +559,8 @@ config:
         - 'view any webform submission'
         - 'view own unpublished content'
         - 'view own webform submission'
+        - 'view published content item entities'
         - 'view scheduled content'
         - 'view term revisions in tags'
+        - 'view ubc_page revisions'
+        - 'view unpublished content item entities'
