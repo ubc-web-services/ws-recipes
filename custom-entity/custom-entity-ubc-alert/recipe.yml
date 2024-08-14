@@ -15,6 +15,8 @@ install:
   - maxlength
   - ubc_content_items
 config:
+  import:
+    ubc_content_items: '*'
   actions:
     user.role.anonymous:
       grantPermissions:
