@@ -246,4 +246,6 @@ config:
         - 'create terms in profile_role'
         - 'delete terms in profile_role'
         - 'edit terms in profile_role'
-
+        - 'create terms in department_or_unit'
+        - 'delete terms in department_or_unit'
+        - 'edit terms in department_or_unit'
