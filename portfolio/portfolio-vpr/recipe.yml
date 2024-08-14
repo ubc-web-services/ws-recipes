@@ -33,6 +33,7 @@ recipes:
   - recipes/ws-recipes/node/node-ubc-announcement
   - recipes/ws-recipes/portfolio/portfolio-vpr/node/node-vpr-announcement
   - recipes/ws-recipes/node/node-ubc-event
+  - recipes/ws-recipes/node/node-ubc-event-fullcalendar
   - recipes/ws-recipes/portfolio/portfolio-vpr/node/node-vpr-event
   - recipes/ws-recipes/node/node-ubc-homepage
   - recipes/ws-recipes/portfolio/portfolio-vpr/node/node-vpr-homepage

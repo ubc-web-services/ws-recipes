@@ -1,0 +1,11 @@
+name: "Fullcalendar Event type configuration"
+description: "Fullcalendar Event type configuration recipe for UBC Web Services websites"
+type: 'View'
+install:
+  #core
+  - datetime_range
+  - node
+  - user
+  - views
+  # contrib
+  - fullcalendar_view
