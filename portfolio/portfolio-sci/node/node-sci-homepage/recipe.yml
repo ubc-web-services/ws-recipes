@@ -35,6 +35,21 @@ config:
     field.field.node.homepage.field_home_feature_image:
       simple_config_update:
         required: false
+    field.field.node.homepage.field_homepage_custom_content:
+      simple_config_update:
+        settings.handler_settings.target_bundles:
+          card_group: card_group
+          feature_image: feature_image
+          slideshow: slideshow
+          tabcordion: tabcordion
+          text: text
+          text_links_region: text_links_region
+          text_links_image_region: text_links_image_region
+        settings.handler_settings.target_bundles_drag_drop.feature_image.enabled: true
+        settings.handler_settings.target_bundles_drag_drop.tabcordion.enabled: true
+        settings.handler_settings.target_bundles_drag_drop.slideshow.enabled: true
+        settings.handler_settings.target_bundles_drag_drop.text_links_image_region.enabled: true
+        settings.handler_settings.target_bundles_drag_drop.text_links_region.enabled: true
     # update the form display
     core.entity_form_display.node.homepage.default:
       simple_config_update:
