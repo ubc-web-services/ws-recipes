@@ -11,7 +11,10 @@ install:
   - user
   # contrib
   - scheduler
+  - ubc_private_page
 config:
+  import:
+    ubc_private_page: "*"
   # assign private page permissions
   actions:
     user.role.editor:
