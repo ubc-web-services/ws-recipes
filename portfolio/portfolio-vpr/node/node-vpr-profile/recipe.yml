@@ -208,6 +208,15 @@ config:
         - 'create terms in research_theme'
         - 'delete terms in research_theme'
         - 'edit terms in research_theme'
+        - 'create terms in profile_category'
+        - 'delete terms in profile_category'
+        - 'edit terms in profile_category'
+        - 'create terms in profile_faculty'
+        - 'delete terms in profile_faculty'
+        - 'edit terms in profile_faculty'
+        - 'create terms in profile_role'
+        - 'delete terms in profile_role'
+        - 'edit terms in profile_role'
     user.role.super_user:
       # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
       createIfNotExists:
@@ -228,4 +237,13 @@ config:
         - 'create terms in research_theme'
         - 'delete terms in research_theme'
         - 'edit terms in research_theme'
+        - 'create terms in profile_category'
+        - 'delete terms in profile_category'
+        - 'edit terms in profile_category'
+        - 'create terms in profile_faculty'
+        - 'delete terms in profile_faculty'
+        - 'edit terms in profile_faculty'
+        - 'create terms in profile_role'
+        - 'delete terms in profile_role'
+        - 'edit terms in profile_role'
 

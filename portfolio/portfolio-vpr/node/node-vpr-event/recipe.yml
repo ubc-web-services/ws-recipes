@@ -147,6 +147,9 @@ config:
         - 'create terms in research_theme'
         - 'delete terms in research_theme'
         - 'edit terms in research_theme'
+        - 'create terms in event_category'
+        - 'delete terms in event_category'
+        - 'edit terms in event_category'
     user.role.super_user:
       # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
       createIfNotExists:
@@ -167,4 +170,7 @@ config:
         - 'create terms in research_theme'
         - 'delete terms in research_theme'
         - 'edit terms in research_theme'
+        - 'create terms in event_category'
+        - 'delete terms in event_category'
+        - 'edit terms in event_category'
 
