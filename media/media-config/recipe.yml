@@ -24,9 +24,9 @@ install:
 config:
   actions:
     # enable standalone media settings
-    media.settings:
-      simple_config_update:
-        standalone_url: 1
+    # media.settings:
+    #   simple_config_update:
+    #     standalone_url: 1
     # assign general media permissions
     user.role.anonymous:
       grantPermissions:
