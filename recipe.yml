@@ -35,7 +35,6 @@ install:
   # core
   # services
   - jsonapi
-  - language
   - rest
   # contrib
   # navigation / menus
