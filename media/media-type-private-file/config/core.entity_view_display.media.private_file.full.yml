@@ -5,21 +5,31 @@ dependencies:
     - core.entity_view_mode.media.full
     - field.field.media.private_file.field_media_file_1
     - media.type.private_file
+  module:
+    - file
 id: media.private_file.full
 targetEntityType: media
 bundle: private_file
 mode: full
 content:
-  name:
-    type: string
-    weight: 0
-    region: content
+  field_media_file_1:
+    type: file_default
     label: hidden
     settings:
-      link_to_entity: true
+      use_description_as_link_text: true
     third_party_settings: {  }
+    weight: 1
+    region: content
+  name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   created: true
-  field_media_file_1: true
   thumbnail: true
   uid: true
+
