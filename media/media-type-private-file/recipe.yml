@@ -8,6 +8,7 @@ install:
   - media_library
   - path
   - user
+  - ubc_media_entities
 config:
   # assign private_file media permissions
   actions:
