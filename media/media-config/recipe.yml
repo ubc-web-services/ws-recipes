@@ -27,13 +27,6 @@ config:
     media.settings:
       simple_config_update:
         standalone_url: 1
-    # update media_alias_display settings
-    media_alias_display.settings:
-      simple_config_update:
-        media_bundles.audio: audio
-        media_bundles.file: file
-        media_bundles.image: image
-        media_bundles.svg_icon: svg_icon
     # assign general media permissions
     user.role.anonymous:
       grantPermissions:
