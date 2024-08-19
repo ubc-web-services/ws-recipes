@@ -45,7 +45,7 @@ default:
       tag: meta
       attributes:
         name: description
-        content: 'This is a summer of the contents of this page.'
+        content: 'This is a summary of the contents of this page.'
     -
       tag: link
       attributes:
@@ -70,7 +70,7 @@ default:
       tag: meta
       attributes:
         property: 'og:description'
-        content: 'This is a summer of the contents of this page.'
+        content: 'This is a summary of the contents of this page.'
     -
       tag: meta
       attributes:
@@ -80,7 +80,7 @@ default:
       tag: meta
       attributes:
         name: 'twitter:description'
-        content: 'This is a summer of the contents of this page.'
+        content: 'This is a summary of the contents of this page.'
     -
       tag: meta
       attributes:
@@ -95,7 +95,7 @@ default:
     -
       value: '<p class="text-lead">Here you will find the lede which has a different text treatment.</p><p>That is followed by some typical sample text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <a href="https://ubc.ca">this is a link</a> magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p><a class="text-sm unit-button unit-button--text-sm" href="https://ubc.ca">Another call to action</a></p>'
       format: filtered_text
-      summary: 'This is a summer of the contents of this page.'
+      summary: 'This is a summary of the contents of this page.'
   field_feature_link:
     -
       uri: 'https://ubc.ca'
