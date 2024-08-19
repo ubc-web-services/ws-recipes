@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 023ed09d-1a5e-4238-a702-bd399b1c5faf
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: post5.jpg
+  uri:
+    -
+      value: 'public://card-image/2024-08/post5.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 54753
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1724088463

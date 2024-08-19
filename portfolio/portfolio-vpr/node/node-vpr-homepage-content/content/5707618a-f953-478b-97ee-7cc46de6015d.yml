@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 5707618a-f953-478b-97ee-7cc46de6015d
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: post3.jpg
+  uri:
+    -
+      value: 'public://card-image/2024-08/post3.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 54601
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1724088494

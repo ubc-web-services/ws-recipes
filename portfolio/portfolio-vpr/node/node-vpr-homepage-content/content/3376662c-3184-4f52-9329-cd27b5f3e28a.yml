@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 3376662c-3184-4f52-9329-cd27b5f3e28a
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 50597762528_787a6f2f88_k_d.jpg
+  uri:
+    -
+      value: 'public://feature-images/2024-08/50597762528_787a6f2f88_k_d.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 809526
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1724088186

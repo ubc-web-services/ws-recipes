@@ -1,0 +1,271 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 671eb032-ce6b-4c8b-b7dd-c0f5954f1299
+  bundle: homepage
+  default_langcode: en
+  depends:
+    c0365eb4-4061-4559-928e-dd800875fbb8: taxonomy_term
+    023ed09d-1a5e-4238-a702-bd399b1c5faf: file
+    5707618a-f953-478b-97ee-7cc46de6015d: file
+    6d5ed8a8-f5a0-4a24-9b0f-5f51523590f4: taxonomy_term
+    76dec27a-740d-4f05-9f16-eae1911418bb: taxonomy_term
+    66fddf0a-91f7-46a8-95fb-9cbaad83758e: taxonomy_term
+    e6b20310-ca8e-482d-94af-e57d0bf670bb: taxonomy_term
+    3376662c-3184-4f52-9329-cd27b5f3e28a: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Welcome
+  created:
+    -
+      value: 1724088157
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Welcome | vpr'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'This is a summary of the contents of this page.'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/node/2'
+    -
+      tag: meta
+      attributes:
+        property: 'og:site_name'
+        content: vpr
+    -
+      tag: meta
+      attributes:
+        property: 'og:url'
+        content: 'http://default/node/2'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: Welcome
+    -
+      tag: meta
+      attributes:
+        property: 'og:description'
+        content: 'This is a summary of the contents of this page.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:card'
+        content: summary
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:description'
+        content: 'This is a summary of the contents of this page.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:title'
+        content: Welcome
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  body:
+    -
+      value: '<p class="text-lead">Here you will find the lede which has a different text treatment.</p><p>That is followed by some typical sample text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <a href="https://ubc.ca">this is a link</a> magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p><a class="unit-button text-sm unit-button--text-sm" href="https://ubc.ca">Another call to action</a></p>'
+      format: filtered_text
+      summary: 'This is a summary of the contents of this page.'
+  field_feature_link:
+    -
+      uri: 'https://ubc.ca'
+      title: 'Call to action'
+      options: {  }
+  field_feature_text:
+    -
+      value: '<div><div><span>Welcome message goes here</span></div></div>'
+      format: filtered_text
+  field_homepage_cards:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 03a460f9-5e0c-4648-8567-6afa3f607524
+          bundle: card_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1724088368
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_paragraph_card_colour:
+            -
+              entity: c0365eb4-4061-4559-928e-dd800875fbb8
+          field_paragraph_card_link:
+            -
+              uri: 'https://ubc.ca'
+              title: ''
+              options: {  }
+          field_paragraph_card_title:
+            -
+              value: Research
+          field_paragraph_link_text:
+            -
+              value: 'A link to somewhere'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 1950711d-9326-4fe9-83ca-5d1d07167bde
+          bundle: card_rollover
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1724088404
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_paragraph_card_image:
+            -
+              entity: 023ed09d-1a5e-4238-a702-bd399b1c5faf
+              alt: 'This is text that describes the photo'
+              title: ''
+              width: 800
+              height: 500
+          field_paragraph_card_link:
+            -
+              uri: 'https://ubc.ca'
+              title: ''
+              options: {  }
+          field_paragraph_card_title:
+            -
+              value: Change
+          field_paragraph_revealed_text:
+            -
+              value: 'Text that is revealed on hover'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 8297ecdb-a011-49ae-b456-cfb2eaa86743
+          bundle: card_rollover
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1724088476
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_paragraph_card_image:
+            -
+              entity: 5707618a-f953-478b-97ee-7cc46de6015d
+              alt: 'This is text that describes the photo'
+              title: ''
+              width: 800
+              height: 500
+          field_paragraph_card_link:
+            -
+              uri: 'https://ubc.ca'
+              title: ''
+              options: {  }
+          field_paragraph_card_title:
+            -
+              value: Action
+          field_paragraph_revealed_text:
+            -
+              value: 'Text that is revealed on hover'
+  field_homepage_custom_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: d2fb346c-f638-4409-a37a-6e36e42a9363
+          bundle: text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1724088511
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_paragraph_card_colour:
+            -
+              entity: 6d5ed8a8-f5a0-4a24-9b0f-5f51523590f4
+          field_paragraph_text:
+            -
+              value: '<div class="widget-column-options widget-columns-2 my-6 widget-keyline-none align-equal"><div class="widget--md--grid gap-12"><div class="first-child--mt-0 widget-region-one"><p>Some text on this side. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div><div class="first-child--mt-0 widget-region-two"><p>Some text on the other side. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p></div></div></div>'
+              format: filtered_text
+          field_paragraph_width_settings:
+            -
+              entity: 76dec27a-740d-4f05-9f16-eae1911418bb
+          field_region_vertical_spacing:
+            -
+              entity: 66fddf0a-91f7-46a8-95fb-9cbaad83758e
+            -
+              entity: e6b20310-ca8e-482d-94af-e57d0bf670bb
+  field_home_feature_image:
+    -
+      entity: 3376662c-3184-4f52-9329-cd27b5f3e28a
+      alt: 'This is text that describes the photo'
+      title: ''
+      width: 2048
+      height: 1365
+  field_show_gradient_on_image:
+    -
+      value: true

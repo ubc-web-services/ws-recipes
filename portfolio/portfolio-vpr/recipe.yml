@@ -36,7 +36,7 @@ recipes:
   - recipes/ws-recipes/node/node-ubc-event-fullcalendar
   - recipes/ws-recipes/portfolio/portfolio-vpr/node/node-vpr-event
   - recipes/ws-recipes/node/node-ubc-homepage
-  - recipes/ws-recipes/portfolio/portfolio-vpr/node/node-vpr-homepage
+  - recipes/ws-recipes/portfolio/portfolio-vpr/node/node-vpr-homepage-content
   - recipes/ws-recipes/node/node-ubc-landing-page
   - recipes/ws-recipes/portfolio/portfolio-vpr/node/node-vpr-landing-page
   - recipes/ws-recipes/node/node-ubc-page
