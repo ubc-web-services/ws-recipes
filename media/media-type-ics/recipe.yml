@@ -1,0 +1,48 @@
+name: "ICS File media type"
+description: "ICS File media type recipe for UBC Web Services websites"
+type: "Media type"
+install:
+  # core
+  - file
+  - media
+  - media_library
+  - path
+  - user
+  # contrib
+  - svg_image
+  - scheduler
+config:
+  # assign file media permissions
+  actions:
+    user.role.content_creator:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: content_creator
+        label: Content Creator
+        weight: 5
+        is_admin: false
+      grantPermissions:
+        - 'create ics_file media'
+        - 'delete any ics_file media'
+        - 'delete own ics_file media'
+        - 'edit any ics_file media'
+        - 'edit own ics_file media'
+        - 'view any ics_file media revisions'
+        - 'delete any ics_file media revisions'
+        - 'revert any ics_file media revisions'
+    user.role.editor:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: editor
+        label: Editor
+        weight: 6
+        is_admin: false
+      grantPermissions:
+        - 'create ics_file media'
+        - 'delete any ics_file media'
+        - 'delete own ics_file media'
+        - 'edit any ics_file media'
+        - 'edit own ics_file media'
+        - 'view any ics_file media revisions'
+        - 'delete any ics_file media revisions'
+        - 'revert any ics_file media revisions'

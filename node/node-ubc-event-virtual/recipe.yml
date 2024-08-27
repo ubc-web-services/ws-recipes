@@ -1,0 +1,59 @@
+
+name: "UBC Event Virtual Update configuration"
+description: "UBC Event Virtual Update configuration recipe for UBC Web Services websites"
+type: 'Content type'
+install:
+  #core
+  - image
+  - link
+  - menu_ui
+  - node
+  - path
+  - taxonomy
+  - text
+  - user
+  - views
+  # contrib
+  - address
+  - allowed_formats
+  - datetime_range
+  - datetimehideseconds
+  - field_group
+  - focal_point
+  - maxlength
+  - metatag
+  - metatag_open_graph
+  - metatag_twitter_cards
+  - pathauto
+  - responsive_image
+  - scheduler
+  - simple_sitemap
+  - svg_image
+  - text_summary_options
+config:
+  actions:
+    # update the form display
+    core.entity_form_display.node.ubc_event.default:
+      setComponent:
+        name: field_event_is_virtual
+        options:
+          type: boolean_checkbox
+          weight: 5
+          region: content
+          settings:
+            display_label: true
+          third_party_settings: {  }
+    # update the default content display
+    core.entity_view_display.node.ubc_event.default:
+      setComponent:
+        name: field_event_is_virtual
+        options:
+          type: boolean
+          label: hidden
+          settings:
+            format: default
+            format_custom_false: ''
+            format_custom_true: ''
+          third_party_settings: {  }
+          weight: 10
+          region: content

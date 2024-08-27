@@ -5,6 +5,7 @@ recipes:
   - recipes/ws-recipes/media/media-view-modes
   - recipes/ws-recipes/media/media-type-audio
   - recipes/ws-recipes/media/media-type-file
+  - recipes/ws-recipes/media/media-type-ics
   - recipes/ws-recipes/media/media-type-image
   - recipes/ws-recipes/media/media-type-private-file
   - recipes/ws-recipes/media/media-type-remote-video
