@@ -24,6 +24,7 @@ recipes:
   - recipes/ws-recipes/node/node-ubc-announcement
   - recipes/ws-recipes/node/node-ubc-event
   - recipes/ws-recipes/node/node-ubc-event-fullcalendar
+  - recipes/ws-recipes/node/node-ubc-event-virtual
   - recipes/ws-recipes/node/node-ubc-homepage-content
   - recipes/ws-recipes/node/node-ubc-landing-page
   - recipes/ws-recipes/node/node-ubc-page
