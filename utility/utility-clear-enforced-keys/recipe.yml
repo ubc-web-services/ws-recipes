@@ -1,0 +1,23 @@
+name: "Clear enforced keys"
+description: "Clear enforced keys for UBC Web Services websites"
+type: "Configuration"
+config:
+  actions:
+    filter.format.filtered_text:
+      simpleConfigUpdate:
+        dependencies.enforced: {}
+    image.style.card_300x150:
+      simpleConfigUpdate:
+        dependencies: {}
+    image.style.card_480x240:
+      simpleConfigUpdate:
+        dependencies: {}
+    image.style.card_600x300:
+      simpleConfigUpdate:
+        dependencies: {}
+    image.style.card_780x390:
+      simpleConfigUpdate:
+        dependencies: {}
+    responsive_image.styles.card:
+      simpleConfigUpdate:
+        dependencies.enforced: {}
