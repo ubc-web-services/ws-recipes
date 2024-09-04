@@ -1,12 +1,8 @@
-name: "VPR config update 1"
-description: "VPR config update 1 recipe for UBC Web Services websites"
+name: "VPR config update ICS permissions"
+description: "VPR config update ICS permissions recipe for UBC Web Services websites"
 type: "Media configuration"
 config:
   actions:
-    # enable standalone media settings
-    core.entity_view_display.node.ubc_event.default:
-      simple_config_update:
-        hidden.field_event_is_virtual: true
     # update media permissions
     user.role.super_user:
       # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
