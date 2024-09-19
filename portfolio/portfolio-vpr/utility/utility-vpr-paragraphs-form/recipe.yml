@@ -1,0 +1,103 @@
+
+name: "VPR Paragraphs Edit Form update configuration"
+description: "VPR Paragraphs Edit Form update configuration recipe for UBC Web Services websites"
+type: 'Config'
+config:
+  actions:
+    # update the homepage form display
+    core.entity_form_display.node.homepage.default:
+      setComponents:
+        -
+          name: field_homepage_cards
+          options:
+            type: paragraphs
+            weight: 3
+            region: content
+            settings:
+              title: Paragraph
+              title_plural: Paragraphs
+              edit_mode: closed
+              closed_mode: summary
+              autocollapse: none
+              closed_mode_threshold: 0
+              add_mode: button
+              form_display_mode: default
+              default_paragraph_type: _none
+              features:
+                add_above: add_above
+                collapse_edit_all: collapse_edit_all
+                convert: convert
+                duplicate: duplicate
+            third_party_settings: {  }
+        -
+          name: field_homepage_custom_content
+          options:
+            type: paragraphs
+            weight: 4
+            region: content
+            settings:
+              title: Paragraph
+              title_plural: Paragraphs
+              edit_mode: closed
+              closed_mode: summary
+              autocollapse: none
+              closed_mode_threshold: 0
+              add_mode: button
+              form_display_mode: default
+              default_paragraph_type: _none
+              features:
+                add_above: add_above
+                collapse_edit_all: collapse_edit_all
+                convert: convert
+                duplicate: duplicate
+            third_party_settings: {  }
+    # update the landing page form display
+    core.entity_form_display.node.ubc_landing_page.default:
+      setComponents:
+        -
+          name: field_landing_custom_content
+          options:
+            type: paragraphs
+            weight: 3
+            region: content
+            settings:
+              title: Paragraph
+              title_plural: Paragraphs
+              edit_mode: closed
+              closed_mode: summary
+              autocollapse: none
+              closed_mode_threshold: 0
+              add_mode: button
+              form_display_mode: default
+              default_paragraph_type: _none
+              features:
+                add_above: add_above
+                collapse_edit_all: collapse_edit_all
+                convert: convert
+                duplicate: duplicate
+            third_party_settings: {  }
+    # update the announcement form display
+    core.entity_form_display.node.ubc_announcement.default:
+      setComponents:
+        -
+          name: field_announcement_custom_conten
+          options:
+            type: paragraphs
+            weight: 8
+            region: content
+            settings:
+              title: Paragraph
+              title_plural: Paragraphs
+              edit_mode: closed
+              closed_mode: summary
+              autocollapse: none
+              closed_mode_threshold: 0
+              add_mode: button
+              form_display_mode: default
+              default_paragraph_type: _none
+              features:
+                add_above: add_above
+                collapse_edit_all: collapse_edit_all
+                convert: convert
+                duplicate: duplicate
+            third_party_settings: {  }
