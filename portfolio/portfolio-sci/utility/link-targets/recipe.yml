@@ -1,0 +1,432 @@
+name: "Add link target attributes"
+description: "Add link target attributes recipe for UBC Web Services websites"
+type: "Configuration"
+install:
+  # contrib
+  - link_attributes
+  - link_attributes_menu_link_content
+  - linkit
+  - linkit_attributes
+config:
+  actions:
+    # update content type form modes
+    # announcment
+    core.entity_form_display.node.ubc_announcement.default:
+      setComponent:
+        name: field_announcement_external_link
+        options:
+          type: link_attributes
+          weight: 4
+          region: content
+          settings:
+            placeholder_url: ''
+            placeholder_title: ''
+            enabled_attributes:
+              target: true
+              id: false
+              name: false
+              rel: false
+              class: false
+              accesskey: false
+              aria-label: false
+              title: false
+            widget_default_open: expandIfValuesSet
+          third_party_settings: {  }
+    # event
+    core.entity_form_display.node.ubc_event.default:
+      setComponent:
+        name: field_event_link
+        options:
+          type: link_attributes
+          weight: 7
+          region: content
+          settings:
+            placeholder_url: ''
+            placeholder_title: ''
+            enabled_attributes:
+              target: true
+              id: false
+              name: false
+              rel: false
+              class: false
+              accesskey: false
+              aria-label: false
+              title: false
+            widget_default_open: expandIfValuesSet
+          third_party_settings: {  }
+    # profile
+    core.entity_form_display.node.ubc_profile.default:
+      setComponent:
+        name: field_profile_sidebar_links
+        options:
+          type: link_attributes
+          weight: 10
+          region: content
+          settings:
+            placeholder_url: ''
+            placeholder_title: ''
+            enabled_attributes:
+              target: true
+              id: false
+              name: false
+              rel: false
+              class: false
+              accesskey: false
+              aria-label: false
+              title: false
+            widget_default_open: expandIfValuesSet
+          third_party_settings: {  }
+    # program specialization
+    # core.entity_form_display.node.program_specialization.default:
+    #   setComponents:
+    #     -
+    #       name: field_apply_link
+    #       options:
+    #         type: link_attributes
+    #         weight: 4
+    #         region: content
+    #         settings:
+    #           placeholder_url: ''
+    #           placeholder_title: ''
+    #           enabled_attributes:
+    #             target: true
+    #             id: false
+    #             name: false
+    #             rel: false
+    #             class: false
+    #             accesskey: false
+    #             aria-label: false
+    #             title: false
+    #           widget_default_open: expandIfValuesSet
+    #         third_party_settings: {  }
+    #     -
+    #       name: field_program_advisors
+    #       options:
+    #         type: linkit_attributes
+    #         weight: 16
+    #         region: content
+    #         settings:
+    #           placeholder_url: ''
+    #           placeholder_title: ''
+    #           linkit_profile: default
+    #           linkit_auto_link_text: false
+    #           enabled_attributes:
+    #             target: true
+    #             id: false
+    #             name: false
+    #             rel: false
+    #             class: false
+    #             accesskey: false
+    #             aria-label: false
+    #             title: false
+    #           widget_default_open: expandIfValuesSet
+    #         third_party_settings: {  }
+    #     -
+    #       name: field_program_calendar_entry_
+    #       options:
+    #         type: linkit_attributes
+    #         weight: 14
+    #         region: content
+    #         settings:
+    #           placeholder_url: ''
+    #           placeholder_title: ''
+    #           linkit_profile: default
+    #           linkit_auto_link_text: false
+    #           enabled_attributes:
+    #             target: true
+    #             id: false
+    #             name: false
+    #             rel: false
+    #             class: false
+    #             accesskey: false
+    #             aria-label: false
+    #             title: false
+    #           widget_default_open: expandIfValuesSet
+    #         third_party_settings: {  }
+    #     -
+    #       name: field_program_career_resources
+    #       options:
+    #         type: linkit_attributes
+    #         weight: 29
+    #         region: content
+    #         settings:
+    #           placeholder_url: ''
+    #           placeholder_title: ''
+    #           linkit_profile: default
+    #           linkit_auto_link_text: false
+    #           enabled_attributes:
+    #             target: true
+    #             id: false
+    #             name: false
+    #             rel: false
+    #             class: false
+    #             accesskey: false
+    #             aria-label: false
+    #             title: false
+    #           widget_default_open: expandIfValuesSet
+    #         third_party_settings: {  }
+    #     -
+    #       name: field_program_club
+    #       options:
+    #         type: linkit_attributes
+    #         weight: 17
+    #         region: content
+    #         settings:
+    #           placeholder_url: ''
+    #           placeholder_title: ''
+    #           linkit_profile: default
+    #           linkit_auto_link_text: false
+    #           enabled_attributes:
+    #             target: true
+    #             id: false
+    #             name: false
+    #             rel: false
+    #             class: false
+    #             accesskey: false
+    #             aria-label: false
+    #             title: false
+    #           widget_default_open: expandIfValuesSet
+    #         third_party_settings: {  }
+    #     -
+    #       name: field_program_library
+    #       options:
+    #         type: linkit_attributes
+    #         weight: 30
+    #         region: content
+    #         settings:
+    #           placeholder_url: ''
+    #           placeholder_title: ''
+    #           linkit_profile: default
+    #           linkit_auto_link_text: false
+    #           enabled_attributes:
+    #             target: true
+    #             id: false
+    #             name: false
+    #             rel: false
+    #             class: false
+    #             accesskey: false
+    #             aria-label: false
+    #             title: false
+    #           widget_default_open: expandIfValuesSet
+    #         third_party_settings: {  }
+    #     -
+    #       name: field_program_professional
+    #       options:
+    #         type: linkit_attributes
+    #         weight: 31
+    #         region: content
+    #         settings:
+    #           placeholder_url: ''
+    #           placeholder_title: ''
+    #           linkit_profile: default
+    #           linkit_auto_link_text: false
+    #           enabled_attributes:
+    #             target: true
+    #             id: false
+    #             name: false
+    #             rel: false
+    #             class: false
+    #             accesskey: false
+    #             aria-label: false
+    #             title: false
+    #           widget_default_open: expandIfValuesSet
+    #         third_party_settings: {  }
+    #     -
+    #       name: field_program_website
+    #       options:
+    #         type: linkit_attributes
+    #         weight: 15
+    #         region: content
+    #         settings:
+    #           placeholder_url: ''
+    #           placeholder_title: ''
+    #           linkit_profile: default
+    #           linkit_auto_link_text: false
+    #           enabled_attributes:
+    #             target: true
+    #             id: false
+    #             name: false
+    #             rel: false
+    #             class: false
+    #             accesskey: false
+    #             aria-label: false
+    #             title: false
+    #           widget_default_open: expandIfValuesSet
+    #         third_party_settings: {  }
+    # # student_resource
+    # core.entity_form_display.node.student_resource.default:
+    #   setComponent:
+    #     name: field_link
+    #     options:
+    #       type: link_attributes
+    #       weight: 10
+    #       region: content
+    #       settings:
+    #         placeholder_url: ''
+    #         placeholder_title: ''
+    #         enabled_attributes:
+    #           target: true
+    #           id: false
+    #           name: false
+    #           rel: false
+    #           class: false
+    #           accesskey: false
+    #           aria-label: false
+    #           title: false
+    #         widget_default_open: expandIfValuesSet
+    #       third_party_settings: {  }
+    # paragraphs
+    # card_horizontal
+    core.entity_form_display.paragraph.card_horizontal.default:
+      setComponent:
+        name: field_paragraph_card_link
+        options:
+          type: link_attributes
+          weight: 5
+          region: content
+          settings:
+            placeholder_url: ''
+            placeholder_title: ''
+            enabled_attributes:
+              target: true
+              id: false
+              name: false
+              rel: false
+              class: false
+              accesskey: false
+              aria-label: false
+              title: false
+            widget_default_open: expandIfValuesSet
+          third_party_settings: {  }
+    # card_vertical
+    core.entity_form_display.paragraph.card_vertical.default:
+      setComponent:
+        name: field_paragraph_card_link
+        options:
+          type: link_attributes
+          weight: 4
+          region: content
+          settings:
+            placeholder_url: ''
+            placeholder_title: ''
+            enabled_attributes:
+              target: true
+              id: false
+              name: false
+              rel: false
+              class: false
+              accesskey: false
+              aria-label: false
+              title: false
+            widget_default_open: expandIfValuesSet
+          third_party_settings: {  }
+    # feature_image
+    core.entity_form_display.paragraph.feature_image.default:
+      setComponent:
+        name: field_paragraph_feature_link
+        options:
+          type: link_attributes
+          weight: 5
+          region: content
+          settings:
+            placeholder_url: ''
+            placeholder_title: ''
+            enabled_attributes:
+              target: true
+              id: false
+              name: false
+              rel: false
+              class: false
+              accesskey: false
+              aria-label: false
+              title: false
+            widget_default_open: expandIfValuesSet
+          third_party_settings: {  }
+    # icon_card
+    core.entity_form_display.paragraph.icon_card.default:
+      setComponent:
+        name: field_paragraph_icon_card_link
+        options:
+          type: link_attributes
+          weight: 5
+          region: content
+          settings:
+            placeholder_url: ''
+            placeholder_title: ''
+            enabled_attributes:
+              target: true
+              id: false
+              name: false
+              rel: false
+              class: false
+              accesskey: false
+              aria-label: false
+              title: false
+            widget_default_open: expandIfValuesSet
+          third_party_settings: {  }
+    # image_card
+    core.entity_form_display.paragraph.image_card.default:
+      setComponent:
+        name: field_paragraph_card_link
+        options:
+          type: link_attributes
+          weight: 5
+          region: content
+          settings:
+            placeholder_url: ''
+            placeholder_title: ''
+            enabled_attributes:
+              target: true
+              id: false
+              name: false
+              rel: false
+              class: false
+              accesskey: false
+              aria-label: false
+              title: false
+            widget_default_open: expandIfValuesSet
+          third_party_settings: {  }
+    # text_links_image_region
+    core.entity_form_display.paragraph.text_links_image_region.default:
+      setComponent:
+        name: field_region_links
+        options:
+          type: link_attributes
+          weight: 6
+          region: content
+          settings:
+            placeholder_url: ''
+            placeholder_title: ''
+            enabled_attributes:
+              target: true
+              id: false
+              name: false
+              rel: false
+              class: false
+              accesskey: false
+              aria-label: false
+              title: false
+            widget_default_open: expandIfValuesSet
+          third_party_settings: {  }
+    # text_links_region
+    core.entity_form_display.paragraph.text_links_region.default:
+      setComponent:
+        name: field_region_links
+        options:
+          type: link_attributes
+          weight: 5
+          region: content
+          settings:
+            placeholder_url: ''
+            placeholder_title: ''
+            enabled_attributes:
+              target: true
+              id: false
+              name: false
+              rel: false
+              class: false
+              accesskey: false
+              aria-label: false
+              title: false
+            widget_default_open: expandIfValuesSet
+          third_party_settings: {  }
