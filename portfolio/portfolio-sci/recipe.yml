@@ -52,6 +52,7 @@ recipes:
   # - recipes/ws-recipes/portfolio/portfolio-sci/node/node-ubc-resource
   - recipes/ws-recipes/portfolio/portfolio-sci/node/node-sci-webform
   - recipes/ws-recipes/portfolio/portfolio-sci/views
+  - recipes/ws-recipes/portfolio/portfolio-sci/utility/link-targets
 install:
   # core
   # services
@@ -81,6 +82,10 @@ install:
   # editing / ui
   - chosen
   - formtips
+  - link_attributes
+  - link_attributes_menu_link_content
+  - linkit
+  - linkit_attributes
   - linkit_media_library
   - scheduler
   - twig_tweak
