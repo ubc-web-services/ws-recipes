@@ -1,0 +1,12 @@
+
+name: "VPR Profile, add vertical card with rounded image"
+description: "VPR Profile, add vertical card with rounded image recipe for UBC Web Services websites"
+type: 'Config'
+install:
+  # core
+  - image
+  - node
+  - user
+  # contrib
+  - focal_point
+  - svg_image

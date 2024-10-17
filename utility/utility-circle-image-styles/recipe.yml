@@ -1,0 +1,8 @@
+name: "Add circle image styles"
+description: "Add circle image styles for UBC Web Services websites"
+type: "Image Styles"
+install:
+  # core
+  - image
+  # contrib
+  - focal_point
