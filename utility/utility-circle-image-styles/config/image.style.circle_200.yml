@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: circle_200
+label: 'Circle, 200'
+effects:
+  98658327-0d1a-4996-86f3-93d7cd8472ee:
+    uuid: 98658327-0d1a-4996-86f3-93d7cd8472ee
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 200
+      height: 200
+      anchor: center-center
