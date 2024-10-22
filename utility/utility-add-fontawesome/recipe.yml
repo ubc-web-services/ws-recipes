@@ -1,0 +1,19 @@
+name: "Add fontawesome to toolbar"
+description: "Add fontawesome to toolbar for UBC Web Services websites"
+type: "Text format"
+install:
+  # core
+  - ckeditor5
+  # contrib
+  - ckeditor5_icons
+  - fontawesome
+config:
+  actions:
+    # enable standalone media settings
+    editor.editor.filtered_text:
+      addItemToToolbar:
+        item_name: icon
+        # Specific zero-based position in the toolbar.
+        # If not specified, it appends to the end.
+        position: 16
+        replace: false
