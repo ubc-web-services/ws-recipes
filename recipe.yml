@@ -72,7 +72,6 @@ install:
   - antibot
   # search
   - google_analytics
-  - google_tag
   - metatag
   # node / permissions
   - quick_node_clone
@@ -89,7 +88,6 @@ config:
     focal_point: "*"
     fullcalendar_view: "*"
     google_analytics: "*"
-    google_tag: "*"
     image_widget_crop: "*"
     metatag: "*"
     redirect: "*"
@@ -439,7 +437,6 @@ config:
         - 'access webform overview'
         - 'access webform submission user'
         - 'administer google analytics'
-        - 'administer google_tag_container'
         - 'administer meta tags'
         - 'administer redirects'
         - 'administer webform'
