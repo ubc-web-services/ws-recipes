@@ -8,6 +8,7 @@ install:
   - file
   - menu_ui
   - path
+  - pathauto
   - taxonomy
   - toolbar
   - user
@@ -38,15 +39,19 @@ config:
         - 'administer node fields'
         - 'administer node form display'
         - 'administer nodes'
+        - 'administer pathauto'
         - 'administer site configuration'
         - 'administer taxonomy'
         - 'administer themes'
         - 'administer url aliases'
         - 'administer users'
         - 'administer views'
+        - 'bulk delete aliases'
+        - 'bulk update aliases'
         - 'cancel account'
         - 'change own username'
         - 'create url aliases'
         - 'delete any file'
+        - 'notify of path changes'
         - 'select account cancellation method'
         - 'view the administration theme'

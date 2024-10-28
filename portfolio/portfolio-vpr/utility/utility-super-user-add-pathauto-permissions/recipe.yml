@@ -1,0 +1,13 @@
+
+name: "VPR Super User Pathauto permissions update configuration"
+description: "VPR Super User Pathauto permissions update configuration recipe for UBC Web Services websites"
+type: 'Config'
+config:
+  actions:
+    # update super user permissions
+    user.role.super_user:
+      grantPermissions:
+        - 'administer pathauto'
+        - 'bulk delete aliases'
+        - 'bulk update aliases'
+        - 'notify of path changes'
