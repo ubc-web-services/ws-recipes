@@ -1,0 +1,122 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 07231822-dcc0-43a1-a877-8ef9306c3e6f
+  bundle: student_profile
+  default_langcode: en
+  depends:
+    b7e1f37c-5215-4e85-b98c-611faf47c47c: node
+    0545322c-9190-4262-991d-f13bdf40e91e: file
+    1f6875cb-c9dc-4dbe-b253-201d991be5af: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'David Williams'
+  created:
+    -
+      value: 1727984595
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'David Williams | Extended Learning'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Through Writing Well: Storytelling, David gained writing skills to tell the many stories he has collected along the way. Read more about his experience.'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/about/student-profiles/writing/david-williams'
+    -
+      tag: meta
+      attributes:
+        property: 'og:site_name'
+        content: 'Extended Learning'
+    -
+      tag: meta
+      attributes:
+        property: 'og:url'
+        content: 'http://default/about/student-profiles/writing/david-williams'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: 'David Williams'
+    -
+      tag: meta
+      attributes:
+        property: 'og:description'
+        content: 'Through Writing Well: Storytelling, David gained writing skills to tell the many stories he has collected along the way. Read more about his experience.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:card'
+        content: summary
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:description'
+        content: 'Through Writing Well: Storytelling, David gained writing skills to tell the many stories he has collected along the way. Read more about his experience.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:title'
+        content: 'David Williams'
+  path:
+    -
+      alias: /about/student-profiles/writing/david-williams
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p><em><span lang="EN-US">David Williams is a retired natural resource and environmental economist. As a young man, he wanted a career that allowed him to see the world, have adventures and help people. He built a career in international development and has traveled to 85 countries and counting. Through&nbsp;</span></em><a href="https://extendedlearning.ubc.ca/courses/writing-well-storytelling/0300"><em><span lang="EN-US">Writing Well: Storytelling</span></em></a><em><span lang="EN-US">, David gained writing skills to tell the many stories he has collected along the way.&nbsp;</span></em></p><p><span lang="EN-US"></span></p><p><span lang="EN-US"><strong>What led you to seek out this course?</strong></span></p><p><span lang="EN-US">Two years ago, I asked my sister what she wanted for Christmas. She said: </span><em><span lang="EN-US">“You have led an interesting life. I want you to write a story for me”.</span></em><span lang="EN-US"> I wrote four short stories for her that Christmas, another four for her birthday and another four stories this past Christmas. I enjoyed the process but had to admit that I didn’t really know what I was doing. I started searching for a course to take and landed on </span><a href="https://extendedlearning.ubc.ca/courses/writing-well-storytelling/0300"><span lang="EN-US">Writing Well: Storytelling</span></a><span lang="EN-US"> at UBC, my alma mater. It looked like just the thing so I signed up.&nbsp;</span></p><p><span lang="EN-US"></span></p><p><span lang="EN-US"><strong>What was a highlight for you from the course?</strong></span></p><p><span lang="EN-US">My birth certificate says I am a senior citizen. Like anyone of my vintage, I am keen to remain sharp mentally. This course proved to be a great way to do that while learning something new and having fun doing it. In a note I posted thanking the instructor for the course, I said it was like he had taken one of those Swiffer mops and cleaned some cobwebs out of my 70-year-old brain. A necessary exercise!</span></p><p><span lang="EN-US"></span></p><p><span lang="EN-US"><strong>What surprised you about the course?</strong></span></p><p><span lang="EN-US">I am a long-time rugby referee. You don’t last long without a thick hide. It was a surprise to me how shy I was initially about writing something and putting it “out there” for the instructor and other students to read, comment on and, possibly, criticize. Fortunately, I got over the shyness quickly thanks to the encouragement of my instructor (which was not surprising) but also my fellow students (which was surprising). I was pleasantly surprised that my fellow students took the time to make thoughtful and encouraging comments on the pieces I submitted. I tried to do likewise.</span></p><p><strong><span lang="EN-US"></span></strong></p><p><span lang="EN-US"><strong>How are you applying the skills you learned in your personal or professional life?</strong></span></p><p><span lang="EN-US">Personally, the course has already helped me develop a more critical eye. The proof lies in the re-writes and edits I have done on pieces I wrote before I took </span><a href="https://extendedlearning.ubc.ca/courses/writing-well-storytelling/0300"><span lang="EN-US">Writing Well: Storytelling</span></a><span lang="EN-US">. The newly rewritten pieces are, on average, 1/3 shorter than the originals and are the better for it.</span></p><p><span lang="EN-US"></span></p><p><span lang="EN-US"><strong>Who would you recommend this course to?</strong></span></p><p><span lang="EN-US">The not-too-helpful answer is that I would recommend the course to anyone who wants to write better.&nbsp; I wanted to get better at writing non-fiction, but the course was just as valuable for fiction writers. &nbsp;Because I am in the demographic, I recommend the course especially to seniors. You are never too old to go back to school. The course was a great workout for the brain. Change is good, especially when it pushes you outside your comfort zone.&nbsp;</span></p>'
+      format: filtered_text
+      summary: 'Through Writing Well: Storytelling, David gained writing skills to tell the many stories he has collected along the way. Read more about his experience.'
+  field_area_of_study:
+    -
+      entity: b7e1f37c-5215-4e85-b98c-611faf47c47c
+  field_student_card_text:
+    -
+      value: '<p>David built a career in international development and has traveled to 85 countries and counting. Through Writing Well: Storytelling, David gained writing skills to tell the many stories he has collected along the way. Read more about his experience.</p>'
+      format: text_only
+  field_student_first_name:
+    -
+      value: David
+  field_student_image:
+    -
+      entity: 0545322c-9190-4262-991d-f13bdf40e91e
+      alt: 'Headshot of David.'
+      title: ''
+      width: 400
+      height: 400
+  field_student_last_name:
+    -
+      value: Williams
+  field_student_profile_card_quote:
+    -
+      value: 'Like anyone of my vintage, I am keen to remain sharp mentally. This course proved to be a great way to do that while learning something new and having fun doing it."'
+  field_student_profile_category:
+    -
+      entity: 1f6875cb-c9dc-4dbe-b253-201d991be5af

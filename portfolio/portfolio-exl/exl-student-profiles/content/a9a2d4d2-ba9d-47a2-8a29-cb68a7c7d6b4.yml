@@ -1,0 +1,122 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: a9a2d4d2-ba9d-47a2-8a29-cb68a7c7d6b4
+  bundle: student_profile
+  default_langcode: en
+  depends:
+    b7e1f37c-5215-4e85-b98c-611faf47c47c: node
+    560142a8-f69b-4ffb-ac06-c6a0bde60b20: file
+    1f6875cb-c9dc-4dbe-b253-201d991be5af: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Michelle Vandermoor'
+  created:
+    -
+      value: 1727985016
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Michelle Vandermoor | Extended Learning'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Michelle wanted to take a course to tap into creative writing and learn to write about one of her passions: food. Read more about her experience.'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/about/student-profiles/writing/michelle-vandermoor'
+    -
+      tag: meta
+      attributes:
+        property: 'og:site_name'
+        content: 'Extended Learning'
+    -
+      tag: meta
+      attributes:
+        property: 'og:url'
+        content: 'http://default/about/student-profiles/writing/michelle-vandermoor'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: 'Michelle Vandermoor'
+    -
+      tag: meta
+      attributes:
+        property: 'og:description'
+        content: 'Michelle wanted to take a course to tap into creative writing and learn to write about one of her passions: food. Read more about her experience.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:card'
+        content: summary
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:description'
+        content: 'Michelle wanted to take a course to tap into creative writing and learn to write about one of her passions: food. Read more about her experience.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:title'
+        content: 'Michelle Vandermoor'
+  path:
+    -
+      alias: /about/student-profiles/writing/michelle-vandermoor
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p><em>Michelle Vandermoor works in policy and planning for the federal government in the natural resources and environmental sector. Although her job involves a lot of technical writing, Michelle wanted to take a course to tap into creative writing and learn to write about one of her passions: food.</em></p><p><strong>What led you to seek out </strong><a href="/node/386299" data-entity-type="node" data-entity-uuid="105fe10b-998a-45fb-90a9-093c73044f3a" data-entity-substitution="canonical"><strong>Food and Travel Writing</strong></a><strong>?</strong></p><p>Taking this course was about opening doors and exploring the paths not taken. In university, I was very interested in local food systems and agriculture, and found myself volunteering at a small farmer’s market on campus after my first week. I loved talking about food, sharing the customers'' passion for it, and learning about it from a sustainability perspective. As my education progressed and career evolved, that hasn’t been the direction I took it in.</p><p>So I was looking for ways to get back into that scene, and the Extended Learning Food and Travel Writing course came up in a Google search. I thought, this is incredible. I do a lot of technical writing in my day-to-day work, so I wondered what it would be like to write creatively about food. Taking the course was kind of an experiment, and it was a good experiment. I really, really loved the course. Immediately upon finishing <a href="/node/385756" data-entity-type="node" data-entity-uuid="3a08bb04-afe0-43cd-8d49-ca152ccdbc64" data-entity-substitution="canonical">Food and Travel Writing</a>, I signed up for <a href="/node/385763" data-entity-type="node" data-entity-uuid="b456e00f-57d0-47ce-a899-1744f4b7aa13" data-entity-substitution="canonical">Freelance Writing: Introduction</a>.</p><p><strong>Why did you choose to learn from UBC Extended Learning?</strong></p><p>I was looking for a course to dip my toe in and see what it was like to go back to school in some way. Extended Learning has the option to just do one course and to build on your existing education. The timeframe and the cost made sense for me so that I could still work while taking the course. The workload is very reasonable and it is easy to fit into your existing schedule.</p><p><strong>What was a highlight for you from the course?</strong></p><p>The course assignments were so much fun, from writing restaurant reviews and recipes to learning photography principles and how to pitch ideas to publications. Really though, the key highlight was the instructor and the career experience that he brought to the table, which informed the course content. Specifically, his feedback on assignments was very thoughtful and informed. It really felt like you were gaining insight into the industry and accessing industry expertise. He managed expectations about what it would look like to start out in freelance writing and in the food and travel sector specifically, and where there are opportunities and challenges.</p><p><strong>How have you been applying what you learned in the course in your personal or professional life?</strong></p><p>I''ve already been thinking about how I can turn my recreational travel and food experiences into fuel for writing. It''s changed the way I think about what I eat and where I go. Now I think through the lens of how I can write about food, even if it''s just journaling and not necessarily for publication.<br>In my professional life, the course has got me thinking a lot about storytelling and what makes a compelling story. Even if you''re doing technical writing like I do a lot of in my “9 to 5” job, you need to develop a message to fit the audience and keep them engaged.</p><p><strong>Who would you recommend these courses to?</strong></p><p>I would recommend this course to anyone who is interested in food. If you''re like me, and you find that your mind drifts to thinking about food a lot, and you need an outlet, it''s an excellent one. And you don''t necessarily need to be interested in pursuing a freelance writing career &nbsp;The course helps you to understand your relationship with food and travel better. I think if you''re looking to do food and travel writing, it''s the best fit possible for getting started. But that doesn''t need to be the only goal.</p><p><a href="/node/385218" data-entity-type="node" data-entity-uuid="238a3d57-7406-4d91-8b0e-11d42350743e" data-entity-substitution="canonical"><span>Read more student profiles.</span></a></p>'
+      format: filtered_text
+      summary: 'Michelle wanted to take a course to tap into creative writing and learn to write about one of her passions: food. Read more about her experience.'
+  field_area_of_study:
+    -
+      entity: b7e1f37c-5215-4e85-b98c-611faf47c47c
+  field_student_card_text:
+    -
+      value: '<p>Michelle wanted to take a course to tap into creative writing and learn to write about one of her passions: food. Read more about her experience.</p>'
+      format: text_only
+  field_student_first_name:
+    -
+      value: Michelle
+  field_student_image:
+    -
+      entity: 560142a8-f69b-4ffb-ac06-c6a0bde60b20
+      alt: 'Headshot of Michelle.'
+      title: ''
+      width: 400
+      height: 400
+  field_student_last_name:
+    -
+      value: Vandermoor
+  field_student_profile_card_quote:
+    -
+      value: 'Food and Travel Writing has really changed the way I think about what I eat and where I go."'
+  field_student_profile_category:
+    -
+      entity: 1f6875cb-c9dc-4dbe-b253-201d991be5af

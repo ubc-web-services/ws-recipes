@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 592ac430-b556-4118-a2d0-0d99de0d5ac3
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'Roxana Kendall_400x400.jpg'
+  uri:
+    -
+      value: 'public://student-profile-images/2024-10/Roxana Kendall_400x400.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 113324
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1727981952

@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - system
+id: student_profiles_technology
+label: 'Student Profiles: Technology'
+menu_name: main
+parent: 'menu_link_content:3a64e941-f933-423c-b1c6-9cd23ca3fef2'
+menu_link: 'menu_position_link:student_profiles_technology'
+enabled: true
+weight: 1
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/about/student-profiles/technology/*'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      student_profile: student_profile

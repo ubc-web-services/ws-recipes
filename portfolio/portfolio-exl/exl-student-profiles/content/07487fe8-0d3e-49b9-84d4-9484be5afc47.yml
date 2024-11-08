@@ -1,0 +1,122 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 07487fe8-0d3e-49b9-84d4-9484be5afc47
+  bundle: student_profile
+  default_langcode: en
+  depends:
+    d67457eb-1ec0-48fd-8f68-1cb1f8cb4dd2: node
+    488fb2c5-305d-4963-b008-f98031468e74: file
+    75cdd8a0-4f3e-4217-a4be-98383607ff47: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Eduardo Maldonado'
+  created:
+    -
+      value: 1727984390
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Eduardo Maldonado | Extended Learning'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Eduardo enrolled in Intro to Systematic Program Design in Python to improve his software development and coding skills and to go beyond the free basic'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/about/student-profiles/technology/eduardo-maldonado'
+    -
+      tag: meta
+      attributes:
+        property: 'og:site_name'
+        content: 'Extended Learning'
+    -
+      tag: meta
+      attributes:
+        property: 'og:url'
+        content: 'http://default/about/student-profiles/technology/eduardo-maldonado'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: 'Eduardo Maldonado'
+    -
+      tag: meta
+      attributes:
+        property: 'og:description'
+        content: 'Eduardo enrolled in Intro to Systematic Program Design in Python to improve his software development and coding skills and to go beyond the free basic tutorials'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:card'
+        content: summary
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:description'
+        content: 'Eduardo enrolled in Intro to Systematic Program Design in Python to improve his software development and coding skills and to go beyond the free basic tutorials'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:title'
+        content: 'Eduardo Maldonado'
+  path:
+    -
+      alias: /about/student-profiles/technology/eduardo-maldonado
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p><em><span lang="EN-US">Eduardo Maldonado came to Canada as an international student in an MBA program. During his studies, he realized his passion for software development and completed a number of free online programming tutorials. He enrolled in&nbsp;</span></em><a href="/node/385659" data-entity-type="node" data-entity-uuid="d67457eb-1ec0-48fd-8f68-1cb1f8cb4dd2" data-entity-substitution="canonical"><em><span lang="EN-US">Introduction to Systematic Program Design in Python</span></em></a><em><span lang="EN-US"> to further improve his software development skills.</span></em></p><p><span lang="EN-US"></span></p><p><span lang="EN-US"><strong>What led you to seek out this program?</strong></span></p><p><span lang="EN-US">One of the main reasons I chose to enrol in </span><a href="/node/385659" data-entity-type="node" data-entity-uuid="d67457eb-1ec0-48fd-8f68-1cb1f8cb4dd2" data-entity-substitution="canonical"><span lang="EN-US">Intro to Systematic Program Design in Python</span></a><span lang="EN-US"> was to improve my software development and coding skills. I wanted to go beyond the free basic tutorials available online for Python.</span></p><p><strong><span lang="EN-US"></span></strong></p><p><span lang="EN-US"><strong>What was the highlight of the program for you?</strong></span></p><p><span lang="EN-US">The program has been developed by Meghan Allen, and the videos she recorded are very clear, concise and easy to understand. The videos are well-presented and professional. I also enjoyed the course structure and self-paced style. You can complete the modules mostly at your own pace, with the exception of the middle course and final project assignments.</span></p><p><strong><span lang="EN-US"></span></strong></p><p><span lang="EN-US"><strong>What surprised you about the program?</strong></span></p><p><span lang="EN-US">The first course, Intro to Systematic Program Design in Python Part I, is beginner-friendly. In Part II, I was pleasantly surprised by the opportunity to apply the knowledge gained from both courses to create well-designed and systematic programs. The course provides excellent guidance on functions and program design.</span></p><p><span lang="EN-US">I have done a lot of online courses, but the practice and systematic approach on how to design programs and functions in Python are highly valuable. This is something free online tutorials can''t teach.</span></p><p><strong><span lang="EN-US"></span></strong></p><p><span lang="EN-US"><strong>How can the knowledge and skills gained from the program be applied in either a professional or personal setting?</strong></span></p><p><span lang="EN-US">The knowledge and skills gained in this program can be used to build structured programs that businesses need or to create personal programs. A range of structured programs could be created to help in automation tasks, for example reading and displaying statistics, charts and information from a file by simply typing in the name of the file into the program.</span></p><p><strong><span lang="EN-US"></span></strong></p><p><span lang="EN-US"><strong>Who would you recommend this program to?</strong></span></p><p><span lang="EN-US">I would recommend this program to anyone who would like to know what a software development course is like, to those who want to upskill their knowledge in Python and learn how to design programs in a structured way, and to anyone who is unsure if coding is something they enjoy but would like to try it out before enrolling to a degree in computer science.</span></p><p><a href="/node/385217" data-entity-type="node" data-entity-uuid="717f01cf-7861-48a9-b051-e4945415e9ac" data-entity-substitution="canonical"><span>Read more student profiles.</span></a></p>'
+      format: filtered_text
+      summary: 'Eduardo enrolled in Intro to Systematic Program Design in Python to improve his software development and coding skills and to go beyond the free basic tutorials'
+  field_area_of_study:
+    -
+      entity: d67457eb-1ec0-48fd-8f68-1cb1f8cb4dd2
+  field_student_card_text:
+    -
+      value: "<p>Eduardo enrolled in Intro to Systematic Program Design in Python to improve his software development and coding skills and to go beyond the free basic tutorials available online. Read more about Eduardo's experience.</p>"
+      format: text_only
+  field_student_first_name:
+    -
+      value: Eduardo
+  field_student_image:
+    -
+      entity: 488fb2c5-305d-4963-b008-f98031468e74
+      alt: 'headshot of Eduardo.'
+      title: ''
+      width: 584
+      height: 408
+  field_student_last_name:
+    -
+      value: Maldonado
+  field_student_profile_card_quote:
+    -
+      value: 'I wanted to go beyond the free basic tutorials available online for Python."'
+  field_student_profile_category:
+    -
+      entity: 75cdd8a0-4f3e-4217-a4be-98383607ff47

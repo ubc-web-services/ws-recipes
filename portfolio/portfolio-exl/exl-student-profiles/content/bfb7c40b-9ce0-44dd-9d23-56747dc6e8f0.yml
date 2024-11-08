@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: bfb7c40b-9ce0-44dd-9d23-56747dc6e8f0
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: Janet_Miller_400x400_0.jpg
+  uri:
+    -
+      value: 'public://student-profile-images/2024-10/Janet_Miller_400x400_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 91553
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1727983350

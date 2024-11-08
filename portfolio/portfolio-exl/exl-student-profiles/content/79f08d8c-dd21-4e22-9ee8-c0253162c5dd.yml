@@ -1,0 +1,122 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 79f08d8c-dd21-4e22-9ee8-c0253162c5dd
+  bundle: student_profile
+  default_langcode: en
+  depends:
+    20a38d8a-d8bb-4e59-8ec4-2a5b7fac94f7: node
+    c31d8d50-e9e1-47ef-9826-8280af38aa18: file
+    35d89425-ba1d-4899-bcf4-aa9caef866a9: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Casey Chung'
+  created:
+    -
+      value: 1727974679
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Casey Chung | Extended Learning'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Casey saw an opportunity to help others when he first learned about the UBC Certificate in Organizational Coaching. Here’s how the certificate helped him.'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/about/student-profiles/coaching/casey-chung'
+    -
+      tag: meta
+      attributes:
+        property: 'og:site_name'
+        content: 'Extended Learning'
+    -
+      tag: meta
+      attributes:
+        property: 'og:url'
+        content: 'http://default/about/student-profiles/coaching/casey-chung'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: 'Casey Chung'
+    -
+      tag: meta
+      attributes:
+        property: 'og:description'
+        content: 'Casey saw an opportunity to help others when he first learned about the UBC Certificate in Organizational Coaching. Here’s how the certificate helped him.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:card'
+        content: summary
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:description'
+        content: 'Casey saw an opportunity to help others when he first learned about the UBC Certificate in Organizational Coaching. Here’s how the certificate helped him.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:title'
+        content: 'Casey Chung'
+  path:
+    -
+      alias: /about/student-profiles/coaching/casey-chung
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p><span lang="EN-US">Like many young people growing up in the 90s, Casey Chung followed the path that his parents and peers expected of him: go to university, earn a degree, and get a stable, professional job.&nbsp;</span></p><p><span lang="EN-US">But within a couple of years of starting his career at a multi-national accounting firm, it became clear to Casey that he didn’t want to be there. “I felt lost in my career, and started wondering what to do with my life,” he recalls.&nbsp;</span></p><p><span lang="EN-US">A death in 2018 in his extended family marked the beginning of a long transition. At first, he tried to keep busy to suppress his growing anxiety. He eventually sought the help of a therapist, who was also a life coach. “I became enthusiastic about mental health, self-development, my creativity, working with people, and education,” explains Casey. “I didn’t call my therapy ‘coaching.’ I didn’t even know what coaching was.”</span></p><p><span lang="EN-US">Two years after he started working with his therapist, the pandemic hit. “At that point, I realized there was an opportunity to help others,” recalls Casey. “I had put the work into myself, and I felt prepared to help.” During a session with his therapist, she recommended he look into the </span><a href="/node/385590" data-entity-type="node" data-entity-uuid="20a38d8a-d8bb-4e59-8ec4-2a5b7fac94f7" data-entity-substitution="canonical"><span lang="EN-US">UBC Certificate in Organizational Coaching</span></a><span lang="EN-US">.&nbsp;</span></p><p><span lang="EN-US">“It’s really important to mention that I had a lot of doubts within myself,” says Casey. “I thought coaching was for 35 to 40-year-olds with life experience.” Despite his reservations, he applied, was accepted into the program, and quit his job.</span></p><p><span lang="EN-US">Within days of quitting, the partners at his firm called him back, and asked him to come on as a performance development manager to coach and support the junior staff. “It was a really amazing opportunity to practise and help 80 ‘clients,’ all new to the organization and workforce, and joining during the hardest time of my generation. It ended up being a dream job.”</span></p><p><span lang="EN-US">After he graduated from the Organizational Coaching program in May 2021, Casey turned his focus to building his own clientele with the goal of coaching full-time. Says Casey, “The UBC program helped me understand systems. And what I discovered is that I didn’t have enough support – nor influence – within my organization to change the culture. The system I was in was structured, hierarchical and regimented.”</span></p><p><span lang="EN-US">Sensing an increasing resistance to change from his accounting firm, Casey quit again three months later to pursue his dream of full-time coaching to help CPAs, accountants in training and young finance professionals advance their careers without burning out. “Through the program, I could see the problem with burnout isn’t an office problem or even an organizational problem; it’s an industry problem. I do believe coaching will play a large role in change.”</span></p><p><span lang="EN-US">Casey also attributes the Organizational Coaching program for helping him through an incredibly difficult period of his life. “For nine months, I was getting coached almost every single day by my cohort, mentors and experienced coaches. The feelings of not being sure of myself, getting stuck – those feelings were gone. I feel so much better equipped to make decisions for myself, for my family and for organizations.”</span></p><p><span lang="EN-US">Since graduating in 2020 at just 25 years old, Casey has gone back as an alumni coach and guest facilitator for following cohorts. “A really key aspect for me has been the community. Everyone is extremely caring, non-judgmental, and open to support, learning and growth. It’s a very constructive community.”</span></p><p><span lang="EN-US">Heading into 2023, Casey is planning to shift his coaching practice from one-on-one coaching to group, team and organizational coaching, with a focus on helping accounting and financial leaders. “The program gave me the foundations and frameworks of coaching, the practice, the feedback and tools like assessments. But the expectation is that you create your own experience, methods and ways of working with clients.”</span></p><p><span lang="EN-US">He adds, “What I like about the coaching profession is you can make it your own business as a full-time job, or do it on the side, or use it in the workplace. The group, team and organizational coaching aspects will really pay dividends in the long run. And coaching is very much a skill you can use in life.”</span></p><p><a href="/node/385214" data-entity-type="node" data-entity-uuid="516806a9-f6e6-441f-9eef-849bfae7efc8" data-entity-substitution="canonical"><span>Read more student profiles.</span></a></p><p><span lang="EN-US"></span></p>'
+      format: filtered_text
+      summary: 'Casey saw an opportunity to help others when he first learned about the UBC Certificate in Organizational Coaching. Here’s how the certificate helped him.'
+  field_area_of_study:
+    -
+      entity: 20a38d8a-d8bb-4e59-8ec4-2a5b7fac94f7
+  field_student_card_text:
+    -
+      value: '<p>Casey saw an opportunity to help others when he first learned about the UBC Certificate in Organizational Coaching. Here’s how the certificate helped him.</p>'
+      format: text_only
+  field_student_first_name:
+    -
+      value: Casey
+  field_student_image:
+    -
+      entity: c31d8d50-e9e1-47ef-9826-8280af38aa18
+      alt: 'Headshot of Casey.'
+      title: ''
+      width: 400
+      height: 400
+  field_student_last_name:
+    -
+      value: Chung
+  field_student_profile_card_quote:
+    -
+      value: 'The kinds of career paths you can develop from this skillset are wide. I really want to highlight that this was nine months — nine months for me to make a full career shift.”'
+  field_student_profile_category:
+    -
+      entity: 35d89425-ba1d-4899-bcf4-aa9caef866a9

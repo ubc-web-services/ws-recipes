@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: ba9ef761-9964-445a-8f2e-e7af5862337c
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: Aaron_4319_2.jpg
+  uri:
+    -
+      value: 'public://student-profile-images/2024-09/Aaron_4319_2.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 2743692
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1727304371

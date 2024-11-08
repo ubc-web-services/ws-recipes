@@ -1,0 +1,122 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 3b7b8ba1-b9a9-4d21-bc6b-54f60dec994a
+  bundle: student_profile
+  default_langcode: en
+  depends:
+    20a38d8a-d8bb-4e59-8ec4-2a5b7fac94f7: node
+    eda9f5a5-4181-4e4c-8f5b-b8561b987e20: file
+    35d89425-ba1d-4899-bcf4-aa9caef866a9: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Kels Davidson'
+  created:
+    -
+      value: 1727978704
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Kels Davidson | Extended Learning'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Kels applied to the UBC Certificate in Organizational Coaching program after a colleague suggested looking into coaching. Here’s what the program meant to her.'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/about/student-profiles/coaching/kels-davidson'
+    -
+      tag: meta
+      attributes:
+        property: 'og:site_name'
+        content: 'Extended Learning'
+    -
+      tag: meta
+      attributes:
+        property: 'og:url'
+        content: 'http://default/about/student-profiles/coaching/kels-davidson'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: 'Kels Davidson'
+    -
+      tag: meta
+      attributes:
+        property: 'og:description'
+        content: 'Kels applied to the UBC Certificate in Organizational Coaching program after a colleague suggested looking into coaching. Here’s what the program meant to her.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:card'
+        content: summary
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:description'
+        content: 'Kels applied to the UBC Certificate in Organizational Coaching program after a colleague suggested looking into coaching. Here’s what the program meant to her.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:title'
+        content: 'Kels Davidson'
+  path:
+    -
+      alias: /about/student-profiles/coaching/kels-davidson
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p><span lang="EN-CA">Kels started her adult life pursuing an education in social work and quickly realized that she needed more life experience to work in the field. Her realization led her into retail, where she would spend the next 20 years working in leadership roles. She reflects on how coaching was something she has always done, “I realized that through conversations and coaching colleagues within their roles, they were able to gain life skills – not just skills to make a sale in the moment.”</span></p><p><span lang="EN-CA">Kels eventually moved into human resources where she managed a health and benefits program for staff all over North America. This is the role where the wellness aspects really stood out to her. “So there was the benefits piece, which is quite technical… But there was also the wellness piece which was really focusing on how people take care of their mental health during different trials and tribulations. You could also just focus on yourself, and really kind of help to find ways to make you thrive.”</span></p><p><span lang="EN-CA">At this point in her career, Kels started thinking about what part of her job she really liked the most.&nbsp; “It always came back to seeing the people that I work with succeed. Getting them to a point where they got promoted or moved to different parts into their current path. And it was really through the conversations and coaching that I could see that happen for people,” she says.</span></p><p><span lang="EN-CA">About a year later, a colleague suggested Kels look into coaching and that is what got her on the path. She looked at a few different programs and coach training centres. She chose the&nbsp;</span><a href="/node/385590" data-entity-type="node" data-entity-uuid="20a38d8a-d8bb-4e59-8ec4-2a5b7fac94f7" data-entity-substitution="canonical"><span lang="EN-CA">UBC Certificate in Organizational Coaching</span></a><span lang="EN-CA"> program for a number of reasons. “What really appealed to me was, one, it’s one of the best universities, and I knew that there would be a standard, a high standard of education and support. UBC also had that organizational lens that looked at how you work with groups within a workplace or how to bring coaching into the workplace. The program really linked to what I wanted to do.”</span></p><p><span lang="EN-CA">Kels graduated from the program in 2020 and spent a lot of time coaching off the side of her desk.&nbsp; She was working on building her confidence, getting ready to really say “Yes, I''m a coach. This is what I do.” She maintained her friendships from the cohort, and together built a coaching cooperative called Fuse Coaching Cooperative to bring coaching to non-profits. By the end of 2020, she had achieved her Associate Certified Coach accreditation with the International Coaching Federation, and in 2021 transitioned out of her job and moved into coaching full time with a coaching platform called Better Up.&nbsp;</span></p><p><span lang="EN-CA">In this new full-time coaching role, Kels immediately became busy seeing incredible clients all across North America, which helped her find her specialization. “This really confirmed that my coaching niche is leadership development: working with leaders who want to increase their effectiveness as well as take care of themselves,” she says. “Because being a leader can be very draining and stressful, I do a lot around management, leadership skills, communication and those types of things with my clients.”</span></p><p><span lang="EN-CA">While she was in her new role, she also signed up to be an alumni coach and cohort leader with the Organizational Coaching program.&nbsp; She comments about what drew her back to being part of the program after graduating. “One thing that I love about being involved with the program – both being on the program team and connecting with new learners – is it’s such a community of support. It''s unlike anything that I''ve ever felt before in a corporate setting, where it''s just coaches. Coaches are kind, coaches are supportive, and you''re constantly around people who are helping you be your best, and that''s really wonderful.”</span></p><p><span lang="EN-CA">A-few things that really stood out to Kels about this program, “This is a lot more reflective. It''s a lot more learning about yourself as you''re learning to be in service to others.” She adds, “The cohort was filled with incredibly talented, insightful people who are there to do the same thing and grow and learn. They are such a supportive group. Everybody from the instructors to the learners. It was different from any other school that I had experienced before and very, very impactful in that way.”</span></p><p><span lang="EN-CA">She has this advice for others considering the program. “I think the biggest thing is, people are going to get what they put into it. And I would say that if you''re willing to put in the work, the time and the vulnerability, you can do great things with it. That''s the same with coaching. Clients are going to get what they put into it.”</span></p><p><span lang="EN-CA">She adds, “Who I thought I would be and what I thought I would be doing when I entered the program is very different from what I''m doing now. But what I''m doing now actually surpasses what I thought I could be. Which is great!”</span></p><p><a href="/node/385214" data-entity-type="node" data-entity-uuid="516806a9-f6e6-441f-9eef-849bfae7efc8" data-entity-substitution="canonical"><span>Read more student profiles.</span></a></p>'
+      format: filtered_text
+      summary: 'Kels applied to the UBC Certificate in Organizational Coaching program after a colleague suggested looking into coaching. Here’s what the program meant to her.'
+  field_area_of_study:
+    -
+      entity: 20a38d8a-d8bb-4e59-8ec4-2a5b7fac94f7
+  field_student_card_text:
+    -
+      value: '<p>Kels applied to the UBC Certificate in Organizational Coaching program after a colleague suggested looking into coaching. Here’s what the program meant to her.</p>'
+      format: text_only
+  field_student_first_name:
+    -
+      value: Kels
+  field_student_image:
+    -
+      entity: eda9f5a5-4181-4e4c-8f5b-b8561b987e20
+      alt: 'Headshot of Kels.'
+      title: ''
+      width: 400
+      height: 400
+  field_student_last_name:
+    -
+      value: Davidson
+  field_student_profile_card_quote:
+    -
+      value: 'This program stood out to me because I wanted to work with teams, individuals and leaders. When I looked into the program, I thought Yes! This totally sounds exactly like what I want to do.”'
+  field_student_profile_category:
+    -
+      entity: 35d89425-ba1d-4899-bcf4-aa9caef866a9

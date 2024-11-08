@@ -1,0 +1,122 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 741b8fb7-99c8-4114-a822-6b16e9d38053
+  bundle: student_profile
+  default_langcode: en
+  depends:
+    20a38d8a-d8bb-4e59-8ec4-2a5b7fac94f7: node
+    26a1ad8a-69a0-4fed-9f94-87760569c2b9: file
+    35d89425-ba1d-4899-bcf4-aa9caef866a9: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Trevor Baker'
+  created:
+    -
+      value: 1727982149
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Trevor Baker | Extended Learning'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "Trevor is a graduate of the 2019-2020\_UBC Certificate in Organizational Coaching\_program. Here’s his experience in the program."
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/about/student-profiles/coaching/trevor-baker'
+    -
+      tag: meta
+      attributes:
+        property: 'og:site_name'
+        content: 'Extended Learning'
+    -
+      tag: meta
+      attributes:
+        property: 'og:url'
+        content: 'http://default/about/student-profiles/coaching/trevor-baker'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: 'Trevor Baker'
+    -
+      tag: meta
+      attributes:
+        property: 'og:description'
+        content: "Trevor is a graduate of the 2019-2020\_UBC Certificate in Organizational Coaching\_program. Here’s his experience in the program."
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:card'
+        content: summary
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:description'
+        content: "Trevor is a graduate of the 2019-2020\_UBC Certificate in Organizational Coaching\_program. Here’s his experience in the program."
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:title'
+        content: 'Trevor Baker'
+  path:
+    -
+      alias: /about/student-profiles/coaching/trevor-baker
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p><span lang="EN-CA"><strong>Trevor Baker, ACC</strong>, is a senior consultant and partner at MacDonald Search Group in Vancouver, and is a graduate of the 2019-2020&nbsp;</span><a href="/node/385590"><span lang="EN-CA">UBC Certificate in Organizational Coaching</span></a><span lang="EN-CA">&nbsp;program. He’s a recruiter and coach, and is working toward his Chartered Professionals in Human Resources designation. Trevor offered his perspectives on his experience in the organizational coaching program.</span></p><p><span lang="EN-CA"><strong>What led you to pursue the UBC Certificate in Organizational Coaching?</strong></span><strong><span lang="EN-CA"></span></strong></p><p><span lang="EN-CA">My organization, MacDonald Search Group, was in the early stages of a generational leadership transition. We were also adding new consultants and offices across the country, and we needed a way to ensure the consultants had support to roll out our process nationally. When I looked at my resume and my future leadership role in the organization, I needed to ensure my leadership and coaching style was the best it could be in a people-first organization like ours.</span><span lang="EN-CA"></span></p><p><span lang="EN-CA">My clients also need the best of me, and for a long time I felt like I was only “okay” at coaching them. I took the program to up my game and learn frameworks and techniques, and acquire tools to assist me in delivering against those priorities.</span><span lang="EN-CA"></span></p><p><span lang="EN-CA"><strong>Why did you choose an organizational coaching credential?</strong></span><strong><span lang="EN-CA"></span></strong></p><p><span lang="EN-CA">I chose organizational coaching because it aligned better with my overall goals. I felt that supporting the smooth functioning of a group of people is more complex and demands more sophisticated skills than coaching one person towards their objectives. Organizational coaching reflects better how companies work. The amplifying effect of helping people succeed together is also highly rewarding.</span><span lang="EN-CA"></span></p><p><span lang="EN-CA"><strong>How did you determine this program was the right fit for you? What were your checkboxes?</strong></span><strong><span lang="EN-CA"></span></strong></p><p><span lang="EN-CA">I wanted a lot of opportunities to practise and learn coaching new techniques and skills in a safe environment – check! I also wanted a program that led to accreditation – check! Lastly, I wanted a great cohort of like-minded people to grow and develop with. The people and instructors in the cohort really made the difference – a highly intelligent, highly motivated and engaged group of people – wow, what a group. I learned as much from them as I did from the content of the program.</span><span lang="EN-CA"></span></p><p><span lang="EN-CA"><strong>What skills are you hoping to gain?</strong></span><strong><span lang="EN-CA"></span></strong></p><p><span lang="EN-CA">I went in hoping to gain a more robust foundation for coaching and developing people as individuals and in groups. I came out with that, as well as with a significantly more robust understanding of myself and how I work with others.</span><span lang="EN-CA"></span></p><p><span lang="EN-CA"><strong>Was the time, effort and money worth it?</strong></span><strong><span lang="EN-CA"></span></strong></p><p><span lang="EN-CA">It was one of those classic, “what you put in you get out of it” kind of scenarios, so yes the time and effort were worth it. The return on investment has been there for me because my ability to provide value yielded far higher billable revenue in part because of the program.</span><span lang="EN-CA"></span></p><p><span lang="EN-CA"><strong>What, if anything, has surprised you about the program?</strong></span><strong><span lang="EN-CA"></span></strong></p><p><span lang="EN-CA">There were plenty of surprises! First was how emotional it got, for myself and others. When coaching is done right, it really digs into some challenging areas. This was a surprise as most of my previous leadership and coaching training was done in a “sanitized” corporate environment.</span><span lang="EN-CA"></span></p><p><span lang="EN-CA">This program created a safe environment that allowed people to really open up and it was amazing and genuinely enthralling to see people have substantive personal changes while learning to be coaches. Another surprise was how academic it was. There was a lot more paper writing than I was prepared for. I really had to think deeply in a way I wasn’t used to, which was intellectually challenging, in a good way.</span><span lang="EN-CA"></span></p><p><span lang="EN-CA"><strong>What have you gained personally and professionally from the program?</strong></span><strong><span lang="EN-CA"></span></strong></p><p><span lang="EN-CA">I gained huge insights into my ethics and values, as well as a whole new framework for working with people which has been especially helpful working inter-generationally within my organization. My relationships are better across the organization, and with my family. I’ve approached challenging relationships in a new way with great success, and I’m able to reflect in a much deeper way on problems and challenges than I did before. My clients have had substantially better experiences and the outcomes have been amazing because of it!</span></p><p><a href="/node/385214" data-entity-type="node" data-entity-uuid="516806a9-f6e6-441f-9eef-849bfae7efc8" data-entity-substitution="canonical"><span>Read more student profiles.</span></a><span lang="EN-CA"></span></p><p><span lang="EN-CA"></span></p>'
+      format: filtered_text
+      summary: "Trevor is a graduate of the 2019-2020\_UBC Certificate in Organizational Coaching\_program. Here’s his experience in the program."
+  field_area_of_study:
+    -
+      entity: 20a38d8a-d8bb-4e59-8ec4-2a5b7fac94f7
+  field_student_card_text:
+    -
+      value: '<p>Trevor is a graduate of the 2019-2020 UBC Certificate in Organizational Coaching program. Here’s his experience in the program.</p>'
+      format: text_only
+  field_student_first_name:
+    -
+      value: Trevor
+  field_student_image:
+    -
+      entity: 26a1ad8a-69a0-4fed-9f94-87760569c2b9
+      alt: 'Headshot of Trevor.'
+      title: ''
+      width: 400
+      height: 400
+  field_student_last_name:
+    -
+      value: Baker
+  field_student_profile_card_quote:
+    -
+      value: 'UBC was an easy choice for its fantastic global reputation and the quality of the onsite and virtual elements of the program. The capstone project was an amazing real-life experience to implement all we learned in a very real, tangible way.”'
+  field_student_profile_category:
+    -
+      entity: 35d89425-ba1d-4899-bcf4-aa9caef866a9

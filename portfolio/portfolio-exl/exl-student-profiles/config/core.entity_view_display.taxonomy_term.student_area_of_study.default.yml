@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.student_area_of_study
+  module:
+    - text
+id: taxonomy_term.student_area_of_study.default
+targetEntityType: taxonomy_term
+bundle: student_area_of_study
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

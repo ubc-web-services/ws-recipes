@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: f6f41b07-454a-4740-a3f9-ad1a4143a9ae
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'justine simmons_400x400.jpg'
+  uri:
+    -
+      value: 'public://student-profile-images/2024-10/justine simmons_400x400.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 112140
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1727984822

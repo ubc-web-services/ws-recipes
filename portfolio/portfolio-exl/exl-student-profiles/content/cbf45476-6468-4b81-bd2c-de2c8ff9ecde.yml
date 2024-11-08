@@ -1,0 +1,122 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: cbf45476-6468-4b81-bd2c-de2c8ff9ecde
+  bundle: student_profile
+  default_langcode: en
+  depends:
+    742fddf1-9fbd-42d8-b7e2-c9bd240c9188: node
+    2bfd61e1-57b5-4487-a1fe-1c5fd0e8227e: file
+    5756984d-2ebe-407d-b296-42031df012aa: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Cam & Gail Pearce'
+  created:
+    -
+      value: 1727476450
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Cam & Gail Pearce | Extended Learning'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Since retiring in 2008, Gail and her husband Cam have been enjoying the Academic Explorations On-Campus lecture series. Together they stay current and'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/about/student-profiles/academic-explorations/cam-gail-pearce'
+    -
+      tag: meta
+      attributes:
+        property: 'og:site_name'
+        content: 'Extended Learning'
+    -
+      tag: meta
+      attributes:
+        property: 'og:url'
+        content: 'http://default/about/student-profiles/academic-explorations/cam-gail-pearce'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: 'Cam & Gail Pearce'
+    -
+      tag: meta
+      attributes:
+        property: 'og:description'
+        content: 'Since retiring in 2008, Gail and her husband Cam have been enjoying the Academic Explorations On-Campus lecture series. Together they stay current and informed.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:card'
+        content: summary
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:description'
+        content: 'Since retiring in 2008, Gail and her husband Cam have been enjoying the Academic Explorations On-Campus lecture series. Together they stay current and informed.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:title'
+        content: 'Cam & Gail Pearce'
+  path:
+    -
+      alias: /about/student-profiles/academic-explorations/cam-gail-pearce
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p><span lang="EN-CA"><strong>Keeping Current Together</strong></span></p><p><span lang="EN-CA">Art, biology, history, economics, political science, philosophy, artificial intelligence, music: there aren’t too many One Week @ UBC (now </span><a href="/node/385645" data-entity-type="node" data-entity-uuid="742fddf1-9fbd-42d8-b7e2-c9bd240c9188" data-entity-substitution="canonical"><span lang="EN-CA">Academic Explorations</span></a><span lang="EN-CA"> On-Campus) topics that Cam and Gail Pearce haven’t explored.</span></p><p><span lang="EN-CA">In fact, since retiring from her teaching career in 2008, Gail has yet to miss a series, often taking courses in all three weeks of June. Gail attends with groups of friends she’s met through volunteering at the Vancouver Art Gallery and VanDusen Gardens, and with her cousin.</span></p><p><span lang="EN-CA">When her husband Cam retired, he started joining her when he semi-retired as an engineer with a Vancouver high-tech company. “Gail keeps me coming back,” he says with a smile. “The courses give me more exposure and depth to topics than I would otherwise get on my own.”</span></p><p><span lang="EN-CA">“We go together but we’ll often go to different courses,” says Gail. “We’ll discuss the classes at the break and at home. We go to topics we want to learn more about. Having a choice is very powerful.”</span></p><p><span lang="EN-CA">Gail speaks of a course on climate change that she took, a topic she had been reading about in the </span><em><span lang="EN-CA">Globe and Mail</span></em><span lang="EN-CA">and other papers</span><em><span lang="EN-CA">.&nbsp;</span></em><span lang="EN-CA">“The course helped me understand climate change at a much different level,” Gail explains. “Since then, I’m even more aware of what’s out there. I can converse with people now; I can even talk about carbon credits. We bought a Toyota Prius Prime plug-in and have filled it up only once in one and a half years. We take transit. It just feels good.”&nbsp;</span></p><p><span lang="EN-CA">They find the different professors and instructors equally compelling. Some are seasoned academics and some are retired professors. Others are young and bring a fresh and current perspective to topics. “The older professors are endearing and have a long history with their subject matter. The younger professors have a finger on what’s happening and are current,” agree the couple.</span></p><p><span lang="EN-CA">Both Cam and Gail have a long history with UBC. Cam’s dad was a faculty member of the Department of Pathology, and both Cam and Gail graduated from UBC. Says Cam, “I’ll wander past the library, or grab a cinnamon bun. It brings back memories, and it’s interesting to see the changes.”</span></p><p><span lang="EN-CA">The couple plan to continue coming to One Week @ UBC, and usually arrange their schedules, travel and plans around the course schedule.&nbsp;</span></p><p><span lang="EN-CA">“I love being a student,” says Gail. “The courses have been varied and interesting. All are pretty relevant. I get stimulation and information.” Cam adds, laughing, “We had to get used to the swivel seats. Have you seen those, and how you get into them?”</span></p><p><a href="/node/385212" data-entity-type="node" data-entity-uuid="64755114-7a35-4b54-8e5d-bb84cd290cc4" data-entity-substitution="canonical"><span>Read more student profiles.</span></a></p><p><span lang="EN-CA"></span></p>'
+      format: filtered_text
+      summary: 'Since retiring in 2008, Gail and her husband Cam have been enjoying the Academic Explorations On-Campus lecture series. Together they stay current and informed.'
+  field_area_of_study:
+    -
+      entity: 742fddf1-9fbd-42d8-b7e2-c9bd240c9188
+  field_student_card_text:
+    -
+      value: '<p>Since retiring in 2008, Gail and her husband Cam have been enjoying the Academic Explorations On-Campus lecture series. Together they stay current and informed. Read more about their experience.</p>'
+      format: text_only
+  field_student_first_name:
+    -
+      value: 'Cam & Gail'
+  field_student_image:
+    -
+      entity: 2bfd61e1-57b5-4487-a1fe-1c5fd0e8227e
+      alt: 'Cam & Gail Pearce'
+      title: ''
+      width: 400
+      height: 400
+  field_student_last_name:
+    -
+      value: Pearce
+  field_student_profile_card_quote:
+    -
+      value: 'I love being a student. The courses have been varied and interesting. All are pretty relevant. I get stimulation and information.'
+  field_student_profile_category:
+    -
+      entity: 5756984d-2ebe-407d-b296-42031df012aa

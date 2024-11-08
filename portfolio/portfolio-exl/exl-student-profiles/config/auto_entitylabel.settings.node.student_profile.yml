@@ -1,0 +1,10 @@
+status: 1
+pattern: '[node:field_student_first_name] [node:field_student_last_name]'
+escape: false
+preserve_titles: false
+save: false
+chunk: 50
+dependencies:
+  config:
+    - node.type.student_profile
+new_content_behavior: 1

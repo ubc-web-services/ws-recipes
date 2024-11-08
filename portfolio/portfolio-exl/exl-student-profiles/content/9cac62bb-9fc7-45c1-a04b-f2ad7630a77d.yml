@@ -1,0 +1,122 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 9cac62bb-9fc7-45c1-a04b-f2ad7630a77d
+  bundle: student_profile
+  default_langcode: en
+  depends:
+    b7e1f37c-5215-4e85-b98c-611faf47c47c: node
+    f6f41b07-454a-4740-a3f9-ad1a4143a9ae: file
+    1f6875cb-c9dc-4dbe-b253-201d991be5af: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Justine Simmons'
+  created:
+    -
+      value: 1727984776
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Justine Simmons | Extended Learning'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "Justine's work revolves around communicating ideas effectively. Discover how Writing Well: Grammar impacted her."
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/about/student-profiles/writing/justine-simmons'
+    -
+      tag: meta
+      attributes:
+        property: 'og:site_name'
+        content: 'Extended Learning'
+    -
+      tag: meta
+      attributes:
+        property: 'og:url'
+        content: 'http://default/about/student-profiles/writing/justine-simmons'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: 'Justine Simmons'
+    -
+      tag: meta
+      attributes:
+        property: 'og:description'
+        content: "Justine's work revolves around communicating ideas effectively. Discover how Writing Well: Grammar impacted her."
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:card'
+        content: summary
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:description'
+        content: "Justine's work revolves around communicating ideas effectively. Discover how Writing Well: Grammar impacted her."
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:title'
+        content: 'Justine Simmons'
+  path:
+    -
+      alias: /about/student-profiles/writing/justine-simmons
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p><em>Justine has a background in marketing and communications as well as degrees in foreign languages and teaching. She has worked in a variety of industries with many responsibilities including promotions, advertising, events, technical writing and data analysis, sometimes all of this while managing a team. The common denominator in all of her work has been the need to communicate ideas and information clearly and convincingly to others.</em></p><p><strong>What led you to seek out writing courses?</strong></p><p>Firstly, like many people, I write all day long including: reports, promotional materials, customer communication and lots of emails. I also edit financial reports and coach staff with their writing. Although I have a background in communication and a degree in languages, there are always niggly little grammatical questions I have such as, does a comma belong here, or not? Or, is quicker or more quickly, correct? I want to spend less time wondering about these things and more time producing clear and accurate work.</p><p><strong>What was a highlight for you from </strong><a href="/node/386461"><strong>Writing Well: Grammar</strong></a><strong>?&nbsp;</strong></p><p>There were a couple. One was the ease of working online. I thought it would be very dry compared to an in-person class because I’m a complete extrovert, but the module I took was very interactive with regular short quizzes, lots of visuals, highlighted tips, short lessons, and a format that kept me moving along and accountable. The second highlight was the friendliness of my instructor, who I never met in person, but with whom I developed a weekly banter. She was always very responsive. I looked forward to each weekly module release.</p><p><strong>What surprised you about the course?</strong></p><p>The level of knowledge we covered was higher than I expected. I thought that a course without pre-requisites might be diluted, or too novice-level. I was pleasantly surprised by the challenge and even with a background in communications, I was humbled by the gaps in my knowledge.</p><p><strong>How are you applying the skills you learned in your personal or professional life?</strong></p><p>I have already shared some of the grammatical lessons I learned with my staff. I now have the labels and language I need to clearly explain the “whys” of grammar, rather than just knowing that something “doesn’t look right.” This helps me to identify why logic doesn’t flow at times, leading to a fuzzy or unclear message. I also feel more confident about my writing being professional enough to print for public consumption. People notice mistakes!</p><p><strong>Who would you recommend this course to?</strong></p><p>I would recommend this course to anyone whose writing is meant to be taken seriously - be it reports, blogs, or daily emails. An error in grammar can put your work into question, as well as leading to misunderstandings. This course would also be a great way to gain some confidence when re-entering the workforce after a long break-be it parental leave, a job change or Covid.</p><p><a href="/node/385218" data-entity-type="node" data-entity-uuid="238a3d57-7406-4d91-8b0e-11d42350743e" data-entity-substitution="canonical"><span>Read more student profiles.</span></a><br>&nbsp;</p>'
+      format: filtered_text
+      summary: "Justine's work revolves around communicating ideas effectively. Discover how Writing Well: Grammar impacted her."
+  field_area_of_study:
+    -
+      entity: b7e1f37c-5215-4e85-b98c-611faf47c47c
+  field_student_card_text:
+    -
+      value: "<p>Justine's work revolves around communicating ideas effectively. Discover how Writing Well: Grammar impacted her.</p>"
+      format: text_only
+  field_student_first_name:
+    -
+      value: Justine
+  field_student_image:
+    -
+      entity: f6f41b07-454a-4740-a3f9-ad1a4143a9ae
+      alt: 'Headshot of Justine.'
+      title: ''
+      width: 400
+      height: 400
+  field_student_last_name:
+    -
+      value: Simmons
+  field_student_profile_card_quote:
+    -
+      value: 'I now feel more confident about my writing being professional enough to print for public consumption.”'
+  field_student_profile_category:
+    -
+      entity: 1f6875cb-c9dc-4dbe-b253-201d991be5af

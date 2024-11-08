@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 6f22d935-cdc5-43d4-806d-395ea6df1bf4
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: laura_martini_400x400.jpg
+  uri:
+    -
+      value: 'public://student-profile-images/2024-10/laura_martini_400x400.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 220335
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1727983762

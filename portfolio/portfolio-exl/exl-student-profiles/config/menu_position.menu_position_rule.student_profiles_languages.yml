@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - system
+id: student_profiles_languages
+label: 'Student Profiles: Languages'
+menu_name: main
+parent: 'menu_link_content:321a1051-44da-41ee-b536-e44fe05a25ed'
+menu_link: 'menu_position_link:student_profiles_languages'
+enabled: true
+weight: -1
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/about/student-profiles/languages/*'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      student_profile: student_profile

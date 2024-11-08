@@ -1,0 +1,122 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 637915d9-9624-48a3-86f9-b140c8ae2d95
+  bundle: student_profile
+  default_langcode: en
+  depends:
+    a63875a7-13f7-464e-9aaf-b768a85ca7b1: node
+    6f22d935-cdc5-43d4-806d-395ea6df1bf4: file
+    74650c6a-f32c-4c4c-9c64-b7f4241426a9: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Laura Martini'
+  created:
+    -
+      value: 1727983681
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Laura Martini | Extended Learning'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'After a trip to Italy, Laura felt discouraged by the difficulty in communicating with her family. Starting at Beginner 1, she studied Italian for over 3 years.'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/about/student-profiles/languages/laura-martini'
+    -
+      tag: meta
+      attributes:
+        property: 'og:site_name'
+        content: 'Extended Learning'
+    -
+      tag: meta
+      attributes:
+        property: 'og:url'
+        content: 'http://default/about/student-profiles/languages/laura-martini'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: 'Laura Martini'
+    -
+      tag: meta
+      attributes:
+        property: 'og:description'
+        content: 'After a trip to Italy, Laura felt discouraged by the difficulty in communicating with her family. Starting at Beginner 1, she studied Italian for over 3 years.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:card'
+        content: summary
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:description'
+        content: 'After a trip to Italy, Laura felt discouraged by the difficulty in communicating with her family. Starting at Beginner 1, she studied Italian for over 3 years.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:title'
+        content: 'Laura Martini'
+  path:
+    -
+      alias: /about/student-profiles/languages/laura-martini
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p>Laura’s love of food and travel were inspired by several childhood trips to visit family overseas as well as the many Sundays spent in the kitchen with her Italian Nonna. After a trip to Italy, Laura felt discouraged by the difficulty in communicating with her family. Starting at Beginner 1, Laura studied <a href="/node/385633" data-entity-type="node" data-entity-uuid="a63875a7-13f7-464e-9aaf-b768a85ca7b1" data-entity-substitution="canonical">Italian</a> at UBC Extended Learning for more than three years without telling her family so she could surprise them at a wedding in Italy.</p><p><strong>What led you to seek out language courses?</strong></p><p><span lang="EN-US">I started looking for an Italian class in 2020 at the height of the pandemic. I got home from a trip to Italy in 2018 and I was discouraged by my lack of ability to communicate with my family, however with work and the necessary commute to in-person classes in Vancouver, taking classes wasn''t an option right away. 2020 provided an opportunity for me to dedicate extra time to learning something new, and a lot of institutions started migrating to online classes which eliminated the need for a long commute after a workday. After my first course or two when life returned to a more normal state, I was already in the habit of setting time aside for classes, and continued to make it a priority.&nbsp;</span></p><p><strong>What was a highlight for you from the courses? &nbsp;</strong></p><p><span lang="EN-US">One of the biggest highlights for me is the friendships. There were four of us who started together in Beginner 1 and continued on for a few years as a cohort. Making friends wasn''t an expectation of this course, but I found that being in class with the same people and learning a new language together made it really easy to get to know people. We''ve celebrated each other’s successes, had a few get togethers, met spouses, and have even seen each other through some tougher times.</span></p><p><strong>What surprised you about the courses?</strong></p><p><span lang="EN-US">How manageable the instructors made it. Claudia is a standout for me, as I have been through four courses with her. It was really nice to be able to email her about a topic I was struggling with and have her provide some additional resources, as well as address it with the class anonymously to make sure we were all on the same page. As frustrating as learning a new language is sometimes, it''s a curious thing to see your personality develop in a new language.&nbsp;</span></p><p><strong>How are you applying the skills you learned in your personal or professional life?</strong></p><p><span lang="EN-US">I took classes to communicate with my family better. My Nonna passed away years ago, and she was previously my translator for trips to Italy. There was only one trip where I went alone and my great aunt and I communicated primarily through Google traduttore.&nbsp;</span></p><p><span lang="EN-US">I took Italian for over three years without telling any of my family, with the intention of surprising them all at once at a wedding in Italy this past summer.&nbsp;</span></p><p><span lang="EN-US">The wait was totally worth it! While my big reveal was a bit anti-climactic, I was ecstatic to be able to chat with both family and wedding guests. The biggest highlight for me came a few days after the wedding when I was able to sit down to chat with my great aunt one morning over some espresso and biscotti, before anyone else was awake.&nbsp;</span></p><p><strong>Who would you recommend this course/program to?</strong></p><p>Learning a language isn''t as easy as I remembered it being in grade school, but I would still recommend this course to anyone looking to start learning Italian. Languages require an investment, both financially and with the effort required. Fortunately, the instructors at UBC took a lot of the guesswork out and had great recommendations for how to accelerate our learning and how to add in activities to complement it.</p><p><a href="/node/385215" data-entity-type="node" data-entity-uuid="0a105f57-705d-4be7-b935-5237f0ecc4e1" data-entity-substitution="canonical"><span>Read more student profiles.</span></a></p>'
+      format: filtered_text
+      summary: 'After a trip to Italy, Laura felt discouraged by the difficulty in communicating with her family. Starting at Beginner 1, she studied Italian for over 3 years.'
+  field_area_of_study:
+    -
+      entity: a63875a7-13f7-464e-9aaf-b768a85ca7b1
+  field_student_card_text:
+    -
+      value: "<p>After a trip to Italy, Laura felt discouraged by the difficulty in communicating with her family. Starting at Beginner 1, Laura studied Italian for more than three years without telling her family so she could surprise them at a wedding in Italy. Read more about Laura's experience taking Italian courses at UBC Extended Learning.</p>"
+      format: text_only
+  field_student_first_name:
+    -
+      value: Laura
+  field_student_image:
+    -
+      entity: 6f22d935-cdc5-43d4-806d-395ea6df1bf4
+      alt: 'Headshot of Laura.'
+      title: ''
+      width: 400
+      height: 400
+  field_student_last_name:
+    -
+      value: Martini
+  field_student_profile_card_quote:
+    -
+      value: 'I was surprised by how manageable the instructor made the courses. She encouraged us to speak up, made sure we all got turns, and also addressed frustrations with our own learning in such an empathetic way.”'
+  field_student_profile_category:
+    -
+      entity: 74650c6a-f32c-4c4c-9c64-b7f4241426a9

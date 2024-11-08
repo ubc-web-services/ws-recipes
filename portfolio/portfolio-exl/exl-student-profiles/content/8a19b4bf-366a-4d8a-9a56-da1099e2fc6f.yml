@@ -1,0 +1,119 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 8a19b4bf-366a-4d8a-9a56-da1099e2fc6f
+  bundle: student_profile
+  default_langcode: en
+  depends:
+    742fddf1-9fbd-42d8-b7e2-c9bd240c9188: node
+    ba9ef761-9964-445a-8f2e-e7af5862337c: file
+    5756984d-2ebe-407d-b296-42031df012aa: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Aaron Posehn'
+  created:
+    -
+      value: 1727304206
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Aaron Posehn | Extended Learning'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Aaron Posehn was delighted to discover online UBC Academic Explorations at the start of the pandemic lockdown.'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/about/student-profiles/academic-explorations/aaron-posehn'
+    -
+      tag: meta
+      attributes:
+        property: 'og:site_name'
+        content: 'Extended Learning'
+    -
+      tag: meta
+      attributes:
+        property: 'og:url'
+        content: 'http://default/about/student-profiles/academic-explorations/aaron-posehn'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: 'Aaron Posehn'
+    -
+      tag: meta
+      attributes:
+        property: 'og:description'
+        content: 'Aaron Posehn was delighted to discover online UBC Academic Explorations at the start of the pandemic lockdown.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:card'
+        content: summary
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:description'
+        content: 'Aaron Posehn was delighted to discover online UBC Academic Explorations at the start of the pandemic lockdown.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:title'
+        content: 'Aaron Posehn'
+  path:
+    -
+      alias: /about/student-profiles/academic-explorations/aaron-posehn
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p><em>After regularly attending in-person One Day @ UBC courses at the UBC Vancouver campus for the past decade, Aaron Posehn was delighted to discover online </em><a href="/node/385645" data-entity-type="node" data-entity-uuid="742fddf1-9fbd-42d8-b7e2-c9bd240c9188" data-entity-substitution="canonical"><em>UBC Academic Explorations</em></a><em> at the start of the pandemic lockdown. Here''s what these online courses have meant for him.</em></p><p><strong>How would you describe your Academic Explorations experiences?</strong><br>My experience has been excellent. I liked the fact that it was a multi-week program so that I could learn things over a longer period of time. I especially liked that the classes were recorded since I wasn''t always able to watch them live due to other commitments. I could go back to view the recordings at my leisure, which I appreciated.</p><p>The professors for the courses I took were all generally very engaging and I would certainly take another class from them again if it was offered.</p><p><strong>What was it like learning online?</strong><br>The online Zoom environment was new for everyone in the last year, but I think that most people (both students and instructors) were able to do a good job navigating this change and make the courses fun.</p><p>The UBC staff members present during the classes really did a good job of managing student expectations, but also did everything they could to explain how to get the most out of the course and the online environment, and I think this was key to making the courses run as smoothly as they did.</p><p><strong>What was your favourite part of attending the UBC Academic Explorations courses?</strong><br>I appreciated the diverse content and was able to find a lot of different interesting subjects to learn about. I liked that the instructors were so engaging and that they took time to answer student questions.</p><p>I also liked that some of the courses included up-to-the-minute topics on COVID-19 from experts in various fields, such as in Perspectives on Canadian and World News. I consistently learned new and very interesting things each time I attended a class.</p><p><strong>Did you have a favourite course or instructor?</strong><br>I tend to most enjoy the history, science, human civilization and politics courses. Some of my favourite courses included:</p><ul><li><em>&nbsp; &nbsp; Six Great Cities of the Pre-Modern World</em></li><li><em>&nbsp; &nbsp; The Workshops of Geniuses - From the Renaissance to the 21st Century</em></li><li><em>&nbsp; &nbsp; Food in Human Culture</em></li><li><em>&nbsp; &nbsp; Continuity and Change in Global Politics</em></li><li><em>&nbsp; &nbsp; Perspectives on Canadian and World News</em></li></ul><p><a href="/node/385212" data-entity-type="node" data-entity-uuid="64755114-7a35-4b54-8e5d-bb84cd290cc4" data-entity-substitution="canonical"><span>Read more student profiles.</span></a></p>'
+      format: filtered_text
+      summary: 'Aaron Posehn was delighted to discover online UBC Academic Explorations at the start of the pandemic lockdown.'
+  field_area_of_study:
+    -
+      entity: 742fddf1-9fbd-42d8-b7e2-c9bd240c9188
+  field_student_card_text:
+    -
+      value: "<p>After regularly attending in-person One Day @ UBC courses at the UBC Vancouver campus for the past decade, Aaron Posehn was delighted to discover online UBC Academic Explorations. Here's what these online courses have meant for him.</p>"
+      format: text_only
+  field_student_first_name:
+    -
+      value: Aaron
+  field_student_image:
+    -
+      entity: ba9ef761-9964-445a-8f2e-e7af5862337c
+      alt: 'Aaron Posehn'
+      title: ''
+      width: 2400
+      height: 2197
+  field_student_last_name:
+    -
+      value: Posehn
+  field_student_profile_card_quote:
+    -
+      value: 'I have a greater appreciation for the world, and of the different people around me.'
+  field_student_profile_category:
+    -
+      entity: 5756984d-2ebe-407d-b296-42031df012aa

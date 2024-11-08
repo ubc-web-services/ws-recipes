@@ -1,0 +1,99 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.student_profile.body
+    - field.field.node.student_profile.field_area_of_study
+    - field.field.node.student_profile.field_student_card_text
+    - field.field.node.student_profile.field_student_first_name
+    - field.field.node.student_profile.field_student_image
+    - field.field.node.student_profile.field_student_last_name
+    - field.field.node.student_profile.field_student_profile_card_quote
+    - field.field.node.student_profile.field_student_profile_category
+    - image.style.quote_headshot
+    - node.type.student_profile
+  module:
+    - svg_image
+    - text
+    - user
+id: node.student_profile.default
+targetEntityType: node
+bundle: student_profile
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_area_of_study:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_student_card_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_student_first_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_student_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: quote_headshot
+      image_loading:
+        attribute: lazy
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_student_last_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_student_profile_card_quote:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_student_profile_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

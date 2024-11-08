@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - system
+id: student_profiles_writing
+label: 'Student Profiles: Writing'
+menu_name: main
+parent: 'menu_link_content:af0418d5-5700-4198-bf94-a240243e0edc'
+menu_link: 'menu_position_link:student_profiles_writing'
+enabled: true
+weight: 2
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/about/student-profiles/writing/*'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      student_profile: student_profile

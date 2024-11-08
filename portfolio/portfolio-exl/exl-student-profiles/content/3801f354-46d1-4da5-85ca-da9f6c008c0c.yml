@@ -1,0 +1,122 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 3801f354-46d1-4da5-85ca-da9f6c008c0c
+  bundle: student_profile
+  default_langcode: en
+  depends:
+    20a38d8a-d8bb-4e59-8ec4-2a5b7fac94f7: node
+    375a0700-1fd1-48eb-9e37-7d0bf91bc504: file
+    35d89425-ba1d-4899-bcf4-aa9caef866a9: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Margaret Seppelt'
+  created:
+    -
+      value: 1727981593
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Margaret Seppelt | Extended Learning'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Margaret, Director of Strategic Transformation at BC Women’s Hospital, shares her experiences as an organizational coaching student.'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/about/student-profiles/coaching/margaret-seppelt'
+    -
+      tag: meta
+      attributes:
+        property: 'og:site_name'
+        content: 'Extended Learning'
+    -
+      tag: meta
+      attributes:
+        property: 'og:url'
+        content: 'http://default/about/student-profiles/coaching/margaret-seppelt'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: 'Margaret Seppelt'
+    -
+      tag: meta
+      attributes:
+        property: 'og:description'
+        content: 'Margaret, Director of Strategic Transformation at BC Women’s Hospital, shares her experiences as an organizational coaching student.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:card'
+        content: summary
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:description'
+        content: 'Margaret, Director of Strategic Transformation at BC Women’s Hospital, shares her experiences as an organizational coaching student.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:title'
+        content: 'Margaret Seppelt'
+  path:
+    -
+      alias: /about/student-profiles/coaching/margaret-seppelt
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p><span lang="EN-CA">Margaret Seppelt is the Director of Strategic Transformation and Improvement at BC Women’s Hospital and Health Centre.&nbsp;She is an expert in adopting Lean/Continuous Improvement as a strategy to achieve organizational excellence, and has trained hundreds of healthcare leaders, physicians, nurses and staff in Lean and Quality Improvement. Margaret shared her experiences as an organizational coaching student with us.</span><span lang="EN-CA"></span></p><p><span lang="EN-CA"></span></p><p><span lang="EN-CA"><strong>What led you to pursue the UBC Certificate in Organizational Coaching?</strong></span></p><p><span lang="EN-CA">I entered the&nbsp;</span><a href="/node/385590"><span lang="EN-CA">UBC Organizational Coaching Program</span></a><span lang="EN-CA"> with more than 25 years of expertise developing strategies and systems that foster a culture of continuous improvement, and achieve organizational excellence in health care. After years of supporting leaders in adopting new management systems and approaches, it became apparent to me that while management methods and tools are easy, what is challenging is the associated behaviour shift.&nbsp;</span></p><p><span lang="EN-CA">If I was expecting to coach leaders to shift their mindset and behaviours, then the shift had to start with me. It was time for me to move from being an expert advice giver, to a coach.&nbsp;</span></p><p><span lang="EN-CA"><strong>Why did you choose an organizational coaching credential?</strong></span></p><p><span lang="EN-CA">Organizational transformation happens with people, and it was important for me to learn the practice of coaching individuals, teams and the organization. The UBC program provided me with an incredible breadth of knowledge and guidance by coaches who are experts in their field.</span></p><p><span lang="EN-CA">I wanted to learn the difference between consultant, facilitator and coach, because these were terms that I often used to describe myself. I was seeking to deepen my understanding of the theory and practice of coaching, including how frameworks, approaches and competencies are applied in organizations.&nbsp;</span></p><p><span lang="EN-CA">My goal was to become a skilled coach so I could be more effective in supporting leaders to deepen their awareness of their personal values and principles, and how they show up in their daily interactions with others.&nbsp;</span></p><p><span lang="EN-CA"><strong>What skills did you gain?</strong></span></p><p><span lang="EN-CA">The program provided me with the opportunity to develop my competencies through repeated individual and team coaching sessions. There was a great balance between active practice and written reflection, which was critical because becoming a coach is to be in service of others, and requires a lifelong commitment of deepening self-awareness and continuous learning.&nbsp;</span></p><p><span lang="EN-CA">The skills that I have gained as a coach have enabled me to shift from being the advice giver working with people from my truth, to working with people from their truth, and create a space with mutual responsibility to help them gain insight and define action.&nbsp;</span></p><p><br><span lang="EN-CA"><strong>What, if anything, surprised you about the program?</strong></span><span lang="EN-CA"></span></p><p><span lang="EN-CA">As someone who started her career as a nurse, what surprised me was that coaching ethics and standards are not unlike those in nursing. I was supported by a network of dedicated coaches who model coaching with distinctive styles and perspectives while maintaining high standards for coaching as a profession.&nbsp;</span></p><p><span lang="EN-CA"><strong>What effect has this program had on your professional role and life?</strong></span></p><p><span lang="EN-CA">Coaching has had a profound impact on all aspects of my life both personally and professionally. Completing the UBC program has shifted me from being an expert back to humble beginnings.</span></p><p><span lang="EN-CA">The program made me acutely aware of my own mindset and behaviours, and the impact that I was having on my environment and others. I am now more aware and thinking more deeply about what is going on around me. I have increased my capacity to listen, and find myself showing up more calm, present and curious in all aspects of my life.</span></p><p><span lang="EN-CA">I am better at displaying respect and humility knowing that I will never be an expert. It’s impossible for me to be able to see everything my client is able to see from their point of truth. I have consciously given up the habit of dispensing advice and am hopeful that, with more reflective practice, I will continue to deepen my understanding of my own patterns and behaviours and the impact that they have on others.&nbsp;</span></p><p><a href="/node/385214" data-entity-type="node" data-entity-uuid="516806a9-f6e6-441f-9eef-849bfae7efc8" data-entity-substitution="canonical"><span>Read more student profiles.</span></a></p>'
+      format: filtered_text
+      summary: 'Margaret, Director of Strategic Transformation at BC Women’s Hospital, shares her experiences as an organizational coaching student.'
+  field_area_of_study:
+    -
+      entity: 20a38d8a-d8bb-4e59-8ec4-2a5b7fac94f7
+  field_student_card_text:
+    -
+      value: '<p>Margaret, Director of Strategic Transformation at BC Women’s Hospital, shares her experiences as an organizational coaching student. Read more here.</p>'
+      format: text_only
+  field_student_first_name:
+    -
+      value: Margaret
+  field_student_image:
+    -
+      entity: 375a0700-1fd1-48eb-9e37-7d0bf91bc504
+      alt: 'Headshot of Margaret.'
+      title: ''
+      width: 400
+      height: 400
+  field_student_last_name:
+    -
+      value: Seppelt
+  field_student_profile_card_quote:
+    -
+      value: 'Coaching has had a profound impact on all aspects of my life both personally and professionally. Completing the UBC program has shifted me from being an expert back to humble beginnings.”'
+  field_student_profile_category:
+    -
+      entity: 35d89425-ba1d-4899-bcf4-aa9caef866a9

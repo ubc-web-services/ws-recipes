@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 560142a8-f69b-4ffb-ac06-c6a0bde60b20
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: michelle_vandermoor_400x400.jpg
+  uri:
+    -
+      value: 'public://student-profile-images/2024-10/michelle_vandermoor_400x400.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 92333
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1727985070

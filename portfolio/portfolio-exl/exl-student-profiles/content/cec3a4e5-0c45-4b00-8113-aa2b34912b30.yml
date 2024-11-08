@@ -1,0 +1,122 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: cec3a4e5-0c45-4b00-8113-aa2b34912b30
+  bundle: student_profile
+  default_langcode: en
+  depends:
+    20a38d8a-d8bb-4e59-8ec4-2a5b7fac94f7: node
+    13d0002b-f506-4fef-a06f-aa5966c6f66e: file
+    35d89425-ba1d-4899-bcf4-aa9caef866a9: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Adenike Oyenuga'
+  created:
+    -
+      value: 1727803987
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Adenike Oyenuga | Extended Learning'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Adenike Oyenuga, is a graduate of the 2019 UBC Certificate in Organizational Coaching program. She shared her experiences in the program with us.'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/about/student-profiles/coaching/adenike-oyenuga'
+    -
+      tag: meta
+      attributes:
+        property: 'og:site_name'
+        content: 'Extended Learning'
+    -
+      tag: meta
+      attributes:
+        property: 'og:url'
+        content: 'http://default/about/student-profiles/coaching/adenike-oyenuga'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: 'Adenike Oyenuga'
+    -
+      tag: meta
+      attributes:
+        property: 'og:description'
+        content: 'Adenike Oyenuga, is a graduate of the 2019 UBC Certificate in Organizational Coaching program. She shared her experiences in the program with us.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:card'
+        content: summary
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:description'
+        content: 'Adenike Oyenuga, is a graduate of the 2019 UBC Certificate in Organizational Coaching program. She shared her experiences in the program with us.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:title'
+        content: 'Adenike Oyenuga'
+  path:
+    -
+      alias: /about/student-profiles/coaching/adenike-oyenuga
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p><span lang="EN-CA"><strong>Adenike Oyenuga,&nbsp;</strong>is a graduate of the 2019&nbsp;</span><a href="/node/385590" data-entity-type="node" data-entity-uuid="20a38d8a-d8bb-4e59-8ec4-2a5b7fac94f7" data-entity-substitution="canonical"><span lang="EN-CA">UBC Certificate in Organizational Coaching</span></a><span lang="EN-CA">&nbsp;program. She’s a performance development manager with an airline in the United Arab Emirates, and shared her experiences in the program with us.</span></p><p><span lang="EN-US"><strong>What lead you to pursue the UBC Certificate in Organizational Coaching?</strong></span></p><p><span lang="EN-CA">I manage a large team and I hold performance conversations with team members to set expectations and support individual and collective development. I needed a robust, varied and well-kitted communication toolbox for our conversations to be effective and have meaningful outcomes. I have found coaching to be an extremely helpful tool in navigating different conversations and harnessing the potential of my team.&nbsp;</span></p><p><span lang="EN-CA"><strong>Why did you choose an organizational coaching credential?</strong></span><span lang="EN-CA"></span></p><p><span lang="EN-CA">I love that organizational coaching approaches coaching from a holistic and systemic point of view. As an organizational coach, your focus is on how systems work individually and collectively.&nbsp;</span></p><p><span lang="EN-CA"><strong>Was the time, effort and money worth it?</strong></span><span lang="EN-CA"></span></p><p><span lang="EN-CA">It was worth it. Not only did I gain the skills I was looking for, but I also connected with a wider community of coaches. This was key to my understanding of being part of a whole, and working in a system. UBC has also provided opportunities for alumni coaches to participate in events and apply their coaching skills.&nbsp;</span></p><p><span lang="EN-CA"><strong>What surprised you about the program?</strong></span></p><p><span lang="EN-CA">UBC’s commitment to the continuous support and development of alumni coaches is both good and unexpected.</span></p><p><span lang="EN-CA"><strong>How do you apply your skills in your role and life?</strong></span></p><p><span lang="EN-CA">I actively use coaching in my role and have also offered coaching sessions to colleagues. I’m partnering with a colleague to deliver a coaching workshop for leaders on my team. I also offer pro bono coaching.&nbsp;</span></p><p><span lang="EN-CA"><strong>How have things changed in your life and career since taking this program?</strong></span></p><p><span lang="EN-CA">The program has improved the quality of conversations I have. I am a better listener and more self-aware, and I make fewer assumptions. At work, I have a richer toolkit to navigate challenging conversations and to ask questions for clarity.</span></p><p><span lang="EN-CA"><strong>Can you describe a recent coaching engagement?</strong></span></p><p><span lang="EN-CA">I coached an acquaintance who lost her job during the pandemic. She was going through stressful times. Our long-term coaching engagement helped her gain self-awareness about limiting thoughts and behaviours that were impeding her progress. She found the intervention helpful.&nbsp;</span></p><p><span lang="EN-CA"><strong>What is your advice for someone considering this program?</strong></span></p><p><span lang="EN-CA">The coaching program was intense. I had to deal with the huge difference in time zones, plus I work full-time. I was also taking another certificate course at the same time. Determination, time management and planning were key.</span></p><p><a href="/node/385214" data-entity-type="node" data-entity-uuid="516806a9-f6e6-441f-9eef-849bfae7efc8" data-entity-substitution="canonical"><span>Read more student profiles.</span></a><span lang="EN-CA"></span></p><p><span lang="EN-CA"></span></p><p><span lang="EN-CA"></span></p>'
+      format: filtered_text
+      summary: 'Adenike Oyenuga, is a graduate of the 2019 UBC Certificate in Organizational Coaching program. She shared her experiences in the program with us.'
+  field_area_of_study:
+    -
+      entity: 20a38d8a-d8bb-4e59-8ec4-2a5b7fac94f7
+  field_student_card_text:
+    -
+      value: '<p>Adenike Oyenuga, is a graduate of the 2019 UBC Certificate in Organizational Coaching program. She shared her experiences in the program with us.</p>'
+      format: text_only
+  field_student_first_name:
+    -
+      value: Adenike
+  field_student_image:
+    -
+      entity: 13d0002b-f506-4fef-a06f-aa5966c6f66e
+      alt: 'Headshot of Adenike.'
+      title: ''
+      width: 400
+      height: 400
+  field_student_last_name:
+    -
+      value: Oyenuga
+  field_student_profile_card_quote:
+    -
+      value: 'I love that organizational coaching approaches coaching from a holistic and systemic point of view. As an organizational coach, your focus is on how systems work individually and collectively.”'
+  field_student_profile_category:
+    -
+      entity: 35d89425-ba1d-4899-bcf4-aa9caef866a9

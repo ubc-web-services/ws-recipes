@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 0545322c-9190-4262-991d-f13bdf40e91e
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: Dave_Williams_400x400.jpg
+  uri:
+    -
+      value: 'public://student-profile-images/2024-10/Dave_Williams_400x400.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 149849
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1727984635

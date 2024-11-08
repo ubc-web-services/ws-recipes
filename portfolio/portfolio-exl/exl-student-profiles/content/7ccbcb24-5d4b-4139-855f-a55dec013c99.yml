@@ -1,0 +1,122 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 7ccbcb24-5d4b-4139-855f-a55dec013c99
+  bundle: student_profile
+  default_langcode: en
+  depends:
+    bb4ab50b-4ebf-438f-b742-b29bf50244cc: node
+    bfb7c40b-9ce0-44dd-9d23-56747dc6e8f0: file
+    74650c6a-f32c-4c4c-9c64-b7f4241426a9: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Janet Miller'
+  created:
+    -
+      value: 1727983314
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Janet Miller | Extended Learning'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Janet Miller is a student in the UBC Extended Learning advanced French reading and writing classes.'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/about/student-profiles/languages/janet-miller'
+    -
+      tag: meta
+      attributes:
+        property: 'og:site_name'
+        content: 'Extended Learning'
+    -
+      tag: meta
+      attributes:
+        property: 'og:url'
+        content: 'http://default/about/student-profiles/languages/janet-miller'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: 'Janet Miller'
+    -
+      tag: meta
+      attributes:
+        property: 'og:description'
+        content: 'Janet Miller is a student in the UBC Extended Learning advanced French reading and writing classes.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:card'
+        content: summary
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:description'
+        content: 'Janet Miller is a student in the UBC Extended Learning advanced French reading and writing classes.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:title'
+        content: 'Janet Miller'
+  path:
+    -
+      alias: /about/student-profiles/languages/janet-miller
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p><span>Completing all 10 of the advanced </span><a href="/node/385632" data-entity-type="node" data-entity-uuid="bb4ab50b-4ebf-438f-b742-b29bf50244cc" data-entity-substitution="canonical"><span>French reading and writing</span></a><span> courses offered by UBC Extended Learning is a remarkable accomplishment—one that Janet Miller has set for herself as a personal goal. With nine courses already under her belt, Janet is on track to finish the tenth this year. It’s been a learning journey full of professional and personal rewards, and a vital part of her ongoing development as a bilingual person.&nbsp;</span></p><p><span>Janet’s deep dive into French began years ago when she accepted a position with the federal government. After completing the Federal Public Service’s six-month intensive French program, in which she reached the highest level, Janet looked for other ways she could continue to develop her language skills.&nbsp;</span></p><p><span>Maintaining her French was part of a bilingual pledge Janet signed as a federal government employee, a commitment that was literally put to the test every five years with mandatory exams. In fact, Janet first enrolled in two advanced French reading and writing courses at UBC Extended Learning to complement her exam preparation. She found the courses to be “very useful because the content was so different from the French I used at work and helped me expand my vocabulary and develop my ease with the language.”&nbsp;</span></p><p><span>Janet was also pleasantly surprised by how personal the online courses felt, and especially appreciated the individual assistance from the instructor. “I had a one-on-one connection with the instructor that didn’t require us to be in the same room,” explains Janet. She was able to ask lots of questions and quickly receive the clarification and support she needed.&nbsp;</span></p><p><span lang="EN-US">As Janet’s well-rounded language abilities grew, so too did her career opportunities. She was able to move into a much higher-level position, one that required her to speak French every day and came with a significant salary increase. Janet reflects that knowing French has served her well at many points in her career and is a huge advantage for those who work in the federal government.&nbsp;</span></p><p><span>Although learning French began as a job requirement, for Janet it has evolved into something more personally meaningful. “I had made this huge time investment in becoming a bilingual person, and I really wanted to </span><em><span>be&nbsp;</span></em><span>that person,” she explains.&nbsp;</span></p><p><span>Progressing through the French reading and writing courses at UBC Extended Learning was the perfect opportunity to continue building on what she knew. “I was looking for something challenging, something to keep my mind expanding. I was no longer trying to develop my career. I was trying to develop that bilingual part of my identity.”</span></p><p><span>Delving into course content, which Janet describes as “sometimes challenging, occasionally intimidating, but always engaging,” has expanded her worldview and pushed her to think more critically. She and her husband often have in-depth discussions sparked by the weekly course readings and she credits the UBC Extended Learning courses for “helping me rewire my brain to think differently, as well as reach a level of understanding and appreciation of French culture that I could not achieve reading about French in English.”&nbsp;</span></p><p><span>As Janet looks forward to beginning the level 10 advanced reading and writing course, she is keen to share her experience. In addition to the career benefits, Janet emphasizes that these courses are for anyone who is looking for a challenge and wants to understand how language works, not just grammatically but in a cultural context. They’re also a great way to keep your mind sharp and grow as a person. As Janet explains, taking French through UBC Extended Learning is an opportunity to “develop the complexity of who you are and expand your experience and knowledge with an instructor who is there to encourage you to do just that.”</span></p>'
+      format: filtered_text
+      summary: 'Janet Miller is a student in the UBC Extended Learning advanced French reading and writing classes.'
+  field_area_of_study:
+    -
+      entity: bb4ab50b-4ebf-438f-b742-b29bf50244cc
+  field_student_card_text:
+    -
+      value: '<p>Janet Miller is a student in the UBC Extended Learning advanced French reading and writing classes. She shares how learning French has expanded her worldview and enriched her identity as a bilingual person.</p>'
+      format: text_only
+  field_student_first_name:
+    -
+      value: Janet
+  field_student_image:
+    -
+      entity: bfb7c40b-9ce0-44dd-9d23-56747dc6e8f0
+      alt: 'headshot of Janet'
+      title: ''
+      width: 400
+      height: 400
+  field_student_last_name:
+    -
+      value: Miller
+  field_student_profile_card_quote:
+    -
+      value: 'I think really highly of the French reading and writing program; it helped me reach a new level of understanding of French culture."'
+  field_student_profile_category:
+    -
+      entity: 74650c6a-f32c-4c4c-9c64-b7f4241426a9

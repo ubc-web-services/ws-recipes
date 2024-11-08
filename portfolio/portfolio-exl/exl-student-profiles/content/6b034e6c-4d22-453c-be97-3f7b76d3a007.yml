@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 6b034e6c-4d22-453c-be97-3f7b76d3a007
+  default_langcode: en
+  depends:
+    10c57082-7680-41b9-bf33-0bcff5a9102d: user
+default:
+  uid:
+    -
+      entity: 10c57082-7680-41b9-bf33-0bcff5a9102d
+  filename:
+    -
+      value: Eduardo_584x408_1.jpg
+  uri:
+    -
+      value: 'public://2024-04/Eduardo_584x408_1.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 115278
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1712358142

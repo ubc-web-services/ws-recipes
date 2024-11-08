@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_student_profile_card_quote
+    - node.type.student_profile
+id: node.student_profile.field_student_profile_card_quote
+field_name: field_student_profile_card_quote
+entity_type: node
+bundle: student_profile
+label: 'Student profile card quote'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

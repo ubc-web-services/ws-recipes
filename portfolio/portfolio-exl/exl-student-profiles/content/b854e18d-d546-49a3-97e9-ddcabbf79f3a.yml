@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: b854e18d-d546-49a3-97e9-ddcabbf79f3a
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'Marielle De Vassoigne_400x400.jpg'
+  uri:
+    -
+      value: 'public://student-profile-images/2024-10/Marielle De Vassoigne_400x400.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 128923
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1727981789

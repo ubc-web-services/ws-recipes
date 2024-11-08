@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: ubc_student_profiles
+label: 'UBC Student Profiles'
+type: 'canonical_entities:node'
+pattern: 'about/student-profiles/[node:field_student_profile_category]/[node:field_student_first_name]-[node:field_student_last_name]'
+selection_criteria:
+  1a8112d0-b5aa-436a-ad74-9f24d2cffaf4:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 1a8112d0-b5aa-436a-ad74-9f24d2cffaf4
+    context_mapping:
+      node: node
+    bundles:
+      student_profile: student_profile
+selection_logic: and
+weight: -5
+relationships: {  }

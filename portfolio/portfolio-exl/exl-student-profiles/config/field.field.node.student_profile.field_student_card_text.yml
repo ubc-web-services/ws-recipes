@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_student_card_text
+    - filter.format.text_only
+    - node.type.student_profile
+  module:
+    - text
+id: node.student_profile.field_student_card_text
+field_name: field_student_card_text
+entity_type: node
+bundle: student_profile
+label: 'Student profile card text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - text_only
+field_type: text_long

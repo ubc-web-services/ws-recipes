@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 5eeb7aea-b79f-4287-bdd5-48a782157ba0
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: Lonny_Chen_400x400.jpg
+  uri:
+    -
+      value: 'public://student-profile-images/2024-10/Lonny_Chen_400x400.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 124523
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1727984980

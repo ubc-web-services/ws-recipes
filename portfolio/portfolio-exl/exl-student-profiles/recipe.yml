@@ -1,0 +1,28 @@
+name: "Student Profiles"
+description: "Student Profiles recipe for EXL"
+type: "Student Profiles"
+install:
+  # core
+  - ckeditor5
+  - file
+  - image
+  - menu_ui
+  - node
+  - path
+  - system
+  - taxonomy
+  - text
+  - user
+  # contrib
+  - allowed_formats
+  - field_group
+  - maxlength
+  - menu_position
+  - node_revision_delete
+  - scheduler
+  - svg_image
+  - text_summary_options
+
+
+
+

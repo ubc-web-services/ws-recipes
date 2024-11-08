@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: a41857e9-e547-45ce-b680-77787ccf62c8
+  default_langcode: en
+  depends:
+    10c57082-7680-41b9-bf33-0bcff5a9102d: user
+default:
+  uid:
+    -
+      entity: 10c57082-7680-41b9-bf33-0bcff5a9102d
+  filename:
+    -
+      value: 'Juan Carlos_400x400.png'
+  uri:
+    -
+      value: 'public://2024-04/Juan Carlos_400x400.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 289704
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1712352715

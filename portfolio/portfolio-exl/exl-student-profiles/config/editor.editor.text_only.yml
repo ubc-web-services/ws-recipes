@@ -1,0 +1,74 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.text_only
+  module:
+    - ckeditor5
+format: text_only
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - bold
+      - italic
+      - bulletedList
+      - numberedList
+      - indent
+      - outdent
+      - alignment
+      - subscript
+      - superscript
+      - specialCharacters
+      - '|'
+      - style
+      - '|'
+      - undo
+      - redo
+      - removeFormat
+      - sourceEditing
+      - Fullscreen
+      - showBlocks
+  plugins:
+    ckeditor5_alignment:
+      enabled_alignments:
+        - center
+        - justify
+        - left
+        - right
+    ckeditor5_list:
+      properties:
+        reversed: true
+        startIndex: true
+      multiBlock: true
+    ckeditor5_sourceEditing:
+      allowed_tags:
+        - '<span>'
+    ckeditor5_style:
+      styles:
+        -
+          label: 'Text Hug (remove top spacing)'
+          element: '<p class="text-hug">'
+        -
+          label: 'Lead Text'
+          element: '<p class="text-lead">'
+        -
+          label: 'Text: small'
+          element: '<p class="text-small">'
+        -
+          label: 'Uppercase Text'
+          element: '<span class="text-uppercase">'
+        -
+          label: 'Lowercase Text'
+          element: '<span class="text-lowercase">'
+        -
+          label: 'Semibold Text'
+          element: '<span class="font-semibold">'
+        -
+          label: 'Grey Text'
+          element: '<span class="text-grey-700">'
+        -
+          label: 'White Text'
+          element: '<span class="text-white">'
+image_upload:
+  status: false

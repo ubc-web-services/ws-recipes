@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 188a5a2b-2e66-46c7-a33e-a8616839f133
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: Tim_Huynh_0226_400x400.jpg
+  uri:
+    -
+      value: 'public://student-profile-images/2024-10/Tim_Huynh_0226_400x400.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 134552
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1727984023

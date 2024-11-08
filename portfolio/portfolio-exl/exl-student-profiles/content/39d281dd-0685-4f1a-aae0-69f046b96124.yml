@@ -1,0 +1,122 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 39d281dd-0685-4f1a-aae0-69f046b96124
+  bundle: student_profile
+  default_langcode: en
+  depends:
+    20a38d8a-d8bb-4e59-8ec4-2a5b7fac94f7: node
+    b854e18d-d546-49a3-97e9-ddcabbf79f3a: file
+    35d89425-ba1d-4899-bcf4-aa9caef866a9: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Marielle De Vassoigne'
+  created:
+    -
+      value: 1727981730
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Marielle De Vassoigne | Extended Learning'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "Like so many during the pandemic, Marielle started searching for a better work-life balance. Here's why she chose the UBC Organizational Coaching Program."
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/about/student-profiles/coaching/marielle-de-vassoigne'
+    -
+      tag: meta
+      attributes:
+        property: 'og:site_name'
+        content: 'Extended Learning'
+    -
+      tag: meta
+      attributes:
+        property: 'og:url'
+        content: 'http://default/about/student-profiles/coaching/marielle-de-vassoigne'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: 'Marielle De Vassoigne'
+    -
+      tag: meta
+      attributes:
+        property: 'og:description'
+        content: "Like so many during the pandemic, Marielle started searching for a better work-life balance. Here's why she chose the UBC Organizational Coaching Program."
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:card'
+        content: summary
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:description'
+        content: "Like so many during the pandemic, Marielle started searching for a better work-life balance. Here's why she chose the UBC Organizational Coaching Program."
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:title'
+        content: 'Marielle De Vassoigne'
+  path:
+    -
+      alias: /about/student-profiles/coaching/marielle-de-vassoigne
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p><span lang="EN-CA">Like so many during the pandemic, Marielle de Vassoigne started searching for a better work-life balance. She had been working for close to 20 years in international change management consulting, and had done stints in Montréal, her native country of France, and Martinique, where she had grown up.&nbsp;</span></p><p><span lang="EN-CA">In 2020, without ever having visited Vancouver, she moved across the country from Montréal. “I change contexts easily,” she explains. “I thought perhaps I needed a new narrative.” &nbsp;</span></p><p><span lang="EN-CA">Marielle was also in search of deeper career fulfillment. She even considered a career change. After talking to a few coaches while in Montréal, she realized she wanted to remain in service to people in an organizational capacity. “What I enjoy most is adding value to a project team, mostly through one-on-one conversations,” says Marielle, smiling. “I love especially working with middle management on projects.”</span></p><p><span lang="EN-CA">When she decided to move to Vancouver, she began looking into ICF-accredited coach training for a professional context. Though she had some experience with informal coaching, she wanted to go beyond what she had been doing naturally as a consultant, and formalize her skills. “When I saw the&nbsp;</span><a href="/node/385590" data-entity-type="node" data-entity-uuid="20a38d8a-d8bb-4e59-8ec4-2a5b7fac94f7" data-entity-substitution="canonical"><span lang="EN-CA">UBC Certificate in Organizational Coaching</span></a><span lang="EN-CA">, I stopped my research right there,” she recalls. &nbsp;</span></p><p><span lang="EN-CA">The program was her first social experience in Vancouver, and she made enduring connections and friendships. “One thing I appreciated so much was the diversity of the students, instructors and mentor coaches. I also related so well to the mindset of the program: openness, mindfulness, exploration, curiosity,” she says. “As someone from the French Caribbean, I like to think if the world had been full of truly curious explorers in the 15<sup>th</sup> century, the world would be a different place.”&nbsp;</span></p><p><span lang="EN-CA">During the program, Marielle experienced a few ah-ha moments. “Change consulting and coaching go so well together, I actually struggled at first,” admits Marielle. “I built my career on finding – and offering – solutions for people. As a coach, that’s the very thing I must not do. I still remember the moment during my third audited call that I realized one of my core values is to be useful and serve people. But one of the ways I can be useful is to get out of someone’s way.”</span></p><p><span lang="EN-CA">Now on the path to earning her Associate Certified Coach (ACC) designation, Marielle does pro bono coaching and volunteering for the Chambre de Commerce Francophone de Vancouver, and the new Vancouver Black Library. She also returned as an alumni coach for Cohort 13. In three to five years, she plans to take a sabbatical from consulting to coach full-time and write. Her second novel is due out in 2023.&nbsp;</span></p><p><span lang="EN-CA">“This program is for anyone who wants to bring change in their life – it offers a method and a mindset to embrace change. It also allowed me to go deep down inside myself, a process I had begun for my move across Canada.”</span></p><p><span lang="EN-CA">She adds, “I came to Vancouver to change my narrative – to explore languages, practices and people. I really feel I’m at the place I need to be now. Vancouver absolutely feels like home.”</span></p><p><a href="/node/385214" data-entity-type="node" data-entity-uuid="516806a9-f6e6-441f-9eef-849bfae7efc8" data-entity-substitution="canonical"><span>Read more student profiles.</span></a></p><p><span lang="EN-CA"></span></p><p><span lang="EN-CA"></span></p>'
+      format: filtered_text
+      summary: "Like so many during the pandemic, Marielle started searching for a better work-life balance. Here's why she chose the UBC Organizational Coaching Program."
+  field_area_of_study:
+    -
+      entity: 20a38d8a-d8bb-4e59-8ec4-2a5b7fac94f7
+  field_student_card_text:
+    -
+      value: '<p>Though Marielle had some experience with informal coaching, she wanted to go beyond what she had been doing naturally as a consultant, and formalize her skills. Here’s how the UBC Organizational Coaching Program helped her.</p>'
+      format: text_only
+  field_student_first_name:
+    -
+      value: Marielle
+  field_student_image:
+    -
+      entity: b854e18d-d546-49a3-97e9-ddcabbf79f3a
+      alt: 'Headshot of Marielle.'
+      title: ''
+      width: 400
+      height: 400
+  field_student_last_name:
+    -
+      value: 'De Vassoigne'
+  field_student_profile_card_quote:
+    -
+      value: 'The UBC Certificate in Organizational Coaching is much more than a program. The connections with the program team, instructors, alumni and cohort members are rich. Although it was virtual, I felt so supported. It was a constant learning experience.”'
+  field_student_profile_category:
+    -
+      entity: 35d89425-ba1d-4899-bcf4-aa9caef866a9

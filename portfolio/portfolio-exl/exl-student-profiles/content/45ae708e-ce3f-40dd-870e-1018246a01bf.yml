@@ -1,0 +1,122 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 45ae708e-ce3f-40dd-870e-1018246a01bf
+  bundle: student_profile
+  default_langcode: en
+  depends:
+    20a38d8a-d8bb-4e59-8ec4-2a5b7fac94f7: node
+    592ac430-b556-4118-a2d0-0d99de0d5ac3: file
+    35d89425-ba1d-4899-bcf4-aa9caef866a9: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Roxana Kendall'
+  created:
+    -
+      value: 1727981871
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Roxana Kendall | Extended Learning'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "When selecting a coaching program, Roxana knew she wanted to help women. Here's why the UBC Certificate in Organizational Coaching stood out to her."
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/about/student-profiles/coaching/roxana-kendall'
+    -
+      tag: meta
+      attributes:
+        property: 'og:site_name'
+        content: 'Extended Learning'
+    -
+      tag: meta
+      attributes:
+        property: 'og:url'
+        content: 'http://default/about/student-profiles/coaching/roxana-kendall'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: 'Roxana Kendall'
+    -
+      tag: meta
+      attributes:
+        property: 'og:description'
+        content: "When selecting a coaching program, Roxana knew she wanted to help women. Here's why the UBC Certificate in Organizational Coaching stood out to her."
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:card'
+        content: summary
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:description'
+        content: "When selecting a coaching program, Roxana knew she wanted to help women. Here's why the UBC Certificate in Organizational Coaching stood out to her."
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:title'
+        content: 'Roxana Kendall'
+  path:
+    -
+      alias: /about/student-profiles/coaching/roxana-kendall
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p>From a very young age, Roxana has known she wanted to do something to connect more with humans and work in the human development sphere. She recalls, “My mom has a sweet recording of me when I was a kid and she asks me what do I like? And I say, ‘I love humans.’ And I’ve always just loved humans, that is my gift, to be able to connect with people from all walks of life.”</p><p>Roxana started on her desired path by getting a Bachelor of Education degree, but quickly realized being an elementary school teacher wouldn’t fulfill her. She started looking for other opportunities, and at the age of 21, she landed a job in the Federal Government in language assessment. Her role allowed her to work with various types of people from different professions, and sparked that appreciation of connecting with people. She progressed to other human resources and recruitment roles. ”I figured HR, that’s where the humans are, that’s where we take care of the humans,” she laughs.</p><p>In 2008-10 Roxana become a mother to two children. After her maternity leave she decided to hire a life coach to help her get back to work. “I had heard of this term ‘life coach,’ and just googled it. I found this woman who was offering 30-minute free life coaching. I was living in France at the time, and I call this number in Toronto. We have this one coaching session, and in that one session I felt a shift and thought, Wow! This is powerful!”</p><p>Roxana continued to meet with this life coach as she returned to the workplace and, a few years later was diagnosed with breast cancer, at the age of 38. She remembers, “I had a dream job offer working in human resources as a staffing advisor for the Department of National Defense. I was on the cusp of signing my offer letter when I got a call from my doctor. I had a type of breast cancer that If I had it 25 years before I would have died.” Several years of treatment in France, surgeries and recovery followed, during which she continued to receive support from her life coach and was prescribed sophrology therapy. As she explains, “Sophrology means harmony and consciousness…and it helps you with anything. It''s all about connecting the body and the mind. It’s Europe’s best kept secret!”</p><p>After going through these difficult years Roxana realized that she wanted to bring all of her experience together, and help young women on their journey beyond breast cancer. She remembers thinking, “Women need support beyond treatment to bounce back into their lives, and I want to help them regain confidence and control.”</p><p>Over the next few years Roxana applied to coaching programs, then deferred each year as she questioned how she would balance the demands of motherhood, work, life and school. When Covid hit, she went to France and had the time to reassess. “It''s almost like everything kind of slowed down again with Covid and I was able to pick up on those desires and say, okay, so what do I want to do with this?” Roxana started to look into opportunities and realized that a coaching community already existed in her organization. &nbsp;“A defence team coaching program that was born in the Department of National Defence (DND). These people were just championing coaching. I started to connect with them, and they''re the ones that encouraged me to go and get my credentials.”</p><p>Roxana took the advice of one of the DND coaches to check out the <a href="/node/385590" data-entity-type="node" data-entity-uuid="20a38d8a-d8bb-4e59-8ec4-2a5b7fac94f7" data-entity-substitution="canonical">UBC Certificate in Organizational Coaching</a> program, “What I loved about UBC over executive coaching was the focus on organizational coaching. I knew I had a passion and a calling to help. I also had this parallel passion to help women thrive and surpass themselves in adversity. And the two met my desire to become a coach for my organization and for my desire to help women bounce back beyond breast cancer.”</p><p>While Roxana had many takeaways from the program, one concept stood out. “I recall this one day when we talked about embodiment, what a coach must embody, and just showing up with that embodiment. It''s something that you exude for your client.” &nbsp;She adds, “The program was incredible, laying down a framework of what coaching is, how to take coaching to an organization. Having a support network was also important…receiving coaching from my cohort on topics. I think when it comes to leadership first you have to lead yourself. You can''t just aspire for leadership roles without truly taking that leadership and accountability inwards first.”<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br>Roxana is now using her organizational coaching skills at the Department of National Defence, where they have launched 400 executive coaching programs for senior leaders. She will also be leading team coaching programs in her workplace and advancing her skills with a Certification in Systemic Team Coaching. She has received a Life Coaching Certification from The Life Coach School, and has completed the first year of her Sophrology. Roxana is working on writing a book and creating a program for women who have recovered from breast cancer, to help them bounce back and create the most powerful version of themselves. &nbsp;<br>&nbsp;<br>Says Roxana, “What I’ve learned with organizational coaching, life coaching and with sophrology is that we can all learn through hard times, and once we understand how to use our mindset, we can step into our own power and make amazing things happen.”</p><p><a href="/node/385214" data-entity-type="node" data-entity-uuid="516806a9-f6e6-441f-9eef-849bfae7efc8" data-entity-substitution="canonical"><span>Read more student profiles.</span></a></p>'
+      format: filtered_text
+      summary: "When selecting a coaching program, Roxana knew she wanted to help women. Here's why the UBC Certificate in Organizational Coaching stood out to her."
+  field_area_of_study:
+    -
+      entity: 20a38d8a-d8bb-4e59-8ec4-2a5b7fac94f7
+  field_student_card_text:
+    -
+      value: "<p>When selecting a coaching program, Roxana knew she wanted to help women. Here's why the UBC Certificate in Organizational Coaching stood out to her.</p>"
+      format: text_only
+  field_student_first_name:
+    -
+      value: Roxana
+  field_student_image:
+    -
+      entity: 592ac430-b556-4118-a2d0-0d99de0d5ac3
+      alt: 'Headshot of Roxana.'
+      title: ''
+      width: 400
+      height: 400
+  field_student_last_name:
+    -
+      value: Kendall
+  field_student_profile_card_quote:
+    -
+      value: 'It was surprising the program went to such a personal level. I thought we might come at it from the angle of HR and strategy. But it was more about talking about learning from our personal biases and delving deep to be able to show up as a coach.”'
+  field_student_profile_category:
+    -
+      entity: 35d89425-ba1d-4899-bcf4-aa9caef866a9

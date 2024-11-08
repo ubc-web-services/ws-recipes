@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: a785a6b4-bfaa-41d1-9d40-010010beab9d
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'Milo_Applejohn_584x408.jpg'
+  uri:
+    -
+      value: 'public://student-profile-images/2024-10/Milo_Applejohn_584x408.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 138075
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1709869998

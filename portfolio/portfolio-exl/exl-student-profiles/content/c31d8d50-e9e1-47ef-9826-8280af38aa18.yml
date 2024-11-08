@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: c31d8d50-e9e1-47ef-9826-8280af38aa18
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: Casey_Chung_400x400.jpg
+  uri:
+    -
+      value: 'public://student-profile-images/2024-10/Casey_Chung_400x400.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 111404
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1727974761

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 10437d59-3596-4d2b-8c3f-e04ba94aa04e
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: Rebecca_Ellison_584x408.jpg
+  uri:
+    -
+      value: 'public://student-profile-images/2024-03/Rebecca_Ellison_584x408.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 194728
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1709870224

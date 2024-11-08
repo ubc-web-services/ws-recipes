@@ -1,0 +1,122 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 4b1349c7-972e-4a6a-b195-773fa227a38c
+  bundle: student_profile
+  default_langcode: en
+  depends:
+    96ce020f-749d-4c01-b43f-3b38c3dc1534: node
+    8b2fd8f2-6278-40ce-a3b7-c320d8bbb009: file
+    74650c6a-f32c-4c4c-9c64-b7f4241426a9: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Nelson Newbigging'
+  created:
+    -
+      value: 1727983797
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Nelson Newbigging | Extended Learning'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Nelson Newbigging is a student in the UBC Extended Learning (ExL) French classes and a regular in our French Summer Institutes.'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/about/student-profiles/languages/nelson-newbigging'
+    -
+      tag: meta
+      attributes:
+        property: 'og:site_name'
+        content: 'Extended Learning'
+    -
+      tag: meta
+      attributes:
+        property: 'og:url'
+        content: 'http://default/about/student-profiles/languages/nelson-newbigging'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: 'Nelson Newbigging'
+    -
+      tag: meta
+      attributes:
+        property: 'og:description'
+        content: 'Nelson Newbigging is a student in the UBC Extended Learning (ExL) French classes and a regular in our French Summer Institutes.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:card'
+        content: summary
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:description'
+        content: 'Nelson Newbigging is a student in the UBC Extended Learning (ExL) French classes and a regular in our French Summer Institutes.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:title'
+        content: 'Nelson Newbigging'
+  path:
+    -
+      alias: /about/student-profiles/languages/nelson-newbigging
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p><em>Nelson Newbigging is a student in the UBC Extended Learning (ExL) </em><a href="/node/385631" data-entity-type="node" data-entity-uuid="2bdf0262-eef8-456a-94d0-62606c79defb" data-entity-substitution="canonical"><em>French</em></a><em> classes and a regular in our </em><a href="/node/142225" data-entity-type="node" data-entity-uuid="a79d8c64-9506-4046-acdf-5c342fb288e7" data-entity-substitution="canonical"><em>French Summer Institutes</em></a><em>. Outside of the classroom, Nelson works as a shift manager at the BC Liquor Distribution Branch in Vancouver, BC. He shares with us his journey, experience and love of learning a new language.</em></p><p><strong>What led you to seek out language classes?</strong></p><p>In 2016, I had a chance to visit Montreal, Old Québec City and Ottawa. It made an impression on me being in three cities where a lot of people could switch back and forth between English and French so easily and so quickly. They’re completely bilingual and I thought that it was pretty impressive, so I decided to look into it when I got back to Vancouver.</p><p><strong>Why did you choose to learn from UBC ExL?</strong></p><p>I really liked the way that the courses were set up and UBC ExL does a good job of placing you in the appropriate language level. The course material was clear and easy to understand, and my classmates and I understood each other perfectly since we were all around the same level. I also found out that UBC ExL offered French Summer Institutes, which are intensive week-long conversational courses. It’s a completely different experience speaking and listening to French all day, and I''m going to attend again in the future.</p><p><strong>What was a highlight for you from these classes?</strong></p><p>The highlight was the feeling of accomplishment and how much fun the French Summer Institute was. You''re in a learning environment with a great instructor and lot of class participation. We did cultural events as well, so it wasn’t just in the classroom. We went to Granville Island to learn how to make macarons and we also learned how to make crêpes. What was fun and surprising about it was that after the first day I found myself speaking French to people, even when the class was over.</p><p><strong>How are you applying your language skills in your day-to-day life?</strong></p><p>It''s possible to take all these courses and have none of it come into play. You have to look for opportunities to apply it, especially with French on the West Coast. I’ve found other people at my workplace that can also speak French, so I take opportunities to speak with them even if it is just for a few minutes. Every once in a while, I’ll be walking around the neighbourhood and I’ll pass by somebody speaking French and I’ll understand what they’re saying and strike up a conversation with them. You''ve got to take the initiative to get the most out of the French you learn.</p><p><strong>Who would you recommend this program to?</strong></p><p>I would recommend it to anybody who’s retired because you’ve got the time. I would also recommend that if you’ve thought about learning French, don’t wait, start now. UBC Extended Learning is a great place to meet people, learn new things and be active.</p><p><a href="/node/385215" data-entity-type="node" data-entity-uuid="0a105f57-705d-4be7-b935-5237f0ecc4e1" data-entity-substitution="canonical"><span>Read more student profiles.</span></a></p>'
+      format: filtered_text
+      summary: ''
+  field_area_of_study:
+    -
+      entity: 96ce020f-749d-4c01-b43f-3b38c3dc1534
+  field_student_card_text:
+    -
+      value: '<p>Nelson Newbigging is a student in the UBC Extended Learning (ExL) French classes and a regular in our French Summer Institutes. He shares with us his journey, experience and love of learning a new language.</p>'
+      format: text_only
+  field_student_first_name:
+    -
+      value: Nelson
+  field_student_image:
+    -
+      entity: 8b2fd8f2-6278-40ce-a3b7-c320d8bbb009
+      alt: 'Nelson holding a French textbook and smiling at the camera.'
+      title: ''
+      width: 400
+      height: 400
+  field_student_last_name:
+    -
+      value: Newbigging
+  field_student_profile_card_quote:
+    -
+      value: 'What was fun and surprising was that I found myself speaking French to people, even when the class was over.”'
+  field_student_profile_category:
+    -
+      entity: 74650c6a-f32c-4c4c-9c64-b7f4241426a9

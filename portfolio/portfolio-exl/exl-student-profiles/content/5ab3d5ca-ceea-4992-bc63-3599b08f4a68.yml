@@ -1,0 +1,122 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 5ab3d5ca-ceea-4992-bc63-3599b08f4a68
+  bundle: student_profile
+  default_langcode: en
+  depends:
+    20a38d8a-d8bb-4e59-8ec4-2a5b7fac94f7: node
+    787751ee-59a4-4aba-95e5-87f7a48115d1: file
+    35d89425-ba1d-4899-bcf4-aa9caef866a9: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Adele Fraser'
+  created:
+    -
+      value: 1727803598
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Adele Fraser | Extended Learning'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Adele talks about her experiences in the Organizational Coaching program and how her personal and professional life has changed since her graduation.'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/about/student-profiles/coaching/adele-fraser'
+    -
+      tag: meta
+      attributes:
+        property: 'og:site_name'
+        content: 'Extended Learning'
+    -
+      tag: meta
+      attributes:
+        property: 'og:url'
+        content: 'http://default/about/student-profiles/coaching/adele-fraser'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: 'Adele Fraser'
+    -
+      tag: meta
+      attributes:
+        property: 'og:description'
+        content: 'Adele talks about her experiences in the Organizational Coaching program and how her personal and professional life has changed since her graduation.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:card'
+        content: summary
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:description'
+        content: 'Adele talks about her experiences in the Organizational Coaching program and how her personal and professional life has changed since her graduation.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:title'
+        content: 'Adele Fraser'
+  path:
+    -
+      alias: /about/student-profiles/coaching/adele-fraser
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p>Adele Fraser is a 2019 graduate of the <a href="/node/385590" data-entity-type="node" data-entity-uuid="20a38d8a-d8bb-4e59-8ec4-2a5b7fac94f7" data-entity-substitution="canonical">UBC Certificate in Organizational Coaching</a>. She’s Director, People and Culture at The Village Restaurant in Vancouver, and Founder, Adele Fraser Coaching.</p><p>We reached out to Adele to talk about her experiences in the Organizational Coaching program, the results she’s seen organizational coaching provide and how her personal and professional life has changed since her graduation.</p><p><strong>What lead you to pursue the UBC Certificate in Organizational Coaching?</strong></p><p>I had been looking at coaching programs for a while when I came across UBC’s program and recognized what a great fit it was for my career and future aspirations.</p><p><strong>Why did you choose an organizational coaching credential?</strong></p><p>As an educator and human resources manager, I am often working with teams, groups and systems. The added layer of experience in UBC’s program with organizational coaching was a great fit for what I was looking for. Organizational coaching achieves the same results for teams of people that 1:1 coaching achieves for individuals.</p><p><strong>Was the time, effort and money worth it?&nbsp;</strong></p><p>Absolutely! The time requirements for participation in the program were very reasonable. I work full time and was able to meet all deadlines and participation expectations. All aspects of the program were interesting, engaging and contributed to my learning.</p><p><strong>What, if anything, surprised you about the program?</strong></p><p>I was surprised with how quickly I made real and authentic connections with other students, instructors, mentor coaches and alumni coaches. Everyone I met in this program was warm, inviting and helpful and had valuable contributions to offer!</p><p><strong>What challenges do organizational coaching skills help address? In what circumstances might you use coaching?</strong></p><p>I have used OC to support an existing team to create alignment, connection, understanding and ultimately a feeling of teamwork in an existing team. I also used OC to create the group agreements required to facilitate future productive work for a new team in the forming stages of their development.</p><p><strong>What are you doing with your credential now? How do you apply your skills in your role and life?</strong></p><p>From the day I began the program, the experiences that I had and the knowledge and skills that I gained contributed to every aspect of my life. This program really helped me focus on two questions: How am I serving as a listener? What question can I ask to add value to this person or situation?&nbsp;</p><p>I use my coaching skills at work to solve problems, support individuals with their development and give teams the framework and support they need to move forward and be productive. I have also successfully opened my own practice and work with teams and individuals in that way as well.</p><p><strong>What has changed in your relationships and interactions at work?</strong></p><p>My experience of UBC’s program and coaching have allowed me to untangle more easily intentions and desired outcomes in challenging or developing situations. This has provided a lot of ease with communication and interactions! While this has been valuable in all areas, the most unexpected place I noticed it showing up was in conversations with my teenagers.</p><p><strong>How has your coaching practice changed?</strong></p><p>Completing this program and other requirements for achieving the ACC designation through the ICF has given me the confidence to work with groups and individuals as a coaching practitioner, as an employee and an entrepreneur.</p><p><a href="/node/385214" data-entity-type="node" data-entity-uuid="516806a9-f6e6-441f-9eef-849bfae7efc8" data-entity-substitution="canonical"><span>Read more student profiles.</span></a></p><p>&nbsp;</p>'
+      format: filtered_text
+      summary: 'Adele talks about her experiences in the Organizational Coaching program and how her personal and professional life has changed since her graduation.'
+  field_area_of_study:
+    -
+      entity: 20a38d8a-d8bb-4e59-8ec4-2a5b7fac94f7
+  field_student_card_text:
+    -
+      value: '<p>Adele talks about her experiences in the Organizational Coaching program and how her personal and professional life has changed since her graduation. Read more about her journey.</p>'
+      format: text_only
+  field_student_first_name:
+    -
+      value: Adele
+  field_student_image:
+    -
+      entity: 787751ee-59a4-4aba-95e5-87f7a48115d1
+      alt: 'Headshot of Adele.'
+      title: ''
+      width: 400
+      height: 400
+  field_student_last_name:
+    -
+      value: Fraser
+  field_student_profile_card_quote:
+    -
+      value: 'I use my coaching skills at work to solve problems, support individuals with their development and give teams the framework and support they need to move forward and be productive.”'
+  field_student_profile_category:
+    -
+      entity: 35d89425-ba1d-4899-bcf4-aa9caef866a9

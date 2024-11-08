@@ -1,0 +1,122 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 31696dc7-c7a8-4643-890d-e372067ab6ec
+  bundle: student_profile
+  default_langcode: en
+  depends:
+    712e2435-aaed-4107-bd41-05e871f48f6a: node
+    a785a6b4-bfaa-41d1-9d40-010010beab9d: file
+    7a87323b-b025-4392-9e19-b680d8745e2c: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Milo Applejohn'
+  created:
+    -
+      value: 1727982595
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Milo Applejohn | Extended Learning'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'When Milo entered the BMVC program at the start of 2021, he did so with the goal of becoming a medical illustrator. Read more about his journey.'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/about/student-profiles/communications/milo-applejohn'
+    -
+      tag: meta
+      attributes:
+        property: 'og:site_name'
+        content: 'Extended Learning'
+    -
+      tag: meta
+      attributes:
+        property: 'og:url'
+        content: 'http://default/about/student-profiles/communications/milo-applejohn'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: 'Milo Applejohn'
+    -
+      tag: meta
+      attributes:
+        property: 'og:description'
+        content: 'When Milo entered the BMVC program at the start of 2021, he did so with the goal of becoming a medical illustrator. Read more about his journey.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:card'
+        content: summary
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:description'
+        content: 'When Milo entered the BMVC program at the start of 2021, he did so with the goal of becoming a medical illustrator. Read more about his journey.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:title'
+        content: 'Milo Applejohn'
+  path:
+    -
+      alias: /about/student-profiles/communications/milo-applejohn
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p>When Milo entered the <a href="/node/385596" data-entity-type="node" data-entity-uuid="712e2435-aaed-4107-bd41-05e871f48f6a" data-entity-substitution="canonical">BMVC program</a> at the start of 2021, he did so with the goal of becoming a medical illustrator. A graphic novelist and professional illustrator, he wanted to study science, and use his skills to support and advocate for neurodiverse, 2SLGBTQIA+ and transgender communities.</p><p>But he was completing the program at the end of 2021, Milo had so many opportunities in front of him, he had to turn a few down, including a book deal. “The opportunities have been unbelievable. The door just opened up for me,” he says.</p><p>It was the opportunity to pursue research that proved the most irresistible. In 2022, Milo will begin a Master of Science (Epidemiology) at SFU, where he’ll study health determinants of autism in Two-Spirit communities.</p><p>“One of the reasons I became interested in science communications is I see people from underprivileged socioeconomic positions unable to get their illnesses diagnosed because of a vocabulary barrier,” says Milo.</p><p>“I could have had a career in illustration and it would be have been comfortable and fun,” he adds. “The BMVC program has opened doors to advocacy and methods I can use to help other people. And It has empowered me to talk to those who are educated in science and research.”</p><p>Milo has also been invited to join the Two-Spirit Dry Lab, Turtle Island’s (Canada’s) first research group that focuses on the wellbeing of Two-Spirit and Indigenous people.</p><p>“It’s everything I could have dreamed of. I’m in the place I’m supposed to be.”</p><p><a href="/node/385213" data-entity-type="node" data-entity-uuid="f99950fb-8f97-4474-84fa-d66d46df9826" data-entity-substitution="canonical"><span>Read more student profiles.</span></a></p>'
+      format: filtered_text
+      summary: 'When Milo entered the BMVC program at the start of 2021, he did so with the goal of becoming a medical illustrator. Read more about his journey.'
+  field_area_of_study:
+    -
+      entity: 712e2435-aaed-4107-bd41-05e871f48f6a
+  field_student_card_text:
+    -
+      value: '<p>When Milo entered the BMVC program at the start of 2021, he did so with the goal of becoming a medical illustrator. Read more about his journey.</p>'
+      format: text_only
+  field_student_first_name:
+    -
+      value: Milo
+  field_student_image:
+    -
+      entity: a785a6b4-bfaa-41d1-9d40-010010beab9d
+      alt: 'Headshot of Milo.'
+      title: ''
+      width: 400
+      height: 400
+  field_student_last_name:
+    -
+      value: Applejohn
+  field_student_profile_card_quote:
+    -
+      value: 'The BMVC program provided an opportunity to bust down barriers between art and science, and invited different expressions and perspectives. It’s everything I could have dreamed of. I’m excited about making a difference in the lives of others.”'
+  field_student_profile_category:
+    -
+      entity: 7a87323b-b025-4392-9e19-b680d8745e2c

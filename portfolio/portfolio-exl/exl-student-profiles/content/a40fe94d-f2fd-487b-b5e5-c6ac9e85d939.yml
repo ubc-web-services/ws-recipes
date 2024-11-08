@@ -1,0 +1,122 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: a40fe94d-f2fd-487b-b5e5-c6ac9e85d939
+  bundle: student_profile
+  default_langcode: en
+  depends:
+    712e2435-aaed-4107-bd41-05e871f48f6a: node
+    edb71f6d-5f56-44e2-8254-bf6d67fac312: file
+    7a87323b-b025-4392-9e19-b680d8745e2c: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Muna Ibrahim'
+  created:
+    -
+      value: 1727982717
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Muna Ibrahim | Extended Learning'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "Muna knew that she wanted to make health information more accessible when she discovered the BMVC program. Here's how the program helped her."
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/about/student-profiles/communications/muna-ibrahim'
+    -
+      tag: meta
+      attributes:
+        property: 'og:site_name'
+        content: 'Extended Learning'
+    -
+      tag: meta
+      attributes:
+        property: 'og:url'
+        content: 'http://default/about/student-profiles/communications/muna-ibrahim'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: 'Muna Ibrahim'
+    -
+      tag: meta
+      attributes:
+        property: 'og:description'
+        content: "Muna knew that she wanted to make health information more accessible when she discovered the BMVC program. Here's how the program helped her."
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:card'
+        content: summary
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:description'
+        content: "Muna knew that she wanted to make health information more accessible when she discovered the BMVC program. Here's how the program helped her."
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:title'
+        content: 'Muna Ibrahim'
+  path:
+    -
+      alias: /about/student-profiles/communications/muna-ibrahim
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p><span lang="EN-CA">As a woman of colour born and raised in Canada, Muna hasn’t had issues accessing healthcare. But having accompanied other women of colour new to Canada to their medical appointments, Muna recognizes not everyone enjoys the same access. “It goes beyond a language barrier – there are cultural differences. There’s a whole subset of our population that needs help but doesn’t know where to get it,” she says.</span></p><p><span lang="EN-CA">When the pandemic hit, Muna started a monthly online workshop designed to help educate young girls of immigrant backgrounds and women of colour about health, fitness and diet. “Bridging the gap between scientific literature and these groups, and making health information accessible and understandable was so rewarding, and knew I would love to do more,” she says.&nbsp;</span></p><p><span lang="EN-CA">While browsing the UBC Extended Learning website one day, she discovered the&nbsp;</span><a href="/node/385596" data-entity-type="node" data-entity-uuid="712e2435-aaed-4107-bd41-05e871f48f6a" data-entity-substitution="canonical"><span lang="EN-CA">BMVC program</span></a><span lang="EN-CA">. “The program seemed perfect. I thought, ‘It’s going to teach me the soft skills to translate and communicate knowledge in a way women of colour and new immigrants can understand,’” recalls Muna.</span></p><p><span lang="EN-CA">Before she started the program, Muna had been exploring other media beyond webinars to share information. “BMVC sparked my interest in podcasting and creating videos. The program not only enabled me to create these, it taught me the importance of knowing your audience to create an effective communications piece.”</span></p><p><span lang="EN-CA">Inclusivity and accessibility in biomedical communications also played a big part in Muna’s learning. “This was such an appealing aspect of the program, and it surpassed my expectations. Growing up, I would have loved to see a young girl wearing a head scarf in illustrations. I’m happy to see a new generation of biomedical communicators advocating for inclusivity.”&nbsp;</span></p><p><span lang="EN-CA">Working with a real client was also new for Muna. “The BMVC team did a very good job guiding us with our client’s relationship. We always had their full support,” she says.&nbsp;</span></p><p><span lang="EN-CA">Muna was recently accepted in the UBC Bachelor of Computer Science degree. Once she’s finished the 20-month program, she plans to continue working with youth and women of colour, and creating more podcasts and videos. Eventually, she’d like to have her own business, combining computer programming with the skills she acquired from BMCV in creating health and wellbeing apps tailored to the needs of marginalized groups.</span></p><p><span lang="EN-CA">When asked her advice to prospective students, Muna says, “Just go for it. Each and every one of the coordinators and instructors had our best interests at heart. They helped us reach our potential.</span></p><p><a href="/node/385213" data-entity-type="node" data-entity-uuid="f99950fb-8f97-4474-84fa-d66d46df9826" data-entity-substitution="canonical"><span>Read more student profiles.</span></a></p>'
+      format: filtered_text
+      summary: "Muna knew that she wanted to make health information more accessible when she discovered the BMVC program. Here's how the program helped her."
+  field_area_of_study:
+    -
+      entity: 712e2435-aaed-4107-bd41-05e871f48f6a
+  field_student_card_text:
+    -
+      value: "<p>Muna knew that she wanted to make health information more accessible when she discovered the BMVC program. Here's how the program helped her.</p>"
+      format: text_only
+  field_student_first_name:
+    -
+      value: Muna
+  field_student_image:
+    -
+      entity: edb71f6d-5f56-44e2-8254-bf6d67fac312
+      alt: 'Headshot of Muna.'
+      title: ''
+      width: 400
+      height: 400
+  field_student_last_name:
+    -
+      value: Ibrahim
+  field_student_profile_card_quote:
+    -
+      value: 'I’m not a graphic designer. I’ve never done video editing. But the BMVC program allowed me to explore those other parts of myself. I created videos and podcasts that bridged science literature and women of colour. It was a confidence boost.”'
+  field_student_profile_category:
+    -
+      entity: 7a87323b-b025-4392-9e19-b680d8745e2c

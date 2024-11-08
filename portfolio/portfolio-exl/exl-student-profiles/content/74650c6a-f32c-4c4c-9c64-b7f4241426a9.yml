@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 74650c6a-f32c-4c4c-9c64-b7f4241426a9
+  bundle: student_area_of_study
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Languages
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Languages | Extended Learning'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/student-area-study/languages'
+  path:
+    -
+      alias: /student-area-study/languages
+      langcode: en
+      pathauto: 1

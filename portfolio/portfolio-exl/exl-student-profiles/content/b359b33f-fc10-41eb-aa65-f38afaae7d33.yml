@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: b359b33f-fc10-41eb-aa65-f38afaae7d33
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: Bhashini_584x408_1.jpg
+  uri:
+    -
+      value: 'public://student-profile-images/2024-10/Bhashini_584x408_1.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 183427
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1727984339

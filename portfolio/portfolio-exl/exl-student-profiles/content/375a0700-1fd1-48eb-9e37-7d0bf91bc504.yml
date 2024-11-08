@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 375a0700-1fd1-48eb-9e37-7d0bf91bc504
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: Marg_Seppelt_400x400.jpg
+  uri:
+    -
+      value: 'public://student-profile-images/2024-10/Marg_Seppelt_400x400.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 101482
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1727981665

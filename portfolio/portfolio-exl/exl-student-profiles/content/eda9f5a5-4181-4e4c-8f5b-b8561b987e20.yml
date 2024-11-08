@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: eda9f5a5-4181-4e4c-8f5b-b8561b987e20
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: Kels_Davidson_400x400.jpg
+  uri:
+    -
+      value: 'public://student-profile-images/2024-10/Kels_Davidson_400x400.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 349851
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1727979351

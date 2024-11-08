@@ -1,0 +1,122 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: ba8126ec-e937-43cc-8f9c-e71aa676d4e5
+  bundle: student_profile
+  default_langcode: en
+  depends:
+    712e2435-aaed-4107-bd41-05e871f48f6a: node
+    a833c0b6-fac3-4a02-ae11-9a0444400084: file
+    7a87323b-b025-4392-9e19-b680d8745e2c: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Olivia Aguiar'
+  created:
+    -
+      value: 1727982835
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Olivia Aguiar | Extended Learning'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "When Olivia discovered the BMVC program, she said her “world froze,” and she knew she had to apply for the program.\_Here’s what attracted her to the program."
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/about/student-profiles/communications/olivia-aguiar'
+    -
+      tag: meta
+      attributes:
+        property: 'og:site_name'
+        content: 'Extended Learning'
+    -
+      tag: meta
+      attributes:
+        property: 'og:url'
+        content: 'http://default/about/student-profiles/communications/olivia-aguiar'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: 'Olivia Aguiar'
+    -
+      tag: meta
+      attributes:
+        property: 'og:description'
+        content: "When Olivia discovered the BMVC program, she said her “world froze,” and she knew she had to apply for the program.\_Here’s what attracted her to the program."
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:card'
+        content: summary
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:description'
+        content: "When Olivia discovered the BMVC program, she said her “world froze,” and she knew she had to apply for the program.\_Here’s what attracted her to the program."
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:title'
+        content: 'Olivia Aguiar'
+  path:
+    -
+      alias: /about/student-profiles/communications/olivia-aguiar
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p><span lang="EN-US">As a PhD student studying head impacts and brain injuries in hockey, Olivia Aguiar knows the work she’s doing is important and relevant to many communities, from players, coaches and hockey parents, to the wider science community. With a passion for understanding how health information is consumed and shared, she was interested in finding other ways to do more with her research and connect with communities she had collected data from.</span></p><p><span lang="EN-US">A self-professed “science kid,” Olivia has always had a heart for the arts. Says Olivia, “I’ve always had this desire to talk about science through visualizations and writing, but I didn’t have a chance to study the arts, and felt I needed formal training.” When she discovered the </span><a href="/node/385596"><span lang="EN-US">BMVC program</span></a><span lang="EN-US">, she said her “world froze,” and she knew she had to apply for the program.&nbsp;</span></p><p><span lang="EN-US">As someone who thrives on teams and collaboration, Olivia found the interdisciplinary nature of the cohort inspiring. “What attracted me to the program was the different professional and personal backgrounds. Having so many different perspectives and being immersed in this space and environment was amazing,” says Olivia.&nbsp;</span></p><p><span lang="EN-US">It was the respect shown for these different perspectives that Olivia says was one of the biggest strengths of the program. “The BMVC team has the capacity to help you fulfill your goals and ambitions. If you come in knowing exactly what you want, they’ll help you get there. If you come in not knowing exactly where you want to go, you’ll feel supported.”</span></p><p><span lang="EN-US">After what she describes as a transformative, life-changing year, Olivia dove deeper into science communications, also known as scicomm, and enrolled in two SFU courses. Through one of her instructors, she learned of a job opportunity at the Scholarly Communications Lab, an interdisciplinary team of researchers that studies how research is produced, disseminated and used. “It’s a nice foot in the door. I’m going from studying biomechanics to the scholarly and science communication fields,” says Olivia.&nbsp;</span></p><p><span lang="EN-US">Olivia hopes to stay at the intersection of academia, science, scicomm and knowledge translation. “I’d like to be in a job that allows me to fuse my knowledge of sports injury prevention with communications. I’m interested in working with stakeholders in the community to understand the science of sports injuries, and together create better prevention solutions.”</span></p><p><span lang="EN-US">Adds Olivia, “I was able to build my confidence in the program. I knew where I wanted to go – I just needed an opportunity to get there. I finally feel like I’m on the path to where I want to be.”&nbsp;</span></p><p><a href="/node/385213" data-entity-type="node" data-entity-uuid="f99950fb-8f97-4474-84fa-d66d46df9826" data-entity-substitution="canonical"><span>Read more student profiles.</span></a></p>'
+      format: filtered_text
+      summary: "When Olivia discovered the BMVC program, she said her “world froze,” and she knew she had to apply for the program.\_Here’s what attracted her to the program."
+  field_area_of_study:
+    -
+      entity: 712e2435-aaed-4107-bd41-05e871f48f6a
+  field_student_card_text:
+    -
+      value: '<p>When Olivia discovered the BMVC program, she said her “world froze,” and she knew she had to apply for the program.&nbsp;Here’s what attracted her to the program.</p>'
+      format: text_only
+  field_student_first_name:
+    -
+      value: Olivia
+  field_student_image:
+    -
+      entity: a833c0b6-fac3-4a02-ae11-9a0444400084
+      alt: 'Headshot of Olivia.'
+      title: ''
+      width: 400
+      height: 400
+  field_student_last_name:
+    -
+      value: Aguiar
+  field_student_profile_card_quote:
+    -
+      value: 'I incorporate the skills I learned in the program in all aspects of my life, whether it’s in a research presentation, posting on social media for the labs, or even communicating science information to my family.”'
+  field_student_profile_category:
+    -
+      entity: 7a87323b-b025-4392-9e19-b680d8745e2c

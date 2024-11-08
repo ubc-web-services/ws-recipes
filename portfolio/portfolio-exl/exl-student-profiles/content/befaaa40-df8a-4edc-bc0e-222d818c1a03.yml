@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: befaaa40-df8a-4edc-bc0e-222d818c1a03
+  default_langcode: en
+  depends:
+    10c57082-7680-41b9-bf33-0bcff5a9102d: user
+default:
+  uid:
+    -
+      entity: 10c57082-7680-41b9-bf33-0bcff5a9102d
+  filename:
+    -
+      value: Bhashini_584x408_0.jpg
+  uri:
+    -
+      value: 'public://2024-03/Bhashini_584x408_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 183427
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1709849596

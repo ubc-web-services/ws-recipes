@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: b42797f7-8425-4b91-8279-0b9f2cfaccc1
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: Cat%20_Lau_584x408.jpg
+  uri:
+    -
+      value: 'public://student-profile-images/2024-09/Cat%20_Lau_584x408.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 1636050
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1715726078

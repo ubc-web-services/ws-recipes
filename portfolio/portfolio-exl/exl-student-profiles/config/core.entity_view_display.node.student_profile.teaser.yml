@@ -1,0 +1,44 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.student_profile.body
+    - field.field.node.student_profile.field_area_of_study
+    - field.field.node.student_profile.field_student_card_text
+    - field.field.node.student_profile.field_student_first_name
+    - field.field.node.student_profile.field_student_image
+    - field.field.node.student_profile.field_student_last_name
+    - field.field.node.student_profile.field_student_profile_card_quote
+    - field.field.node.student_profile.field_student_profile_category
+    - node.type.student_profile
+  module:
+    - text
+    - user
+id: node.student_profile.teaser
+targetEntityType: node
+bundle: student_profile
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_area_of_study: true
+  field_student_card_text: true
+  field_student_first_name: true
+  field_student_image: true
+  field_student_last_name: true
+  field_student_profile_card_quote: true
+  field_student_profile_category: true
+  search_api_excerpt: true

@@ -1,0 +1,122 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 4867fba1-232a-430e-a473-2797f2152e00
+  bundle: student_profile
+  default_langcode: en
+  depends:
+    4d24ef9d-2da7-4fd5-83f8-a544bb06b27e: node
+    965e0b32-1092-48d5-aa0a-f54b69c25f7e: file
+    74650c6a-f32c-4c4c-9c64-b7f4241426a9: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Aloka McLean'
+  created:
+    -
+      value: 1727983189
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Aloka McLean | Extended Learning'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "Aloka is a student in the UBC Extended Learning\_Mandarin classes. She shares her story about keeping up her language skills with a community of learners at"
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/about/student-profiles/languages/aloka-mclean'
+    -
+      tag: meta
+      attributes:
+        property: 'og:site_name'
+        content: 'Extended Learning'
+    -
+      tag: meta
+      attributes:
+        property: 'og:url'
+        content: 'http://default/about/student-profiles/languages/aloka-mclean'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: 'Aloka McLean'
+    -
+      tag: meta
+      attributes:
+        property: 'og:description'
+        content: "Aloka is a student in the UBC Extended Learning\_Mandarin classes. She shares her story about keeping up her language skills with a community of learners at ExL."
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:card'
+        content: summary
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:description'
+        content: "Aloka is a student in the UBC Extended Learning\_Mandarin classes. She shares her story about keeping up her language skills with a community of learners at ExL."
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:title'
+        content: 'Aloka McLean'
+  path:
+    -
+      alias: /about/student-profiles/languages/aloka-mclean
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p><em>Aloka McLean is a student in the UBC Extended Learning (ExL) </em><a href="/node/385636" data-entity-type="node" data-entity-uuid="4d24ef9d-2da7-4fd5-83f8-a544bb06b27e" data-entity-substitution="canonical"><em>Mandarin classes</em></a><em>. She shares her story about keeping up her language skills with a community of learners at ExL.</em></p><p><strong>What led you to seek out these courses?</strong></p><p>My degree is in Asian Language and Culture, specifically Mandarin and Chinese culture. After finishing my degree, I moved to Shanghai to work for a couple of years, which was amazing. I used Mandarin for all of my day-to-day activities. I would have to think in Mandarin; my whole world was Mandarin.</p><p>Since I’ve come home, I''ve been working at the Asia Pacific Foundation of Canada, but I don’t use Mandarin in my day-to-day job. During the pandemic, I realized it was a good opportunity to brush up on my language skills and looked into the UBC Extended Learning program to do that.</p><p><strong>Why did you choose to learn from UBC ExL?</strong></p><p>I liked the format and that the course was online once a week, which worked well with my schedule. I also trust UBC as a reputable and solid education institution. I''ve had good experiences in the past, so I wanted to return to UBC.</p><p><strong>What was a highlight for you from these courses?</strong></p><p>One highlight for me was connecting with other people who also wanted to learn Mandarin and who didn’t necessarily have a background or degree in it. That was really nice. I took the courses during the pandemic, and it was great to be able to meet new people.</p><p>For me personally, I enjoyed being able to reconnect with my language skills and to have a place to learn where there was no pressure. The purpose of taking the course was just to enjoy learning, which is not an opportunity we often get. The conversation class was very relaxed, and it was really nice to be able to brush up on my skills in that kind of environment.</p><p><strong>Who would you recommend these courses to?</strong></p><p>I would recommend these courses to anyone who is interested in starting to learn Mandarin, but also to anybody who has some base in it and wants to keep up their language skills. Because, as we know, learning a language requires maintaining it, otherwise you can lose it. The courses are tremendously helpful in that way, and it''s such a relaxed, stress-free sort of environment to learn in.</p><p><a href="/node/385215" data-entity-type="node" data-entity-uuid="0a105f57-705d-4be7-b935-5237f0ecc4e1" data-entity-substitution="canonical"><span>Read more student profiles.</span></a></p><p>&nbsp;</p>'
+      format: filtered_text
+      summary: "Aloka is a student in the UBC Extended Learning\_Mandarin classes. She shares her story about keeping up her language skills with a community of learners at ExL."
+  field_area_of_study:
+    -
+      entity: 4d24ef9d-2da7-4fd5-83f8-a544bb06b27e
+  field_student_card_text:
+    -
+      value: '<p>Aloka McLean is a student in the UBC Extended Learning (ExL) Mandarin classes. She shares her story about keeping up her language skills with a community of learners at ExL.</p>'
+      format: text_only
+  field_student_first_name:
+    -
+      value: Aloka
+  field_student_image:
+    -
+      entity: 965e0b32-1092-48d5-aa0a-f54b69c25f7e
+      alt: 'Headshot of Aloka.'
+      title: ''
+      width: 400
+      height: 400
+  field_student_last_name:
+    -
+      value: McLean
+  field_student_profile_card_quote:
+    -
+      value: 'I enjoyed being able to reconnect with my language skills and to have a place to learn without pressure. The purpose was just to enjoy learning.”'
+  field_student_profile_category:
+    -
+      entity: 74650c6a-f32c-4c4c-9c64-b7f4241426a9

@@ -1,0 +1,122 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 9b178a72-78c0-462f-aa79-417ce0971d81
+  bundle: student_profile
+  default_langcode: en
+  depends:
+    712e2435-aaed-4107-bd41-05e871f48f6a: node
+    b42797f7-8425-4b91-8279-0b9f2cfaccc1: file
+    7a87323b-b025-4392-9e19-b680d8745e2c: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Cat Lau'
+  created:
+    -
+      value: 1727982438
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Cat Lau | Extended Learning'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "Cat sensed that science communication and community engagement were her calling. Here's why she chose to enrol in the BMVC program."
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/about/student-profiles/communications/cat-lau'
+    -
+      tag: meta
+      attributes:
+        property: 'og:site_name'
+        content: 'Extended Learning'
+    -
+      tag: meta
+      attributes:
+        property: 'og:url'
+        content: 'http://default/about/student-profiles/communications/cat-lau'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: 'Cat Lau'
+    -
+      tag: meta
+      attributes:
+        property: 'og:description'
+        content: "Cat sensed that science communication and community engagement were her calling. Here's why she chose to enrol in the BMVC program."
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:card'
+        content: summary
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:description'
+        content: "Cat sensed that science communication and community engagement were her calling. Here's why she chose to enrol in the BMVC program."
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:title'
+        content: 'Cat Lau'
+  path:
+    -
+      alias: /about/student-profiles/communications/cat-lau
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p>When Cat was in grad school studying behavioural neuroscience, she realized there was a big gap in the general public’s understanding of science. Even explaining concepts to family and friends was a challenge.</p><p>Sensing that science communication and community engagement were her calling, Cat enrolled in a graduate diploma in science communication. While she describes the diploma as comprehensive, it didn’t offer the deep dive into visualization and art that she had hoped for.</p><p><a href="/node/385596" data-entity-type="node" data-entity-uuid="712e2435-aaed-4107-bd41-05e871f48f6a" data-entity-substitution="canonical">She then discovered the BMVC program.</a></p><p>Before applying to the BMVC program, however, Cat wanted to ensure she wasn’t going to repeat what she had already learned. “There were things about the BMVC program that stood out – equity, diversity and inclusion in science communications, and ethics. Those really spoke to me.” The part-time, online format was also perfect since she was working full-time in Montreal.</p><p>During the program, a class about comics and graphic medicine proved to be an eye-opening experience. A doodler since she was little, Cat says, “When we started doing comics, something clicked and I thought, ‘This is it, this is something I want to pursue.’ Before, I didn’t think it was possible to use this art form to talk about health topics.”</p><p>Today, Cat continues to work for ACCESS Open Minds, a youth mental health research network, and is applying what she learned in BMVC. “I try to incorporate more illustrations or comics in the resources I create. What I really love is that I’m working together with youth and families to create &nbsp;more visual-based resources. That’s really exciting work for me.”</p><p>She’s also taking on freelance work. “A big goal for me was to create an online portfolio during the program.” She credits the BMVC team for their help. “They really wanted to help us achieve what we wanted to do. I felt seen and heard.”</p><p><a href="/node/385213" data-entity-type="node" data-entity-uuid="f99950fb-8f97-4474-84fa-d66d46df9826" data-entity-substitution="canonical"><span>Read more student profiles.</span></a></p>'
+      format: filtered_text
+      summary: "Cat sensed that science communication and community engagement were her calling. Here's why she chose to enrol in the BMVC program."
+  field_area_of_study:
+    -
+      entity: 712e2435-aaed-4107-bd41-05e871f48f6a
+  field_student_card_text:
+    -
+      value: "<p>Cat sensed that science communication and community engagement were her calling. Here's why she chose to enrol in the BMVC program.</p>"
+      format: text_only
+  field_student_first_name:
+    -
+      value: Cat
+  field_student_image:
+    -
+      entity: b42797f7-8425-4b91-8279-0b9f2cfaccc1
+      alt: 'Headshot of Cat.'
+      title: ''
+      width: 400
+      height: 400
+  field_student_last_name:
+    -
+      value: Lau
+  field_student_profile_card_quote:
+    -
+      value: 'One of the most exciting and cool things about the program was the different experiences, perspectives and knowledge students brought into the program. We learned so much, not just from the instructors, but from the students.”'
+  field_student_profile_category:
+    -
+      entity: 7a87323b-b025-4392-9e19-b680d8745e2c

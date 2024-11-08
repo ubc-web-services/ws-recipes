@@ -1,0 +1,122 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 1fb3aa5a-090b-4944-a1b1-657e0a58128a
+  bundle: student_profile
+  default_langcode: en
+  depends:
+    20a38d8a-d8bb-4e59-8ec4-2a5b7fac94f7: node
+    d8758646-45dc-40c2-a3dd-c1dcbd728ddb: file
+    35d89425-ba1d-4899-bcf4-aa9caef866a9: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Adrian Liem'
+  created:
+    -
+      value: 1727804147
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Adrian Liem | Extended Learning'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Adrian stumbled on coaching through an interaction with a friend who was a coach. Here’s what the UBC Certificate in Organizational Coaching has meant to him.'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/about/student-profiles/coaching/adrian-liem'
+    -
+      tag: meta
+      attributes:
+        property: 'og:site_name'
+        content: 'Extended Learning'
+    -
+      tag: meta
+      attributes:
+        property: 'og:url'
+        content: 'http://default/about/student-profiles/coaching/adrian-liem'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: 'Adrian Liem'
+    -
+      tag: meta
+      attributes:
+        property: 'og:description'
+        content: 'Adrian stumbled on coaching through an interaction with a friend who was a coach. Here’s what the UBC Certificate in Organizational Coaching has meant to him.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:card'
+        content: summary
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:description'
+        content: 'Adrian stumbled on coaching through an interaction with a friend who was a coach. Here’s what the UBC Certificate in Organizational Coaching has meant to him.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:title'
+        content: 'Adrian Liem'
+  path:
+    -
+      alias: /about/student-profiles/coaching/adrian-liem
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p><span lang="EN-CA">Adrian Liem has always had an interest in people and psychology. He has an undergraduate degree in psychology, and did teacher education. At one point he had seriously considered becoming a counsellor. His father talked him out of it knowing Adrian’s level of empathy and sensitivity would make it difficult. “I recognized that I didn''t know how to hold space for people as they''re processing some really deep things without also getting pulled into it myself.”</span></p><p><span lang="EN-CA">Adrian stumbled on coaching through an interaction with a friend who was a coach, and he became involved in her group coaching sessions, “I was explaining the stagnation I felt in my career and the need for something more and she asked me questions in a different way. I was experiencing something very different. A different way of learning, of interacting with people, it was a peer support type of environment.” This experience sparked his curiosity and is what prompted Adrian to eventually apply to the&nbsp;</span><a href="/node/385590" data-entity-type="node" data-entity-uuid="20a38d8a-d8bb-4e59-8ec4-2a5b7fac94f7" data-entity-substitution="canonical"><span lang="EN-CA">UBC Certificate in Organizational Coaching</span></a><span lang="EN-CA"> program.</span></p><p><span lang="EN-CA">Once Adrian started the program, he was able to solve the dilemma of balancing his feelings while being in service to others. “In the first couple of days, there was this light bulb that turned on for me, an epiphany of how I can be with people in a way that is different. It''s still joining them in a space, but there''s a method behind it, there''s a framework, there''s a way of managing that for myself, and that kind of kicked off the whole journey that has been continuing since then.”</span></p><p><span lang="EN-CA">When Adrian began the program his goal was to find a new career path that allowed him to use technology to support people’s growth. “I viewed the program itself, as a way for me to understand the mechanics around what coaching does. The outcome I was looking for was to apply that knowledge in a way that I can create something that melds my digital background with my interest in people,” he says.&nbsp;</span></p><p><span lang="EN-CA">Adrian also wanted to be able to use the coaching knowledge in his current role as a Digital Comunications Manager to manage his team more effectively. He explains, “I have a big C coach role that I play where I am coaching but I also have a little C coach role where I''m bringing a coach approach and holding true to the principles, and the values, and the way of being as a coach. This is changing the way we work, it’s changing the way that people collaborate with one another, it’s opening things up.”</span></p><p><span lang="EN-CA">Adrian reflects on some of the things that really stood out to him. “Through the program we really learned a framework with an academic foundation to it that can generate measurable impact, and not just for individuals, but for groups and teams and broader systems.” &nbsp;He also felt the level of support in the program was significant, “The size of the program team, the people that have a hand or a part in the journey in this, it''s amazing. There''s nothing as far as I''m hearing of other coach training programs that comes close to the community and years of experience that you get exposed to through this program. I was coached by so many different people, practiced coaching with a diverse range of clients, was mentored by leaders in the field, and am now part of an amazing community.”</span></p><p><span lang="EN-CA">After completing the program in 2020, Adrian has kept very busy. He says, “Professionally I just had my job before, but now I have pockets of little networks of groups that I work with in different types of roles in different capacities.” Adrian does alumni coaching for the program, he is a UBC internal coach and has done coach consulting with various organizations in the health and technology field, as well as running his own coaching consultancy. Adrian is also pursuing a master’s degree in applied positive psychology and coaching psychology.&nbsp;</span></p><p><span lang="EN-CA">Adrian recommends this program to, “anyone who is trying to have more meaningful interactions with whatever circle they are part of whether that’s with a big C Coach or little C coaching role.” He adds, “I also think any leader, anyone who is leading people, has something to gain from some coach training.”&nbsp;</span></p><p><span lang="EN-CA">His experiences have led him on a path that he initially hadn’t anticipated. “Coming out of the program, the process got me to a totally different spot than I expected,” he recalls. “I have a good idea of where I''m going, but it started a whole new way of thinking about how I work with people. It also got me deep into the world of coaching, into the theory, research and practice of providing coaching to people in a variety of ways. Where I''m at now has far exceeded my expectations, and I feel like the journey is still not done.”</span></p><p><a href="/node/385214" data-entity-type="node" data-entity-uuid="516806a9-f6e6-441f-9eef-849bfae7efc8" data-entity-substitution="canonical"><span>Read more student profiles.</span></a></p>'
+      format: filtered_text
+      summary: 'Adrian stumbled on coaching through an interaction with a friend who was a coach. Here’s what the UBC Certificate in Organizational Coaching has meant to him.'
+  field_area_of_study:
+    -
+      entity: 20a38d8a-d8bb-4e59-8ec4-2a5b7fac94f7
+  field_student_card_text:
+    -
+      value: '<p>Adrian stumbled on coaching through an interaction with a friend who was a coach. Here’s what the UBC Certificate in Organizational Coaching has meant to him.</p>'
+      format: text_only
+  field_student_first_name:
+    -
+      value: Adrian
+  field_student_image:
+    -
+      entity: d8758646-45dc-40c2-a3dd-c1dcbd728ddb
+      alt: 'Headshot of Adrian.'
+      title: ''
+      width: 400
+      height: 400
+  field_student_last_name:
+    -
+      value: Liem
+  field_student_profile_card_quote:
+    -
+      value: "There's a new version of me that's emerging and I'm going on this journey, and I feel like it's a whole different way of interacting with people, of having conversations, of just seeing dynamics at play.”"
+  field_student_profile_category:
+    -
+      entity: 35d89425-ba1d-4899-bcf4-aa9caef866a9

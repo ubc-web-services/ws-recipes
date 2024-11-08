@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 8b2fd8f2-6278-40ce-a3b7-c320d8bbb009
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: Nelson_6381_400x400.jpg
+  uri:
+    -
+      value: 'public://student-profile-images/2024-10/Nelson_6381_400x400.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 201842
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1727983885

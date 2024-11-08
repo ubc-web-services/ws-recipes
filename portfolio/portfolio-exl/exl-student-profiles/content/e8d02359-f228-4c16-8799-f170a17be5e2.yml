@@ -1,0 +1,122 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: e8d02359-f228-4c16-8799-f170a17be5e2
+  bundle: student_profile
+  default_langcode: en
+  depends:
+    3d7bea1c-a40d-4e15-bdd2-5b3eb8f88c3f: node
+    188a5a2b-2e66-46c7-a33e-a8616839f133: file
+    74650c6a-f32c-4c4c-9c64-b7f4241426a9: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Tim Huynh'
+  created:
+    -
+      value: 1727983951
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Tim Huynh | Extended Learning'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Tim wanted to brush up his public speaking skills for his career and connect with other international professionals. Read about Tim’s experience.'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/about/student-profiles/languages/tim-huynh'
+    -
+      tag: meta
+      attributes:
+        property: 'og:site_name'
+        content: 'Extended Learning'
+    -
+      tag: meta
+      attributes:
+        property: 'og:url'
+        content: 'http://default/about/student-profiles/languages/tim-huynh'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: 'Tim Huynh'
+    -
+      tag: meta
+      attributes:
+        property: 'og:description'
+        content: 'Tim wanted to brush up his public speaking skills for his career and connect with other international professionals. Read about Tim’s experience.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:card'
+        content: summary
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:description'
+        content: 'Tim wanted to brush up his public speaking skills for his career and connect with other international professionals. Read about Tim’s experience.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:title'
+        content: 'Tim Huynh'
+  path:
+    -
+      alias: /about/student-profiles/languages/tim-huynh
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p><em><span>Tim Huynh is an employment counsellor for WorkBC and curriculum developer for MOSAIC in Metro Vancouver. In his role, he coaches people to develop employment skills for better job opportunities and creates online courses for social community projects. He took&nbsp;</span></em><a href="https://extendedlearning.ubc.ca/courses/public-speaking-international-professionals/0290"><em><span>Public Speaking for International Professionals</span></em></a><em><span> to brush up his public speaking skills for his career and to connect with a community of international professionals.</span></em></p><p><span><strong>What led you to seek out&nbsp;</strong></span><a href="https://extendedlearning.ubc.ca/courses/public-speaking-international-professionals/0290"><span>Public Speaking for International Professionals</span></a><span><strong>?</strong></span></p><p><span>I enrolled in this in-person public speaking course for international professionals to regain my public speaking skills after a long period of virtual work and learning due to the pandemic.</span></p><p><span><strong>What was a highlight for you from the course?</strong></span></p><p><span>A highlight of the course was the chance to meet other professionals from different parts of the world. Being an immigrant can feel very isolating sometimes, and </span><a><span>the course was a great opportunity to meet people and learn together as a community.</span></a><span> My classmates were from all over the world, including Quebec! We had the chance to learn about each other’s cultures and to network with other international professionals. I’ve stayed in touch with a group from my class, and we still meet up and get together.</span></p><p><span><strong>What surprised you about the course?</strong></span></p><p>I was surprised that we covered so much theory and practice in just two months. Having done grad studies, I could see that this course is a good mix of theory and research-based content, taught in a practical way. We were provided with excellent resources like TED Talks and research papers to continue learning outside of class, which is great because public speaking is a lifelong pursuit.</p><p><span><strong>How are you applying the skills you learned in your professional life?</strong></span></p><p><span>The course has had a great impact not just on my English skills, but also on how I do presentations in my first language. I feel more confident attending and presenting at conferences and at work. The course has also helped me pitch my ideas more effectively to team leaders and other stakeholders. I wish to be a keynote speaker in the future, and this course helped support me in working toward my goal.&nbsp;</span></p><p><span><strong>Who would you recommend&nbsp;</strong></span><a href="https://extendedlearning.ubc.ca/courses/public-speaking-international-professionals/0290"><span>Public Speaking for International Professionals</span></a><span><strong> to?</strong></span></p><p><span>I think this course could benefit people in all sorts of roles in business or social work. I would recommend this course to anyone who wants to improve their public speaking skills in English because it provides a safe space to practice and present ideas confidently in public.</span></p>'
+      format: filtered_text
+      summary: 'Tim wanted to brush up his public speaking skills for his career and connect with other international professionals. Read about Tim’s experience.'
+  field_area_of_study:
+    -
+      entity: 3d7bea1c-a40d-4e15-bdd2-5b3eb8f88c3f
+  field_student_card_text:
+    -
+      value: '<p>Tim wanted to brush up his public speaking skills for his career and connect with other international professionals. Read about Tim’s experience and the impact of the course.</p>'
+      format: text_only
+  field_student_first_name:
+    -
+      value: Tim
+  field_student_image:
+    -
+      entity: 188a5a2b-2e66-46c7-a33e-a8616839f133
+      alt: 'headshot of Tim'
+      title: ''
+      width: 400
+      height: 400
+  field_student_last_name:
+    -
+      value: Huynh
+  field_student_profile_card_quote:
+    -
+      value: "The course has had a great impact not just on my English skills, but also on how I do presentations in my first language.\_I wish to be a keynote speaker in the future, and this course helped support me in working toward my goal.\""
+  field_student_profile_category:
+    -
+      entity: 74650c6a-f32c-4c4c-9c64-b7f4241426a9

@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Text only'
+format: text_only
+weight: 0
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: false
+    weight: -10
+    settings:
+      allowed_html: '<span class="text-uppercase text-lowercase font-semibold text-grey-700 text-white"> <p class="text-hug text-lead text-small">'
+      filter_html_help: true
+      filter_html_nofollow: false

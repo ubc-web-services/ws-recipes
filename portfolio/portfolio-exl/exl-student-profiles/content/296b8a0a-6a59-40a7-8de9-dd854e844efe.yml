@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 296b8a0a-6a59-40a7-8de9-dd854e844efe
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: Jasmin__no_squares_584x408.jpg
+  uri:
+    -
+      value: 'public://student-profile-images/2024-10/Jasmin__no_squares_584x408.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 60400
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1727983598

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 787751ee-59a4-4aba-95e5-87f7a48115d1
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: adele_fraser_400x400.jpg
+  uri:
+    -
+      value: 'public://student-profile-images/2024-10/adele_fraser_400x400.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 104876
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1727803718

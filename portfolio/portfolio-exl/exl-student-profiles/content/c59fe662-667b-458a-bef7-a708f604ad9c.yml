@@ -1,0 +1,122 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: c59fe662-667b-458a-bef7-a708f604ad9c
+  bundle: student_profile
+  default_langcode: en
+  depends:
+    712e2435-aaed-4107-bd41-05e871f48f6a: node
+    10437d59-3596-4d2b-8c3f-e04ba94aa04e: file
+    7a87323b-b025-4392-9e19-b680d8745e2c: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Rebecca Ellison'
+  created:
+    -
+      value: 1727982934
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Rebecca Ellison | Extended Learning'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "When COVID shut her business down, Rebecca sought programs that combined art and science – BMVC was the perfect fit. Here's what the program meant for her."
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/about/student-profiles/communications/rebecca-ellison'
+    -
+      tag: meta
+      attributes:
+        property: 'og:site_name'
+        content: 'Extended Learning'
+    -
+      tag: meta
+      attributes:
+        property: 'og:url'
+        content: 'http://default/about/student-profiles/communications/rebecca-ellison'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: 'Rebecca Ellison'
+    -
+      tag: meta
+      attributes:
+        property: 'og:description'
+        content: "When COVID shut her business down, Rebecca sought programs that combined art and science – BMVC was the perfect fit. Here's what the program meant for her."
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:card'
+        content: summary
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:description'
+        content: "When COVID shut her business down, Rebecca sought programs that combined art and science – BMVC was the perfect fit. Here's what the program meant for her."
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:title'
+        content: 'Rebecca Ellison'
+  path:
+    -
+      alias: /about/student-profiles/communications/rebecca-ellison
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p>Rebecca arrived at the intersection of art and science along a path that took her many directions. She began her career as an occupational therapy working with diverse populations, from infants to seniors. Early in her career, however, Rebecca found herself constantly circling back to the sciences and their intimate connection to art.</p><p>Over time, Rebecca evolved her career, and launched a successful freelance business in arts education with a focus on STEAM (science, technology, engineering, art and math). She was also an artist-in-residence with the Calgary School Board.</p><p>When COVID shut much of her business down, she started looking at programs that could combine her love of art and science – and <a href="/node/385596" data-entity-type="node" data-entity-uuid="712e2435-aaed-4107-bd41-05e871f48f6a" data-entity-substitution="canonical">BMVC</a> proved the perfect fit.</p><p>During the program, Rebecca continued doing virtual freelance work, and created the Biomedical Design Lab, a course for middle school students. “I was taking everything I was learning – designing with empathy, researching user needs – and putting it into the Lab,” says Rebecca.</p><p>Studying anatomy in the program was also eye-opening for Rebecca. “The way the HIVE taught anatomy compared to the way I learned 20 years ago is unbelievable. We learned not through a rehab medicine or Western medical lens, but through an artistic lens. This was such a big takeaway for me.”</p><p>While she had intended to continue as a freelance biomedical artist and communicator after the program, instead she was approached for a role as a Senior Service Designer with a Toronto agency. “For my interview, I used my capstone project – working on a team, using rapid design, scoping client needs – to demonstrate my experience,” recalls Rebecca.</p><p>“Today, I’m integrating my experience in frontline health, visual art and design, and biomedical communications to make healthcare experiences more human-centered.”</p><p><a href="/node/385213" data-entity-type="node" data-entity-uuid="f99950fb-8f97-4474-84fa-d66d46df9826" data-entity-substitution="canonical"><span>Read more student profiles.</span></a></p>'
+      format: filtered_text
+      summary: "When COVID shut her business down, Rebecca sought programs that combined art and science – BMVC was the perfect fit. Here's what the program meant for her."
+  field_area_of_study:
+    -
+      entity: 712e2435-aaed-4107-bd41-05e871f48f6a
+  field_student_card_text:
+    -
+      value: "<p>When COVID shut her business down, Rebecca sought programs that combined art and science – BMVC was the perfect fit. Here's what the program meant for her.</p>"
+      format: text_only
+  field_student_first_name:
+    -
+      value: Rebecca
+  field_student_image:
+    -
+      entity: 10437d59-3596-4d2b-8c3f-e04ba94aa04e
+      alt: 'Headshot of Rebecca.'
+      title: ''
+      width: 400
+      height: 400
+  field_student_last_name:
+    -
+      value: Ellison
+  field_student_profile_card_quote:
+    -
+      value: 'One of the greatest assets of the program is the people. The instructors are so open to all of the students’ backgrounds. They’re very supportive and encouraging, and available to guide your learning.”'
+  field_student_profile_category:
+    -
+      entity: 7a87323b-b025-4392-9e19-b680d8745e2c

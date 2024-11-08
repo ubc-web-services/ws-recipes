@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 13d0002b-f506-4fef-a06f-aa5966c6f66e
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: Adenike_Oyenuga_400x400.jpg
+  uri:
+    -
+      value: 'public://student-profile-images/2024-10/Adenike_Oyenuga_400x400.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 106338
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1727804056

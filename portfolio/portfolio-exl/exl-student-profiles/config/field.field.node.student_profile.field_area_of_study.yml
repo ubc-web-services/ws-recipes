@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_area_of_study
+    - node.type.certificate
+    - node.type.program
+    - node.type.student_profile
+id: node.student_profile.field_area_of_study
+field_name: field_area_of_study
+entity_type: node
+bundle: student_profile
+label: 'Program / Area of Study'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      certificate: certificate
+      program: program
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: certificate
+field_type: entity_reference

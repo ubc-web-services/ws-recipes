@@ -1,0 +1,122 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: f91c91f5-12b1-47d4-941f-55bf036831eb
+  bundle: student_profile
+  default_langcode: en
+  depends:
+    20a38d8a-d8bb-4e59-8ec4-2a5b7fac94f7: node
+    be8e0354-4534-46b7-8789-209718e0633b: file
+    35d89425-ba1d-4899-bcf4-aa9caef866a9: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Angad Singh Nirh'
+  created:
+    -
+      value: 1727974468
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Angad Singh Nirh | Extended Learning'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "Angad's interest in coaching, culture-building, and organizational scaling led him to pursue the UBC Certificate in Organizational Coaching. Here's his"
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/about/student-profiles/coaching/angad-singh-nirh'
+    -
+      tag: meta
+      attributes:
+        property: 'og:site_name'
+        content: 'Extended Learning'
+    -
+      tag: meta
+      attributes:
+        property: 'og:url'
+        content: 'http://default/about/student-profiles/coaching/angad-singh-nirh'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: 'Angad Singh Nirh'
+    -
+      tag: meta
+      attributes:
+        property: 'og:description'
+        content: "Angad's interest in coaching, culture-building, and organizational scaling led him to pursue the UBC Certificate in Organizational Coaching. Here's his journey."
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:card'
+        content: summary
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:description'
+        content: "Angad's interest in coaching, culture-building, and organizational scaling led him to pursue the UBC Certificate in Organizational Coaching. Here's his journey."
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:title'
+        content: 'Angad Singh Nirh'
+  path:
+    -
+      alias: /about/student-profiles/coaching/angad-singh-nirh
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p><span lang="EN-US">Before Angad became a coach, he thought he would be a teacher or an accountant. Born and raised in India, he would eventually settle in Canada where he earned his Bachelor of Education degree.</span></p><p><span lang="EN-US">After finding work with Canada Revenue Agency, he landed a job at a Vancouver-based fintech company. Within nine months, he found himself leading a team as a senior accounting associate. “I really didn’t have the tools to do so at the time,” recalls Angad. “I&nbsp;just had my natural skills, or what I knew to be true about leading people. In hindsight, I was taking a coach approach in some ways.”</span></p><p><span lang="EN-US">As Angad would discover, his approach worked. Among eight teams, his was one of the few doing well in engagement surveys. At that point, he realized accounting wasn’t what he wanted to do in his career.&nbsp;</span></p><p><span lang="EN-US">An introduction to the president of The Coaching Studio, a global team of leadership development experts, led to a role as the studio’s coordinator in 2018. By then, Angad had also been working as a career coach for a few months. “I got really curious about coaching, building positive cultures, and scaling organizations,” he says. “I decided to invest in a coaching certification.”&nbsp;</span></p><p><span lang="EN-US">Almost a year of conversations with other coaches and program team members of the </span><a href="/node/385590"><span lang="EN-US">UBC Certificate in Organizational Coaching</span></a><span lang="EN-US">, Angad applied and was accepted into the program.&nbsp;</span></p><p><span lang="EN-US">As Angad explains, “I had started with another coach training organization before joining UBC. But what became very clear is relationships really matter to me, and I didn’t want to meet new people every module of a program. The UBC brand also carries a lot of weight.”</span></p><p><span lang="EN-US">A visual, Angad gained a lot of value from the hours of hands-on client coaching sessions, and being coached by peers. He also speaks highly of the program’s balance of practice and theory. “UBC has an academic approach I appreciated, because that''s the evidence-based research that sometimes helps organizations understand the value in coaching.”</span></p><p><span lang="EN-US">Angad also had a few ah-ha moments while progressing through the program. “Coaching is not a one-and-done approach. We learned how to integrate coaching into day-to-day interactions. What rung true for me is that coaching is one of many toolkits, but one that we should be embedding more in organizations.”&nbsp;</span></p><p><span lang="EN-US">Since graduating from the Organizational Coaching program, Angad has been promoted to Vice President of The Coaching Studio. He says, “I’ve been able to apply what I was learning at UBC in my coaching sessions with clients, and I’m building coaching programs for leaders. These coaching programs are deliberately shifting their culture to adopt a coaching mindset. And we''re already seeing the massive results, one where it’s also helping organizations with retention and succession planning.”</span></p><p><span lang="EN-US">He’s even noticed differences within his organization. “The biggest shift took place in my day to day conversations with the team,” Angad says. “I''ve only been growing since I left this program at UBC.”</span></p><p><a href="/node/385214" data-entity-type="node" data-entity-uuid="516806a9-f6e6-441f-9eef-849bfae7efc8" data-entity-substitution="canonical"><span>Read more student profiles.</span></a></p>'
+      format: filtered_text
+      summary: "Angad's interest in coaching, culture-building, and organizational scaling led him to pursue the UBC Certificate in Organizational Coaching. Here's his journey."
+  field_area_of_study:
+    -
+      entity: 20a38d8a-d8bb-4e59-8ec4-2a5b7fac94f7
+  field_student_card_text:
+    -
+      value: "<p>Angad's interest in coaching, culture-building, and organizational scaling led him to pursue the UBC Certificate in Organizational Coaching. Here's his journey.</p>"
+      format: text_only
+  field_student_first_name:
+    -
+      value: Angad
+  field_student_image:
+    -
+      entity: be8e0354-4534-46b7-8789-209718e0633b
+      alt: 'Headshot of Angad.'
+      title: ''
+      width: 400
+      height: 400
+  field_student_last_name:
+    -
+      value: 'Singh Nirh'
+  field_student_profile_card_quote:
+    -
+      value: 'I would say the biggest reason [I applied to the Organizational Coaching program] was the caliber of the coaches and mentor coaches, and the sheer amount of experience this program is built on.”'
+  field_student_profile_category:
+    -
+      entity: 35d89425-ba1d-4899-bcf4-aa9caef866a9

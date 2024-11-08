@@ -1,0 +1,122 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 56bd0de9-c55b-4d1b-857a-883328837b64
+  bundle: student_profile
+  default_langcode: en
+  depends:
+    b7e1f37c-5215-4e85-b98c-611faf47c47c: node
+    5eeb7aea-b79f-4287-bdd5-48a782157ba0: file
+    1f6875cb-c9dc-4dbe-b253-201d991be5af: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Lonny Chen'
+  created:
+    -
+      value: 1727984924
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Lonny Chen | Extended Learning'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Writing Well: Style provided structure and a process for writing that has helped Lonny in his personal and professional writing. Read more about his journey.'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/about/student-profiles/writing/lonny-chen'
+    -
+      tag: meta
+      attributes:
+        property: 'og:site_name'
+        content: 'Extended Learning'
+    -
+      tag: meta
+      attributes:
+        property: 'og:url'
+        content: 'http://default/about/student-profiles/writing/lonny-chen'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: 'Lonny Chen'
+    -
+      tag: meta
+      attributes:
+        property: 'og:description'
+        content: 'Writing Well: Style provided structure and a process for writing that has helped Lonny in his personal and professional writing. Read more about his journey.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:card'
+        content: summary
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:description'
+        content: 'Writing Well: Style provided structure and a process for writing that has helped Lonny in his personal and professional writing. Read more about his journey.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:title'
+        content: 'Lonny Chen'
+  path:
+    -
+      alias: /about/student-profiles/writing/lonny-chen
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p><em>Lonny Chen graduated from UBC with a degree in computer engineering and worked in tech for 12 years. After a life-changing volunteer experience in Tanzania, Lonny pivoted his career to international development and started a nonprofit organization called Kinara for Youth Evolution. He is now on the path to a Master of Data Science for Public Policy to marry his tech background with his work in Tanzania. </em><a href="/node/386464" data-entity-type="node" data-entity-uuid="6c1d6001-7cf0-442b-bf84-e12a8633c47c" data-entity-substitution="canonical"><em>Writing Well: Style</em></a><em> provided structure and a process for writing that has helped Lonny in his personal and professional writing.</em></p><p><strong>What led you to seek out Writing Well: Style?</strong></p><p>Writing has always been something that I felt I was naturally good at, but I never really knew why or had a process. I just kind of knew what sounded good and what didn’t, but how does it work? It all seemed kind of magical to me. I was looking for a course where I could learn a process for writing as well as get timely feedback from a professional.</p><p><strong>What were some highlights for you from Writing Well: Style?</strong></p><p>The course covered foundational writing skills and incorporated some creative elements, which is why I loved it. It gave me the grounding of outlines, topic sentences, and methods of development that I really needed. Now I have a structure and tools for writing that I can rely on.</p><p>The instructor Deborah is amazing, and she added fun and creativity to the course. One highlight was an assignment where we took a dark Edgar Allen Poe passage and turned it into something comedic or satirical. I struggled with it at first because I had never done that before, but I used material from the course and looked at some online references. I ended up doing pretty well! It was very rewarding.</p><p><strong>How have you been applying what you learned in the course in your personal or professional life?</strong></p><p>A lot of events lined up. A scholarship opportunity came up for my master’s program and I needed to write an essay. I used the first two paragraphs of the essay as my final writing project in the course. It fit perfectly and was immediately applicable.</p><p>I’m also working on a personal project that will prepare me for the data science aspects of my program. It involves analyzing education results in Tanzania and writing a blog article to publish for my portfolio. Content from the course like outlining and using methods of development has been really helpful for this project.</p><p><strong>Who would you recommend this course to?</strong></p><p>I’d recommend this course to anyone who does any type of writing or communicating and who wants to improve and get feedback on their writing. I believe that one’s approach to writing also affects how they think. In the era of ChatGPT, developing an authentic personal writing style is as important as ever. This course pushed me to confidently continue that journey.</p><p><a href="/node/385218" data-entity-type="node" data-entity-uuid="238a3d57-7406-4d91-8b0e-11d42350743e" data-entity-substitution="canonical"><span>Read more student profiles.</span></a><br>&nbsp;</p>'
+      format: filtered_text
+      summary: 'Writing Well: Style provided structure and a process for writing that has helped Lonny in his personal and professional writing. Read more about his journey.'
+  field_area_of_study:
+    -
+      entity: b7e1f37c-5215-4e85-b98c-611faf47c47c
+  field_student_card_text:
+    -
+      value: '<p>Writing Well: Style provided structure and a process for writing that has helped Lonny in his personal and professional writing. Read more about his journey.</p>'
+      format: text_only
+  field_student_first_name:
+    -
+      value: Lonny
+  field_student_image:
+    -
+      entity: 5eeb7aea-b79f-4287-bdd5-48a782157ba0
+      alt: 'Headshot of Lonny.'
+      title: ''
+      width: 400
+      height: 400
+  field_student_last_name:
+    -
+      value: Chen
+  field_student_profile_card_quote:
+    -
+      value: 'In the era of ChatGPT, developing an authentic personal writing style is as important as ever. This course pushed me to confidently continue that journey.”'
+  field_student_profile_category:
+    -
+      entity: 1f6875cb-c9dc-4dbe-b253-201d991be5af

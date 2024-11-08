@@ -1,0 +1,122 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 51b6e2ca-bee5-441c-90d8-8429eee1364a
+  bundle: student_profile
+  default_langcode: en
+  depends:
+    a63875a7-13f7-464e-9aaf-b768a85ca7b1: node
+    296b8a0a-6a59-40a7-8de9-dd854e844efe: file
+    74650c6a-f32c-4c4c-9c64-b7f4241426a9: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Jasmine Hall'
+  created:
+    -
+      value: 1727983479
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Jasmine Hall | Extended Learning'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Jasmine Hall is a student in the UBC Extended Learning (ExL) Portuguese classes. She shares her story with us about her language learning experience at UBC'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/about/student-profiles/languages/jasmine-hall'
+    -
+      tag: meta
+      attributes:
+        property: 'og:site_name'
+        content: 'Extended Learning'
+    -
+      tag: meta
+      attributes:
+        property: 'og:url'
+        content: 'http://default/about/student-profiles/languages/jasmine-hall'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: 'Jasmine Hall'
+    -
+      tag: meta
+      attributes:
+        property: 'og:description'
+        content: 'Jasmine Hall is a student in the UBC Extended Learning (ExL) Portuguese classes. She shares her story with us about her language learning experience at UBC ExL.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:card'
+        content: summary
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:description'
+        content: 'Jasmine Hall is a student in the UBC Extended Learning (ExL) Portuguese classes. She shares her story with us about her language learning experience at UBC ExL.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:title'
+        content: 'Jasmine Hall'
+  path:
+    -
+      alias: /about/student-profiles/languages/jasmine-hall
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p><em>Jasmine Hall is a student in the UBC Extended Learning (ExL) </em><a href="/node/385633" data-entity-type="node" data-entity-uuid="a63875a7-13f7-464e-9aaf-b768a85ca7b1" data-entity-substitution="canonical"><em>Portuguese classes</em></a><em>. She shares her story with us about her language learning experience at UBC ExL.</em></p><p><strong>What led you to seek out language classes?</strong></p><p>I married a Brazilian so I’ve been interested in learning Portuguese for some time. I wanted to be able to speak Portuguese with my new family and use the language when I travel to Brazil. I started with a private tutor and then someone had mentioned to me that UBC ExL offers Portuguese classes, so I tried it and I loved it.</p><p><strong>Why did you choose to learn from UBC ExL?</strong></p><p>I liked the option of having both online and in-person classes, and the material was presented in a style that I could understand well. It’s a combination of learning in class, doing homework and practising through conversation. I’ve taken three classes now with the same instructor and group of students. It''s hard to get comfortable speaking a new language because you feel silly, but they’re an encouraging group so it''s been great.</p><p><strong>What was a highlight for you from these classes?</strong></p><p>One of the highlights was getting acquainted with the Brazilian culture. There''s an excellent sense of community in that everybody who''s studying Portuguese loves not only the language, but the culture. A lot of my classmates are also married to Brazilians so we would get together with our classmates and invite our partners along to cook Brazilian food, cheer on the football team and exchange stories about trips to Brazil. There’s a lot of stuff that happens outside the classroom as well – which I think is really wonderful.</p><p><strong>How are you applying your skills/knowledge in your day-to-day life?</strong></p><p>Now I can consume more media in Portuguese and I can converse with my partner in simple Portuguese. I have resources from the class that I can go to, like websites and textbooks, so I can look up and find certain things that I want to learn.</p><p><strong>Who would you recommend this program to?</strong></p><p>I’d recommend this program to anyone who has a Brazilian partner, because I think a lot of Brazilians would love if their partners learned the language but Portuguese classes are not the most accessible in Canada, compared to say French or Spanish. Taking Portuguese classes at UBC ExL has been super helpful and I feel like I’ve made exponential returns since I started.</p><p><a href="/node/385215" data-entity-type="node" data-entity-uuid="0a105f57-705d-4be7-b935-5237f0ecc4e1" data-entity-substitution="canonical"><span>Read more student profiles.</span></a></p>'
+      format: filtered_text
+      summary: 'Jasmine Hall is a student in the UBC Extended Learning (ExL) Portuguese classes. She shares her story with us about her language learning experience at UBC ExL.'
+  field_area_of_study:
+    -
+      entity: a63875a7-13f7-464e-9aaf-b768a85ca7b1
+  field_student_card_text:
+    -
+      value: '<p>Jasmine Hall is a student in the UBC Extended Learning (ExL) Portuguese classes. She shares her story with us about her language learning experience at UBC ExL.</p>'
+      format: text_only
+  field_student_first_name:
+    -
+      value: Jasmine
+  field_student_image:
+    -
+      entity: 296b8a0a-6a59-40a7-8de9-dd854e844efe
+      alt: 'Jasmine in conversation'
+      title: ''
+      width: 400
+      height: 400
+  field_student_last_name:
+    -
+      value: Hall
+  field_student_profile_card_quote:
+    -
+      value: "One of the highlights has been getting acquainted with Brazilian culture. There's an excellent sense of community in that everybody who's studying Portuguese loves not only the language, but also the culture.”"
+  field_student_profile_category:
+    -
+      entity: 74650c6a-f32c-4c4c-9c64-b7f4241426a9

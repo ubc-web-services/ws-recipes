@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: a8c6fcdf-4cfa-4f35-907e-4accc40f1450
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: Stephanie_Hoi_400x400.jpg
+  uri:
+    -
+      value: 'public://student-profile-images/2024-10/Stephanie_Hoi_400x400.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 138211
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1727982047

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: d8758646-45dc-40c2-a3dd-c1dcbd728ddb
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: adrian_liem_400x400.jpg
+  uri:
+    -
+      value: 'public://student-profile-images/2024-10/adrian_liem_400x400.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 105345
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1727804181

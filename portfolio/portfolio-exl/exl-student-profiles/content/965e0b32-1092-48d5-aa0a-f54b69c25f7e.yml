@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 965e0b32-1092-48d5-aa0a-f54b69c25f7e
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: Aloka_6663_400x400.jpg
+  uri:
+    -
+      value: 'public://student-profile-images/2024-10/Aloka_6663_400x400.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 529991
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1727983257

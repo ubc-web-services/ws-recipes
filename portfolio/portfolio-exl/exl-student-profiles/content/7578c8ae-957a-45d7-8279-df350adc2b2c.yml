@@ -1,0 +1,122 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 7578c8ae-957a-45d7-8279-df350adc2b2c
+  bundle: student_profile
+  default_langcode: en
+  depends:
+    20a38d8a-d8bb-4e59-8ec4-2a5b7fac94f7: node
+    a8c6fcdf-4cfa-4f35-907e-4accc40f1450: file
+    35d89425-ba1d-4899-bcf4-aa9caef866a9: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Stephanie Hoi'
+  created:
+    -
+      value: 1727982001
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Stephanie Hoi | Extended Learning'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Stephanie is a 2019 graduate of the UBC Certificate in Organizational Coaching program. She’s shared her reflections and experiences in the program.'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/about/student-profiles/coaching/stephanie-hoi'
+    -
+      tag: meta
+      attributes:
+        property: 'og:site_name'
+        content: 'Extended Learning'
+    -
+      tag: meta
+      attributes:
+        property: 'og:url'
+        content: 'http://default/about/student-profiles/coaching/stephanie-hoi'
+    -
+      tag: meta
+      attributes:
+        property: 'og:title'
+        content: 'Stephanie Hoi'
+    -
+      tag: meta
+      attributes:
+        property: 'og:description'
+        content: 'Stephanie is a 2019 graduate of the UBC Certificate in Organizational Coaching program. She’s shared her reflections and experiences in the program.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:card'
+        content: summary
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:description'
+        content: 'Stephanie is a 2019 graduate of the UBC Certificate in Organizational Coaching program. She’s shared her reflections and experiences in the program.'
+    -
+      tag: meta
+      attributes:
+        name: 'twitter:title'
+        content: 'Stephanie Hoi'
+  path:
+    -
+      alias: /about/student-profiles/coaching/stephanie-hoi
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: '<p><span lang="EN-CA">Stephanie Hoi, is a 2019 graduate of the&nbsp;</span><a href="/node/385590" data-entity-type="node" data-entity-uuid="20a38d8a-d8bb-4e59-8ec4-2a5b7fac94f7" data-entity-substitution="canonical"><span lang="EN-CA">UBC Certificate in Organizational Coaching</span></a><span lang="EN-CA"> program. She’s a customer experience specialist at Slack in Vancouver, BC, and shared her reflections and experiences in the program</span><span lang="EN-CA"></span></p><p><span lang="EN-CA"></span></p><p><span lang="EN-CA"><strong>What lead you to pursue the UBC Certificate in Organizational Coaching?</strong></span><strong><span lang="EN-CA"></span></strong></p><p><span lang="EN-CA">I was going through major changes in my life. When I immigrated to Canada, I had the opportunity to open myself up to new possibilities. I took a short course to learn coaching as I believe coaching is such a powerful tool for self-awareness and development. I gained confidence and empowerment in that course, and I knew that I wanted to continue learning about coaching, and use the knowledge to help others. </span><span lang="EN-CA"></span></p><p><span lang="EN-CA"><strong>Why did you choose an organizational coaching credential?</strong></span><strong><span lang="EN-CA"></span></strong></p><p><span lang="EN-CA">I chose organizational coaching because my background is business and marketing. I wanted to learn coaching skills while using my experience working in organizations. Doing the program in a recognized university was important as well, and I know UBC has a high reputation. </span><span lang="EN-CA"></span></p><p><span lang="EN-CA">Organizational coaching not only helps individuals improve, it causes a ripple effect on other systems, the people they work with, and potentially the organization as a whole. With commitment from all levels of the organization and the guidance of coaches, this interconnection could lead to a positive and permanent change in a company’s culture. </span><span lang="EN-CA"></span></p><p><span lang="EN-CA"><strong>What, if anything, surprised you about the program?</strong></span><strong><span lang="EN-CA"></span></strong></p><p><span lang="EN-CA">I enjoyed the Mentor Coach calls. They really helped me assess my progress as a coach. I was impressed by the support of the program leaders and all the Mentor Coaches, and their availability to answer questions. </span><span lang="EN-CA"></span></p><p><span lang="EN-CA"><strong>What are you doing with your credential now? How do you apply your skills in your role and life?</strong></span><strong><span lang="EN-CA"></span></strong></p><p><span lang="EN-CA">What I found the most appealing about this program is the network and connections we build in this community of coaches. I’ve exchanged with so many peers and worked with mentors, and we all learn from each other and share important resources. This program has given me the knowledge and skills to pursue a career as a coach. </span><span lang="EN-CA"></span></p>'
+      format: filtered_text
+      summary: 'Stephanie is a 2019 graduate of the UBC Certificate in Organizational Coaching program. She’s shared her reflections and experiences in the program.'
+  field_area_of_study:
+    -
+      entity: 20a38d8a-d8bb-4e59-8ec4-2a5b7fac94f7
+  field_student_card_text:
+    -
+      value: '<p>Stephanie is a 2019 graduate of the UBC Certificate in Organizational Coaching program. She’s a customer experience specialist at Slack in Vancouver, BC, and shared her reflections and experiences in the program. Read about her journey here.</p>'
+      format: text_only
+  field_student_first_name:
+    -
+      value: Stephanie
+  field_student_image:
+    -
+      entity: a8c6fcdf-4cfa-4f35-907e-4accc40f1450
+      alt: 'Headshot of Stephanie.'
+      title: ''
+      width: 400
+      height: 400
+  field_student_last_name:
+    -
+      value: Hoi
+  field_student_profile_card_quote:
+    -
+      value: 'What I found the most appealing about this program is the network and connections we build in this community of coaches. We all learn from each other and share important resources.”'
+  field_student_profile_category:
+    -
+      entity: 35d89425-ba1d-4899-bcf4-aa9caef866a9

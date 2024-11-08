@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 2bfd61e1-57b5-4487-a1fe-1c5fd0e8227e
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: Gail_Cam_400x400.jpg
+  uri:
+    -
+      value: 'public://student-profile-images/2024-09/Gail_Cam_400x400.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 385942
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1727476474

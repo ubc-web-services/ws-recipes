@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: be8e0354-4534-46b7-8789-209718e0633b
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'Angad Singh Nirh_400x400.jpg'
+  uri:
+    -
+      value: 'public://student-profile-images/2024-10/Angad Singh Nirh_400x400.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 112351
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1727974560
