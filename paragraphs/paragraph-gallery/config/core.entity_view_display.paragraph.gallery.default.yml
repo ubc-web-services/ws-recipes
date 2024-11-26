@@ -9,7 +9,7 @@ dependencies:
     - field.field.paragraph.gallery.field_paragraph_title_right
     - field.field.paragraph.gallery.field_paragraph_width_settings
     - field.field.paragraph.gallery.field_region_vertical_spacing
-    - image.style.circle_400
+    - image.style.max_640w
     - paragraphs.paragraphs_type.gallery
   module:
     - photoswipe
@@ -32,7 +32,7 @@ content:
     label: hidden
     settings:
       photoswipe_thumbnail_style_first: ''
-      photoswipe_thumbnail_style: circle_400
+      photoswipe_thumbnail_style: max_640w
       photoswipe_image_style: ''
       photoswipe_reference_image_field: field_media_image
       photoswipe_view_mode: default
