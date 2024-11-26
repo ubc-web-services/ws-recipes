@@ -1,0 +1,21 @@
+name: "Image Gallery paragraph"
+description: "Image Gallery paragraph recipe for UBC Web Services websites"
+type: "Paragraph type"
+install:
+  # core
+  - image
+  - media
+  - media_library
+  - path
+  - scheduler
+  - taxonomy
+  - text
+  # contrib
+  - field_group
+  - paragraphs
+  - photoswipe
+  - photoswipe_dynamic_caption
+config:
+  import:
+    photoswipe: "*"
+    photoswipe_dynamic_caption: "*"

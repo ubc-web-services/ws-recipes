@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.admin_gallery_layout.field_class
+    - taxonomy.vocabulary.admin_gallery_layout
+  module:
+    - text
+id: taxonomy_term.admin_gallery_layout.default
+targetEntityType: taxonomy_term
+bundle: admin_gallery_layout
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_class:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
