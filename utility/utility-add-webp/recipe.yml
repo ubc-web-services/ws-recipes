@@ -1,0 +1,665 @@
+name: "Add webp to image styles"
+description: "Add webp to image styles for UBC Web Services websites"
+type: "Image style"
+install:
+  # core
+  - image
+  # contrib
+  - focal_point
+
+config:
+  actions:
+
+    # card styles
+    image.style.card_300x150:
+      createIfNotExists:
+        langcode: en
+        status: true
+        name: card_300x150
+        label: 'Card 300x150'
+      simpleConfigUpdate:
+        effects:
+          61a65da2-79cc-4450-b252-74aed6f10edf:
+            uuid: 61a65da2-79cc-4450-b252-74aed6f10edf
+            id: image_scale_and_crop
+            weight: 1
+            data:
+              width: 300
+              height: 150
+              anchor: center-center
+          92cbbd56-919c-4ba7-a387-e7396ed25a89:
+            uuid: 92cbbd56-919c-4ba7-a387-e7396ed25a89
+            id: image_convert
+            weight: 2
+            data:
+              extension: webp
+
+    image.style.card_480x240:
+      createIfNotExists:
+        langcode: en
+        status: true
+        name: card_480x240
+        label: 'Card 480x240'
+      simpleConfigUpdate:
+        effects:
+          6c01ddb7-65b5-4717-919b-a0a9996c2a08:
+            uuid: 6c01ddb7-65b5-4717-919b-a0a9996c2a08
+            id: image_scale_and_crop
+            weight: 1
+            data:
+              width: 480
+              height: 240
+              anchor: center-center
+          85e14dad-f9a7-44aa-9fdb-105dcbd31d99:
+            uuid: 85e14dad-f9a7-44aa-9fdb-105dcbd31d99
+            id: image_convert
+            weight: 2
+            data:
+              extension: webp
+
+    image.style.card_600x300:
+      createIfNotExists:
+        langcode: en
+        status: true
+        name: card_600x300
+        label: 'Card 600x300'
+      simpleConfigUpdate:
+        effects:
+          a8012b21-2dc3-4df8-831d-24be40c5ba5f:
+            uuid: a8012b21-2dc3-4df8-831d-24be40c5ba5f
+            id: image_scale_and_crop
+            weight: 1
+            data:
+              width: 600
+              height: 300
+              anchor: center-center
+          c002daa1-c693-4d40-bd23-d56bf75d6007:
+            uuid: c002daa1-c693-4d40-bd23-d56bf75d6007
+            id: image_convert
+            weight: 2
+            data:
+              extension: webp
+
+    image.style.card_780x390:
+      createIfNotExists:
+        langcode: en
+        status: true
+        name: card_780x390
+        label: 'Card 780x390'
+      simpleConfigUpdate:
+        effects:
+          54c77fd8-2e22-4eee-89d5-335e6f31066f:
+            uuid: 54c77fd8-2e22-4eee-89d5-335e6f31066f
+            id: image_scale_and_crop
+            weight: 1
+            data:
+              width: 780
+              height: 390
+              anchor: center-center
+          59a8ecfa-c676-4311-a3c4-0fa24f5050a4:
+            uuid: 59a8ecfa-c676-4311-a3c4-0fa24f5050a4
+            id: image_convert
+            weight: 2
+            data:
+              extension: webp
+
+    image.style.card_focal_point_lg:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies:
+          module:
+            - focal_point
+        name: card_focal_point_lg
+        label: 'Card, focal point, lg'
+      simpleConfigUpdate:
+        effects:
+          beab74e9-6a1a-429d-9561-3bb17f97c824:
+            uuid: beab74e9-6a1a-429d-9561-3bb17f97c824
+            id: focal_point_crop
+            weight: 1
+            data:
+              width: 640
+              height: 556
+              crop_type: focal_point
+          f1178a8a-c709-4795-ac8e-cb1f33d80b63:
+            uuid: f1178a8a-c709-4795-ac8e-cb1f33d80b63
+            id: image_convert
+            weight: 2
+            data:
+              extension: webp
+
+    image.style.card_focal_point_sm:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies:
+          module:
+            - focal_point
+        name: card_focal_point_sm
+        label: 'Card, focal point, sm'
+      simpleConfigUpdate:
+        effects:
+          dd394a14-57b1-4852-8ae9-dd06a1f1d021:
+            uuid: dd394a14-57b1-4852-8ae9-dd06a1f1d021
+            id: focal_point_crop
+            weight: 1
+            data:
+              width: 380
+              height: 330
+              crop_type: focal_point
+          d40d053f-09fb-4beb-be99-f35dcf37fc52:
+            uuid: d40d053f-09fb-4beb-be99-f35dcf37fc52
+            id: image_convert
+            weight: 2
+            data:
+              extension: webp
+    image.style.card_focal_point_xl:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies:
+          module:
+            - focal_point
+        name: card_focal_point_xl
+        label: 'Card, focal point, xl'
+      simpleConfigUpdate:
+        effects:
+          6e3afed2-f98e-4eea-9b7a-e8b220af77b1:
+            uuid: 6e3afed2-f98e-4eea-9b7a-e8b220af77b1
+            id: focal_point_scale_and_crop
+            weight: 1
+            data:
+              width: 970
+              height: 843
+              crop_type: focal_point
+          843c7312-d97b-4052-a6fa-e46a186ea961:
+            uuid: 843c7312-d97b-4052-a6fa-e46a186ea961
+            id: image_convert
+            weight: 2
+            data:
+              extension: webp
+
+    # circle image styles
+    image.style.circle_200:
+      createIfNotExists:
+        langcode: en
+        status: true
+        name: circle_200
+        label: 'Circle, 200'
+      simpleConfigUpdate:
+        effects:
+          98658327-0d1a-4996-86f3-93d7cd8472ee:
+            uuid: 98658327-0d1a-4996-86f3-93d7cd8472ee
+            id: image_scale_and_crop
+            weight: 1
+            data:
+              width: 200
+              height: 200
+              anchor: center-center
+          4ddd239c-2732-4c1a-893f-004a8c32b7ed:
+            uuid: 4ddd239c-2732-4c1a-893f-004a8c32b7ed
+            id: image_convert
+            weight: 2
+            data:
+              extension: webp
+    image.style.circle_400:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies: {  }
+        name: circle_400
+        label: 'Circle, 400'
+      simpleConfigUpdate:
+        effects:
+          3a2293de-7a02-492f-b2ca-67df7ccdf86b:
+            uuid: 3a2293de-7a02-492f-b2ca-67df7ccdf86b
+            id: image_scale_and_crop
+            weight: 1
+            data:
+              width: 400
+              height: 400
+              anchor: center-center
+          5292598f-e375-4b8f-a8fd-4ced165e9979:
+            uuid: 5292598f-e375-4b8f-a8fd-4ced165e9979
+            id: image_convert
+            weight: 2
+            data:
+              extension: webp
+    image.style.circle_600:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies: {  }
+        name: circle_600
+        label: 'Circle, 600'
+      simpleConfigUpdate:
+        effects:
+          6af6c307-cd5a-4eec-8e60-9bb493306992:
+            uuid: 6af6c307-cd5a-4eec-8e60-9bb493306992
+            id: image_scale_and_crop
+            weight: 1
+            data:
+              width: 600
+              height: 600
+              anchor: center-center
+          f2b4f387-0ff9-45c1-91ba-d26738566dbe:
+            uuid: f2b4f387-0ff9-45c1-91ba-d26738566dbe
+            id: image_convert
+            weight: 2
+            data:
+              extension: webp
+    image.style.circle_focal_point_600:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies:
+          module:
+            - focal_point
+        name: circle_focal_point_600
+        label: 'Circle, focal point, 600' 
+      simpleConfigUpdate:
+        effects:
+          96045aa8-c06f-4848-99d1-98dffc2d28d6:
+            uuid: 96045aa8-c06f-4848-99d1-98dffc2d28d6
+            id: focal_point_scale_and_crop
+            weight: 1
+            data:
+              width: 600
+              height: 600
+              crop_type: focal_point
+          90f04510-d3c6-4540-88ec-8314fc1ea46e:
+            uuid: 90f04510-d3c6-4540-88ec-8314fc1ea46e
+            id: image_convert
+            weight: 2
+            data:
+              extension: webp
+
+    # hero focal points
+    image.style.hero_focal_point_325:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies:
+          module:
+            - focal_point
+        name: hero_focal_point_325
+        label: 'Hero, focal point, 325'
+      simpleConfigUpdate:
+        effects:
+          205c78b7-fd87-4be5-a494-908dd2205e7f:
+            uuid: 205c78b7-fd87-4be5-a494-908dd2205e7f
+            id: focal_point_scale_and_crop
+            weight: 1
+            data:
+              width: 325
+              height: 150
+              crop_type: focal_point
+          025b0696-3b3e-4e69-85b7-69d48f6ab96e:
+            uuid: 025b0696-3b3e-4e69-85b7-69d48f6ab96e
+            id: image_convert
+            weight: 2
+            data:
+              extension: webp
+    image.style.hero_focal_point_650:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies:
+          module:
+            - focal_point
+        name: hero_focal_point_650
+        label: 'Hero, focal point, 650'
+      simpleConfigUpdate:
+        effects:
+          43c9f282-4fd9-4324-b7fd-8a4f48a42f14:
+            uuid: 43c9f282-4fd9-4324-b7fd-8a4f48a42f14
+            id: focal_point_scale_and_crop
+            weight: 1
+            data:
+              width: 650
+              height: 225
+              crop_type: focal_point
+          265d874e-eaaf-4278-89bb-754ee5f2d61e:
+            uuid: 265d874e-eaaf-4278-89bb-754ee5f2d61e
+            id: image_convert
+            weight: 2
+            data:
+              extension: webp
+    image.style.hero_focal_point_970:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies:
+          module:
+            - focal_point
+        name: hero_focal_point_970
+        label: 'Hero, focal point, 970'
+      simpleConfigUpdate:
+        effects:
+          e66684e1-b274-464f-a1d9-a9aea42d1f2d:
+            uuid: e66684e1-b274-464f-a1d9-a9aea42d1f2d
+            id: focal_point_scale_and_crop
+            weight: 1
+            data:
+              width: 970
+              height: 336
+              crop_type: focal_point
+          5f22344d-1767-4a01-9f09-989cc6c7bece:
+            uuid: 5f22344d-1767-4a01-9f09-989cc6c7bece
+            id: image_convert
+            weight: 2
+            data:
+              extension: webp
+    image.style.hero_focal_point_1300:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies:
+          module:
+            - focal_point
+        name: hero_focal_point_1300
+        label: 'Hero, focal point, 1300'
+      simpleConfigUpdate:
+        effects:
+          3bd36d37-80c9-47bb-a4fe-863e3a1811bd:
+            uuid: 3bd36d37-80c9-47bb-a4fe-863e3a1811bd
+            id: focal_point_scale_and_crop
+            weight: 1
+            data:
+              width: 1300
+              height: 450
+              crop_type: focal_point
+          fb925110-fe48-4303-957c-8f8e68976fdf:
+            uuid: fb925110-fe48-4303-957c-8f8e68976fdf
+            id: image_convert
+            weight: 2
+            data:
+              extension: webp
+    image.style.hero_focal_point_2600:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies:
+          module:
+            - focal_point
+        name: hero_focal_point_2600
+        label: 'Hero, focal point, 2600'
+      simpleConfigUpdate:
+        effects:
+          d1f781ee-20b1-4f2e-ad88-c3ef3a609877:
+            uuid: d1f781ee-20b1-4f2e-ad88-c3ef3a609877
+            id: focal_point_scale_and_crop
+            weight: 1
+            data:
+              width: 2600
+              height: 900
+              crop_type: focal_point
+          a47cfd41-e389-4437-b632-ecaa48cf51cf:
+            uuid: a47cfd41-e389-4437-b632-ecaa48cf51cf
+            id: image_convert
+            weight: 2
+            data:
+              extension: webp
+
+    # icon styles
+    image.style.icon_large:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies: {  }
+        name: icon_large
+        label: 'Icon, large'
+      simpleConfigUpdate:
+        effects:
+          f9973a7b-6e05-4c2a-983b-ad1c5816b4e0:
+            uuid: f9973a7b-6e05-4c2a-983b-ad1c5816b4e0
+            id: image_scale_and_crop
+            weight: 1
+            data:
+              width: 96
+              height: 96
+              anchor: center-center
+          7f946f52-fbe5-439d-9326-a1fd32944b10:
+            uuid: 7f946f52-fbe5-439d-9326-a1fd32944b10
+            id: image_convert
+            weight: 2
+            data:
+              extension: webp
+    image.style.icon_small:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies: {  }
+        name: icon_small
+        label: 'Icon, small'
+      simpleConfigUpdate:
+        effects:
+          aed7f070-e2f5-44a1-965c-4d1564f3bc2b:
+            uuid: aed7f070-e2f5-44a1-965c-4d1564f3bc2b
+            id: image_scale_and_crop
+            weight: 1
+            data:
+              width: 24
+              height: 24
+              anchor: center-center
+          b413c32d-0c7a-4e05-8e2b-01840b2ff620:
+            uuid: b413c32d-0c7a-4e05-8e2b-01840b2ff620
+            id: image_convert
+            weight: 2
+            data:
+              extension: webp
+    
+    # max styles
+    image.style.max_640w:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies: {  }
+        name: max_640w
+        label: 'Max 640w'
+      simpleConfigUpdate:
+        effects:
+          8aae1731-b787-479b-b74f-c469ee7bf0a1:
+            uuid: 8aae1731-b787-479b-b74f-c469ee7bf0a1
+            id: image_scale
+            weight: 1
+            data:
+              width: 640
+              height: null
+              upscale: false
+          0dccef1a-2d21-44fc-a390-812af83117d1:
+            uuid: 0dccef1a-2d21-44fc-a390-812af83117d1
+            id: image_convert
+            weight: 2
+            data:
+              extension: webp
+    image.style.max_970x970:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies: {  }
+        name: max_970x970
+        label: 'Max 970x970'
+      simpleConfigUpdate:
+        effects:
+          65b0e913-d2ef-4ba4-8f7b-443cb07f709c:
+            uuid: 65b0e913-d2ef-4ba4-8f7b-443cb07f709c
+            id: image_scale
+            weight: 1
+            data:
+              width: 970
+              height: 970
+              upscale: false
+          6a764339-20f6-488c-84c2-70d60eb66083:
+            uuid: 6a764339-20f6-488c-84c2-70d60eb66083
+            id: image_convert
+            weight: 2
+            data:
+              extension: webp
+    image.style.max_1300x1300:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies: {  }
+        name: max_1300x1300
+        label: 'Max 1300x1300'
+      simpleConfigUpdate:
+        effects:
+          04caae9a-fa3e-4ea6-ae09-9c26aec7d308:
+            uuid: 04caae9a-fa3e-4ea6-ae09-9c26aec7d308
+            id: image_scale
+            weight: 1
+            data:
+              width: 1300
+              height: 1300
+              upscale: false
+          08969f2c-2c07-4d12-abd0-7df328fad351:
+            uuid: 08969f2c-2c07-4d12-abd0-7df328fad351
+            id: image_convert
+            weight: 2
+            data:
+              extension: webp
+    image.style.max_2600x2600:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies: {  }
+        name: max_2600x2600
+        label: 'Max 2600x2600'
+      simpleConfigUpdate:
+        effects:
+          9b311dd1-0351-45a1-9500-cd069e4670cb:
+            uuid: 9b311dd1-0351-45a1-9500-cd069e4670cb
+            id: image_scale
+            weight: 3
+            data:
+              width: 2600
+              height: 2600
+              upscale: false
+          603b1ec1-f003-420f-bb58-8e19e8ccc7fa:
+            uuid: 603b1ec1-f003-420f-bb58-8e19e8ccc7fa
+            id: image_convert
+            weight: 2
+            data:
+              extension: webp
+
+    # square styles
+    image.style.square_200:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies: {  }
+        name: square_200
+        label: 'Square 200'
+      simpleConfigUpdate:
+        effects:
+          7492bb39-1db2-461d-9ef5-c89f8648f09a:
+            uuid: 7492bb39-1db2-461d-9ef5-c89f8648f09a
+            id: image_scale_and_crop
+            weight: 1
+            data:
+              width: 200
+              height: 200
+              anchor: center-center
+          6051c863-5734-4673-aee4-35ccd1a286cb:
+            uuid: 6051c863-5734-4673-aee4-35ccd1a286cb
+            id: image_convert
+            weight: 2
+            data:
+              extension: webp
+    image.style.square_400:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies: {  }
+        name: square_400
+        label: 'Square 400'
+      simpleConfigUpdate:
+        effects:
+          d8803269-fc79-48c9-ba51-56b836b4e951:
+            uuid: d8803269-fc79-48c9-ba51-56b836b4e951
+            id: image_scale_and_crop
+            weight: 1
+            data:
+              width: 400
+              height: 400
+              anchor: center-center
+          209cc21b-65a8-41e6-8e5e-53e0f0b3d2ae:
+            uuid: 209cc21b-65a8-41e6-8e5e-53e0f0b3d2ae
+            id: image_convert
+            weight: 2
+            data:
+              extension: webp
+    image.style.square_600:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies: {  }
+        name: square_600
+        label: 'Square 600'
+      simpleConfigUpdate:
+        effects:
+          0c723b83-50f2-44a8-a1bd-b1158de4a462:
+            uuid: 0c723b83-50f2-44a8-a1bd-b1158de4a462
+            id: image_scale_and_crop
+            weight: 1
+            data:
+              width: 600
+              height: 600
+              anchor: center-center
+          c70d6b75-5951-4a24-9bcf-bfead909a8ae:
+            uuid: c70d6b75-5951-4a24-9bcf-bfead909a8ae
+            id: image_convert
+            weight: 2
+            data:
+              extension: webp
+    image.style.square_focal_point_600:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies:
+          module:
+            - focal_point
+        name: square_focal_point_600
+        label: 'Square, focal point, 600'
+      simpleConfigUpdate:
+        effects:
+          12f169b6-e0e7-4fdf-b0ed-e6bffa8c8a89:
+            uuid: 12f169b6-e0e7-4fdf-b0ed-e6bffa8c8a89
+            id: focal_point_scale_and_crop
+            weight: 1
+            data:
+              width: 600
+              height: 600
+              crop_type: focal_point
+          93983c09-e588-4e45-b22b-3488e780e418:
+            uuid: 93983c09-e588-4e45-b22b-3488e780e418
+            id: image_convert
+            weight: 2
+            data:
+              extension: webp
+
+    # video thumbnail
+    image.style.video_thumbnail:
+      createIfNotExists:
+        langcode: en
+        status: true
+        name: video_thumbnail
+        label: 'Video thumbnail'
+      simpleConfigUpdate:
+        effects:
+          5c2acded-7aed-40d4-a6cc-d12164bb6750:
+            uuid: 5c2acded-7aed-40d4-a6cc-d12164bb6750
+            id: image_scale_and_crop
+            weight: 1
+            data:
+              width: 900
+              height: 506
+              anchor: center-center
+          d17433df-1a5f-4323-9943-f7020083d3d8:
+            uuid: d17433df-1a5f-4323-9943-f7020083d3d8
+            id: image_convert
+            weight: 2
+            data:
+              extension: webp

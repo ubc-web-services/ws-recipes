@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies: {  }
 name: circle_600
-label: 'Circle 600'
+label: 'Circle, 600'
 effects:
   6af6c307-cd5a-4eec-8e60-9bb493306992:
     uuid: 6af6c307-cd5a-4eec-8e60-9bb493306992
