@@ -1,0 +1,92 @@
+name: "Web Services themes"
+description: "Web Services UBC and admin theme configuration for UBC Web Services websites"
+type: "Site"
+install:
+  - admin_toolbar
+  - admin_toolbar_tools
+  - gin
+  - gin_toolbar
+  - gin_login
+  - kraken
+  - rebuild_cache_access
+config:
+  import:
+    kraken: "*"
+  actions:
+    system.theme:
+      simple_config_update:
+        admin: gin
+    block.block.gin_help:
+      simple_config_update:
+        region: help
+    block.block.gin_primary_local_tasks:
+      simple_config_update:
+        region: header
+    block.block.gin_secondary_local_tasks:
+      simple_config_update:
+        region: pre_content
+    block.block.gin_primary_admin_actions:
+      simple_config_update:
+        region: content
+    # disable unneeded blocks
+    block.block.gin_search_form_wide:
+      simple_config_update:
+        status: false
+    block.block.gin_search_form_narrow:
+      simple_config_update:
+        status: false
+    block.block.gin_account_menu:
+      simple_config_update:
+        status: false
+    block.block.gin_main_menu:
+      simple_config_update:
+        status: false
+    block.block.gin_powered:
+      simple_config_update:
+        status: false
+    block.block.gin_syndicate:
+      simple_config_update:
+        status: false
+    block.block.gin_site_branding:
+      simple_config_update:
+        status: false
+    system.theme:
+      simple_config_update:
+        default: kraken
+    block.block.kraken_help:
+      simple_config_update:
+        region: help
+    block.block.kraken_messages:
+      simple_config_update:
+        region: help
+    # disable unneeded blocks
+    block.block.kraken_page_title:
+      simple_config_update:
+        status: false
+    block.block.kraken_powered:
+      simple_config_update:
+        status: false
+    block.block.kraken_search_form_wide:
+      simple_config_update:
+        status: false
+    block.block.kraken_search_form_narrow:
+      simple_config_update:
+        status: false
+    block.block.kraken_account_menu:
+      simple_config_update:
+        status: false
+    block.block.kraken_syndicate:
+      simple_config_update:
+        status: false
+    block.block.kraken_site_branding:
+      simple_config_update:
+        status: false
+    block.block.kraken_content:
+      simple_config_update:
+        status: false
+    block.block.kraken_primary_admin_actions:
+      simple_config_update:
+        status: false
+    block.block.kraken_primary_local_tasks:
+      simple_config_update:
+        status: false

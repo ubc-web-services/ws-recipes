@@ -1,0 +1,49 @@
+name: "Default text formats"
+description: "Default text formats for UBC Web Services websites"
+type: "Text format editor"
+install:
+  # core
+  - ckeditor5
+  - image
+  - media
+  - media_library
+  - user
+  # contrib
+  - ckeditor5_fullscreen
+  - editor_advanced_link
+  - linkit
+  - responsive_table_filter
+  - ubc_ckeditor_widgets
+config:
+  import:
+    ckeditor5:
+      - editor.editor.filtered_text.yml
+      - editor.editor.simple.yml
+      - filter.format.filtered_text.yml
+      - filter.format.simple.yml
+    editor_advanced_link: "*"
+    linkit: "*"
+    responsive_table_filter: "*"
+    ubc_ckeditor_widgets: "*"
+  # assign text format permissions
+  actions:
+    user.role.content_creator:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: content_creator
+        label: Content Creator
+        weight: 5
+        is_admin: false
+      grantPermissions:
+        - 'use text format filtered_text'
+        - 'use text format simple'
+    user.role.editor:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: editor
+        label: Editor
+        weight: 6
+        is_admin: false
+      grantPermissions:
+        - 'use text format filtered_text'
+        - 'use text format simple'

@@ -1,0 +1,95 @@
+name: "Paragraph configuration"
+description: "Paragraph configuration recipe for UBC Web Services websites"
+type: "Paragraph configuration"
+install:
+  # core
+  - breakpoint
+  - file
+  - image
+  - link
+  - media
+  - media_library
+  - responsive_image
+  - taxonomy
+  - text
+  # contrib
+  - entity_reference_revisions
+  - field_group
+  - focal_point
+  - maxlength
+  - paragraphs
+  - svg_image
+  - ubc_paragraph_entities
+config:
+  # assign general paragraphs permissions
+  actions:
+     # add icon_large image style if it doesn't already exist
+    image.style.icon_large:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies: {  }
+        name: icon_large
+        label: 'Icon, large'
+        effects:
+          f9973a7b-6e05-4c2a-983b-ad1c5816b4e0:
+            uuid: f9973a7b-6e05-4c2a-983b-ad1c5816b4e0
+            id: image_scale_and_crop
+            weight: 1
+            data:
+              width: 96
+              height: 96
+              anchor: center-center
+    # add max_1300x1300 image style if it doesn't already exist
+    image.style.max_1300x1300:
+      createIfNotExists:
+        langcode: en
+        status: true
+        name: max_1300x1300
+        label: 'Max 1300x1300'
+        effects:
+          04caae9a-fa3e-4ea6-ae09-9c26aec7d308:
+            uuid: 04caae9a-fa3e-4ea6-ae09-9c26aec7d308
+            id: image_scale
+            weight: 1
+            data:
+              width: 1300
+              height: 1300
+              upscale: false
+    # add square_focal_point_600 image style if it doesn't already exist
+    image.style.square_focal_point_600:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies:
+          module:
+            - focal_point
+        name: square_focal_point_600
+        label: 'Square, focal point, 600'
+        effects:
+          12f169b6-e0e7-4fdf-b0ed-e6bffa8c8a89:
+            uuid: 12f169b6-e0e7-4fdf-b0ed-e6bffa8c8a89
+            id: focal_point_scale_and_crop
+            weight: 1
+            data:
+              width: 600
+              height: 600
+              crop_type: focal_point
+    user.role.content_creator:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: content_creator
+        label: Content Creator
+        weight: 5
+        is_admin: false
+      grantPermissions:
+        - 'view unpublished paragraphs'
+    user.role.editor:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: editor
+        label: Editor
+        weight: 6
+        is_admin: false
+      grantPermissions:
+        - 'view unpublished paragraphs'

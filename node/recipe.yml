@@ -1,0 +1,144 @@
+name: "Default Node Types"
+description: "Default Node Types recipe for UBC Web Services websites"
+type: "Nodes"
+install:
+  #core
+  - file
+  - image
+  - link
+  - menu_ui
+  - node
+  - path
+  - taxonomy
+  - text
+  - user
+  - views
+  # contrib
+  - address
+  - allowed_formats
+  - auto_entitylabel
+  - datetime_range
+  - datetimehideseconds
+  - entity_reference_revisions
+  - field_group
+  - focal_point
+  - fullcalendar_view
+  - maxlength
+  - metatag
+  - metatag_open_graph
+  - metatag_twitter_cards
+  - paragraphs
+  - pathauto
+  - responsive_image
+  - scheduler
+  - simple_sitemap
+  - svg_image
+  - telephone
+  - text_summary_options
+config:
+  actions:
+    # assign announcement permissions
+    user.role.content_creator:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: content_creator
+        label: Content Creator
+        weight: 5
+        is_admin: false
+      grantPermissions:
+        # add permissions for ubc_announcement
+        - 'create ubc_announcement content'
+        - 'delete own ubc_announcement content'
+        - 'delete ubc_announcement revisions'
+        - 'edit own ubc_announcement content'
+        - 'revert ubc_announcement revisions'
+        - 'view ubc_announcement revisions'
+        # add permissions for ubc_event
+        - 'create ubc_event content'
+        - 'delete own ubc_event content'
+        - 'delete ubc_event revisions'
+        - 'edit own ubc_event content'
+        - 'revert ubc_event revisions'
+        - 'view ubc_event revisions'
+        # add permissions for ubc_page
+        - 'create ubc_page content'
+        - 'delete own ubc_page content'
+        - 'delete ubc_page revisions'
+        - 'edit own ubc_page content'
+        - 'revert ubc_page revisions'
+        - 'view ubc_page revisions'
+        # add permissions for ubc_profile
+        - 'create ubc_profile content'
+        - 'delete own ubc_profile content'
+        - 'delete ubc_profile revisions'
+        - 'edit own ubc_profile content'
+        - 'revert ubc_profile revisions'
+        - 'view ubc_profile revisions'
+    user.role.editor:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: editor
+        label: Editor
+        weight: 6
+        is_admin: false
+      grantPermissions:
+        # add permissions for ubc_announcement
+        - 'create terms in announcement_type'
+        - 'delete terms in announcement_type'
+        - 'edit terms in announcement_type'
+        - 'create ubc_announcement content'
+        - 'delete any ubc_announcement content'
+        - 'delete own ubc_announcement content'
+        - 'delete ubc_announcement revisions'
+        - 'edit any ubc_announcement content'
+        - 'edit own ubc_announcement content'
+        - 'revert ubc_announcement revisions'
+        - 'view ubc_announcement revisions'
+        # add permissions for ubc_event
+        - 'create terms in event_category'
+        - 'delete terms in event_category'
+        - 'edit terms in event_category'
+        - 'create ubc_event content'
+        - 'delete any ubc_event content'
+        - 'delete own ubc_event content'
+        - 'delete ubc_event revisions'
+        - 'edit any ubc_event content'
+        - 'edit own ubc_event content'
+        - 'revert ubc_event revisions'
+        - 'view ubc_event revisions'
+        # add permissions for homepage
+        - 'delete homepage revisions'
+        - 'edit any homepage content'
+        - 'edit own homepage content'
+        - 'revert homepage revisions'
+        - 'view homepage revisions'
+        # add permissions for ubc_landing_page
+        - 'create ubc_landing_page content'
+        - 'delete any ubc_landing_page content'
+        - 'delete own ubc_landing_page content'
+        - 'delete ubc_landing_page revisions'
+        - 'edit any ubc_landing_page content'
+        - 'edit own ubc_landing_page content'
+        - 'revert ubc_landing_page revisions'
+        - 'view ubc_landing_page revisions'
+        # add permissions for ubc_page
+        - 'create ubc_page content'
+        - 'delete any ubc_page content'
+        - 'delete own ubc_page content'
+        - 'delete ubc_page revisions'
+        - 'edit any ubc_page content'
+        - 'edit own ubc_page content'
+        - 'revert ubc_page revisions'
+        - 'view ubc_page revisions'
+        # add permissions for ubc_profile
+        - 'create terms in department_or_unit'
+        - 'delete terms in department_or_unit'
+        - 'edit terms in department_or_unit'
+        - 'create ubc_profile content'
+        - 'delete any ubc_profile content'
+        - 'delete own ubc_profile content'
+        - 'delete ubc_profile revisions'
+        - 'edit any ubc_profile content'
+        - 'edit own ubc_profile content'
+        - 'revert ubc_profile revisions'
+        - 'view ubc_profile revisions'

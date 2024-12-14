@@ -1,0 +1,256 @@
+name: "General media configuration"
+description: "General media configuration recipe for UBC Web Services websites"
+type: "Media configuration"
+recipes:
+  - core/recipes/audio_media_type
+  - core/recipes/image_media_type
+  - core/recipes/remote_video_media_type
+install:
+  # core
+  - file
+  - image
+  - media
+  - media_library
+  - path
+  - responsive_image
+  - user
+  # contrib
+  - crop
+  - dropzonejs
+  - image_widget_crop
+  - media_bulk_upload_dropzonejs
+  - media_alias_display
+  - media_bulk_upload
+  - media_entity_file_replace
+  - svg_image
+  - ubc_media_entities
+config:
+  actions:
+    # enable standalone media settings
+    media.settings:
+      simple_config_update:
+        standalone_url: 1
+    # alter default view mode for remote video media
+    core.entity_view_display.media.remote_video.default:
+      setComponents:
+        -
+          name: field_media_oembed_video
+          options:
+            type: oembed
+            label: hidden
+            settings:
+              max_width: 900
+              max_height: 506
+              loading:
+                attribute: lazy
+            third_party_settings: {  }
+            weight: 0
+            region: content
+        -
+          name: thumbnail
+          options:
+            type: image
+            label: hidden
+            settings:
+              image_link: ''
+              image_style: video_thumbnail
+              image_loading:
+                attribute: lazy
+            third_party_settings: {  }
+            weight: 0
+            region: content
+    # Add Icon Large image style
+    image.style.icon_large:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies: {  }
+        name: icon_large
+        label: 'Icon, large'
+        effects:
+          f9973a7b-6e05-4c2a-983b-ad1c5816b4e0:
+            uuid: f9973a7b-6e05-4c2a-983b-ad1c5816b4e0
+            id: image_scale_and_crop
+            weight: 1
+            data:
+              width: 96
+              height: 96
+              anchor: center-center
+    # Add Icon Small image style
+    image.style.icon_small:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies: {  }
+        name: icon_small
+        label: 'Icon, small'
+        effects:
+          aed7f070-e2f5-44a1-965c-4d1564f3bc2b:
+            uuid: aed7f070-e2f5-44a1-965c-4d1564f3bc2b
+            id: image_scale_and_crop
+            weight: 1
+            data:
+              width: 24
+              height: 24
+              anchor: center-center
+    # Add Small Icon view mode
+    core.entity_view_mode.media.small_icon:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies:
+          module:
+            - media
+        id: media.small_icon
+        label: 'Small icon'
+        targetEntityType: media
+        cache: true
+    # assign general media permissions
+    user.role.anonymous:
+      grantPermissions:
+        - 'view media'
+    user.role.authenticated:
+      grantPermissions:
+        - 'view media'
+    user.role.content_creator:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: content_creator
+        label: Content Creator
+        weight: 5
+        is_admin: false
+      grantPermissions:
+        # assign file permissions
+        - 'create file media'
+        - 'delete any file media'
+        - 'delete own file media'
+        - 'edit any file media'
+        - 'edit own file media'
+        - 'view any file media revisions'
+        - 'delete any file media revisions'
+        - 'revert any file media revisions'
+        # assign image permissions
+        - 'create image media'
+        - 'delete any image media'
+        - 'delete own image media'
+        - 'edit any image media'
+        - 'edit own image media'
+        - 'view any image media revisions'
+        - 'delete any image media revisions'
+        - 'revert any image media revisions'
+        # assign private_file permissions
+        - 'create private_file media'
+        - 'delete any private_file media'
+        - 'delete own private_file media'
+        - 'edit any private_file media'
+        - 'edit own private_file media'
+        - 'view any private_file media revisions'
+        - 'delete any private_file media revisions'
+        - 'revert any private_file media revisions'
+        # assign remote_video permissions
+        - 'create remote_video media'
+        - 'delete any remote_video media'
+        - 'delete own remote_video media'
+        - 'edit any remote_video media'
+        - 'edit own remote_video media'
+        - 'view any remote_video media revisions'
+        - 'delete any remote_video media revisions'
+        - 'revert any remote_video media revisions'
+        # assign svg_icon permissions
+        - 'create svg_icon media'
+        - 'delete any svg_icon media'
+        - 'delete own svg_icon media'
+        - 'edit any svg_icon media'
+        - 'edit own svg_icon media'
+        - 'view any svg_icon media revisions'
+        - 'delete any svg_icon media revisions'
+        - 'revert any svg_icon media revisions'
+        # assign media permissions
+        - 'access media overview'
+        - 'delete any media'
+        - 'delete media'
+        - 'dropzone upload files'
+        - 'update any media'
+        - 'update media'
+        - 'use bulk_upload_documents bulk upload form'
+        - 'use bulk_upload_images bulk upload form'
+        - 'view all media revisions'
+        - 'view media'
+        - 'view own unpublished media'
+    user.role.editor:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: editor
+        label: Editor
+        weight: 6
+        is_admin: false
+      grantPermissions:
+        # assign audio permissions
+        - 'create audio media'
+        - 'delete any audio media'
+        - 'delete own audio media'
+        - 'edit any audio media'
+        - 'edit own audio media'
+        - 'view any audio media revisions'
+        - 'delete any audio media revisions'
+        - 'revert any audio media revisions'
+        # assign file permissions
+        - 'create file media'
+        - 'delete any file media'
+        - 'delete own file media'
+        - 'edit any file media'
+        - 'edit own file media'
+        - 'view any file media revisions'
+        - 'delete any file media revisions'
+        - 'revert any file media revisions'
+        # assign image permissions
+        - 'create image media'
+        - 'delete any image media'
+        - 'delete own image media'
+        - 'edit any image media'
+        - 'edit own image media'
+        - 'view any image media revisions'
+        - 'delete any image media revisions'
+        - 'revert any image media revisions'
+        # assign private_file permissions
+        - 'create private_file media'
+        - 'delete any private_file media'
+        - 'delete own private_file media'
+        - 'edit any private_file media'
+        - 'edit own private_file media'
+        - 'view any private_file media revisions'
+        - 'delete any private_file media revisions'
+        - 'revert any private_file media revisions'
+        # assign remote_video permissions
+        - 'create remote_video media'
+        - 'delete any remote_video media'
+        - 'delete own remote_video media'
+        - 'edit any remote_video media'
+        - 'edit own remote_video media'
+        - 'view any remote_video media revisions'
+        - 'delete any remote_video media revisions'
+        - 'revert any remote_video media revisions'
+        # assign svg_icon permissions
+        - 'create svg_icon media'
+        - 'delete any svg_icon media'
+        - 'delete own svg_icon media'
+        - 'edit any svg_icon media'
+        - 'edit own svg_icon media'
+        - 'view any svg_icon media revisions'
+        - 'delete any svg_icon media revisions'
+        - 'revert any svg_icon media revisions'
+        # assign media permissions
+        - 'access media overview'
+        - 'delete any media'
+        - 'delete media'
+        - 'dropzone upload files'
+        - 'update any media'
+        - 'update media'
+        - 'use bulk_upload_documents bulk upload form'
+        - 'use bulk_upload_images bulk upload form'
+        - 'view all media revisions'
+        - 'view media'
+        - 'view own unpublished media'

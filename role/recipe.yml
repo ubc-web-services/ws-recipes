@@ -1,0 +1,64 @@
+name: "WS roles"
+description: "Default roles recipe for UBC Web Services websites"
+type: "Editor role"
+install:
+  # core
+  - block
+  - contextual
+  - file
+  - menu_ui
+  - path
+  - taxonomy
+  - toolbar
+  - user
+config:
+  actions:
+    actions:
+    user.role.content_creator:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: content_creator
+        label: Content Creator
+        weight: 5
+        is_admin: false
+      # grant permissions from enabled core modules
+      grantPermissions:
+        - 'access administration pages'
+        - 'access content overview'
+        - 'access files overview'
+        - 'access site in maintenance mode'
+        - 'access taxonomy overview'
+        - 'access toolbar'
+        - 'administer menu'
+        - 'administer url aliases'
+        - 'create url aliases'
+        - 'view the administration theme'
+    user.role.editor:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: editor
+        label: Editor
+        weight: 6
+        is_admin: false
+      # grant permissions from enabled core modules
+      grantPermissions:
+        - 'access administration pages'
+        - 'access block library'
+        - 'access content overview'
+        - 'access contextual links'
+        - 'access files overview'
+        - 'access site in maintenance mode'
+        - 'access taxonomy overview'
+        - 'access toolbar'
+        - 'access user profiles'
+        - 'administer blocks'
+        - 'administer menu'
+        - 'administer themes'
+        - 'administer url aliases'
+        - 'administer users'
+        - 'cancel account'
+        - 'change own username'
+        - 'create url aliases'
+        - 'delete any file'
+        - 'select account cancellation method'
+        - 'view the administration theme'
