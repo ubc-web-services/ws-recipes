@@ -3,48 +3,37 @@ description: "Orchestrate all Science recipes for UBC Web Services websites"
 type: "Site"
 recipes:
   # install parent recipes first
-  - recipes/ws-recipes/role/role-editor
-  - recipes/ws-recipes/role/role-content-creator
+  - recipes/ws-recipes/role
   - recipes/ws-recipes/portfolio/portfolio-sci/role/role-manager
-  - recipes/ws-recipes/theme/theme-admin
+  - recipes/ws-recipes/theme
   - recipes/ws-recipes/portfolio/portfolio-sci/theme/theme-sci
-  - recipes/ws-recipes/block/block-code
-  - recipes/ws-recipes/block/block-quicklinks
+  - recipes/ws-recipes/block
   - recipes/ws-recipes/portfolio/portfolio-sci/block/block-share-block
   - recipes/ws-recipes/date-formats
-  - recipes/ws-recipes/taxonomy/taxonomy-admin
-  - recipes/ws-recipes/taxonomy/taxonomy-admin-content
+  - recipes/ws-recipes/taxonomy
   - recipes/ws-recipes/portfolio/portfolio-sci/taxonomy/taxonomy-admin
   - recipes/ws-recipes/portfolio/portfolio-sci/taxonomy/taxonomy-media-contact
   - recipes/ws-recipes/portfolio/portfolio-sci/menu
-  - recipes/ws-recipes/image/image-styles
+  - recipes/ws-recipes/image
   - recipes/ws-recipes/portfolio/portfolio-sci/image/image-styles
   # # install recipes that rely on other recipes next
-  - recipes/ws-recipes/image/image-styles-responsive
   - recipes/ws-recipes/portfolio/portfolio-sci/image/image-styles-responsive
-  # image-styles and image-styles-responsive recipes needed for media recipe
-  - recipes/ws-recipes/media/media-config
+  # image-styles recipe needed for media recipe
+  - recipes/ws-recipes/media
   - recipes/ws-recipes/portfolio/portfolio-sci/media/media-config
-  - recipes/ws-recipes/text-format/text-format-filtered
-  - recipes/ws-recipes/text-format/text-format-simple
+  - recipes/ws-recipes/text-format
   - recipes/ws-recipes/portfolio/portfolio-sci/text-format
   - recipes/ws-recipes/custom-entity/custom-entity-ubc-alert
   # image-styles and image-styles-responsive recipes needed for paragraph-config recipe
-  - recipes/ws-recipes/paragraphs/paragraph-config
+  - recipes/ws-recipes/paragraphs
   - recipes/ws-recipes/portfolio/portfolio-sci/paragraphs
   # node-view-modes, image-styles and image-styles-responsive recipes needed for subsequent node recipes
-  - recipes/ws-recipes/node/node-view-modes
+  - recipes/ws-recipes/node
   - recipes/ws-recipes/portfolio/portfolio-sci/node/node-view-modes
-  - recipes/ws-recipes/node/node-ubc-announcement
   - recipes/ws-recipes/portfolio/portfolio-sci/node/node-sci-announcement
-  - recipes/ws-recipes/node/node-ubc-event
   - recipes/ws-recipes/portfolio/portfolio-sci/node/node-sci-event
-  - recipes/ws-recipes/node/node-ubc-homepage
   - recipes/ws-recipes/portfolio/portfolio-sci/node/node-sci-homepage
-  - recipes/ws-recipes/node/node-ubc-landing-page
   - recipes/ws-recipes/portfolio/portfolio-sci/node/node-sci-landing-page
-  - recipes/ws-recipes/node/node-ubc-page
-  - recipes/ws-recipes/node/node-ubc-profile
   - recipes/ws-recipes/portfolio/portfolio-sci/node/node-sci-profile
   # - recipes/ws-recipes/node/node-ubc-private-page
   # - recipes/ws-recipes/portfolio/portfolio-sci/node/node-ubc-blog
