@@ -16,6 +16,7 @@ config:
     system.theme:
       simple_config_update:
         admin: gin
+        default: kraken
     block.block.gin_help:
       simple_config_update:
         region: help
@@ -50,9 +51,6 @@ config:
     block.block.gin_site_branding:
       simple_config_update:
         status: false
-    system.theme:
-      simple_config_update:
-        default: kraken
     block.block.kraken_help:
       simple_config_update:
         region: help
