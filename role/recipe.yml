@@ -13,7 +13,6 @@ install:
   - user
 config:
   actions:
-    actions:
     user.role.content_creator:
       # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
       createIfNotExists:
