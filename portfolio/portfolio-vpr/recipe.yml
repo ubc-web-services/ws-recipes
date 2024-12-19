@@ -16,6 +16,7 @@ recipes:
 
   # image-styles recipe needed for media recipe
   - recipes/ws-recipes/media
+  - recipes/ws-recipes/media-type-ics
   - recipes/ws-recipes/text-format
   - recipes/ws-recipes/custom-entity/custom-entity-ubc-alert
   # image-styles and image-styles-responsive recipes needed for paragraph-config recipe
@@ -24,6 +25,7 @@ recipes:
   - recipes/ws-recipes/portfolio/portfolio-vpr/paragraphs/paragraph-card-text
   # node-view-modes, image-styles and image-styles-responsive recipes needed for subsequent node recipes
   - recipes/ws-recipes/node
+  - recipes/ws-recipes/node/node-ubc-private-page
   - recipes/ws-recipes/portfolio/portfolio-vpr/node/node-vpr-shared
   - recipes/ws-recipes/portfolio/portfolio-vpr/node/node-vpr-announcement
   - recipes/ws-recipes/portfolio/portfolio-vpr/node/node-vpr-event
