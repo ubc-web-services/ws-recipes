@@ -3,6 +3,9 @@ description: "Update VPR media display settings for UBC Web Services websites"
 type: "Media"
 install:
   # core
+  - ckeditor
+  - file
+  - image
   - media
   # contrib
   - linkit

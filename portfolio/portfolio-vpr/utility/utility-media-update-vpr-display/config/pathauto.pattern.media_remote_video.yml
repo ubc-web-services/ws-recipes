@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media_remote_video
+label: 'Media: remote video'
+type: 'canonical_entities:media'
+pattern: 'media/remote-video/[media:name]'
+selection_criteria:
+  b93eb28a-c8eb-46d0-b89a-5d6d6d663bc4:
+    id: 'entity_bundle:media'
+    negate: false
+    uuid: b93eb28a-c8eb-46d0-b89a-5d6d6d663bc4
+    context_mapping:
+      media: media
+    bundles:
+      remote_video: remote_video
+selection_logic: and
+weight: 10
+relationships: {  }

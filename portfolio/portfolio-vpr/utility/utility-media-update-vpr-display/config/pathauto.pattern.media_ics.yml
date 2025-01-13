@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media_ics
+label: 'Media: ICS'
+type: 'canonical_entities:media'
+pattern: 'media/ics/[media:name]'
+selection_criteria:
+  0eca9650-a7d1-4d60-8242-4893c45368e4:
+    id: 'entity_bundle:media'
+    negate: false
+    uuid: 0eca9650-a7d1-4d60-8242-4893c45368e4
+    context_mapping:
+      media: media
+    bundles:
+      ics_file: ics_file
+selection_logic: and
+weight: 10
+relationships: {  }

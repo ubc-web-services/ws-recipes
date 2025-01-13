@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media_audio
+label: 'Media: audio'
+type: 'canonical_entities:media'
+pattern: 'media/audio/[media:name]'
+selection_criteria:
+  ea7ae580-03ea-4de0-92c0-7f405143b1d4:
+    id: 'entity_bundle:media'
+    negate: false
+    uuid: ea7ae580-03ea-4de0-92c0-7f405143b1d4
+    context_mapping:
+      media: media
+    bundles:
+      audio: audio
+selection_logic: and
+weight: 10
+relationships: {  }
