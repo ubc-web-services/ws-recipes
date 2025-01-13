@@ -1,0 +1,39 @@
+name: "Update media display"
+description: "Update media display settings for UBC Web Services websites"
+type: "Media"
+install:
+  # core
+  - media
+  # contrib
+  - linkit
+  - media_alias_display
+  - ubc_media_entities
+config:
+  actions:
+    # enable linkit for media
+    editor.editor.filtered_text:
+      simpleConfigUpdate:
+        settings.plugins.linkit_extension:
+          linkit_enabled: true
+          linkit_profile: default
+    # enable standalone media settings
+    media.settings:
+      simpleConfigUpdate:
+        standalone: true
+    user.role.anonymous:
+      grantPermissions:
+        - 'view document media'
+        - 'view file media'
+        - 'view image media'
+        - 'view remote_video media'
+        - 'view svg_icon media'
+        - 'view video media'
+    user.role.authenticated:
+      grantPermissions:
+        - 'view document media'
+        - 'view file media'
+        - 'view image media'
+        - 'view private_file media'
+        - 'view remote_video media'
+        - 'view svg_icon media'
+        - 'view video media'
