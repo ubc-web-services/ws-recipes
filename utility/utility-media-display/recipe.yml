@@ -3,7 +3,7 @@ description: "Update media display settings for UBC Web Services websites"
 type: "Media"
 install:
   # core
-  - ckeditor
+  - ckeditor5
   - file
   - image
   - media
@@ -22,7 +22,7 @@ config:
     # enable standalone media settings
     media.settings:
       simpleConfigUpdate:
-        standalone: true
+        standalone_url: true
     user.role.anonymous:
       grantPermissions:
         - 'view document media'
