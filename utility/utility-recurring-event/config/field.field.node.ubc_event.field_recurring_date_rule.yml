@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_recurring_date_rule
+    - node.type.ubc_event
+id: node.ubc_event.field_recurring_date_rule
+field_name: field_recurring_date_rule
+entity_type: node
+bundle: ubc_event
+label: 'Recurring Date Rule'
+description: 'You need to enter a specially formatted string here, which <a href="https://jkbrzt.github.io/rrule/" target="_blank">you can generate using this tool</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

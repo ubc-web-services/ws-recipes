@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+id: ws
+label: WS
+date_format: 'F j, Y'
+time_format: 'g:i a'
+time_hour_format: ga
+allday_label: 'All day'
+separator: ' to '
+join: ', '
+ampm_reduce: '1'
+date_first: '1'
+site_time_toggle: '1'

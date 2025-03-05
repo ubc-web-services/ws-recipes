@@ -1,0 +1,210 @@
+
+name: "UBC Event: recurring configuration"
+description: "Recurring event update configuration recipe for UBC Web Services websites"
+type: 'Config'
+install:
+  # contrib
+  - smart_date
+  - smart_date_recur
+config:
+  actions:
+    # update the event date field
+    field.storage.node.field_event_date:
+      simple_config_update:
+        settings:
+          datetime_type: datetime
+          optional_end_date: true
+    # update the event form display
+    core.entity_form_display.node.ubc_event.default:
+      simple_config_update:
+        third_party_settings.field_group.group_event_time.children:
+          - field_event_date
+          - field_event_is_ongoing
+          - field_recurring_date_rule
+      setComponents:
+        -
+          name: field_event_date
+          options:
+            type: smartdate_default
+            weight: 11
+            region: content
+            settings:
+              modal: false
+              default_duration: 60
+              default_duration_increments: "30\r\n60|1 hour\r\n90\r\n120|2 hours\r\ncustom"
+              show_extra: false
+              hide_date: true
+              allday: true
+              remove_seconds: true
+              duration_overlay: true
+            third_party_settings: {  }
+        -
+          name: field_recurring_date_rule
+          options:
+            type: string_textarea
+            weight: 13
+            region: content
+            settings:
+              rows: 5
+              placeholder: ''
+            third_party_settings: {  }
+    # update the event default display
+    core.entity_view_display.node.ubc_event.default:
+      hideComponent: field_recurring_date_rule
+      setComponents:
+        -
+          name: field_event_date
+          options:
+            type: smartdate_default
+            weight: 5
+            region: content
+            label: hidden
+            settings:
+              timezone_override: America/Vancouver
+              format_type: medium
+              format: ws
+              force_chronological: false
+              add_classes: false
+              time_wrapper: true
+              localize: false
+              parts:
+                start: start
+                end: end
+                duration: '0'
+              duration:
+                separator: ', '
+                unit: ''
+                decimals: 2
+                suffix: h
+            third_party_settings: {  }
+        -
+          name: field_event_image
+          options:
+            type: image
+            weight: 0
+            region: content
+            settings:
+              image_link: ''
+              image_style: square_focal_point_600
+              image_loading:
+                attribute: lazy
+              svg_attributes:
+                width: null
+                height: null
+              svg_render_as_image: true
+            third_party_settings: {  }
+    # update the event teaser display
+    core.entity_view_display.node.ubc_event.teaser:
+      hideComponent: field_recurring_date_rule
+      setComponents:
+        -
+          name: field_event_date
+          options:
+            type: smartdate_default
+            weight: 4
+            region: content
+            label: hidden
+            settings:
+              format_type: medium
+              format: ws
+              force_chronological: false
+              add_classes: false
+              time_wrapper: true
+              localize: false
+              parts:
+                start: start
+                end: end
+                duration: '0'
+              duration:
+                separator: ', '
+                unit: ''
+                decimals: 2
+                suffix: h
+            third_party_settings: {  }
+    # update the event card_horizontal display
+    core.entity_view_display.node.ubc_event.card_horizontal:
+      hideComponent: field_recurring_date_rule
+      setComponents:
+        -
+          name: field_event_date
+          options:
+            type: smartdate_default
+            weight: 0
+            region: content
+            label: hidden
+            settings:
+              format_type: medium
+              format: ws
+              force_chronological: false
+              add_classes: false
+              time_wrapper: true
+              localize: false
+              parts:
+                start: start
+                end: end
+                duration: '0'
+              duration:
+                separator: ', '
+                unit: ''
+                decimals: 2
+                suffix: h
+            third_party_settings: {  }
+    # update the event card_vertical display
+    core.entity_view_display.node.ubc_event.card_vertical:
+      hideComponent: field_recurring_date_rule
+      setComponents:
+        -
+          name: field_event_date
+          options:
+            type: smartdate_default
+            weight: 0
+            region: content
+            label: hidden
+            settings:
+              format_type: medium
+              format: ws
+              force_chronological: false
+              add_classes: false
+              time_wrapper: true
+              localize: false
+              parts:
+                start: start
+                end: end
+                duration: '0'
+              duration:
+                separator: ', '
+                unit: ''
+                decimals: 2
+                suffix: h
+            third_party_settings: {  }
+    # update the event card_image display
+    core.entity_view_display.node.ubc_event.card_image:
+      hideComponent: field_recurring_date_rule
+      setComponents:
+        -
+          name: field_event_date
+          options:
+            type: smartdate_default
+            weight: 0
+            region: content
+            label: hidden
+            settings:
+              format_type: medium
+              format: ws
+              force_chronological: false
+              add_classes: false
+              time_wrapper: true
+              localize: false
+              parts:
+                start: start
+                end: end
+                duration: '0'
+              duration:
+                separator: ', '
+                unit: ''
+                decimals: 2
+                suffix: h
+            third_party_settings: {  }
+    # update the event featured_content display
+    core.entity_view_display.node.ubc_event.featured_content:
+      hideComponent: field_recurring_date_rule
