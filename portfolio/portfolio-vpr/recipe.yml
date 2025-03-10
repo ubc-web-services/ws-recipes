@@ -51,8 +51,14 @@ recipes:
   # - recipes/ws-recipes/portfolio/portfolio-vpr/node/node-ubc-research-project
   - recipes/ws-recipes/portfolio/portfolio-vpr/node/node-vpr-webform
   - recipes/ws-recipes/views
+  - recipes/ws-recipes/utility/utility-add-fontawesome
+  - recipes/ws-recipes/portfolio/portfolio-vpr/utility/utility-media-update-vpr-display
 install:
   # core
+  - ckeditor5
+  - file
+  - image
+  - media
   # services
   - jsonapi
   - rest
@@ -78,9 +84,12 @@ install:
   - file_to_media
   - focal_point
   - image_widget_crop
+  - media_alias_display
+  - ubc_media_entities
   # editing / ui
   - chosen
   - formtips
+  - linkit
   - linkit_media_library
   - scheduler
   - twig_tweak
