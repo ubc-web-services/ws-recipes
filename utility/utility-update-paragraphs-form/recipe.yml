@@ -33,7 +33,7 @@ config:
     core.entity_form_display.node.ubc_landing_page.default:
       setComponents:
         -
-          name: field_announcement_custom_conten
+          name: field_landing_custom_content
           options:
             type: paragraphs
             weight: 3
