@@ -33,6 +33,7 @@ config:
         - 'access user profiles'
         - 'administer blocks'
         - 'administer menu'
+        - 'administer nodes'
         - 'administer themes'
         - 'administer url aliases'
         - 'administer users'
