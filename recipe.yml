@@ -32,7 +32,6 @@ recipes:
   - recipes/ws-recipes/node/node-ubc-profile
   - recipes/ws-recipes/node/node-ubc-webform
   - recipes/ws-recipes/views
-  - recipes/ws-recipes/utility/utility-add-webp
   - recipes/ws-recipes/utility/utility-media-display
 install:
   # core
