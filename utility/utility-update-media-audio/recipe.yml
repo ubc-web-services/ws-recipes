@@ -1,0 +1,30 @@
+
+name: "Audio Media Entity - update configuration"
+description: "Audio Media Entity - update configuration for UBC Web Services websites"
+type: 'Config'
+config:
+  actions:
+    # update the form display
+    core.entity_form_display.media.audio.default:
+      setComponents:
+        -
+          name: name
+          options:
+            type: string_textfield
+            weight: 0
+            region: content
+            settings:
+              size: 60
+              placeholder: ''
+            third_party_settings: {  }
+        -
+          name: replace_file
+          options:
+            weight: 6
+            region: content
+            settings: {  }
+            third_party_settings: {  }
+    # update the path where medis is stored
+    field.field.media.audio.field_media_audio_file:
+      simpleConfigUpdate:
+        settings.file_directory: audio
