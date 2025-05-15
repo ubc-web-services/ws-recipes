@@ -1,11 +1,11 @@
 
-name: "Audio Media Entity - update configuration"
-description: "Audio Media Entity - update configuration for UBC Web Services websites"
+name: "Video Media Entity - update configuration"
+description: "Video Media Entity - update configuration for UBC Web Services websites"
 type: 'Config'
 config:
   actions:
     # update the form display
-    core.entity_form_display.media.audio.default:
+    core.entity_form_display.media.video.default:
       setComponents:
         -
           name: name
@@ -24,7 +24,7 @@ config:
             region: content
             settings: {  }
             third_party_settings: {  }
-    # update the path where media is is stored
-    field.field.media.audio.field_media_audio_file:
+    # update the path where medis is stored
+    field.field.media.video.field_media_video_file:
       simpleConfigUpdate:
-        settings.file_directory: media-uploads/audio
+        settings.file_directory: media-uploads/video

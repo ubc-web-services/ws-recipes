@@ -1,0 +1,19 @@
+
+name: "Remote Video Media Entity - update configuration"
+description: "Remote Video Media Entity - update configuration for UBC Web Services websites"
+type: 'Config'
+config:
+  actions:
+    # update the form display
+    core.entity_form_display.media.remote_video.default:
+      setComponents:
+        -
+          name: name
+          options:
+            type: string_textfield
+            weight: 0
+            region: content
+            settings:
+              size: 60
+              placeholder: ''
+            third_party_settings: {  }
