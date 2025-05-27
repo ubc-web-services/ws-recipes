@@ -11,7 +11,7 @@ third_party_settings:
 name: Homepage
 type: homepage
 description: 'Adds a homepage content type. Note that creation of new instances of this type is <strong>locked</strong> by default.'
-help: ''
+help: null
 new_revision: true
 preview_mode: 1
 display_submitted: false

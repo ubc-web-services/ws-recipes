@@ -24,7 +24,7 @@ third_party_settings:
 name: 'Partner Organization'
 type: ubc_partner_organization
 description: 'Use <em>Partner Organization</em> to add a new partner.'
-help: ''
+help: null
 new_revision: true
 preview_mode: 1
 display_submitted: false

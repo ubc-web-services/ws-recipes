@@ -24,7 +24,7 @@ third_party_settings:
 name: Project
 type: ubc_project
 description: 'Use <em>Project</em> to add new projects.'
-help: ''
+help: null
 new_revision: true
 preview_mode: 1
 display_submitted: false

@@ -24,7 +24,7 @@ third_party_settings:
 name: 'Research Project'
 type: ubc_research_project
 description: 'Use the <em>Research Project</em> to add an additional Research project.'
-help: ''
+help: null
 new_revision: true
 preview_mode: 1
 display_submitted: false
