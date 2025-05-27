@@ -21,8 +21,10 @@ settings:
       - sourceEditing
   plugins:
     ckeditor5_list:
-      reversed: true
-      startIndex: true
+      properties:
+        reversed: true
+        startIndex: true
+      multiBlock: true
     ckeditor5_sourceEditing:
       allowed_tags:
         - '<button data-* class="widget-* unit-* text-*">'
@@ -44,9 +46,3 @@ settings:
       linkit_profile: default
 image_upload:
   status: false
-  scheme: public
-  directory: inline-images
-  max_size: ''
-  max_dimensions:
-    width: null
-    height: null
