@@ -10,7 +10,7 @@ recipes:
   - ../recipes/ws-recipes/ws-core/block/block-code
   - ../recipes/ws-recipes/ws-core/block/block-quicklinks
   - ../recipes/ws-recipes/ws-core/date-formats
-  - ../ecipes/ws-recipes/ws-core/taxonomy/taxonomy-admin
+  - ../recipes/ws-recipes/ws-core/taxonomy/taxonomy-admin
   - ../recipes/ws-recipes/ws-core/taxonomy/taxonomy-admin-content
   - ../recipes/ws-recipes/ws-core/image/image-styles
   # install recipes that rely on other recipes next
