@@ -128,10 +128,6 @@ config:
         use_relative_width: 'true'
         search_contains: 'true'
         chosen_include: '0'
-    # easy breadcrumb settings
-    easy_breadcrumb.settings:
-      simple_config_update:
-        include_title_segment: 1
     # metatag settings
     metatag.metatag_defaults.global:
       simple_config_update:
