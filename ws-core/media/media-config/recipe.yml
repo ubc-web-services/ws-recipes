@@ -1,0 +1,75 @@
+name: "General media configuration"
+description: "General media configuration recipe for UBC Web Services websites"
+type: "Media configuration"
+recipes:
+  - recipes/ws-recipes/ws-core/media/media-view-modes
+  - recipes/ws-recipes/ws-core/media/media-type-audio
+  - recipes/ws-recipes/ws-core/media/media-type-file
+  - recipes/ws-recipes/ws-core/media/media-type-ics
+  - recipes/ws-recipes/ws-core/media/media-type-image
+  - recipes/ws-recipes/ws-core/media/media-type-private-file
+  - recipes/ws-recipes/ws-core/media/media-type-remote-video
+  - recipes/ws-recipes/ws-core/media/media-type-svg-icon
+install:
+  # core
+  - media
+  - user
+  # contrib
+  - crop
+  - dropzonejs
+  - image_widget_crop
+  - media_bulk_upload_dropzonejs
+  - media_alias_display
+  - media_bulk_upload
+  - media_entity_file_replace
+config:
+  actions:
+    # enable standalone media settings
+    media.settings:
+      simple_config_update:
+        standalone_url: 1
+    # assign general media permissions
+    user.role.anonymous:
+      grantPermissions:
+        - 'view media'
+    user.role.authenticated:
+      grantPermissions:
+        - 'view media'
+    user.role.content_creator:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: content_creator
+        label: Content Creator
+        weight: 5
+        is_admin: false
+      grantPermissions:
+        - 'access media overview'
+        - 'delete any media'
+        - 'delete media'
+        - 'dropzone upload files'
+        - 'update any media'
+        - 'update media'
+        - 'use bulk_upload_documents bulk upload form'
+        - 'use bulk_upload_images bulk upload form'
+        - 'view all media revisions'
+        - 'view media'
+        - 'view own unpublished media'
+    user.role.editor:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: editor
+        label: Editor
+        weight: 6
+        is_admin: false
+      grantPermissions:
+        - 'access media overview'
+        - 'delete any media'
+        - 'delete media'
+        - 'dropzone upload files'
+        - 'update any media'
+        - 'update media'
+        - 'use bulk_upload_documents bulk upload form'
+        - 'use bulk_upload_images bulk upload form'
+        - 'view all media revisions'
+        - 'view media'
+        - 'view own unpublished media'

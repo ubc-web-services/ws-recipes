@@ -1,0 +1,5 @@
+name: "Homepage default content configuration"
+description: "Homepage default content recipe for UBC Web Services websites"
+type: "Content"
+recipes:
+  - recipes/ws-recipes/ws-core/node/node-ubc-homepage

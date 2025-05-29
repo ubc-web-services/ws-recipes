@@ -1,40 +1,64 @@
-name: "Orchestrate all recipes"
-description: "Orchestrate all recipes for UBC Web Services websites"
+name: "Orchestrate all VPR recipes"
+description: "Orchestrate all VPR recipes for UBC Web Services websites"
 type: "Site"
 recipes:
   # install parent recipes first
   - recipes/ws-recipes/ws-core/role/role-editor
   - recipes/ws-recipes/ws-core/role/role-content-creator
+  - recipes/ws-recipes/ws-vpr/role/role-read-only
+  - recipes/ws-recipes/ws-vpr/role/role-super-user
   - recipes/ws-recipes/ws-core/theme/theme-admin
-  - recipes/ws-recipes/ws-core/theme/theme-ws
+  - recipes/ws-recipes/ws-vpr/theme/theme-vpr
   - recipes/ws-recipes/ws-core/block/block-code
   - recipes/ws-recipes/ws-core/block/block-quicklinks
   - recipes/ws-recipes/ws-core/date-formats
   - recipes/ws-recipes/ws-core/taxonomy/taxonomy-admin
   - recipes/ws-recipes/ws-core/taxonomy/taxonomy-admin-content
   - recipes/ws-recipes/ws-core/image/image-styles
-  # install recipes that rely on other recipes next
+  - recipes/ws-recipes/ws-vpr/image/image-styles
+  # # install recipes that rely on other recipes next
   - recipes/ws-recipes/ws-core/image/image-styles-responsive
+  # image-styles and image-styles-responsive recipes needed for media recipe
   - recipes/ws-recipes/ws-core/media/media-config
   - recipes/ws-recipes/ws-core/text-format/text-format-filtered
   - recipes/ws-recipes/ws-core/text-format/text-format-simple
   - recipes/ws-recipes/ws-core/custom-entity/custom-entity-ubc-alert
+  # image-styles and image-styles-responsive recipes needed for paragraph-config recipe
   - recipes/ws-recipes/ws-core/paragraphs/paragraph-config
+  - recipes/ws-recipes/ws-vpr/paragraphs/paragraph-card-rollover
+  - recipes/ws-recipes/ws-vpr/paragraphs/paragraph-card-text
+  # node-view-modes, image-styles and image-styles-responsive recipes needed for subsequent node recipes
   - recipes/ws-recipes/ws-core/node/node-view-modes
+  - recipes/ws-recipes/ws-vpr/node/node-vpr-shared
   - recipes/ws-recipes/ws-core/node/node-ubc-announcement
+  - recipes/ws-recipes/ws-vpr/node/node-vpr-announcement
   - recipes/ws-recipes/ws-core/node/node-ubc-event
   - recipes/ws-recipes/ws-core/node/node-ubc-event-fullcalendar
+  - recipes/ws-recipes/ws-vpr/node/node-vpr-event
   - recipes/ws-recipes/ws-core/node/node-ubc-event-virtual
-  - recipes/ws-recipes/ws-core/node/node-ubc-homepage-content
+  - recipes/ws-recipes/ws-core/node/node-ubc-homepage
+  - recipes/ws-recipes/ws-vpr/node/node-vpr-homepage-content
   - recipes/ws-recipes/ws-core/node/node-ubc-landing-page
+  - recipes/ws-recipes/ws-vpr/node/node-vpr-landing-page
   - recipes/ws-recipes/ws-core/node/node-ubc-page
-  # - recipes/ws-recipes/ws-core/node/node-ubc-private-page
+  - recipes/ws-recipes/ws-vpr/node/node-vpr-page
   - recipes/ws-recipes/ws-core/node/node-ubc-profile
-  - recipes/ws-recipes/ws-core/node/node-ubc-webform
+  - recipes/ws-recipes/ws-vpr/node/node-vpr-profile
+  - recipes/ws-recipes/ws-core/node/node-ubc-private-page
+  # - recipes/ws-recipes/ws-vpr/node/node-ubc-awards
+  # - recipes/ws-recipes/ws-vpr/node/node-ubc-project
+  # - recipes/ws-recipes/ws-vpr/node/node-ubc-publication
+  # - recipes/ws-recipes/ws-vpr/node/node-ubc-research-project
+  - recipes/ws-recipes/ws-vpr/node/node-vpr-webform
   - recipes/ws-recipes/ws-core/views
-  - recipes/ws-recipes/ws-utility/utility-media-display
+  - recipes/ws-recipes/ws-utility/utility-add-fontawesome
+  - recipes/ws-recipes/ws-vpr/utility/utility-media-update-vpr-display
 install:
   # core
+  - ckeditor5
+  - file
+  - image
+  - media
   # services
   - jsonapi
   - rest
@@ -42,6 +66,7 @@ install:
   # navigation / menus
   - easy_breadcrumb
   - menu_block
+  - menu_position
   # redirects
   - redirect
   # block
@@ -60,12 +85,14 @@ install:
   - focal_point
   - image_widget_crop
   - media_alias_display
+  - ubc_media_entities
   # editing / ui
   - chosen
   - formtips
+  - linkit
   - linkit_media_library
-  - twig_tweak
   - scheduler
+  - twig_tweak
   - ubc_chosen_style_tweaks
   # views
   - fullcalendar_view
@@ -74,14 +101,13 @@ install:
   - antibot
   # search
   - google_analytics
+  - google_tag
   - metatag
   # node / permissions
-  - quick_node_clone
   - node_revision_delete
   - role_delegation
   - view_unpublished
   - webform
-  - webform_node
   - webform_ui
 config:
   import:
@@ -90,6 +116,7 @@ config:
     focal_point: "*"
     fullcalendar_view: "*"
     google_analytics: "*"
+    google_tag: "*"
     image_widget_crop: "*"
     metatag: "*"
     redirect: "*"
@@ -98,16 +125,15 @@ config:
       - views.view.scheduler_scheduled_content
     simple_sitemap: "*"
     webform: "*"
-    webform_node: "*"
   actions:
+    # theme settings
+    vpr.settings:
+      simple_config_update:
+        clf_css: css-prod
     # admin role weight
     user.role.administrator:
       simple_config_update:
         weight: 10
-    # theme settings
-    kraken.settings:
-      simple_config_update:
-        clf_css: css-prod
     # antibot settings
     antibot.settings:
       simple_config_update:
@@ -132,6 +158,10 @@ config:
     easy_breadcrumb.settings:
       simple_config_update:
         include_title_segment: 1
+    # filtered text format settings
+    filter.format.filtered_text:
+      simple_config_update:
+        filters.media_embed.settings.allowed_media_types.ics_file: ics_file
     # metatag settings
     metatag.metatag_defaults.global:
       simple_config_update:
@@ -177,7 +207,7 @@ config:
         smtp_username: 'ubcuit-a-UBCITWSNR'
         smtp_client_helo: 'mail.ubc.ca'
     # place blocks
-    block.block.kraken_alert_banner:
+    block.block.vpr_alert_banner:
       createIfNotExists:
         langcode: en
         status: true
@@ -187,9 +217,9 @@ config:
           module:
             - views
           theme:
-            - kraken
-        id: kraken_alert_banner
-        theme: kraken
+            - vpr
+        id: vpr_alert_banner
+        theme: vpr
         region: alert_region
         weight: 0
         provider: null
@@ -202,7 +232,7 @@ config:
           views_label: ''
           items_per_page: none
         visibility: {  }
-    block.block.kraken_announcement_feature:
+    block.block.vpr_announcement_feature:
       createIfNotExists:
         langcode: en
         status: true
@@ -213,9 +243,9 @@ config:
             - node
             - views
           theme:
-            - kraken
-        id: kraken_announcement_feature
-        theme: kraken
+            - vpr
+        id: vpr_announcement_feature
+        theme: vpr
         region: masthead
         weight: 0
         provider: null
@@ -236,7 +266,7 @@ config:
               node: '@node.node_route_context:node'
             bundles:
               ubc_announcement: ubc_announcement
-    block.block.kraken_event_feature:
+    block.block.vpr_event_feature:
       createIfNotExists:
         langcode: en
         status: true
@@ -247,9 +277,9 @@ config:
             - node
             - views
           theme:
-            - kraken
-        id: kraken_event_feature
-        theme: kraken
+            - vpr
+        id: vpr_event_feature
+        theme: vpr
         region: masthead
         weight: 0
         provider: null
@@ -270,7 +300,7 @@ config:
               node: '@node.node_route_context:node'
             bundles:
               ubc_event: ubc_event
-    block.block.kraken_homepage_feature:
+    block.block.vpr_homepage_feature:
       createIfNotExists:
         langcode: en
         status: true
@@ -281,9 +311,9 @@ config:
             - node
             - views
           theme:
-            - kraken
-        id: kraken_homepage_feature
-        theme: kraken
+            - vpr
+        id: vpr_homepage_feature
+        theme: vpr
         region: masthead
         weight: 0
         provider: null
@@ -303,7 +333,7 @@ config:
               node: '@node.node_route_context:node'
             bundles:
               homepage: homepage
-    block.block.kraken_homepage_paragraphs:
+    block.block.vpr_homepage_paragraphs:
       createIfNotExists:
         langcode: en
         status: true
@@ -314,9 +344,9 @@ config:
             - node
             - views
           theme:
-            - kraken
-        id: kraken_homepage_paragraphs
-        theme: kraken
+            - vpr
+        id: vpr_homepage_paragraphs
+        theme: vpr
         region: prefooter
         weight: 0
         provider: null
@@ -337,7 +367,7 @@ config:
               node: '@node.node_route_context:node'
             bundles:
               homepage: homepage
-    block.block.kraken_landing_feature:
+    block.block.vpr_landing_feature:
       createIfNotExists:
         langcode: en
         status: true
@@ -348,9 +378,9 @@ config:
             - node
             - views
           theme:
-            - kraken
-        id: kraken_landing_feature
-        theme: kraken
+            - vpr
+        id: vpr_landing_feature
+        theme: vpr
         region: masthead
         weight: 0
         provider: null
@@ -371,7 +401,7 @@ config:
               node: '@node.node_route_context:node'
             bundles:
               ubc_landing_page: ubc_landing_page
-    block.block.kraken_landing_paragraphs:
+    block.block.vpr_landing_paragraphs:
       createIfNotExists:
         langcode: en
         status: true
@@ -382,9 +412,9 @@ config:
             - node
             - views
           theme:
-            - kraken
-        id: kraken_landing_paragraphs
-        theme: kraken
+            - vpr
+        id: vpr_landing_paragraphs
+        theme: vpr
         region: prefooter
         weight: 0
         provider: null
@@ -439,17 +469,14 @@ config:
         - 'access webform overview'
         - 'access webform submission user'
         - 'administer google analytics'
+        - 'administer google_tag_container'
         - 'administer meta tags'
         - 'administer redirects'
         - 'administer webform'
         - 'administer webform submission'
         - 'assign content_creator role'
         - 'assign editor role'
-        - 'clone ubc_announcement content'
-        - 'clone ubc_event content'
-        - 'clone ubc_landing_page content'
-        - 'clone ubc_page content'
-        - 'clone ubc_profile content'
+        - 'assign read_only role'
         - 'create basic block content'
         - 'create terms in tags'
         - 'create webform'
@@ -485,3 +512,154 @@ config:
         - 'view term revisions in tags'
         - 'view webform submissions any node'
         - 'view webform submissions own node'
+    # super user role
+    user.role.super_user:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: super_user
+        label: 'Super User'
+        weight: 7
+        is_admin: false
+      # grant permissions from enabled modules
+      grantPermissions:
+        - 'access webform help'
+        - 'access webform overview'
+        - 'access webform submission user'
+        - 'add content item entities'
+        - 'administer google analytics'
+        - 'administer google_tag_container'
+        - 'administer meta tags'
+        - 'administer redirects'
+        - 'administer webform'
+        - 'administer webform submission'
+        - 'assign content_creator role'
+        - 'assign editor role'
+        - 'assign read_only role'
+        - 'assign super_user role'
+        - 'create basic block content'
+        - 'create quicklinks_block block content'
+        - 'create terms in tags'
+        - 'create webform'
+        - 'delete all content item revisions'
+        - 'delete any basic block content'
+        - 'delete any basic block content revisions'
+        - 'delete any quicklinks_block block content'
+        - 'delete any quicklinks_block block content revisions'
+        - 'delete any webform'
+        - 'delete any webform submission'
+        - 'delete content item entities'
+        - 'delete own webform'
+        - 'delete own webform submission'
+        - 'delete term revisions in tags'
+        - 'delete terms in tags'
+        - 'delete webform submissions any node'
+        - 'delete webform submissions own node'
+        - 'dropzone upload files'
+        - 'edit any basic block content'
+        - 'edit any quicklinks_block block content'
+        - 'edit any webform'
+        - 'edit content item entities'
+        - 'edit own webform'
+        - 'edit own webform submission'
+        - 'edit terms in tags'
+        - 'edit webform submissions any node'
+        - 'edit webform submissions own node'
+        - 'revert all content item revisions'
+        - 'revert all revisions'
+        - 'revert any basic block content revisions'
+        - 'revert any quicklinks_block block content revisions'
+        - 'revert term revisions in tags'
+        - 'schedule publishing of nodes'
+        - 'use text format filtered_text'
+        - 'use text format simple'
+        - 'view all content item revisions'
+        - 'view all revisions'
+        - 'view any basic block content history'
+        - 'view any quicklinks_block block content history'
+        - 'view any unpublished content'
+        - 'view any webform submission'
+        - 'view own unpublished content'
+        - 'view own webform submission'
+        - 'view published content item entities'
+        - 'view scheduled content'
+        - 'view term revisions in tags'
+        - 'view unpublished content item entities'
+        - 'view unpublished paragraphs'
+        - 'view webform submissions any node'
+        - 'view webform submissions own node'
+        - 'access media overview'
+        - 'delete any media'
+        - 'delete media'
+        - 'dropzone upload files'
+        - 'update any media'
+        - 'update media'
+        - 'use bulk_upload_documents bulk upload form'
+        - 'use bulk_upload_images bulk upload form'
+        - 'view all media revisions'
+        - 'view media'
+        - 'view own unpublished media'
+        - 'create audio media'
+        - 'delete any audio media'
+        - 'delete own audio media'
+        - 'edit any audio media'
+        - 'edit own audio media'
+        - 'view any audio media revisions'
+        - 'delete any audio media revisions'
+        - 'revert any audio media revisions'
+        - 'create file media'
+        - 'delete any file media'
+        - 'delete own file media'
+        - 'edit any file media'
+        - 'edit own file media'
+        - 'view any file media revisions'
+        - 'delete any file media revisions'
+        - 'revert any file media revisions'
+        - 'create ics_file media'
+        - 'delete any ics_file media'
+        - 'delete own ics_file media'
+        - 'edit any ics_file media'
+        - 'edit own ics_file media'
+        - 'view any ics_file media revisions'
+        - 'delete any ics_file media revisions'
+        - 'revert any ics_file media revisions'
+        - 'create image media'
+        - 'delete any image media'
+        - 'delete own image media'
+        - 'edit any image media'
+        - 'edit own image media'
+        - 'view any image media revisions'
+        - 'delete any image media revisions'
+        - 'revert any image media revisions'
+        - 'create private_file media'
+        - 'delete any private_file media'
+        - 'delete own private_file media'
+        - 'edit any private_file media'
+        - 'edit own private_file media'
+        - 'view any private_file media revisions'
+        - 'delete any private_file media revisions'
+        - 'revert any private_file media revisions'
+        - 'create remote_video media'
+        - 'delete any remote_video media'
+        - 'delete own remote_video media'
+        - 'edit any remote_video media'
+        - 'edit own remote_video media'
+        - 'view any remote_video media revisions'
+        - 'delete any remote_video media revisions'
+        - 'revert any remote_video media revisions'
+        - 'create svg_icon media'
+        - 'delete any svg_icon media'
+        - 'delete own svg_icon media'
+        - 'edit any svg_icon media'
+        - 'edit own svg_icon media'
+        - 'view any svg_icon media revisions'
+        - 'delete any svg_icon media revisions'
+        - 'revert any svg_icon media revisions'
+        - 'clone private_page content'
+        - 'create private_page content'
+        - 'delete any private_page content'
+        - 'delete own private_page content'
+        - 'delete private_page revisions'
+        - 'edit any private_page content'
+        - 'edit own private_page content'
+        - 'revert private_page revisions'
+        - 'view private_page revisions'

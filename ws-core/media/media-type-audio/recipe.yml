@@ -1,0 +1,35 @@
+name: "Audio media type"
+description: "Audio media type recipe for UBC Web Services websites"
+type: "Media"
+recipes:
+  - core/recipes/audio_media_type
+install:
+  # core
+  - file
+  - image
+  - media
+  - path
+  - user
+config:
+  actions:
+    # update the path where media is is stored
+    field.field.media.audio.field_media_audio_file:
+      simpleConfigUpdate:
+        settings.file_directory: media-uploads/audio
+    # assign audio media permissions
+    user.role.editor:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: editor
+        label: Editor
+        weight: 6
+        is_admin: false
+      grantPermissions:
+        - 'create audio media'
+        - 'delete any audio media'
+        - 'delete own audio media'
+        - 'edit any audio media'
+        - 'edit own audio media'
+        - 'view any audio media revisions'
+        - 'delete any audio media revisions'
+        - 'revert any audio media revisions'

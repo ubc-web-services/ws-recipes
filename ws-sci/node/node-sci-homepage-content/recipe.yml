@@ -1,0 +1,5 @@
+name: "Science Homepage default content configuration"
+description: "Science Homepage default content recipe for UBC Web Services websites"
+type: "Content"
+recipes:
+  - recipes/ws-recipes/ws-sci/node/node-sci-homepage

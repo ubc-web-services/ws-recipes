@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: hero
+label: Hero
+icon_uuid: null
+icon_default: null
+description: 'Add a media item, formatted as a hero image <em>(note: image dimensions are not enforced, so media should only be chosen if appropriately sized)</em>'
+behavior_plugins: {  }
