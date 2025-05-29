@@ -13,6 +13,9 @@ install:
 config:
   # assign audio media permissions
   actions:
+    field.field.media.audio.field_media_audio_file:
+      simple_config_update:
+        settings.file_directory: 'audio'
     user.role.editor:
       # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
       createIfNotExists:
