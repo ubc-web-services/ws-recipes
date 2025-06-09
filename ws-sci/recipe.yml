@@ -147,6 +147,7 @@ config:
         use_relative_width: 'true'
         search_contains: 'true'
         chosen_include: '0'
+        jquery_selector: ':not(.webform-ui-element-form) select:visible'
     # metatag settings
     metatag.metatag_defaults.global:
       simple_config_update:

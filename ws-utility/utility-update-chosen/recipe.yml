@@ -1,0 +1,10 @@
+
+name: "Chosen settings - update configuration"
+description: "Chosen settings - update configuration for UBC Web Services websites"
+type: 'Config'
+config:
+  actions:
+    # chosen settings
+    chosen.settings:
+      simple_config_update:
+        jquery_selector: ':not(.webform-ui-element-form) select:visible'
