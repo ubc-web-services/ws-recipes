@@ -9,42 +9,12 @@ install:
   - gin_login
   - rebuild_cache_access
 config:
+  import:
+    admin_toolbar: "*"
+    gin: "*"
+    gin_toolbar: "*"
+    gin_login: "*"
   actions:
     system.theme:
       simple_config_update:
         admin: gin
-    block.block.gin_help:
-      simple_config_update:
-        region: help
-    block.block.gin_primary_local_tasks:
-      simple_config_update:
-        region: header
-    block.block.gin_secondary_local_tasks:
-      simple_config_update:
-        region: pre_content
-    block.block.gin_primary_admin_actions:
-      simple_config_update:
-        region: content
-    # disable unneeded blocks
-    block.block.gin_search_form_wide:
-      simple_config_update:
-        status: false
-    block.block.gin_search_form_narrow:
-      simple_config_update:
-        status: false
-    block.block.gin_account_menu:
-      simple_config_update:
-        status: false
-    block.block.gin_main_menu:
-      simple_config_update:
-        status: false
-    block.block.gin_powered:
-      simple_config_update:
-        status: false
-    block.block.gin_syndicate:
-      simple_config_update:
-        status: false
-    block.block.gin_site_branding:
-      simple_config_update:
-        status: false
-
