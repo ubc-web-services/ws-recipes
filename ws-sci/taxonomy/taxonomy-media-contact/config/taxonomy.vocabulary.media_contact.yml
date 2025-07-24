@@ -3,5 +3,5 @@ status: true
 dependencies: {  }
 name: 'Media Contact'
 vid: media_contact
-description: ''
+description: 'Defines a media contact for the content'
 weight: 0
