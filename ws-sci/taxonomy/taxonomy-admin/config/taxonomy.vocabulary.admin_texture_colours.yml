@@ -3,5 +3,5 @@ status: true
 dependencies: {  }
 name: 'ADMIN - Texture Colours'
 vid: admin_texture_colours
-description: ''
+description: 'Defines colours for the various textures'
 weight: 0

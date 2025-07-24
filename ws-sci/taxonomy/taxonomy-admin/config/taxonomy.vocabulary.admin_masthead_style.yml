@@ -3,5 +3,5 @@ status: true
 dependencies: {  }
 name: 'ADMIN - Masthead Style'
 vid: admin_masthead_style
-description: ''
+description: 'Defines styles for the masthead'
 weight: 0
