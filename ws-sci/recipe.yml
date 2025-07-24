@@ -30,7 +30,7 @@ recipes:
   - recipes/ws-recipes/ws-sci/text-format
   - recipes/ws-recipes/ws-core/custom-entity/custom-entity-ubc-alert
   # image-styles and image-styles-responsive recipes needed for paragraph-config recipe
-  - recipes/ws-recipes/paragraphs/paragraph-config
+  - recipes/ws-recipes/ws-core/paragraphs/paragraph-config
   - recipes/ws-recipes/ws-sci/paragraphs
   # node-view-modes, image-styles and image-styles-responsive recipes needed for subsequent node recipes
   - recipes/ws-recipes/ws-core/node/node-view-modes
