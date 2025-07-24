@@ -3,5 +3,5 @@ status: true
 dependencies: {  }
 name: 'Resource Type'
 vid: resource_type
-description: ''
+description: 'Defines a resource type'
 weight: 0

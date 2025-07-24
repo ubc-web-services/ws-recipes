@@ -3,5 +3,5 @@ status: true
 dependencies: {  }
 name: 'Profile Type'
 vid: profile_type
-description: ''
+description: 'Defines a profile type'
 weight: 0

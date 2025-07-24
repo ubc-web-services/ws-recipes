@@ -3,5 +3,5 @@ status: true
 dependencies: {  }
 name: 'Documentation Type'
 vid: documentation_type
-description: ''
+description: 'Defines a guide documentation type'
 weight: 0

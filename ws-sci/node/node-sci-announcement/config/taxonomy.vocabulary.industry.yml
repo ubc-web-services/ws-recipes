@@ -3,5 +3,5 @@ status: true
 dependencies: {  }
 name: Industry
 vid: industry
-description: ''
+description: 'Defines a related industry'
 weight: 0

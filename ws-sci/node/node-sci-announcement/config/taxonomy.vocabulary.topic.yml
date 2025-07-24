@@ -3,5 +3,5 @@ status: true
 dependencies: {  }
 name: Topic
 vid: topic
-description: ''
+description: 'Defines a related topic'
 weight: 0

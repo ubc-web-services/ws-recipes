@@ -3,5 +3,5 @@ status: true
 dependencies: {  }
 name: Addresses
 vid: addresses
-description: ''
+description: 'Defines a profile address'
 weight: 0

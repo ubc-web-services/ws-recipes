@@ -3,5 +3,5 @@ status: true
 dependencies: {  }
 name: 'Profile Rank'
 vid: profile_rank
-description: ''
+description: 'Defines a profile rank'
 weight: 0
