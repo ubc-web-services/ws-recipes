@@ -192,6 +192,12 @@ config:
         smtp_autotls: 1
         smtp_username: 'ubcuit-a-UBCITWSNR'
         smtp_client_helo: 'mail.ubc.ca'
+    ubc_ckeditor_widgets.settings:
+      simple_config_update:
+        primary_color: '#0055B7'
+        secondary_color: '#6EC4E8'
+        tertiary_colour: '#BEE6F4'
+        accent_colour: '#00ACCE'
     # place blocks
     block.block.science_alert_banner:
       createIfNotExists:
