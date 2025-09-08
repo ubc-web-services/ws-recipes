@@ -3,56 +3,56 @@ description: "Orchestrate all VPR recipes for UBC Web Services websites"
 type: "Site"
 recipes:
   # install parent recipes first
-  - recipes/ws-recipes/ws-core/role/role-editor
-  - recipes/ws-recipes/ws-core/role/role-content-creator
-  - recipes/ws-recipes/ws-vpr/role/role-read-only
-  - recipes/ws-recipes/ws-vpr/role/role-super-user
-  - recipes/ws-recipes/ws-core/theme/theme-admin
-  - recipes/ws-recipes/ws-vpr/theme/theme-vpr
-  - recipes/ws-recipes/ws-core/block/block-code
-  - recipes/ws-recipes/ws-core/block/block-quicklinks
-  - recipes/ws-recipes/ws-core/date-formats
-  - recipes/ws-recipes/ws-core/taxonomy/taxonomy-admin
-  - recipes/ws-recipes/ws-core/taxonomy/taxonomy-admin-content
-  - recipes/ws-recipes/ws-core/image/image-styles
-  - recipes/ws-recipes/ws-vpr/image/image-styles
+  - ../recipes/ws-recipes/ws-core/role/role-editor
+  - ../recipes/ws-recipes/ws-core/role/role-content-creator
+  - ../recipes/ws-recipes/ws-vpr/role/role-read-only
+  - ../recipes/ws-recipes/ws-vpr/role/role-super-user
+  - ../recipes/ws-recipes/ws-core/theme/theme-admin
+  - ../recipes/ws-recipes/ws-vpr/theme/theme-vpr
+  - ../recipes/ws-recipes/ws-core/block/block-code
+  - ../recipes/ws-recipes/ws-core/block/block-quicklinks
+  - ../recipes/ws-recipes/ws-core/date-formats
+  - ../recipes/ws-recipes/ws-core/taxonomy/taxonomy-admin
+  - ../recipes/ws-recipes/ws-core/taxonomy/taxonomy-admin-content
+  - ../recipes/ws-recipes/ws-core/image/image-styles
+  - ../recipes/ws-recipes/ws-vpr/image/image-styles
   # # install recipes that rely on other recipes next
-  - recipes/ws-recipes/ws-core/image/image-styles-responsive
+  - ../recipes/ws-recipes/ws-core/image/image-styles-responsive
   # image-styles and image-styles-responsive recipes needed for media recipe
-  - recipes/ws-recipes/ws-core/media/media-config
-  - recipes/ws-recipes/ws-core/text-format/text-format-filtered
-  - recipes/ws-recipes/ws-core/text-format/text-format-simple
-  - recipes/ws-recipes/ws-core/custom-entity/custom-entity-ubc-alert
+  - ../recipes/ws-recipes/ws-core/media/media-config
+  - ../recipes/ws-recipes/ws-core/text-format/text-format-filtered
+  - ../recipes/ws-recipes/ws-core/text-format/text-format-simple
+  - ../recipes/ws-recipes/ws-core/custom-entity/custom-entity-ubc-alert
   # image-styles and image-styles-responsive recipes needed for paragraph-config recipe
-  - recipes/ws-recipes/ws-core/paragraphs/paragraph-config
-  - recipes/ws-recipes/ws-vpr/paragraphs/paragraph-card-rollover
-  - recipes/ws-recipes/ws-vpr/paragraphs/paragraph-card-text
+  - ../recipes/ws-recipes/ws-core/paragraphs/paragraph-config
+  - ../recipes/ws-recipes/ws-vpr/paragraphs/paragraph-card-rollover
+  - ../recipes/ws-recipes/ws-vpr/paragraphs/paragraph-card-text
   # node-view-modes, image-styles and image-styles-responsive recipes needed for subsequent node recipes
-  - recipes/ws-recipes/ws-core/node/node-view-modes
-  - recipes/ws-recipes/ws-vpr/node/node-vpr-shared
-  - recipes/ws-recipes/ws-core/node/node-ubc-announcement
-  - recipes/ws-recipes/ws-vpr/node/node-vpr-announcement
-  - recipes/ws-recipes/ws-core/node/node-ubc-event
-  - recipes/ws-recipes/ws-core/node/node-ubc-event-fullcalendar
-  - recipes/ws-recipes/ws-vpr/node/node-vpr-event
-  - recipes/ws-recipes/ws-core/node/node-ubc-event-virtual
-  - recipes/ws-recipes/ws-core/node/node-ubc-homepage
-  - recipes/ws-recipes/ws-vpr/node/node-vpr-homepage-content
-  - recipes/ws-recipes/ws-core/node/node-ubc-landing-page
-  - recipes/ws-recipes/ws-vpr/node/node-vpr-landing-page
-  - recipes/ws-recipes/ws-core/node/node-ubc-page
-  - recipes/ws-recipes/ws-vpr/node/node-vpr-page
-  - recipes/ws-recipes/ws-core/node/node-ubc-profile
-  - recipes/ws-recipes/ws-vpr/node/node-vpr-profile
-  - recipes/ws-recipes/ws-core/node/node-ubc-private-page
-  # - recipes/ws-recipes/ws-vpr/node/node-ubc-awards
-  # - recipes/ws-recipes/ws-vpr/node/node-ubc-project
-  # - recipes/ws-recipes/ws-vpr/node/node-ubc-publication
-  # - recipes/ws-recipes/ws-vpr/node/node-ubc-research-project
-  - recipes/ws-recipes/ws-vpr/node/node-vpr-webform
-  - recipes/ws-recipes/ws-core/views
-  - recipes/ws-recipes/ws-utility/utility-add-fontawesome
-  - recipes/ws-recipes/ws-vpr/utility/utility-media-update-vpr-display
+  - ../recipes/ws-recipes/ws-core/node/node-view-modes
+  - ../recipes/ws-recipes/ws-vpr/node/node-vpr-shared
+  - ../recipes/ws-recipes/ws-core/node/node-ubc-announcement
+  - ../recipes/ws-recipes/ws-vpr/node/node-vpr-announcement
+  - ../recipes/ws-recipes/ws-core/node/node-ubc-event
+  - ../recipes/ws-recipes/ws-core/node/node-ubc-event-fullcalendar
+  - ../recipes/ws-recipes/ws-vpr/node/node-vpr-event
+  - ../recipes/ws-recipes/ws-core/node/node-ubc-event-virtual
+  - ../recipes/ws-recipes/ws-core/node/node-ubc-homepage
+  - ../recipes/ws-recipes/ws-vpr/node/node-vpr-homepage-content
+  - ../recipes/ws-recipes/ws-core/node/node-ubc-landing-page
+  - ../recipes/ws-recipes/ws-vpr/node/node-vpr-landing-page
+  - ../recipes/ws-recipes/ws-core/node/node-ubc-page
+  - ../recipes/ws-recipes/ws-vpr/node/node-vpr-page
+  - ../recipes/ws-recipes/ws-core/node/node-ubc-profile
+  - ../recipes/ws-recipes/ws-vpr/node/node-vpr-profile
+  - ../recipes/ws-recipes/ws-core/node/node-ubc-private-page
+  # - ../recipes/ws-recipes/ws-vpr/node/node-ubc-awards
+  # - ../recipes/ws-recipes/ws-vpr/node/node-ubc-project
+  # - ../recipes/ws-recipes/ws-vpr/node/node-ubc-publication
+  # - ../recipes/ws-recipes/ws-vpr/node/node-ubc-research-project
+  - ../recipes/ws-recipes/ws-vpr/node/node-vpr-webform
+  - ../recipes/ws-recipes/ws-core/views
+  - ../recipes/ws-recipes/ws-utility/utility-add-fontawesome
+  - ../recipes/ws-recipes/ws-vpr/utility/utility-media-update-vpr-display
 install:
   # core
   - ckeditor5

@@ -2,7 +2,7 @@ name: "Add ICS File configuration"
 description: "Add ICS File configuration recipe for UBC Web Services websites"
 type: "Media configuration"
 recipes:
-  - recipes/ws-recipes/ws-core/media/media-type-ics
+  - ../recipes/ws-recipes/ws-core/media/media-type-ics
 install:
   # core
   - file

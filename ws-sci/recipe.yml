@@ -3,56 +3,56 @@ description: "Orchestrate all Science recipes for UBC Web Services websites"
 type: "Site"
 recipes:
   # install parent recipes first
-  - recipes/ws-recipes/ws-core/role/role-editor
-  - recipes/ws-recipes/ws-core/role/role-content-creator
-  - recipes/ws-recipes/ws-sci/role/role-manager
-  - recipes/ws-recipes/ws-core/theme/theme-admin
-  - recipes/ws-recipes/ws-sci/theme/theme-sci
-  - recipes/ws-recipes/ws-core/block/block-code
-  - recipes/ws-recipes/ws-core/block/block-quicklinks
-  - recipes/ws-recipes/ws-sci/block/block-share-block
-  - recipes/ws-recipes/ws-core/date-formats
-  - recipes/ws-recipes/ws-core/taxonomy/taxonomy-admin
-  - recipes/ws-recipes/ws-core/taxonomy/taxonomy-admin-content
-  - recipes/ws-recipes/ws-sci/taxonomy/taxonomy-admin
-  - recipes/ws-recipes/ws-sci/taxonomy/taxonomy-media-contact
-  - recipes/ws-recipes/ws-sci/menu
-  - recipes/ws-recipes/ws-core/image/image-styles
-  - recipes/ws-recipes/ws-sci/image/image-styles
+  - ../recipes/ws-recipes/ws-core/role/role-editor
+  - ../recipes/ws-recipes/ws-core/role/role-content-creator
+  - ../recipes/ws-recipes/ws-sci/role/role-manager
+  - ../recipes/ws-recipes/ws-core/theme/theme-admin
+  - ../recipes/ws-recipes/ws-sci/theme/theme-sci
+  - ../recipes/ws-recipes/ws-core/block/block-code
+  - ../recipes/ws-recipes/ws-core/block/block-quicklinks
+  - ../recipes/ws-recipes/ws-sci/block/block-share-block
+  - ../recipes/ws-recipes/ws-core/date-formats
+  - ../recipes/ws-recipes/ws-core/taxonomy/taxonomy-admin
+  - ../recipes/ws-recipes/ws-core/taxonomy/taxonomy-admin-content
+  - ../recipes/ws-recipes/ws-sci/taxonomy/taxonomy-admin
+  - ../recipes/ws-recipes/ws-sci/taxonomy/taxonomy-media-contact
+  - ../recipes/ws-recipes/ws-sci/menu
+  - ../recipes/ws-recipes/ws-core/image/image-styles
+  - ../recipes/ws-recipes/ws-sci/image/image-styles
   # # install recipes that rely on other recipes next
-  - recipes/ws-recipes/ws-core/image/image-styles-responsive
-  - recipes/ws-recipes/ws-sci/image/image-styles-responsive
+  - ../recipes/ws-recipes/ws-core/image/image-styles-responsive
+  - ../recipes/ws-recipes/ws-sci/image/image-styles-responsive
   # image-styles and image-styles-responsive recipes needed for media recipe
-  - recipes/ws-recipes/ws-core/media/media-config
-  - recipes/ws-recipes/ws-sci/media/media-config
-  - recipes/ws-recipes/ws-core/text-format/text-format-filtered
-  - recipes/ws-recipes/ws-core/text-format/text-format-simple
-  - recipes/ws-recipes/ws-sci/text-format
-  - recipes/ws-recipes/ws-core/custom-entity/custom-entity-ubc-alert
+  - ../recipes/ws-recipes/ws-core/media/media-config
+  - ../recipes/ws-recipes/ws-sci/media/media-config
+  - ../recipes/ws-recipes/ws-core/text-format/text-format-filtered
+  - ../recipes/ws-recipes/ws-core/text-format/text-format-simple
+  - ../recipes/ws-recipes/ws-sci/text-format
+  - ../recipes/ws-recipes/ws-core/custom-entity/custom-entity-ubc-alert
   # image-styles and image-styles-responsive recipes needed for paragraph-config recipe
-  - recipes/ws-recipes/ws-core/paragraphs/paragraph-config
-  - recipes/ws-recipes/ws-sci/paragraphs
+  - ../recipes/ws-recipes/ws-core/paragraphs/paragraph-config
+  - ../recipes/ws-recipes/ws-sci/paragraphs
   # node-view-modes, image-styles and image-styles-responsive recipes needed for subsequent node recipes
-  - recipes/ws-recipes/ws-core/node/node-view-modes
-  - recipes/ws-recipes/ws-sci/node/node-view-modes
-  - recipes/ws-recipes/ws-core/node/node-ubc-announcement
-  - recipes/ws-recipes/ws-sci/node/node-sci-announcement
-  - recipes/ws-recipes/ws-core/node/node-ubc-event
-  - recipes/ws-recipes/ws-sci/node/node-sci-event
-  - recipes/ws-recipes/ws-core/node/node-ubc-homepage
-  - recipes/ws-recipes/ws-sci/node/node-sci-homepage
-  - recipes/ws-recipes/ws-core/node/node-ubc-landing-page
-  - recipes/ws-recipes/ws-sci/node/node-sci-landing-page
-  - recipes/ws-recipes/ws-core/node/node-ubc-page
-  - recipes/ws-recipes/ws-core/node/node-ubc-profile
-  - recipes/ws-recipes/ws-sci/node/node-sci-profile
-  # - recipes/ws-recipes/ws-core/node/node-ubc-private-page
-  # - recipes/ws-recipes/ws-sci/node/node-ubc-blog
-  # - recipes/ws-recipes/ws-sci/node/node-ubc-guide
-  # - recipes/ws-recipes/ws-sci/node/node-ubc-resource
-  - recipes/ws-recipes/ws-sci/node/node-sci-webform
-  - recipes/ws-recipes/ws-sci/views
-  - recipes/ws-recipes/ws-sci/utility/link-targets
+  - ../recipes/ws-recipes/ws-core/node/node-view-modes
+  - ../recipes/ws-recipes/ws-sci/node/node-view-modes
+  - ../recipes/ws-recipes/ws-core/node/node-ubc-announcement
+  - ../recipes/ws-recipes/ws-sci/node/node-sci-announcement
+  - ../recipes/ws-recipes/ws-core/node/node-ubc-event
+  - ../recipes/ws-recipes/ws-sci/node/node-sci-event
+  - ../recipes/ws-recipes/ws-core/node/node-ubc-homepage
+  - ../recipes/ws-recipes/ws-sci/node/node-sci-homepage
+  - ../recipes/ws-recipes/ws-core/node/node-ubc-landing-page
+  - ../recipes/ws-recipes/ws-sci/node/node-sci-landing-page
+  - ../recipes/ws-recipes/ws-core/node/node-ubc-page
+  - ../recipes/ws-recipes/ws-core/node/node-ubc-profile
+  - ../recipes/ws-recipes/ws-sci/node/node-sci-profile
+  # - ../recipes/ws-recipes/ws-core/node/node-ubc-private-page
+  # - ../recipes/ws-recipes/ws-sci/node/node-ubc-blog
+  # - ../recipes/ws-recipes/ws-sci/node/node-ubc-guide
+  # - ../recipes/ws-recipes/ws-sci/node/node-ubc-resource
+  - ../recipes/ws-recipes/ws-sci/node/node-sci-webform
+  - ../recipes/ws-recipes/ws-sci/views
+  - ../recipes/ws-recipes/ws-sci/utility/link-targets
 install:
   # core
   # services

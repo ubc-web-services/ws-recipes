@@ -3,36 +3,36 @@ description: "Orchestrate all recipes for UBC Web Services websites"
 type: "Site"
 recipes:
   # install parent recipes first
-  - recipes/ws-recipes/ws-core/role/role-editor
-  - recipes/ws-recipes/ws-core/role/role-content-creator
-  - recipes/ws-recipes/ws-core/theme/theme-admin
-  - recipes/ws-recipes/ws-core/theme/theme-ws
-  - recipes/ws-recipes/ws-core/block/block-code
-  - recipes/ws-recipes/ws-core/block/block-quicklinks
-  - recipes/ws-recipes/ws-core/date-formats
-  - recipes/ws-recipes/ws-core/taxonomy/taxonomy-admin
-  - recipes/ws-recipes/ws-core/taxonomy/taxonomy-admin-content
-  - recipes/ws-recipes/ws-core/image/image-styles
+  - ../recipes/ws-recipes/ws-core/role/role-editor
+  - ../recipes/ws-recipes/ws-core/role/role-content-creator
+  - ../recipes/ws-recipes/ws-core/theme/theme-admin
+  - ../recipes/ws-recipes/ws-core/theme/theme-ws
+  - ../recipes/ws-recipes/ws-core/block/block-code
+  - ../recipes/ws-recipes/ws-core/block/block-quicklinks
+  - ../recipes/ws-recipes/ws-core/date-formats
+  - ../recipes/ws-recipes/ws-core/taxonomy/taxonomy-admin
+  - ../recipes/ws-recipes/ws-core/taxonomy/taxonomy-admin-content
+  - ../recipes/ws-recipes/ws-core/image/image-styles
   # install recipes that rely on other recipes next
-  - recipes/ws-recipes/ws-core/image/image-styles-responsive
-  - recipes/ws-recipes/ws-core/media/media-config
-  - recipes/ws-recipes/ws-core/text-format/text-format-filtered
-  - recipes/ws-recipes/ws-core/text-format/text-format-simple
-  - recipes/ws-recipes/ws-core/custom-entity/custom-entity-ubc-alert
-  - recipes/ws-recipes/ws-core/paragraphs/paragraph-config
-  - recipes/ws-recipes/ws-core/node/node-view-modes
-  - recipes/ws-recipes/ws-core/node/node-ubc-announcement
-  - recipes/ws-recipes/ws-core/node/node-ubc-event
-  - recipes/ws-recipes/ws-core/node/node-ubc-event-fullcalendar
-  - recipes/ws-recipes/ws-core/node/node-ubc-event-virtual
-  - recipes/ws-recipes/ws-core/node/node-ubc-homepage-content
-  - recipes/ws-recipes/ws-core/node/node-ubc-landing-page
-  - recipes/ws-recipes/ws-core/node/node-ubc-page
-  # - recipes/ws-recipes/ws-core/node/node-ubc-private-page
-  - recipes/ws-recipes/ws-core/node/node-ubc-profile
-  - recipes/ws-recipes/ws-core/node/node-ubc-webform
-  - recipes/ws-recipes/ws-core/views
-  - recipes/ws-recipes/ws-utility/utility-media-display
+  - ../recipes/ws-recipes/ws-core/image/image-styles-responsive
+  - ../recipes/ws-recipes/ws-core/media/media-config
+  - ../recipes/ws-recipes/ws-core/text-format/text-format-filtered
+  - ../recipes/ws-recipes/ws-core/text-format/text-format-simple
+  - ../recipes/ws-recipes/ws-core/custom-entity/custom-entity-ubc-alert
+  - ../recipes/ws-recipes/ws-core/paragraphs/paragraph-config
+  - ../recipes/ws-recipes/ws-core/node/node-view-modes
+  - ../recipes/ws-recipes/ws-core/node/node-ubc-announcement
+  - ../recipes/ws-recipes/ws-core/node/node-ubc-event
+  - ../recipes/ws-recipes/ws-core/node/node-ubc-event-fullcalendar
+  - ../recipes/ws-recipes/ws-core/node/node-ubc-event-virtual
+  - ../recipes/ws-recipes/ws-core/node/node-ubc-homepage-content
+  - ../recipes/ws-recipes/ws-core/node/node-ubc-landing-page
+  - ../recipes/ws-recipes/ws-core/node/node-ubc-page
+  - ../recipes/ws-recipes/ws-core/node/node-ubc-private-page
+  - ../recipes/ws-recipes/ws-core/node/node-ubc-profile
+  - ../recipes/ws-recipes/ws-core/node/node-ubc-webform
+  - ../recipes/ws-recipes/ws-core/views
+  - ../recipes/ws-recipes/ws-utility/utility-media-display
 install:
   # core
   # services

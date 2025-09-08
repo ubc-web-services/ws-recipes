@@ -2,14 +2,14 @@ name: "General media configuration"
 description: "General media configuration recipe for UBC Web Services websites"
 type: "Media configuration"
 recipes:
-  - recipes/ws-recipes/ws-core/media/media-view-modes
-  - recipes/ws-recipes/ws-core/media/media-type-audio
-  - recipes/ws-recipes/ws-core/media/media-type-file
-  - recipes/ws-recipes/ws-core/media/media-type-ics
-  - recipes/ws-recipes/ws-core/media/media-type-image
-  - recipes/ws-recipes/ws-core/media/media-type-private-file
-  - recipes/ws-recipes/ws-core/media/media-type-remote-video
-  - recipes/ws-recipes/ws-core/media/media-type-svg-icon
+  - ../recipes/ws-recipes/ws-core/media/media-view-modes
+  - ../recipes/ws-recipes/ws-core/media/media-type-audio
+  - ../recipes/ws-recipes/ws-core/media/media-type-file
+  - ../recipes/ws-recipes/ws-core/media/media-type-ics
+  - ../recipes/ws-recipes/ws-core/media/media-type-image
+  - ../recipes/ws-recipes/ws-core/media/media-type-private-file
+  - ../recipes/ws-recipes/ws-core/media/media-type-remote-video
+  - ../recipes/ws-recipes/ws-core/media/media-type-svg-icon
 install:
   # core
   - media

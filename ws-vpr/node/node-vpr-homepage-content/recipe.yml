@@ -2,4 +2,4 @@ name: "VPR Homepage default content configuration"
 description: "VPR Homepage default content recipe for UBC Web Services websites"
 type: "Content"
 recipes:
-  - recipes/ws-recipes/ws-vpr/node/node-vpr-homepage
+  - ../recipes/ws-recipes/ws-vpr/node/node-vpr-homepage

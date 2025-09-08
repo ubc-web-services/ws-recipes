@@ -2,7 +2,7 @@ name: "General media configuration"
 description: "General media configuration recipe for UBC Web Services websites"
 type: "Media configuration"
 recipes:
-  - recipes/ws-recipes/ws-sci/media/media-line-art
+  - ../recipes/ws-recipes/ws-sci/media/media-line-art
 install:
   # core
   - media

@@ -2,10 +2,10 @@ name: "Card group paragraph"
 description: "Card group paragraph recipe for UBC Web Services websites"
 type: "Paragraph type"
 recipes:
-  - recipes/ws-recipes/ws-core/paragraphs/paragraph-card-horizontal
-  - recipes/ws-recipes/ws-core/paragraphs/paragraph-card-vertical
-  - recipes/ws-recipes/ws-core/paragraphs/paragraph-icon-card
-  - recipes/ws-recipes/ws-core/paragraphs/paragraph-image-card
+  - ../recipes/ws-recipes/ws-core/paragraphs/paragraph-card-horizontal
+  - ../recipes/ws-recipes/ws-core/paragraphs/paragraph-card-vertical
+  - ../recipes/ws-recipes/ws-core/paragraphs/paragraph-icon-card
+  - ../recipes/ws-recipes/ws-core/paragraphs/paragraph-image-card
 install:
   # core
   - taxonomy

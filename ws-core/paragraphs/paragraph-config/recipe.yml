@@ -2,13 +2,13 @@ name: "Paragraph configuration"
 description: "Paragraph configuration recipe for UBC Web Services websites"
 type: "Paragraph configuration"
 recipes:
-  - recipes/ws-recipes/ws-core/paragraphs/paragraph-shared-fields
-  - recipes/ws-recipes/ws-core/paragraphs/paragraph-card-group
-  - recipes/ws-recipes/ws-core/paragraphs/paragraph-feature-image
-  - recipes/ws-recipes/ws-core/paragraphs/paragraph-hero
-  - recipes/ws-recipes/ws-core/paragraphs/paragraph-slideshow
-  - recipes/ws-recipes/ws-core/paragraphs/paragraph-tabcordion
-  - recipes/ws-recipes/ws-core/paragraphs/paragraph-text
+  - ../recipes/ws-recipes/ws-core/paragraphs/paragraph-shared-fields
+  - ../recipes/ws-recipes/ws-core/paragraphs/paragraph-card-group
+  - ../recipes/ws-recipes/ws-core/paragraphs/paragraph-feature-image
+  - ../recipes/ws-recipes/ws-core/paragraphs/paragraph-hero
+  - ../recipes/ws-recipes/ws-core/paragraphs/paragraph-slideshow
+  - ../recipes/ws-recipes/ws-core/paragraphs/paragraph-tabcordion
+  - ../recipes/ws-recipes/ws-core/paragraphs/paragraph-text
 config:
   # assign general paragraphs permissions
   actions:

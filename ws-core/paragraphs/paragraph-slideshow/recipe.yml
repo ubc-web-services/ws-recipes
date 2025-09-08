@@ -2,7 +2,7 @@ name: "Slideshow paragraph"
 description: "Slideshow paragraph recipe for UBC Web Services websites"
 type: "Paragraph type"
 recipes:
-  - recipes/ws-recipes/ws-core/paragraphs/paragraph-slide
+  - ../recipes/ws-recipes/ws-core/paragraphs/paragraph-slide
 install:
     # core
   - file
