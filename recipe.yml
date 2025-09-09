@@ -132,7 +132,7 @@ config:
     # easy breadcrumb settings
     easy_breadcrumb.settings:
       simple_config_update:
-        include_title_segment: 1
+        include_title_segment: '0'
     # metatag settings
     metatag.metatag_defaults.global:
       simple_config_update:
