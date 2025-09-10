@@ -199,32 +199,6 @@ config:
     block.block.science_help:
       simple_config_update:
         region: help
-    block.block.science_account_menu:
-      disable: []
-    block.block.science_powered:
-      disable: []
-    block.block.science_search_form_narrow:
-      disable: []
-    block.block.science_search_form_wide:
-      disable: []
-    block.block.science_site_branding:
-      disable: []
-    block.block.science_syndicate:
-      disable: []
-    block.block.gin_account_menu:
-      disable: []
-    block.block.gin_main_menu:
-      disable: []
-    block.block.gin_powered:
-      disable: []
-    block.block.gin_search_form_narrow:
-      disable: []
-    block.block.gin_search_form_wide:
-      disable: []
-    block.block.gin_site_branding:
-      disable: []
-    block.block.gin_syndicate:
-      disable: []
     # content creator role
     user.role.content_creator:
       # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
