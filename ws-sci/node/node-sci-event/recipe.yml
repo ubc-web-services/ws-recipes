@@ -121,11 +121,6 @@ config:
             third_party_settings: {  }
     # update the default display
     core.entity_view_display.node.ubc_event.default:
-      simple_config_update:
-        third_party_settings.field_group.group_metadata.children:
-          - field_event_category
-          - field_event_media_contact
-          - field_event_tags
       setComponents:
         -
           name: field_event_media_contact
