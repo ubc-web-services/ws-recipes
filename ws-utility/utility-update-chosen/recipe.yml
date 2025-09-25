@@ -7,4 +7,4 @@ config:
     # chosen settings
     chosen.settings:
       simple_config_update:
-        jquery_selector: ':not(.webform-ui-element-form) select:visible'
+        jquery_selector: 'select:not(:where(.webform-ui-element-form *))'
