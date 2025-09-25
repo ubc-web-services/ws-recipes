@@ -154,7 +154,7 @@ config:
         use_relative_width: 'true'
         search_contains: 'true'
         chosen_include: '0'
-        jquery_selector: ':not(.webform-ui-element-form) select:visible'
+        jquery_selector: 'select:not(:where(.webform-ui-element-form *))'
     # easy breadcrumb settings
     easy_breadcrumb.settings:
       simple_config_update:
