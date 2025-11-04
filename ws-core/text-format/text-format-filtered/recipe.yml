@@ -10,6 +10,12 @@ install:
   - user
   # contrib
   - ckeditor5_fullscreen
+  - ckeditor5_plugin_pack
+  - ckeditor5_plugin_pack_bookmark
+  - ckeditor5_plugin_pack_find_and_replace
+  - ckeditor5_plugin_pack_indent_block
+  - ckeditor5_plugin_pack_select_all
+  - ckeditor5_plugin_pack_word_count
   - editor_advanced_link
   - linkit
   - responsive_table_filter

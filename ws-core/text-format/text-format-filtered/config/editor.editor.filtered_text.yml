@@ -14,6 +14,7 @@ settings:
       - italic
       - '|'
       - link
+      - bookmark
       - '|'
       - bulletedList
       - numberedList
@@ -24,6 +25,8 @@ settings:
       - subscript
       - strikethrough
       - alignment
+      - code
+      - codeBlock
       - '|'
       - blockQuote
       - drupalInsertImage
@@ -51,6 +54,8 @@ settings:
       - removeFormat
       - showBlocks
       - Fullscreen
+      - findAndReplace
+      - selectAll
       - sourceEditing
   plugins:
     ckeditor5_alignment:
@@ -59,6 +64,50 @@ settings:
         - justify
         - left
         - right
+    ckeditor5_codeBlock:
+      languages:
+        -
+          label: 'Plain text'
+          language: plaintext
+        -
+          label: C
+          language: c
+        -
+          label: 'C#'
+          language: cs
+        -
+          label: C++
+          language: cpp
+        -
+          label: CSS
+          language: css
+        -
+          label: Diff
+          language: diff
+        -
+          label: HTML
+          language: html
+        -
+          label: Java
+          language: java
+        -
+          label: JavaScript
+          language: javascript
+        -
+          label: PHP
+          language: php
+        -
+          label: Python
+          language: python
+        -
+          label: Ruby
+          language: ruby
+        -
+          label: TypeScript
+          language: typescript
+        -
+          label: XML
+          language: xml
     ckeditor5_heading:
       enabled_headings:
         - heading2
@@ -73,6 +122,13 @@ settings:
         reversed: true
         startIndex: true
       multiBlock: true
+    ckeditor5_plugin_pack_find_and_replace__find_and_replace:
+      ui_type: dialog
+    ckeditor5_plugin_pack_indent_block__indent_block:
+      enabled: true
+    ckeditor5_plugin_pack_word_count__word_count:
+      word_count_enabled: true
+      word_count_mode: words_chars
     ckeditor5_sourceEditing:
       allowed_tags:
         - '<cite>'
@@ -121,6 +177,15 @@ settings:
         -
           label: 'White Text'
           element: '<span class="text-white">'
+        -
+          label: 'Text Measure (approx 60 char)'
+          element: '<span class="text-measure">'
+        -
+          label: 'Text Measure Sm (approx 50 char)'
+          element: '<span class="text-measure-sm">'
+        -
+          label: 'Text Measure Lg (approx 70 char)'
+          element: '<span class="text-measure-lg">'
         -
           label: 'Attribution, Footnote Text'
           element: '<p class="text-grey-700 text-uppercase text-sm">'
