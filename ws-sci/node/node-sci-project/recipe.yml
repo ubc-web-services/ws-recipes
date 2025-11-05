@@ -1,0 +1,76 @@
+name: "Project type configuration"
+description: "Project type configuration recipe for UBC Web Services websites"
+type: 'Content type'
+install:
+  #core
+  - datetime
+  - image
+  - link
+  - menu_ui
+  - node
+  - options
+  - path
+  - taxonomy
+  - text
+  - user
+  - views
+  # contrib
+  - allowed_formats
+  - better_exposed_filters
+  - field_group
+  - maxlength
+  - metatag
+  - node_revision_delete
+  - pathauto
+  - scheduler
+  - simple_sitemap
+  - text_summary_options
+config:
+  actions:
+    # assign awards permissions
+    user.role.content_creator:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: content_creator
+        label: Content Creator
+        weight: 5
+        is_admin: false
+      grantPermissions:
+        - 'create projects_type content'
+        - 'delete own projects_type content'
+        - 'delete projects_type revisions'
+        - 'edit own projects_type content'
+        - 'revert projects_type revisions'
+        - 'view projects_type revisions'
+    user.role.editor:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: editor
+        label: Editor
+        weight: 6
+        is_admin: false
+      grantPermissions:
+        - 'create projects_type content'
+        - 'delete any projects_type content'
+        - 'delete own projects_type content'
+        - 'delete projects_type revisions'
+        - 'edit any projects_type content'
+        - 'edit own projects_type content'
+        - 'revert projects_type revisions'
+        - 'view projects_type revisions'
+    user.role.manager:
+      # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
+      createIfNotExists:
+        id: manager
+        label: 'Manager'
+        weight: 7
+        is_admin: false
+      grantPermissions:
+        - 'create projects_type content'
+        - 'delete any projects_type content'
+        - 'delete own projects_type content'
+        - 'delete projects_type revisions'
+        - 'edit any projects_type content'
+        - 'edit own projects_type content'
+        - 'revert projects_type revisions'
+        - 'view projects_type revisions'

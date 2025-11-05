@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_projects_awarded_to_list
+    - filter.format.simple
+    - node.type.projects_type
+  module:
+    - text
+id: node.projects_type.field_projects_awarded_to_list
+field_name: field_projects_awarded_to_list
+entity_type: node
+bundle: projects_type
+label: 'Awarded To'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - simple
+field_type: text_long

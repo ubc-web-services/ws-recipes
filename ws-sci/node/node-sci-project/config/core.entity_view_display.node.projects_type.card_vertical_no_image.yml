@@ -1,0 +1,87 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card_vertical_no_image
+    - field.field.node.projects_type.body
+    - field.field.node.projects_type.field_project_category_tags
+    - field.field.node.projects_type.field_project_image_file
+    - field.field.node.projects_type.field_project_post_doc_fellows
+    - field.field.node.projects_type.field_project_year
+    - field.field.node.projects_type.field_projects_awarded_to_list
+    - node.type.projects_type
+  module:
+    - link
+    - svg_image
+    - text
+    - user
+id: node.projects_type.card_vertical_no_image
+targetEntityType: node
+bundle: projects_type
+mode: card_vertical_no_image
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_project_category_tags:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_project_image_file:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_project_post_doc_fellows:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_project_year:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_projects_awarded_to_list:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
