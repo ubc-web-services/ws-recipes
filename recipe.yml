@@ -439,7 +439,7 @@ config:
         - 'access webform help'
         - 'access webform overview'
         - 'access webform submission user'
-        - 'administer google analytics'
+        - 'administer google_tag_container'
         - 'administer meta tags'
         - 'administer redirects'
         - 'administer webform'
