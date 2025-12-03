@@ -95,7 +95,7 @@ install:
   # spam
   - antibot
   # search
-  - google_analytics
+  - google_tag
   - metatag
   # node / permissions
   - node_revision_delete
@@ -109,7 +109,7 @@ config:
     dropzonejs: "*"
     focal_point: "*"
     fullcalendar_view: "*"
-    google_analytics: "*"
+    google_tag: "*"
     image_widget_crop: "*"
     metatag: "*"
     redirect: "*"
