@@ -1,0 +1,24 @@
+name: 'Add LLM support tools'
+description: 'Provides instructions to AI agents when processing site content.'
+type: 'AI'
+
+install:
+  - llms_txt
+  - user
+  - token
+
+recipes:
+  - core/recipes/administrator_role
+  - ../recipes/ws-recipes/ws-core/role/role-editor
+
+config:
+  strict: false
+  import:
+    llms_txt: '*'
+  actions:
+    user.role.administrator:
+      grantPermissions:
+        - 'administer llms.txt configuration'
+    user.role.editor:
+      grantPermissions:
+        - 'administer llms.txt configuration'
