@@ -8,6 +8,7 @@ install:
   - media_library
   - path
   - user
+  - media_entity_file_replace
 config:
   # assign file media permissions
   actions:

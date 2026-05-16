@@ -16,6 +16,25 @@ config:
     field.field.media.video.field_media_video_file:
       simpleConfigUpdate:
         settings.file_directory: media-uploads/video
+    core.entity_form_display.media.video.default:
+      setComponents:
+        -
+          name: name
+          options:
+            type: string_textfield
+            settings:
+              size: 60
+              placeholder: ''
+            third_party_settings: {  }
+            weight: 0
+            region: content
+        -
+          name: replace_file
+          options:
+            settings: {  }
+            third_party_settings: {  }
+            weight: 6
+            region: content
     # assign video media permissions
     user.role.editor:
       # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.
