@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: card_focal_point_lg_scaled
+label: 'Card, focal point, lg, scaled'
+effects:
+  d5410efb-ffa3-49a6-95a5-1d8c794f33d8:
+    uuid: d5410efb-ffa3-49a6-95a5-1d8c794f33d8
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 640
+      height: 360
+      crop_type: focal_point
+  999de266-801b-464d-b639-cf6b0e75064b:
+    uuid: 999de266-801b-464d-b639-cf6b0e75064b
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp
