@@ -9,6 +9,7 @@ install:
   - path
   - user
   - ubc_media_entities
+  - media_entity_file_replace
 config:
   # assign private_file media permissions
   actions:

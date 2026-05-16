@@ -10,12 +10,32 @@ install:
   - media
   - path
   - user
+  - media_entity_file_replace
 config:
   actions:
     # update the path where media is is stored
     field.field.media.audio.field_media_audio_file:
       simpleConfigUpdate:
         settings.file_directory: media-uploads/audio
+    core.entity_form_display.media.audio.default:
+      setComponents:
+        -
+          name: name
+          options:
+            type: string_textfield
+            settings:
+              size: 60
+              placeholder: ''
+            third_party_settings: {  }
+            weight: 0
+            region: content
+        -
+          name: replace_file
+          options:
+            settings: {  }
+            third_party_settings: {  }
+            weight: 6
+            region: content
     # assign audio media permissions
     user.role.editor:
       # If this role already exists, then this action has no effect. If it doesn't exist, we'll create it with the following values.

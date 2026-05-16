@@ -12,6 +12,7 @@ install:
   - media_library
   - path
   - user
+  - media_entity_file_replace
 config:
   actions:
     # alter default view mode for remote video media
@@ -42,6 +43,25 @@ config:
                 attribute: lazy
             third_party_settings: {  }
             weight: 0
+            region: content
+    core.entity_form_display.media.remote_video.default:
+      setComponents:
+        -
+          name: name
+          options:
+            type: string_textfield
+            settings:
+              size: 60
+              placeholder: ''
+            third_party_settings: {  }
+            weight: 0
+            region: content
+        -
+          name: replace_file
+          options:
+            settings: {  }
+            third_party_settings: {  }
+            weight: 6
             region: content
     # assign remote_video media permissions
     user.role.content_creator:
