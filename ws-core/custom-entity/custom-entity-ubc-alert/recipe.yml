@@ -10,6 +10,7 @@ install:
   - views
   - user
   # contrib
+  - allowed_formats
   - auto_entitylabel
   - datetime
   - maxlength
