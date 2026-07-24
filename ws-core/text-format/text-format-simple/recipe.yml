@@ -9,6 +9,7 @@ install:
   - media_library
   - user
   # contrib
+  - allowed_formats
   - editor_advanced_link
   - linkit
 config:

@@ -9,6 +9,7 @@ install:
   - media_library
   - user
   # contrib
+  - allowed_formats
   - ckeditor5_fullscreen
   - ckeditor5_plugin_pack
   - ckeditor5_plugin_pack_bookmark
