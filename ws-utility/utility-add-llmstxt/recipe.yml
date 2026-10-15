@@ -3,7 +3,7 @@ description: 'Provides instructions to AI agents when processing site content.'
 type: 'AI'
 
 install:
-  - llms_txt
+  - llmstxt
   - user
   - token
 
@@ -14,7 +14,7 @@ recipes:
 config:
   strict: false
   import:
-    llms_txt: '*'
+    llmstxt: '*'
   actions:
     user.role.administrator:
       grantPermissions:
