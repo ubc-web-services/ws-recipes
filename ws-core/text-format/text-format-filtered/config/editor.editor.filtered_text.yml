@@ -44,16 +44,11 @@ settings:
       - UbcAccordionToggle
       - UbcAccordion
       - '|'
-      - UbcCardHorizontal
-      - UbcCardVerticalOne
-      - UbcCardVerticalTwo
-      - UbcCardVerticalThree
-      - '|'
       - undo
       - redo
       - removeFormat
       - showBlocks
-      - Fullscreen
+      - fullscreen
       - findAndReplace
       - selectAll
       - sourceEditing
@@ -185,7 +180,7 @@ settings:
           element: '<span class="text-measure-lg">'
         -
           label: 'Attribution, Footnote Text'
-          element: '<p class="text-grey-700 text-uppercase text-sm">'
+          element: '<p class="text-sm text-grey-700 text-uppercase">'
         -
           label: 'List: inline'
           element: '<ul class="list-inline">'
@@ -218,19 +213,19 @@ settings:
           element: '<a class="unit-button unit-button--block">'
         -
           label: 'Text Extra Small'
-          element: '<a class="unit-button text-xs unit-button--text-xs">'
+          element: '<a class="text-xs unit-button unit-button--text-xs">'
         -
           label: 'Text Small'
-          element: '<a class="unit-button text-sm unit-button--text-sm">'
+          element: '<a class="text-sm unit-button unit-button--text-sm">'
         -
           label: 'Text Large'
-          element: '<a class="unit-button text-lg unit-button--text-lg">'
+          element: '<a class="text-lg unit-button unit-button--text-lg">'
         -
           label: 'Text XLarge'
-          element: '<a class="unit-button text-xl unit-button--text-xl">'
+          element: '<a class="text-xl unit-button unit-button--text-xl">'
         -
           label: 'Text XXLarge'
-          element: '<a class="unit-button text-2xl unit-button--text-2xl">'
+          element: '<a class="text-2xl unit-button unit-button--text-2xl">'
         -
           label: 'Light Button'
           element: '<a class="unit-button unit-button--light">'
@@ -248,7 +243,7 @@ settings:
           element: '<a class="unit-button unit-button--transparent">'
         -
           label: 'Hidden Anchor'
-          element: '<a class="anchor anchor-invisible sr-only">'
+          element: '<a class="sr-only anchor anchor-invisible">'
     editor_advanced_link_link:
       enabled_attributes:
         - id

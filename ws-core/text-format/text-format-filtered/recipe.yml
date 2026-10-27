@@ -10,7 +10,6 @@ install:
   - user
   # contrib
   - allowed_formats
-  - ckeditor5_fullscreen
   - ckeditor5_plugin_pack
   - ckeditor5_plugin_pack_bookmark
   - ckeditor5_plugin_pack_find_and_replace

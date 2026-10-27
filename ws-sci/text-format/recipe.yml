@@ -9,7 +9,6 @@ install:
   - media_library
   - user
   # contrib
-  - ckeditor5_fullscreen
   - editor_advanced_link
   - linkit
   - responsive_table_filter
