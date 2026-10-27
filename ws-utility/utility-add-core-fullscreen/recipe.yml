@@ -1,0 +1,12 @@
+name: "Add core fullscreen button to toolbar"
+description: "Add core fullscreen button to toolbar for UBC Web Services websites"
+type: "Text format"
+install:
+  # core
+  - ckeditor5
+config:
+  actions:
+    editor.editor.filtered_text:
+      addItemToToolbar:
+        item_name: fullscreen
+        replace: false
