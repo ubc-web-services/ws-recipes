@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - content_item_entity
+id: content_item_entity.markdown
+label: Markdown
+description: null
+targetEntityType: content_item_entity
+cache: true
