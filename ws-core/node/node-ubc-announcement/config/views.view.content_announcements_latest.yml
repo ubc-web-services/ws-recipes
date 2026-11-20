@@ -234,7 +234,6 @@ display:
             term_page: '0'
             limit: false
             vids: {  }
-          default_argument_skip_url: false
           summary_options:
             base_path: ''
             count: true
